@@ -1,0 +1,265 @@
+{
+ "assessment_type": "Staged submissions",
+ "n_studies_in_pack": 23,
+ "cells": [
+  {
+   "dimension": "capability_verification",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] In a computing project with about 30 students, a guided design phase plus screencast code tours gave more meaningful outcome data than the unsupervised instruments it replaced, which had produced misleading attainment under AI use [R82]. Most studies pair staged work with an oral or defence element to confirm understanding, such as an individual viva after three checkpoints in two cohorts of 14 and 15 students [R79], a narrative review's proposed, untested triangulation of staged work with oral explanation and live demonstration [S113], and defence of the reasoning behind the final submission [S430], [S218]. Practitioners doubted that portfolios alone resist GenAI [R24].",
+   "dataset": "[D] Marks on AI-permitted take-home programming assignments bunched at the top and agreed only moderately with proctored exam marks [D24], [D25]. Assignment marking did not respond to the share of AI-authored code in submissions [J1].",
+   "interpretation": "[I] Staged submissions verify individual capability only when at least one stage requires the student to explain, defend or extend their own work under observed conditions; the drafts alone say little.",
+   "key_studies": [
+    "R82",
+    "R79",
+    "S113",
+    "R24",
+    "S430"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 1,
+   "core_studies": 1,
+   "conflicts": "R01 and S214 describe multi-stage submissions as AI-resistant, but this is untested advice; R24 practitioners doubted portfolios resist GenAI.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 1
+  },
+  {
+   "dimension": "genai_exposure",
+   "rating": "Weak",
+   "confidence": "Medium",
+   "literature": "[L] Non-invigilated tasks are hard to design so that they preclude substantial GenAI use [R68], and realistic take-home tasks stay open to undisclosed AI help [S113]. Most standard programming assessments can be completed by current GenAI [R28], and practitioners doubted that portfolios resist it [R24]. In a computing project staged with a design phase, GenAI was deliberately encouraged for leaf functions rather than excluded [R82].",
+   "dataset": "[D] With 8 prompting strategies and best-answer selection, GPT-4 fully answered 85.6% of CS questions [D03]. In one AI course, production delegation and verbatim reuse were highest in a scaffolded tutorial notebook and lowest in applied tasks requiring explanations or reports [J2].",
+   "interpretation": "[I] Staging does not stop GenAI producing each unsupervised stage, so exposure stays high unless stages demand context-specific explanation or are completed under observation.",
+   "key_studies": [
+    "R68",
+    "S113",
+    "R28",
+    "R24",
+    "R82"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 2,
+   "core_studies": 1,
+   "conflicts": "R01, R28 and S214 list staged or multi-stage designs among AI-resistant strategies, but these are recommendations, not tests of AI completion; S113 is a low-confidence venue.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 1
+  },
+  {
+   "dimension": "authorship_assurance",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Multi-stage submissions with drafts let educators follow learning progress and students' interaction with AI over time [R01], and decision trails or AI-collaboration logs are proposed as evidence of process [R68]. One project combined mandatory team prompt logs and evidence boards with an individual viva as a dual safeguard [R79]. In EAP programmes, AI-use declarations were judged ineffective, while named marking by tutors who knew the students reportedly coincided with fewer misconduct cases [R24].",
+   "dataset": "[D] Marking did not respond to AI-authored content in submissions, so a product-focused mark gave no signal of AI authorship [J1].",
+   "interpretation": "[I] Staged evidence improves staff confidence about how the work developed, but it gives firm authorship assurance only when combined with individual verification and staff who follow the work across stages.",
+   "key_studies": [
+    "R01",
+    "R79",
+    "R24",
+    "R68"
+   ],
+   "n_supporting": 4,
+   "computing_studies": 0,
+   "core_studies": 0,
+   "conflicts": "Process logs and drafts can themselves be AI-generated; R24 doubted that portfolios resist GenAI.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "lo_alignment",
+   "rating": "Strong",
+   "confidence": "Medium",
+   "literature": "[L] Multi-staged connected scaffolding and milestone group projects are mapped to ICT graduate competencies through constructive alignment [R04]. In a computing course, a multi-part project with a guided design phase gave more meaningful outcome data than the instruments it replaced [R82], and a checkpointed project was built on explicit alignment of outcomes and criteria [R79]. Having students apply the actual marking rubric to an AI draft early aligned critique with the criteria for later phases [R47], and staged activities can be aligned to evidence artefacts and a rubric [S316].",
+   "dataset": "",
+   "interpretation": "[I] Because each stage can target a different part of the intended outcome, including design and reasoning, staged submissions measure process as well as product.",
+   "key_studies": [
+    "R04",
+    "R82",
+    "R79",
+    "R47",
+    "S316"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 2,
+   "core_studies": 2,
+   "conflicts": "",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authenticity",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Staged projects have been framed around professional GenAI use: one computing group-project module design, described without any evaluation, frames GenAI as a professional, collaborative tool [S199], and a computing project encouraged GenAI for leaf functions after a design phase, in line with a recommendation to use GenAI as in professional practice [R82]. Checkpointed prototype projects were built under real constraints and demonstrated publicly [R79], and a staged science-communication task emulated professional writing [R47]. Authenticity alone is not enough, since realistic take-home tasks stay open to undisclosed AI use [S113].",
+   "dataset": "[D] In a software engineering capstone, 92.7% of students reported using GenAI [D12], and 7 of 11 clients wanted students supported to use it [D20], although client views may have been inflated by how the question was framed [J5].",
+   "interpretation": "[I] Staging mirrors iterative professional development when stages are real milestones such as design, build and review, but its authenticity depends on the task, not on staging itself.",
+   "key_studies": [
+    "R82",
+    "R79",
+    "R47",
+    "S113"
+   ],
+   "n_supporting": 4,
+   "computing_studies": 1,
+   "core_studies": 1,
+   "conflicts": "",
+   "cohort_note": "",
+   "low_conf_venue_studies": 1
+  },
+  {
+   "dimension": "appropriate_ai_use",
+   "rating": "Strong",
+   "confidence": "Medium",
+   "literature": "[L] Staging lets AI use be sequenced: students designed the architecture first and then used GenAI for low-level functions [R82], and GenAI use was allowed with mandatory disclosure and progressive fading of scaffolding across checkpoints [R79]. In a large course, students graded a ChatGPT draft against the rubric and then revised it, and most performed well on the critique, though some rated inaccurate AI content highly [R47]. Staged frameworks also ask students to start from their own understanding, engage AI critically and document evaluative decisions [S430], and teachers proposed drafting with ChatGPT and showing improvements [R50].",
+   "dataset": "[D] In a capstone, the most frequent advice students gave peers was to retain understanding (39.3%) and review outputs (29.2%) [D19].",
+   "interpretation": "[I] Staged designs are well suited to teaching critical, graduated GenAI use, but students may need explicit scaffolding to check AI accuracy.",
+   "key_studies": [
+    "R82",
+    "R79",
+    "R47",
+    "S430",
+    "R50"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 1,
+   "core_studies": 1,
+   "conflicts": "R47 found a few students graded ChatGPT's inaccurate content highly, suggesting critique stages need support.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "process_visibility",
+   "rating": "Strong",
+   "confidence": "High",
+   "literature": "[L] Process over product, using prompts, reflective commentaries, planning notes and time-stamped drafts, is a core strategy for ICT assessment [R04], and multi-stage submissions let educators follow learning progress and AI interaction over time [R01]. Design-phase deliverables and screencast code tours exposed students' process in a computing course [R82], evidence boards and prompt logs fed formative and summative judgement [R79], and tracked changes documented revision of an AI draft [R47]. Staged design was advised in 13 of 17 university guidelines that gave assessment-design advice [R51].",
+   "dataset": "",
+   "interpretation": "[I] Making process visible is the main strength of staged submissions, as long as stages capture AI interactions and decisions, not only interim products.",
+   "key_studies": [
+    "R04",
+    "R01",
+    "R82",
+    "R79",
+    "R47",
+    "R51"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 2,
+   "core_studies": 2,
+   "conflicts": "",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "scalability",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] A three-phase staged assignment ran in a large psychology course (n = 363) with tutorial instructors marking [R47]. In a computing course of about 30 students, the open-ended multi-part project prevented autograding, so grading relied on rubrics and screencast demos [R82], while a checkpointed project with vivas was run only with cohorts of 14 and 15 [R79]. Practitioners raised workload concerns about marking multiple drafts [R24], and a claim that a staged framework scales has not been tested [R04].",
+   "dataset": "[D] A capstone's own assessment added a 5-15 minute one-to-one tutor conversation on artefacts and commit history, with about one tutor per three teams of 9-10; this shows feasibility, not effectiveness [J4].",
+   "interpretation": "[I] Staged submissions can run at scale when stages are few and rubric-marked by a tutor team, but per-stage feedback and individual verification grow with cohort size.",
+   "key_studies": [
+    "R47",
+    "R82",
+    "R79",
+    "R24"
+   ],
+   "n_supporting": 4,
+   "computing_studies": 1,
+   "core_studies": 1,
+   "conflicts": "R47 shows large-cohort use, but it is a non-computing course; R82 lost autograding in computing.",
+   "cohort_note": "Small (<50): workable with feedback at each checkpoint and an individual viva in cohorts of 14 and 15 [R79], and with rubric marking and screencast demos for about 30 students, though autograding was lost [R82]. Medium (50-200): no staged computing deployment of this size was reported; a tutor team would be needed for any individual check [J4]. Large (>200): shown in one non-computing course with tutorial instructors marking three phases [R47], but multi-draft marking is a known burden [R24].",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "workload",
+   "rating": "Weak",
+   "confidence": "Medium",
+   "literature": "[L] Practitioners raised workload concerns about marking multiple drafts, constrained by time and hiring freezes [R24], and staged tasks are said to require recalibrating assessment volume, with workload pressure listed as an implementation challenge [R04]. Staged and other design-based measures are said to demand substantial teacher time [S105], workload sustainability is flagged for staged, process-oriented designs [S192], and workload is acknowledged as a barrier to reform at scale [R68]. In one computing course, the only extra burden reported was rubric-based grading, because autograders could not be used [R82].",
+   "dataset": "",
+   "interpretation": "[I] Each added stage adds marking and feedback, so staff workload is high unless the number of stages and assessed tasks is reduced elsewhere.",
+   "key_studies": [
+    "R24",
+    "R04",
+    "R68",
+    "R82",
+    "S105"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 2,
+   "core_studies": 2,
+   "conflicts": "R82 reported only modest added burden; R23 cites fewer but more meaningful assessments as a way to reduce load.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "feasibility",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Staged submissions need no invigilation or venues and can be built from existing tasks: a peer-review step was replaced with an AI-critique step within an existing three-phase assessment, with materials shared openly [R47], and adapting an existing computing task needed only a relatively simple change to the marking criteria [R23]. A checkpointed project ran in two five-week blocks with low-cost ESP32 and Arduino hardware [R79]. The main cost is staff time: open-ended staged projects lost autograding and needed rubric marking [R82], marking multiple drafts was constrained by time, hiring freezes and course-approval processes [R24], and staff resistance, resource limits and workload are named as barriers [R04].",
+   "dataset": "",
+   "interpretation": "[I] Infrastructure, platform and licence needs are low, but the staff time for marking and feedback at several points means feasibility including cost is Moderate rather than Strong; cost evidence is limited, because no study measured marking hours or costs in money terms.",
+   "key_studies": [
+    "R47",
+    "R23",
+    "R82",
+    "R79",
+    "R24",
+    "R04"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 2,
+   "core_studies": 2,
+   "conflicts": "R47 and R23 describe modest changes to existing tasks, while R24 and R04 report time, staffing and approval barriers. Workload is rated Weak because of multiple marking points [R24], [R04].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "accessibility_equity",
+   "rating": "Moderate",
+   "confidence": "Low",
+   "literature": "[L] Some university guidelines cautioned that over-reliance on in-class or oral formats may disadvantage non-native English speakers and students needing accommodations [R51]; staged written work avoids this, but staged designs that add in-class Q&A raise similar concerns for neurodivergent and anxious students [R04]. Students raised concerns about unequal access to paid AI tools [R23], and a digital divide in AI access is flagged [R01]. In one staged task, critiquing ChatGPT drafts of consistent quality was argued to be more equitable than reviewing peers' variable drafts [R47].",
+   "dataset": "",
+   "interpretation": "[I] Staged submissions are not inherently unfair and may suit students who struggle with timed or live formats, but equity depends on the AI access and verification stages chosen, and direct evidence is thin.",
+   "key_studies": [
+    "R51",
+    "R04",
+    "R23",
+    "R47",
+    "R01"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 1,
+   "core_studies": 1,
+   "conflicts": "",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  }
+ ],
+ "evaluation_finding": "Staged submissions are strong at making the learning process visible and at sequencing responsible GenAI use, and they can usually be built from existing tasks without new infrastructure [R04], [R01], [R82], [R47]. Each unsupervised stage remains open to GenAI, so staging on its own gives weak protection and only moderate assurance of capability and authorship [R68], [R24], [D03], [J1]. Marking at several points makes staff workload high and feasibility moderate, and the literature consistently pairs staged work with an individual oral or defence checkpoint to verify understanding [R24], [R04], [R79], [S113], [R28].",
+ "strengths": [
+  "Makes process, drafts and AI interactions visible and assessable over time [R04], [R01], [R79].",
+  "Allows AI use to be sequenced, for example design first and GenAI for low-level code afterwards [R82].",
+  "Supports structured critique of GenAI output against the marking rubric [R47].",
+  "Can be aligned stage by stage to computing graduate competencies [R04], [R82].",
+  "Often built from existing tasks with modest changes to criteria and no new venues or platforms [R47], [R23], [R79]."
+ ],
+ "limitations": [
+  "Each unsupervised stage can still be produced by GenAI [R68], [S113], [D03].",
+  "Practitioners doubt that portfolios resist GenAI on their own [R24].",
+  "AI-use declarations attached to staged work were judged ineffective [R24].",
+  "Marking multiple drafts adds staff workload and cost, and open-ended staged projects can lose autograding [R24], [R04], [R82].",
+  "Evidence is mostly conceptual or practice reports; the few evaluations lack comparison groups [R79], [R47]."
+ ],
+ "practical_considerations": [
+  "Add at least one individual explanation or viva checkpoint to verify understanding [R79], [S113].",
+  "Keep stages few and rubric-marked by a tutor team in large cohorts, and budget tutor time for each marking point [R47], [R82], [R24].",
+  "Expect autograding to be harder for open-ended multi-part projects [R82].",
+  "Pre-test stage briefs with GenAI and weight marks towards process justification and evaluation [R23].",
+  "Short one-to-one tutor conversations on artefacts and commit history are a feasible add-on in team projects [J4]."
+ ],
+ "evidence_gaps": [
+  "No study tested how far GenAI can complete each stage of a staged computing task.",
+  "No controlled comparison of staged versus single-submission assessment on capability verification in computing.",
+  "No computing study measured staff marking time for staged submissions in large cohorts (>200).",
+  "No study evaluated equity effects of staged submissions for students with disabilities, anxiety or English as an additional language.",
+  "No study showed that staged process evidence (drafts, logs) is itself resistant to AI fabrication."
+ ]
+}

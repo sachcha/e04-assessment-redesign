@@ -1,0 +1,285 @@
+{
+ "assessment_type": "Oral assessments",
+ "n_studies_in_pack": 55,
+ "cells": [
+  {
+   "dimension": "capability_verification",
+   "rating": "Strong",
+   "confidence": "High",
+   "literature": "[L] In a computing module, take-home scores averaged about 83.8% but viva scores about 35.2%, and many high scorers could not explain or reproduce their own code [R81]. Individual vivas with live modification requests gave clearly different marks to members of the same group [R80], live TA checkoffs with scripted questions confirmed individual tool proficiency [R95], and a post-exam Socratic viva was used to check students could explain their reasoning [S009]. A computing systematic review found oral defence and live coding endorsed by 12 studies as the most AI-resistant checks because they need real-time independent reasoning [R28], and a project viva was one of the few hurdles GPT-4 could not clear in a whole-degree benchmark [S097].",
+   "dataset": "[D] Students averaged 94.8% on AI-permitted assignments but 86.3% on proctored exams, and the share of AI-authored code did not change assignment marks [D24], [J1]. In a capstone, the most common client concern was students' lack of independent understanding in client meetings (7 of 11) [D20].",
+   "interpretation": "[I] Orals are among the best-evidenced ways to verify individual understanding in computing, but the evidence is mostly single-cohort and descriptive, so the viva is best triangulated with other evidence [R81].",
+   "key_studies": [
+    "R81",
+    "R80",
+    "R95",
+    "R28",
+    "S097",
+    "S009",
+    "S117",
+    "R79",
+    "R94",
+    "S001"
+   ],
+   "n_supporting": 10,
+   "computing_studies": 6,
+   "core_studies": 4,
+   "conflicts": "Viva scores may partly reflect anxiety, hesitation or language proficiency [R81]; checkoff scores showed ceiling effects, limiting discrimination between students [R95].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "genai_exposure",
+   "rating": "Strong",
+   "confidence": "Medium",
+   "literature": "[L] In a whole-programme benchmark, GPT-4 would have earned about 65% and failed the degree only because of compulsory labs and the project viva [S097], and a multi-institution benchmark judged interview-style orals with impromptu questions the most secure oral format [S001]. Reviews and surveys report live presentations and discussions as least affected by GenAI [R03], [R49], and a computing review rates oral defence and live coding as the most AI-resistant strategies [R28]. However, prepared presentations can rely on AI-written scripts and unsupervised online interviews may become open to real-time AI help [S001], online vivas are argued to be vulnerable to AI assistance and avatars [S104], and LLMs passed text-based structured oral question sets in dentistry [S154].",
+   "dataset": "[D] With best-of-8 prompting GPT-4 fully answered 85.6% of EPFL computing questions [D03], and item format explained little of AI resistance [J3].",
+   "interpretation": "[I] Strong applies to in-person, interactive orals with unscripted follow-up questions; prepared presentations, reused question banks and remote orals sit closer to Moderate.",
+   "key_studies": [
+    "S097",
+    "S001",
+    "R28",
+    "R03",
+    "R49"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 1,
+   "core_studies": 0,
+   "conflicts": "LLMs can answer structured oral questions when given them as text [S154]; online vivas and scripted presentations are exposed [S001], [S104]. No study tested AI assistance during a live oral.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authorship_assurance",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Vivas and live demonstrations exposed large gaps between submitted code and students' ability to explain it, and a triangulated redesign raised a learning-integrity score from about 11.7 to 45.3 [R81]; individual vivas distinguished contributions within group projects [R80], [R79]. Oral interviews are noted as an effective authorship check in a web development course [R84], and guidance and reviews favour interviewing students over detector scores because markers and detectors cannot reliably identify AI-assisted work [S454], [R52], [R51]. The same computing study warns that no single mode, especially the viva, should be treated as decisive evidence of integrity [R81].",
+   "dataset": "[D] The Hannover capstone used rotating 5-15 minute tutor conversations on artefacts and commit history to verify individual contributions; this is evidence of feasibility, not effectiveness [J4].",
+   "interpretation": "[I] Orals give good assurance that the student understands and owns the work, but they show how AI was used only when paired with prompt logs, repositories or disclosures [R80], [R79].",
+   "key_studies": [
+    "R81",
+    "R80",
+    "R79",
+    "R84",
+    "R52",
+    "S454",
+    "R51"
+   ],
+   "n_supporting": 7,
+   "computing_studies": 3,
+   "core_studies": 3,
+   "conflicts": "One framework reframes integrity as accountability for the work rather than provenance [R11]; online vivas may be open to AI assistance [S104].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 1
+  },
+  {
+   "dimension": "lo_alignment",
+   "rating": "Strong",
+   "confidence": "Medium",
+   "literature": "[L] Computing orals were designed to assess explaining logic, justifying design and adapting code [R81], reasoning, dependencies, failure analysis and transfer [R79], and code and design decisions under live modification requests [R80]. Live checkoffs listed the skills assessed in each checkoff and scoped questions to the learning objectives [R95], viva preparation has been structured by Bloom's levels [R94], and RAG-generated viva questions were grounded in each student's own submission [S156].",
+   "dataset": "[D] Capstone students' most frequent advice to peers was 'Retain Understanding' (39.3%), and clients most often worried about lack of independent understanding [D19], [D20].",
+   "interpretation": "[I] Orals align well with reasoning and explanation outcomes in computing, but alignment is asserted by design rather than validated, so confidence is held at Medium.",
+   "key_studies": [
+    "R81",
+    "R79",
+    "R80",
+    "R95",
+    "R94",
+    "S156"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 5,
+   "core_studies": 4,
+   "conflicts": "Oral performance may partly measure anxiety or language [R81]; scripted presentations measure presentation skill rather than knowledge [S001]; the debugger checkoff was scoped to tool use rather than real-time bug finding [R95].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authenticity",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Live checkoffs ran in the real tool environments and were likened to technical interviews [R95], short oral presentations were framed as professional communication [R94], and vivas were attached to authentic AI-permitted projects such as a Java maths-learning app, with selected apps to be trialled by a partner school [R80], and public ESP32 prototype demonstrations [R79]. A conceptual paper includes oral defences and recorded walkthroughs within authentic, AI-present assessment [R16]. These are author framings rather than measured authenticity.",
+   "dataset": "[D] In the Hannover capstone, the most common client concern was students' lack of independent understanding in client meetings (7 of 11) [D20].",
+   "interpretation": "[I] Orals resemble professional code reviews and client explanations when they discuss a realistic, AI-permitted artefact, but decontextualised Q&A on random topics is less authentic.",
+   "key_studies": [
+    "R95",
+    "R94",
+    "R80",
+    "R79",
+    "R16"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 3,
+   "core_studies": 3,
+   "conflicts": "No study measured authenticity; random-topic micro-presentations are only loosely tied to computing practice [R94].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "appropriate_ai_use",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Computing and engineering designs allowed GenAI for coding, debugging and documentation and used an individual viva to check understanding, together with submitted prompts or prompt logs [R80], [R79], and another did not ban AI but required students to show understanding and ownership [R81]. A permitted-AI take-home with a follow-up viva let students choose whether to use AI and lowered the perceived value of AI outputs [S117], and university guidance commonly pairs AI-assisted drafting with oral verification [S115]. Orals are also used as No-AI checkpoints [R10], [R19].",
+   "dataset": "[D] Most capstone students used GenAI (92.7%), and 7 of 11 clients wanted students supported in using it [D12], [D20], although the client figures may be inflated by the questionnaire framing [J5].",
+   "interpretation": "[I] Orals make AI-permitted coursework defensible, but they assess understanding rather than the quality of AI use unless questions explicitly probe how AI output was checked.",
+   "key_studies": [
+    "R80",
+    "R79",
+    "R81",
+    "S117",
+    "S115",
+    "R10"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 2,
+   "core_studies": 2,
+   "conflicts": "",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "process_visibility",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Vivas asked students to reconstruct reasoning, explain dependencies and analyse failures, while the working process was captured separately by evidence boards and prompt logs [R79]. Computing redesigns paired the viva with repository commit history [R81] or submitted prompts and reflections [R80], and authors propose oral code defence with Git history review without testing it [R96], [R92]. A dialogic AI viva is proposed as a way to elicit evidence of students' reasoning processes [R11].",
+   "dataset": "[D] The Hannover tutor conversations discussed artefacts and commit history to verify contributions [J4].",
+   "interpretation": "[I] An oral shows reasoning on demand but not the working process or AI interactions, so it approaches Strong only when it interrogates logs, commits or prompts.",
+   "key_studies": [
+    "R79",
+    "R81",
+    "R80",
+    "R96",
+    "R92",
+    "R11"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 4,
+   "core_studies": 4,
+   "conflicts": "",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "scalability",
+   "rating": "Moderate",
+   "confidence": "High",
+   "literature": "[L] Ten-minute individual vivas were run with over 750 students across two campuses [R80], and live checkoffs ran with 237 students but overran planned times and took about 80% of TA office-hour time [R95]. Interviews are described as effective but costly to scale, at about 1,000 minutes for 100 students [R84], and staff in non-computing settings judged one-to-one orals hard to run with large or online cohorts [S011], [S012]. Workarounds include vivas for a random 20% sample [S009], securing only key programme moments [R68] and automated text-based vivas tested with over 250 students [S156].",
+   "dataset": "[D] The Hannover capstone ran rotating 5-15 minute tutor conversations with about one tutor per three teams of 9-10 students [J4].",
+   "interpretation": "[I] Orals scale only with short formats, TA teams, sampling or targeting key assessments; full individual vivas remain costly for large cohorts.",
+   "key_studies": [
+    "R80",
+    "R95",
+    "R84",
+    "S009",
+    "S156",
+    "S011",
+    "S012",
+    "R68"
+   ],
+   "n_supporting": 8,
+   "computing_studies": 5,
+   "core_studies": 3,
+   "conflicts": "Some authors claim scalability without data beyond 30 or about 50 students [R94], [R93]; the 750-student implementation reported no staff-time data [R80].",
+   "cohort_note": "Small (<50): full individual vivas and oral micro-presentations are workable in classes of up to 30 and cohorts of 14 and 15 [R94], [R79]. Medium (50-200): oral questioning was built into a course of about 50 students [R93], and a viva plus live demo ran within normal delivery for 60 students [R81], but 10-minute interviews cost about 1,000 staff minutes per 100 students [R84]. Large (>200): feasible only with short vivas and many staff [R80], TA-run appointment schedules [R95], random sampling [S009], short rotating tutor conversations [J4] or automated text-based vivas [S156].",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "workload",
+   "rating": "Weak",
+   "confidence": "High",
+   "literature": "[L] Ten-minute interviews for 100 students are estimated at about 1,000 minutes of instructor time [R84], and live checkoffs ran longer than planned (medians 9.5, 19 and 25 minutes against 5, 15 and 15) and took about 80% of TA office-hour time [R95]. Current viva practice used at least two evaluators per session [S156], and staff describe one-to-one orals as demanding much more time and cost [S011], [R11]. Requiring orals for every high detection score would make marking far more onerous [R52].",
+   "dataset": "[D] The Hannover course needed about one tutor per three teams of 9-10 students for its 5-15 minute conversations [J4].",
+   "interpretation": "[I] Orals carry a high staff-time burden concentrated in live contact hours; short formats, pairs and automated questioning reduce it but do not remove it.",
+   "key_studies": [
+    "R84",
+    "R95",
+    "S156",
+    "S011",
+    "R11",
+    "R52"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 3,
+   "core_studies": 2,
+   "conflicts": "An abstract-only humanities report found oral exam time comparable to paper grading [S110]; code-explanation components are positioned as a lower-effort entry point than full oral defence [R28].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "feasibility",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Computing orals were run within normal module delivery for 60 students [R81] and across two campuses [R80], and need little technology, but their main cost is staff contact time: 10-minute interviews are estimated at about 1,000 staff minutes per 100 students [R84], checkoffs took about 80% of TA office-hour time and needed Docker environments, scripts and rubrics [R95], and current viva practice used at least two evaluators per session [S156]. Staff elsewhere judged one-to-one orals to need much more time and cost, and reported casual teaching teams and slow approval or accreditation processes as barriers [S011], [S012]. A review reports oral-defence templates rated implementable within one semester [R28], one framework funded a secured capstone code review by removing a first-year exam [R68], and an automated viva platform built on ChatGPT and open-source tools was tested with over 250 students [S156].",
+   "dataset": "[D] The Hannover capstone embedded short tutor conversations in its existing assessment [J4].",
+   "interpretation": "[I] Orals need little infrastructure, but their staff time, scheduling and moderation costs are high, so feasibility including cost is Moderate and improves when orals are short, sampled or targeted at key programme points; cost evidence is limited to staff-time estimates, and no study reported room, platform or licence costs in money terms.",
+   "key_studies": [
+    "R81",
+    "R80",
+    "R95",
+    "R84",
+    "S156",
+    "R28",
+    "S011",
+    "S012",
+    "R68"
+   ],
+   "n_supporting": 9,
+   "computing_studies": 6,
+   "core_studies": 4,
+   "conflicts": "Workload is rated Weak, which rules out a Strong rating here [R84], [R95]. An abstract-only humanities report found oral exam time comparable to paper grading [S110].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "accessibility_equity",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Viva performance can reflect anxiety, hesitation or language proficiency [R81], and university guidelines caution that heavy use of oral formats may disadvantage non-native speakers and students with disabilities [R51]; neurodivergent and socially anxious students may also be challenged [R04], [S001]. Reported mitigations include two attempts per question and a quieter space for students with accommodations [R95], and triangulation with other evidence, after which 86.7% of students rated the assessment fair [R81]. One prototype AI viva was made text-based partly because spoken formats can disadvantage students with language or accessibility needs [R11].",
+   "dataset": "",
+   "interpretation": "[I] Orals do not depend on AI access but create risks for anxious, neurodivergent and EAL students; no study measured outcomes by group, so equity depends on accommodations and triangulation.",
+   "key_studies": [
+    "R81",
+    "R51",
+    "R04",
+    "S001",
+    "R95",
+    "R11"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 3,
+   "core_studies": 3,
+   "conflicts": "Orals may disadvantage some neurodivergent or anxious students but help others [S001]; an abstract-only report says its design addressed anxiety and fairness concerns [S110].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  }
+ ],
+ "evaluation_finding": "Oral assessments are the best-evidenced way in this review to verify that computing students understand work produced with GenAI: vivas exposed large gaps between take-home marks and students' ability to explain their code [R81], [R80], and in-person interactive orals were consistently judged hard for GenAI to complete [S097], [S001], [R28]. Their main weakness is staff time, which limits scale unless formats are short, sampled or targeted at key assessments [R84], [R95], [S009], [R68]. They work best as one part of a triangulated design with process evidence, not as a stand-alone integrity test [R81], [R79].",
+ "strengths": [
+  "Viva and live demonstration revealed that many students with high take-home marks could not explain or reproduce their own code [R81].",
+  "Individual vivas distinguished members of the same group whose shared report was well written [R80].",
+  "Interview-style orals with impromptu questions were judged the most secure oral format, and a project viva was one of the few hurdles GPT-4 could not pass [S001], [S097].",
+  "Orals let staff permit GenAI in coursework while still checking individual understanding [R80], [R79], [S117].",
+  "Students in two computing implementations reported benefits: 85-93% of survey respondents said checkoffs improved their skills [R95], and 86.7% rated a triangulated viva design fair [R81]."
+ ],
+ "limitations": [
+  "Staff time is high: about 1,000 minutes for 10-minute interviews with 100 students [R84], and checkoffs took about 80% of TA office-hour time [R95].",
+  "Viva performance may reflect anxiety or language proficiency, and guidelines warn of disadvantage for non-native speakers and students with disabilities [R81], [R51].",
+  "Prepared presentations can rely on AI-written scripts, and remote orals may be open to real-time AI help or avatars [S001], [S104].",
+  "Orals show reasoning but not the working process or AI interactions unless paired with logs or repositories [R79], [R81].",
+  "Computing evidence comes from single-course, descriptive reports without control groups [R81], [R80], [R95]."
+ ],
+ "practical_considerations": [
+  "Use short, structured vivas (about 10 minutes) with scripted questions and rubrics, and book appointments with time limits to avoid queues [R80], [R95].",
+  "For large cohorts, consider viva sampling (for example a random 20%), TA-run checkoffs or securing orals only at key programme points such as capstones, and budget staff contact time at about 1,000 minutes per 100 students for 10-minute interviews [S009], [R95], [R68], [R84].",
+  "Anchor questions in the student's own artefact, commit history or prompt log, and ask for live modifications [R80], [R81], [R79], [J4].",
+  "Create multiple question versions to limit sharing, and run orals in person where security matters [R95], [S001].",
+  "Provide accommodations such as second attempts and quieter rooms, and triangulate the oral with other evidence [R95], [R81]."
+ ],
+ "evidence_gaps": [
+  "No study tested whether students can use GenAI covertly during a live or remote oral.",
+  "No study compared outcomes of oral assessment by disability, anxiety or English-language status.",
+  "No controlled computing study compared oral and non-oral designs; available reports are single-cohort and descriptive.",
+  "Staff time at large scale was estimated or reported only partially; the 750-student implementation reported no workload data.",
+  "Marking consistency of human-run orals is uncertain: one study found much higher variability among human examiners (CoV 32.69%) than among LLM graders [S156], and automated vivas were not tested for integrity outcomes."
+ ]
+}

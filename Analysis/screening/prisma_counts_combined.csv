@@ -1,0 +1,31 @@
+stage,n
+A. Evidence-log stream: records identified (team lists + team-supplied papers),96
+A. duplicates removed,4
+A. screened at title/abstract,92
+A. excluded at title/abstract,32
+A. full texts assessed,60
+A. excluded at full text (incl. Amendment 3 redesign rule),7
+A. included,53
+B. Update search: hits across 9 strings (with overlap),565
+B. unique records retrieved,501
+B. already in evidence log (duplicates removed),7
+B. screened at title/abstract,494
+B. excluded at title/abstract,344
+B. full texts sought,150
+B.   assessed with full text,97
+B.   assessed on abstract only (no legal full text),53
+B. excluded at full text,60
+B.   of which E2,53
+B.   of which E4,4
+B.   of which E7,2
+B.   of which E3,1
+B. included,90
+TOTAL studies included in review,143
+  Core (team log Include),19
+  Supporting,124
+  computing-specific (Y),33
+  a_redesign,89
+  b_informs_redesign,54
+  full text,118
+  abstract only,25
+  low-confidence venue (kept at low weight),14

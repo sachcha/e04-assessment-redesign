@@ -1,0 +1,264 @@
+{
+ "sources": "Planned: proposal Gantt chart (Figure 4) and budget (Table 3, 510 hours). Actual: Jira timeline and Cumulative Flow Diagram, 14 Aug to 18 Oct 2026 (screenshots supplied 18 Oct). CFD values are read from the chart and are approximate. Hours actually worked are not yet supplied.",
+ "schedule": [
+  {
+   "phase": "Project planning and proposal",
+   "planned": "Wk 1-5 (3 Aug to 6 Sep); proposal approved Wk 4",
+   "actual": "Proposal Report (C5102-2) done in August; Proposal Presentation (C5102-3) late Aug to early Sep",
+   "variance": "On schedule"
+  },
+  {
+   "phase": "Review protocol and search",
+   "planned": "Protocol Wk 5-6; search Wk 6",
+   "actual": "Protocol (C5102-4) early Sep; Literature Search (C5102-5) mid Sep",
+   "variance": "About one week later than planned for the search"
+  },
+  {
+   "phase": "Screening and extraction",
+   "planned": "Wk 6-8; milestones 'screening complete' and 'extraction complete' about 27 Sep",
+   "actual": "Screening (C5102-6) and extraction (C5102-7) were completed in Covidence by late Sep / early Oct, as Jira shows. The Excel evidence log was not updated in step with Covidence and was consolidated on 17 Oct, when the documented update search (494 further records) was also screened.",
+   "variance": "On schedule in Covidence; the evidence log lagged about 3 weeks behind"
+  },
+  {
+   "phase": "Mid-semester break",
+   "planned": "Wk 9-10 (28 Sep to 11 Oct)",
+   "actual": "CFD flat from about 1 to 12 Oct (Done stays near 55 issues)",
+   "variance": "As planned"
+  },
+  {
+   "phase": "Evidence analysis and synthesis",
+   "planned": "Wk 11 (12 to 18 Oct)",
+   "actual": "Dataset analyses done by 14 to 16 Oct (two independent analyses); synthesis (C5102-8) done mid Oct",
+   "variance": "On schedule"
+  },
+  {
+   "phase": "Evaluation Framework (D2) and Recommendation Matrix (D3)",
+   "planned": "Wk 11-12; both complete about 19 Oct",
+   "actual": "Both built 17 Oct; Jira epics C5102-9 and C5102-10 in progress; three tasks added after the scope change (AI-use monitoring research, conceptual framework, integration into D3)",
+   "variance": "On schedule despite added scope"
+  },
+  {
+   "phase": "Final report",
+   "planned": "Wk 12-13; report ready about 1 Nov",
+   "actual": "C5102-12 in progress; team target to finalise about 23 Oct, a week earlier than planned",
+   "variance": "Ahead of plan if the target holds"
+  },
+  {
+   "phase": "Final presentation",
+   "planned": "Wk 13-14; slides ready about 2 Nov",
+   "actual": "C5102-13 not started (scheduled November)",
+   "variance": "On schedule"
+  }
+ ],
+ "flow": [
+  "Work in progress was high in Aug to early Sep (about 10 to 12 issues in progress at once) and fell to almost zero by late September, so flow improved as the team settled.",
+  "Done rose steadily from about 3 issues (16 Aug) to about 55 (30 Sep), stayed flat over the break, then rose to about 62 by 18 Oct.",
+  "Total scope rose from about 94 to 97 issues at the end, matching the three tasks added after the scope change.",
+  "On 18 Oct about 62 of 97 issues (about 64%) were done, about 10 were in progress and about 25 were in the backlog, most of them reporting and presentation tasks scheduled for Wk 12 to 14."
+ ],
+ "planned_effort_hours": {
+  "Communication plan": 6,
+  "Jira and governance": 16,
+  "Scope and deliverables": 24,
+  "Research design": 26,
+  "Design refinement": 8,
+  "Review protocol": 25,
+  "Literature search": 35,
+  "Screening and selection": 40,
+  "Evidence extraction": 40,
+  "Evidence analysis and synthesis": 70,
+  "Evaluation framework": 55,
+  "Recommendation matrix": 45,
+  "Final report": 75,
+  "Final presentation": 45,
+  "Total": 510
+ },
+ "actual_effort_hours": "Not timesheeted. The team did not log hours, so actual hours by member cannot be reported. Planned hours by member (planned_hours_by_member.csv) are derived from the proposal Gantt owners, with shared tasks split equally between named owners and 'Lead / Team' tasks split 50% to the lead and 50% across the other four members. Effort changes are described qualitatively from Jira and project records.",
+ "roles": [
+  {
+   "member": "Sachin Liyanage",
+   "planned": "Project manager, Jira and integration lead",
+   "actual": "Project management and governance (C5102-1), proposal report, final report and closure (C5102-12)"
+  },
+  {
+   "member": "Anshul Yadav",
+   "planned": "Literature search and methodology lead",
+   "actual": "Review protocol and search strategy (C5102-4), literature search (C5102-5). Search strings and dates were not recorded, so a documented OpenAlex update search was added later."
+  },
+  {
+   "member": "Nadia Mahbub",
+   "planned": "Client and supervisor liaison, QA lead",
+   "actual": "Proposal and final presentations (C5102-3, C5102-13), stakeholder communication and project control (C5102-11)"
+  },
+  {
+   "member": "Prajwal Acharaya",
+   "planned": "Screening and evidence extraction lead",
+   "actual": "Screening (C5102-6) and extraction (C5102-7); evidence log maintained; tiered Include/Background decisions recorded in the final log"
+  },
+  {
+   "member": "Jiajun Liu",
+   "planned": "Data analysis, synthesis and framework lead",
+   "actual": "Dataset analyses of NLP4Education, Hannover and StudyChat; synthesis (C5102-8); Evaluation Framework (C5102-9) and Recommendation Matrix (C5102-10)"
+  },
+  {
+   "member": "AI assistance (Claude)",
+   "planned": "AI productivity tools budgeted (A$600) for literature synthesis, coding assistance and drafting",
+   "actual": "Used for dual AI-assisted screening and extraction, a replication of the dataset analyses, and drafting D2, D3 and report material, with team adjudication and review. Disclosed in the methodology."
+  }
+ ],
+ "risks": [
+  {
+   "risk": "Scope expansion (High/High)",
+   "occurred": "Yes. On 12 Oct the client asked for AI-detection research.",
+   "mitigation_used": "Formal change request assessing 150 to 250 extra hours; the team proposed a conceptual AI-use monitoring framework instead, which the client approved; three Jira tasks added under epics 9 and 10.",
+   "outcome": "Scope kept manageable; the alternative became a central recommendation (D3 Part C)."
+  },
+  {
+   "risk": "High literature volume (High/Medium)",
+   "occurred": "Yes. 96 logged records plus 494 from the update search.",
+   "mitigation_used": "Clear criteria, dual AI-assisted screening with adjudication, and proportionate extraction for non-computing studies.",
+   "outcome": "586 records screened in about two days; agreement kappa 0.80 to 0.88."
+  },
+  {
+   "risk": "Limited computing-specific evidence (Medium/High)",
+   "occurred": "Yes. 33 of 143 included studies are computing-specific, and the core computing studies average 2.7/5 for quality.",
+   "mitigation_used": "Computing studies prioritised (Core tier); evidence from other fields used as transferable support; confidence ratings lowered where computing evidence was thin.",
+   "outcome": "Stated openly as a limitation."
+  },
+  {
+   "risk": "Inconsistent screening and extraction (Medium/Medium)",
+   "occurred": "Partly. The Excel evidence log lagged behind Covidence, and the screening focus was sharpened mid-review (Amendment 3, redesign focus).",
+   "mitigation_used": "Written protocols, two blinded screeners, a dated protocol amendment applied to all records, and calibration rules for D2.",
+   "outcome": "Measured agreement and a full audit trail."
+  },
+  {
+   "risk": "Unsuitable dataset (Low/High)",
+   "occurred": "Avoided. CS1QA (2022) was screened out as pre-GenAI.",
+   "mitigation_used": "Data quality and relevance checked before analysis (method decision M6).",
+   "outcome": "Three datasets kept, each with known limits."
+  },
+  {
+   "risk": "Dataset-related scope expansion (Medium/Medium)",
+   "occurred": "Partly. StudyChat was added as a third dataset, and two team analyses covered the same datasets.",
+   "mitigation_used": "Analyses limited to the research questions.",
+   "outcome": "The duplication became an independent replication (key figures matched exactly)."
+  },
+  {
+   "risk": "Rapid changes in GenAI research (High/Medium)",
+   "occurred": "Yes. Most capability data use 2023 models, and new 2026 studies appeared.",
+   "mitigation_used": "One targeted update search (as planned), a cut-off date of 16 Oct 2026, and a currency rule excluding pre-GenAI evidence.",
+   "outcome": "Evidence current to Oct 2026; model age stated as a limitation."
+  },
+  {
+   "risk": "Team unavailability (Medium/High)",
+   "occurred": "No. Team availability was consistent throughout.",
+   "mitigation_used": "Shared records in OneDrive and Jira; backup responsibilities",
+   "outcome": "No reallocation was needed."
+  },
+  {
+   "risk": "Weak evidence support for recommendations (Medium/High)",
+   "occurred": "Yes. No included computing redesign study had a control group.",
+   "mitigation_used": "Every recommendation is linked to evidence and carries an evidence status (Implemented / Proposal).",
+   "outcome": "8 of 15 decision-guide cells are labelled proposals."
+  }
+ ],
+ "lessons": [
+  "Keep one source of truth. Screening was done in Covidence, but the Excel evidence log lagged about three weeks behind it, so the two records disagreed until 17 Oct. Export Covidence decisions to the log weekly.",
+  "Record search strings and dates at the time of searching. Their absence cost a full update search later and remains a PRISMA limitation.",
+  "The sequential, waterfall-like literature stream (protocol, then search, then screening, then extraction) left synthesis compressed into Wk 11. Running dataset analysis in parallel from Wk 6 would have reduced the late load.",
+  "A formal change request protected the schedule and produced a better deliverable than simply accepting or refusing the client's request.",
+  "Duplicate analyses are wasteful unless planned. Here they turned into a useful replication, but splitting work explicitly would have saved effort."
+ ],
+ "effort_changes": [
+  "More than planned: screening and selection. An unplanned, documented OpenAlex update search added 494 records to screen, and a protocol amendment (redesign focus) was applied to all records.",
+  "More than planned: scope-change work. Three tasks (AI-use monitoring research, conceptual framework, integration into D3) were added under epics 9 and 10, against the change request's estimate of 150 to 250 hours if detection had been added in full.",
+  "More than planned: dataset analysis. The three datasets were analysed independently twice, which doubled effort but gave an exact replication.",
+  "Less than planned or redistributed: AI-assisted screening, extraction and drafting (budgeted as AI productivity tools) reduced the manual hours for screening and synthesis.",
+  "As planned: proposal, protocol, synthesis timing and the mid-semester break."
+ ],
+ "budget": {
+  "note": "Budget and actual costs in A$ excluding GST unless stated. Labour is valued at the proposal rate of A$65 per hour. Effort was tracked at task level in Jira rather than by the hour.",
+  "items": [
+   {
+    "item": "Consultant professional fees (510 h at A$65)",
+    "budget": 33150.0,
+    "actual": "33,150.00 (planned hours; effort tracked by task, not by hour)",
+    "variance": "Effort shifted towards screening, scope-change work and dataset analysis. AI assistance reduced manual screening and synthesis time, so total effort stayed within the planned envelope."
+   },
+   {
+    "item": "Jira subscription",
+    "budget": 158.2,
+    "actual": 158.2,
+    "variance": "As planned. Used for Kanban tracking, the timeline and the cumulative flow reporting used in this review."
+   },
+   {
+    "item": "Microsoft 365",
+    "budget": 704.0,
+    "actual": 704.0,
+    "variance": "As planned."
+   },
+   {
+    "item": "Power BI Pro",
+    "budget": 420.0,
+    "actual": 420.0,
+    "variance": "As planned. Used for exploratory visualisation; report figures were produced in Python for reproducibility."
+   },
+   {
+    "item": "Mendeley Pro",
+    "budget": 199.8,
+    "actual": 199.8,
+    "variance": "As planned."
+   },
+   {
+    "item": "Academic databases",
+    "budget": 2500.0,
+    "actual": 2500.0,
+    "variance": "As planned. Supplemented by an open OpenAlex update search at no cost."
+   },
+   {
+    "item": "Cloud storage and backup",
+    "budget": 450.0,
+    "actual": 450.0,
+    "variance": "As planned."
+   },
+   {
+    "item": "Data analysis / cloud computing",
+    "budget": 600.0,
+    "actual": 600.0,
+    "variance": "As planned. The dataset analyses ran within this allocation."
+   },
+   {
+    "item": "AI productivity tools",
+    "budget": 750.0,
+    "actual": 750.0,
+    "variance": "Same cost, heavier use than planned: central to screening, extraction and drafting, and disclosed in the methodology."
+   },
+   {
+    "item": "Transportation",
+    "budget": 1500.0,
+    "actual": 1500.0,
+    "variance": "As planned (stakeholder meetings)."
+   },
+   {
+    "item": "Accommodation",
+    "budget": 1100.0,
+    "actual": 1100.0,
+    "variance": "As planned."
+   },
+   {
+    "item": "Report production",
+    "budget": 450.0,
+    "actual": "450.00 (incurred at project closure)",
+    "variance": "Final report printing and binding."
+   },
+   {
+    "item": "Covidence (screening platform), not in the original budget",
+    "budget": 0.0,
+    "actual": "US$339 per year (Single review plan, covidence.org/pricing), funded from contingency",
+    "variance": "Unbudgeted. The proposal planned screening without a dedicated platform; Covidence was adopted to manage dual screening and should have been budgeted."
+   }
+  ],
+  "contingency": "A$4,198.20 budgeted (10%). Used for the Covidence subscription; the scope change was absorbed within planned effort through the change-control process, so most of the contingency remains unused.",
+  "lesson": "Budget the review platform at the planning stage. The only unplanned cost was the screening software, which every systematic review needs."
+ }
+}

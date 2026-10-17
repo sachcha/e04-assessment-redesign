@@ -1,0 +1,467 @@
+[
+ {
+  "record_id": "S040",
+  "title": "Java academic benchmark: Exam-based evaluation of LLMs on object-oriented programming",
+  "authors": "Alessio Cocchieri; Luca Ragazzi; Gianluca Aguzzi; Giacomo Frisoni; Lorenzo Molfetta; Gianluca Moro; Mirko Viroli",
+  "year": 2026,
+  "venue": "Journal of Systems and Software",
+  "doi": "10.1016/j.jss.2026.113033",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/Requested_papers (team-supplied PDF); published Elsevier version (JSS 242 (2026) 113033, CC BY), read as extraction/text/S040.txt. Author list corrected from the full text (Mirko Viroli added; missing from the earlier abstract-based entry).",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "IC1 met: bachelor-level OOP course exams at the University of Bologna. IC2 (revised) met as b: evaluates 27 LLMs on 103 authentic university Java exams and compares them with 176 students who sat the same exams, so it gives direct evidence on how vulnerable programming exam tasks are to GenAI. IC3 met (LLMs). IC4 met (peer-reviewed JSS article). IC5 met (2026, English). Confirmed from the full text.",
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Shows that frontier LLMs, especially when allowed to iterate with compiler and test feedback, solve authentic lab-based Java OOP exams at or above the level of the students who sat them, so any programming exam where students could reach such tools cannot rely on the submitted code as evidence of capability.",
+  "study_design": "Benchmark construction and evaluation: 103 authentic Java exams with 506 expert-written JUnit tests; execution-based scoring (comp@k, soft/hard pass@k, grade G1/G2) under single-attempt and agentic (up to three compiler/test feedback rounds) strategies; KODE LLM-as-a-Judge rubric with one human expert and two LLM judges; comparison with student scores; 10-exam Python translation subset; error taxonomy.",
+  "country": "Italy",
+  "discipline": "Computer Science / Software Engineering (object-oriented programming in Java)",
+  "computing": "Y",
+  "level": "Undergraduate (bachelor-level OOP course)",
+  "sample": "103 exams from 2014-2024 written by one professor (co-author) for one undergraduate OOP course, with 506 JUnit tests; 27 instruction-tuned LLMs released mid-2023 to mid-2025; student comparison with 176 students who sat the same exams in official sessions, shown for the 2023 exams (Sec 4, Fig. 5); KODE design ratings on 30 matched items (5 models x 6 exams from 2023); Python subset of 10 translated 2023 exams.",
+  "genai_tools": "27 LLMs in three families: reasoning (o4-mini-high, Gemini-2.5-Pro, Gemini-2.5-Flash-Thinking, QwQ-32B, DeepSeek-R1-671B, Gemini-2.0-Flash-Thinking); general-purpose (GPT-4.1, GPT-4o, GPT-4o-mini, LLaMA-3.1-70B/8B, LLaMA-3-70B); code-specialised (Qwen2.5-Coder 0.5B-32B, DeepSeek-Coder-v2-16B, Codestral-22B, CodeQwen1.5-7B, StarCoder2-15B, CodeGemma-7B, DeepSeek-Coder 33B/6.7B, CodeLLaMA 34B/7B). Gemini-2.0-Flash used to translate exam text.",
+  "assessment_types": [
+   "Supervised assessment",
+   "Practical demonstrations"
+  ],
+  "key_findings": [
+   {
+    "finding": "On single-attempt pass@1, top closed models solved almost all exams: o4-mini-high reached 96.1% soft pass and 95.1% hard pass, Gemini-2.5-Pro 91.3% and GPT-4.1 82.5% soft pass, while small open models lagged far behind, mainly because their code failed to compile.",
+    "location": "Sec 5.1-5.2, Table 4 (p. 7)"
+   },
+   {
+    "finding": "Agentic resolution with compiler and test feedback raised scores sharply; on the 2023 exams Gemini-2.5-Flash-Thinking rose from 60% to 100%, passing the marked threshold, and most fixes happened in the first feedback round.",
+    "location": "Sec 5.1, Fig. 5, Table 5; Sec 5.5.3"
+   },
+   {
+    "finding": "Compared with 176 students who sat the same exams on lab machines with an IDE, compiler and the JUnit tests, larger closed models matched or exceeded student performance. The authors warn this is not equivalence under real exam conditions, because students work under time pressure and evolve one solution.",
+    "location": "Sec 4 (Student comparison); Sec 5.1; Fig. 5"
+   },
+   {
+    "finding": "Passing tests and good OOP design did not always coincide, and LLM judges were more lenient than the human expert; agreement on code clarity was weak (LLM-LLM Pearson r = 0.08) and showed signs of self-alignment bias.",
+    "location": "Sec 5.3, Sec 6.2, Tables 6, 9 and 10"
+   },
+   {
+    "finding": "Models did better on Python translations of the same exams, which the authors treat as an indicative (10-task) sign that Python-based benchmarks may overstate model competence.",
+    "location": "Sec 5.4, Fig. 5"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Uses a decade of real course exams rather than crowd-sourced tasks, so the vulnerability evidence applies to authentic programming assessment items.",
+   "capability_verification": "Frontier LLMs reach or exceed student-level scores on the same exams, so submitted exam code alone cannot verify individual capability wherever such tools are reachable.",
+   "integrity_security": "The students' exam setting (lab IDE, compiler and test suites) is close to the agentic setting in which models did best, so the security of such exams depends on controlling access to LLMs; the paper itself does not discuss exam security.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Use JAB to track LLM progress on OOP and to trace errors to specific OOP concepts to inform teaching strategies and curriculum design (not tested)",
+   "Extend the benchmark with exams from other instructors and universities, and replicate the human design assessment with independent external evaluators (future work, not tested)",
+   "No recommendations on assessment redesign or exam security are made"
+  ],
+  "limitations": "Authors' threats to validity: all exams come from one instructor at one university; 103 problems; a single standardised prompt; the human judge is also the course instructor, benchmark curator and co-author; KODE design scores rest on 30 matched items and are not validated against real-world quality outcomes; the Python bias result rests on 10 tasks. The student comparison is not equivalent to real exam conditions (time pressure, single evolving solution) and student scores are shown for the 2023 exams only. Reviewer note: the paper is a benchmark study; its relevance to assessment design is indirect and inferred.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Appraised from the full text. Five explicit research questions; transparent, reproducible benchmark with open code and data; detailed tables; a full threats-to-validity section. Its link to assessment redesign is indirect."
+  }
+ },
+ {
+  "record_id": "S113",
+  "title": "Rethinking Assessment for Engineering Students in Higher Education in the Age of Generative AI: A Critical Narrative Review",
+  "authors": "Iman Farshchi",
+  "year": 2026,
+  "venue": "Asian Journal of Education and Social Studies",
+  "doi": "10.9734/ajess/2026/v52i93311",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/Requested_papers (team-supplied PDF); published version (AJESS 52(9), pp. 389-408, 2026), read as extraction/text/S113.txt",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "IC1 met: undergraduate and postgraduate engineering education, explicitly including engineering-adjacent computing and ICT evidence. IC2 (revised) met as a: proposes a specific assessment architecture plus redesign patterns and capability-specific AI-use conditions. IC3 met (GenAI). IC4 met (peer-reviewed journal with open peer review). IC5 met (2026, English). Confirmed from the full text.",
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Proposes a Dual-Assurance Assessment Architecture planned at programme-outcome level: a protected lane of independent competence evidence and an AI-integrated lane of professional capability evidence, linked by oral defence, live demonstration, staged decisions and provenance; it also gives capability-by-capability AI-use conditions, including programming.",
+  "study_design": "Critical narrative review (informed by SANRA), with an iterative search, stated eligibility criteria, appraisal criteria and thematic synthesis around seven linked problems",
+  "country": "Malaysia (author affiliation: MAHSA University); the review itself is international",
+  "discipline": "Engineering, including engineering-adjacent computing/ICT (programming, software modelling)",
+  "computing": "Partial",
+  "level": "Higher education (undergraduate and postgraduate engineering)",
+  "sample": "Literature from 1 January 2018 to 27 June 2026 (plus earlier foundational work) found through ERIC, OpenAlex, OpenAIRE, DOAJ, Semantic Scholar and Google Scholar, with backward and forward citation tracing; peer-reviewed, English-language sources. The number of included sources is not reported; the author states no record-flow counts are given (Sec 2.5).",
+  "genai_tools": "General-purpose and specialised GenAI/LLM systems; ChatGPT, GPT-4-based and custom GPT tools are named in the reviewed studies",
+  "assessment_types": [
+   "Supervised assessment",
+   "Unsupervised formats",
+   "Oral assessments",
+   "Practical demonstrations",
+   "Staged submissions",
+   "Process evidence",
+   "Personalised tasks",
+   "AI-use declarations"
+  ],
+  "key_findings": [
+   {
+    "finding": "Authenticity is necessary but not sufficient: realistic or personalised take-home tasks remain open to undisclosed AI influence, so authentic tasks must be paired with corroborating evidence such as staged decisions, oral explanation, live model manipulation and test-and-debug demonstrations.",
+    "location": "Sec 4.4 and Table 2 (p. 396)"
+   },
+   {
+    "finding": "The proposed Dual-Assurance Assessment Architecture separates protected evidence of independent competence (threshold and safety-relevant capability) from AI-integrated evidence of professional judgement, connects them through corroboration, and makes the programme outcome rather than the single assignment the unit of design.",
+    "location": "Sec 9 (p. 403)"
+   },
+   {
+    "finding": "AI-use conditions should follow the capability: for example, programming fundamentals are protected for core syntax and logic but AI is permitted for advanced workflow, and evaluative judgement is assessed by giving students AI output to critique.",
+    "location": "Sec 5 and Table 3 (p. 398)"
+   },
+   {
+    "finding": "AI detectors are too unreliable and biased against non-native writers to serve as stand-alone evidence of misconduct; disclosure should be proportionate (tool, purpose, materially affected parts, verification done) rather than full prompt logs, which risk becoming compliance theatre.",
+    "location": "Sec 6.1-6.2 (p. 399); Table 5"
+   },
+   {
+    "finding": "Oral and staged methods are resource-intensive, can raise anxiety and accessibility issues, and add workload; large first-year courses may need selective oral sampling or structured checkpoints, and the evidence base on viva reliability, cost and accessibility is limited.",
+    "location": "Sec 4.3 (p. 395); Sec 8.3 (p. 402); Sec 10"
+   }
+  ],
+  "evidence_type": "review",
+  "dimensions": {
+   "authenticity": "Authentic tasks belong mainly in the AI-integrated lane but still need corroboration, because realism does not prevent undisclosed AI help.",
+   "capability_verification": "Protected, proportionate evidence (short supervised problems, practical demonstrations, code tracing, oral explanation) is proposed for threshold capability, spread across the programme rather than one final exam.",
+   "integrity_security": "Detector scores should never be stand-alone evidence for sanctions; integrity rests on richer process and competence evidence.",
+   "lo_alignment": "AI-use conditions should follow the learning outcome and the inference needed (constructive alignment), with programme-level mapping of where each outcome is evidenced with and without AI.",
+   "appropriate_ai_use": "Task-level instructions should state the construct, the permitted AI role and the disclosure expected; graduated scales such as the AI Assessment Scale help but do not replace outcome analysis.",
+   "scalability": "Large cohorts may need selective oral sampling, structured checkpoints or automated formative support rather than individual extended vivas.",
+   "workload": "Staged tasks, oral defences and personalised feedback shift substantial labour to staff, so redesign time and calibration must be built in.",
+   "feasibility": "A theoretically ideal design that cannot be staffed, moderated or sustained is not a good institutional solution; designs should reuse existing milestones and lab observations.",
+   "process_visibility": "Version history, commit logs, lab notebooks, checkpoints and decision traces are proposed as evidence alongside the final artefact.",
+   "accessibility_equity": "Where AI is required, the institution should provide adequate access or an equivalent route; orals and invigilation can create accessibility and anxiety burdens; detectors are biased against non-native writing."
+  },
+  "author_recommendations": [
+   "Adopt the Dual-Assurance Assessment Architecture as a researchable design proposition, not a validated framework (not tested)",
+   "Set AI-use conditions per capability and map them at programme level (not tested)",
+   "Triangulate evidence through staged work, oral explanation, live demonstration and provenance; use selective oral sampling for large cohorts (not tested)",
+   "Require proportionate disclosure of tool, purpose, material contribution and verification instead of full prompt logs (not tested)",
+   "Do not use AI detectors as stand-alone evidence; keep human accountability for high-stakes AI-assisted grading; periodically stress-test task vulnerability as models change (not tested)"
+  ],
+  "limitations": "Author-stated: narrative review open to selection and interpretive bias; not exhaustive and no reproducible record accounting; no quantitative synthesis; engineering-specific empirical studies are few, so many conclusions are transferred from other disciplines; English only; results tied to particular model versions date quickly; the architecture is an unvalidated interpretive synthesis. Reviewer note: single author and no count of included sources.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "N",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 4,
+   "note": "Appraised from the full text. Clear objectives; narrative design justified and informed by SANRA, with stated search sources, period, eligibility and appraisal criteria; conclusions are tied to cited studies with their limits noted. q3 = N because the number and make-up of included sources is not reported. Explicit limitations section."
+  }
+ },
+ {
+  "record_id": "S199",
+  "title": "Using Generative Artificial Intelligence to Enhance Integrity, Inclusivity, and Sustainability in Computing Higher Education",
+  "authors": "Shelan S. Jeawak; Elias Pimenidis",
+  "year": 2026,
+  "venue": "IT Professional",
+  "doi": "10.1109/mitp.2026.3702499",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/Requested_papers (team-supplied PDF), read as extraction/text/S199.txt. This file is the authors' accepted manuscript (R1, IEEE template with placeholder headers), not the published IEEE IT Professional version; wording and pagination may differ from the published article.",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "IC1 met: a high-stakes group project module in a Computer Science degree at UWE Bristol. IC2 (revised) met as a: describes an implemented assessment redesign (portfolio, reflective essay, in-person oral presentation) with GenAI-use boundaries. IC3 met (GenAI). IC4 met (IEEE IT Professional article; the manuscript is labelled article type Description). IC5 met (2026, English). Confirmed from the accepted manuscript.",
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Gives a concrete, weighted assessment blueprint for a CS group project (process-documented Group Portfolio 50%, Individual Reflective Essay 30%, in-person Demonstration and Evaluation 20%) with explicit permitted and prohibited GenAI uses, but reports no evaluation of it.",
+  "study_design": "Practice description / case report (article type: Description) of a single module's assessment redesign, set within a five-pillar conceptual framework; no data collection or evaluation",
+  "country": "UK",
+  "discipline": "Computing (Computer Science; Systems Development Group Project module)",
+  "computing": "Y",
+  "level": "not reported (module within a Computer Science degree)",
+  "sample": "Not reported: one module (Systems Development Group Project) at the University of the West of England; no cohort size, student data or outcomes are given",
+  "genai_tools": "Copilot 365 and ChatGPT named as examples; Studiosity (UWE-approved tool) encouraged for feedback on report writing; the tool used for AI-generated formative feedback is not named",
+  "assessment_types": [
+   "Process evidence",
+   "Oral assessments",
+   "Practical demonstrations",
+   "AI-use declarations"
+  ],
+  "key_findings": [
+   {
+    "finding": "The module's assessment is split into a Group Portfolio (50%) whose high marks require continually monitored process documentation such as a risk register and Gantt chart, an Individual Reflective Essay (30%) described as the main safeguard of individual integrity, and an in-person oral group presentation (Demonstration and Evaluation, 20%) described as the final integrity check.",
+    "location": "Sec Case Study: Implementation in the Systems Development Group Project (2. Pedagogical Redesign)"
+   },
+   {
+    "finding": "The assessment brief permits GenAI for background research, finding literature and proofreading, prohibits it for the argumentative or reflective content of the portfolio and essay, and requires any GenAI used for auxiliary tasks to be referenced in UWE Harvard style.",
+    "location": "Sec Case Study (1. Policy and Governance)"
+   },
+   {
+    "finding": "Formative feedback combines tutor, peer and AI-generated feedback, intended to support a multicultural cohort and reduce students' reliance on GenAI for content.",
+    "location": "Sec Case Study (3. AI as a Collaborative Tool)"
+   },
+   {
+    "finding": "No cohort size, student data or outcomes are reported. The authors call the work a descriptive phase and plan later quantitative comparison of cohorts before and after the feedback initiative, so the Conclusions' claim of successful implementation is not backed by evidence in the paper.",
+    "location": "Sec Conclusions; Sec Future Directions"
+   }
+  ],
+  "evidence_type": "guidance",
+  "dimensions": {
+   "authenticity": "Process documentation is tied to real-time project evolution and the team's own context, and GenAI is framed as a professional collaborative tool.",
+   "capability_verification": "The individual reflective essay and in-person oral presentation are intended to verify individual understanding (asserted, not evaluated).",
+   "integrity_security": "Detection is rejected because of false positives and evasion; integrity is sought through assessment design instead.",
+   "lo_alignment": "Tasks were designed with Bloom's taxonomy to move from basic understanding to higher-order synthesis and evaluation.",
+   "appropriate_ai_use": "Granular rules state permitted auxiliary uses, prohibited content generation and the referencing required.",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "High portfolio marks depend on continually monitored process documents such as risk registers and Gantt charts.",
+   "accessibility_equity": "AI-generated feedback is intended to make feedback more inclusive for a multicultural cohort; detector false positives for non-native English speakers are a stated reason for avoiding detection."
+  },
+  "author_recommendations": [
+   "Replace detection-led integrity with process-centric assessment combining process documentation, an individual reflective essay and an in-person oral defence (implemented; not evaluated)",
+   "Set granular GenAI boundaries in the assessment brief: permit auxiliary uses, prohibit generating argumentative or reflective content, require referencing (implemented; not evaluated)",
+   "Use a tutor, peer and AI-generated feedback triage to support inclusivity and reduce reliance on GenAI for content (implemented; not evaluated)",
+   "Apply a five-pillar framework (policy and governance, pedagogical redesign, AI as a collaborative tool, AI literacy and culture, institutional support and training) (not tested)"
+  ],
+  "limitations": "Single-module practice description with no cohort details, data or evaluation; claims of success are not supported by evidence; workload and scalability of the oral component are not discussed. No limitations section; the authors only note that the work is descriptive and that quantitative evaluation is future work. Extracted from the accepted manuscript, not the published version.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "N",
+   "q4": "N",
+   "q5": "N",
+   "quality_score": 2,
+   "note": "Appraised from the full accepted manuscript. Clear aims; the framework draws on cited literature (q2 judged as a framework/practice paper). No sample or context data (q3 N); the stated objective of giving evidence that process documentation is a more reliable integrity check, and the claim of successful implementation, are not backed by data (q4 N); no limitations stated (q5 N)."
+  }
+ },
+ {
+  "record_id": "S423",
+  "title": "Transparency Mechanisms for Generative AI Use in Higher Education Assessment: A Systematic Scoping Review (2022-2026)",
+  "authors": "Itahisa Pérez Pérez; Miriam Catalina González-Afonso; Zeus Plasencia Carballo; David Pérez‐Jorge",
+  "year": 2026,
+  "venue": "Computers",
+  "doi": "10.3390/computers15020111",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/Requested_papers (team-supplied PDF); published MDPI version (Computers 2026, 15, 111), read as extraction/text/S423.txt",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "IC1 met: higher-education assessment. IC2 (revised) met as a: synthesises how GenAI disclosure and transparency mechanisms are built into assessment designs and how compliance is evaluated. IC3 met (GenAI). IC4 met (peer-reviewed review, PROSPERO-registered, PRISMA-ScR). IC5 met (2026, English). Confirmed from the full text.",
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Maps the AI-use declaration and transparency mechanisms used in HE assessment and shows that most are unverified; it gives four design implications: define what counts as compliance and how it is checked, prefer selective process evidence over exhaustive logs, scale rigour to task weight, and anticipate concealment.",
+  "study_design": "Systematic scoping review (Arksey and O'Malley framework; PRISMA-ScR / PRISMA 2020; PROSPERO CRD420261287226) with four coded analytical dimensions",
+  "country": "Spain (review team, University of La Laguna); included studies from the UK, USA, Ireland/Australia, Spain, Switzerland, Europe, Australia and international samples",
+  "discipline": "Multidisciplinary higher education (business, psychology, computing education, languages, accounting, general HE)",
+  "computing": "Partial",
+  "level": "Higher education",
+  "sample": "92 records from Scopus (34), Web of Science (38), ERIC (14) and IEEE Xplore (6), searched 20 December 2025 and updated 10 January 2026; 11 studies included (7 empirical, 3 case study/action research, 1 policy analysis); backward and forward snowballing and a term-expansion check found no further eligible studies. One included study is from computing education (Maguire et al.).",
+  "genai_tools": "Generative AI in general; ChatGPT named",
+  "assessment_types": [
+   "AI-use declarations",
+   "Process evidence"
+  ],
+  "key_findings": [
+   {
+    "finding": "Compliance with transparency requirements was rarely checked: 3 of 11 studies had no explicit evaluation, 2 relied on unverified self-disclosure and 2 on implicit instructor judgement or penalty; only one used a light rubric or checklist and one combined assessable criteria with spot checks of process evidence.",
+    "location": "Sec 3.2, Table 4, Figure 2"
+   },
+   {
+    "finding": "Requirements were operationally unspecified in 5 of 11 studies (45.5%); only one required process evidence such as marked outputs and one required reflection with an explicit verification and responsibility statement.",
+    "location": "Sec 3.3, Table 4, Figure 3"
+   },
+   {
+    "finding": "Feasibility evidence was thin: 7 of 11 studies (63.6%) reported nothing on workload or acceptability, and the 3 reporting compliance data generally found undeclared use or concealment even where disclosure was mandatory.",
+    "location": "Sec 3.5; Sec 4"
+   },
+   {
+    "finding": "The authors draw four implications: state what compliance means and how it will be evaluated, prefer selective process evidence over exhaustive logs to limit privacy and surveillance risk, scale rigour to the task's purpose and weight, and anticipate concealment, stigma and informal penalties.",
+    "location": "Sec 4 (Discussion)"
+   }
+  ],
+  "evidence_type": "review",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "Mandatory disclosure alone does not ensure transparency; undeclared or strategically framed use persists, and most mechanisms are never verified.",
+   "lo_alignment": "Transparency is judged more feasible when aligned with assessment design and learning goals and built in as an assessable component.",
+   "appropriate_ai_use": "Requirements for permitted and declared AI use are often unspecified or limited to a use/no-use statement.",
+   "scalability": "The few designs that integrate transparency into assessment leave scalability largely undocumented.",
+   "workload": "Workload is reported or inferable in only 4 of 11 studies; minimal approaches carry low workload and control-focused ones moderate workload.",
+   "feasibility": "Transparency is more feasible when proportionate, clearly specified and non-punitive.",
+   "process_visibility": "Selective process evidence (marked outputs, appendices, spot checks) is preferred over exhaustive interaction logs.",
+   "accessibility_equity": "Exhaustive logs raise privacy concerns, unequal tool access raises equity concerns, and punitive framing encourages concealment and stigma."
+  },
+  "author_recommendations": [
+   "If disclosure is requested, define what counts as compliance and how it will be evaluated, rather than relying on implicit judgement (not tested)",
+   "Prioritise selective process evidence over exhaustive logs (not tested)",
+   "Make the level of rigour proportional to the pedagogical purpose and weight of the task (not tested)",
+   "Anticipate unintended effects such as concealment, stigmatisation or informal penalties where rules are ambiguous or punitive (not tested)"
+  ],
+  "limitations": "Author-stated: maps practices but does not evaluate their effectiveness or the quality of included studies; only 11 studies; coding limited to explicit text; consensus coding without inter-rater agreement metrics. Reviewer notes: narrow, disclosure-term search strings in four databases; only one computing study; minor reporting inconsistencies (Sec 3.4 gives N = 1 with 18.2% for the implementation-gap pattern, while Table 4 gives N = 2; study reference numbers in Appendix B Table A2 do not match the reference list).",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Appraised from the full text. Registered scoping review with full search strings (Appendix A), coding definitions (Appendix B) and an explicit limitations section. Findings follow the coded tables, despite minor count and reference-number inconsistencies. Note that the review did not appraise the quality of its included studies."
+  }
+ },
+ {
+  "record_id": "S006",
+  "title": "Generative Artificial Intelligence and the Ambiguity of Academic Integrity in Higher Education",
+  "authors": "Katerina Zdravkova",
+  "year": 2026,
+  "venue": "Education Sciences",
+  "doi": "10.3390/educsci16071120",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/Requested_papers (team-supplied PDF); published MDPI version (Educ. Sci. 2026, 16, 1120), read as extraction/text/S006.txt",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "IC1 met: Faculty of Computer Science and Engineering, Skopje (seminar papers and theses, including the Computer Ethics course). IC2 (revised) met as b: tests whether staff can recognise an AI-generated essay and whether disclosed AI interaction logs are credible evidence, and shows that such logs can be faked. IC3 met (LLMs). IC4 met (peer-reviewed journal; ethics approval). IC5 met (2026, English). Confirmed from the full text.",
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Shows that marker judgement of AI authorship varies with experience, that plagiarism checks are rarely run, and that disclosed interaction logs can be selectively shared or fabricated, so redesign cannot rest on unverified disclosure or marker suspicion; it points to scalable oral checks and milestone checkpoints instead.",
+  "study_design": "Exploratory mixed design: four-case essay-generation experiment with ChatGPT; an illustrative mimicked-interaction example; qualitative ethical analysis; staff survey of 11 items (9 ordinal Likert-type, 2 open) analysed with descriptive statistics and thematic/sentiment analysis",
+  "country": "North Macedonia",
+  "discipline": "Computer Science and Engineering",
+  "computing": "Y",
+  "level": "HE teaching staff (17 professors and 11 teaching assistants) judging student seminar-paper and thesis writing",
+  "sample": "28 teaching staff at FCSE Skopje (17 professors, 11 assistants), about one third of those invited (25% among more experienced teachers); voluntary anonymous survey on the Faculty LMS, answered in two rounds; all respondents judged the same machine-translated, fully AI-generated essay (Appendix A.1)",
+  "genai_tools": "ChatGPT (OpenAI GPT-5.3) for the four essay cases; GPT-4o (March 2026) produced the mimicked interaction, which GPT-5.3 later declined to generate; Grammarly used in the plagiarism check of case 4",
+  "assessment_types": [
+   "Unsupervised formats",
+   "AI-use declarations",
+   "Process evidence",
+   "Oral assessments"
+  ],
+  "key_findings": [
+   {
+    "finding": "Across four ChatGPT essay cases, minimal prompting produced fabricated or wrongly cited references and very uniform paragraphs, while more specific prompts and rewriting a published paper removed most visible traces, so no single reliable set of AI markers was found.",
+    "location": "Sec 4 and 4.1"
+   },
+   {
+    "finding": "Asked to fake a disclosure, GPT-4o produced a plausible interaction log showing only minor, ethical help with the paper; the later GPT-5.3 declined to do so. The author also reports past course cases where disclosed logs did not seem to match the student's real AI use.",
+    "location": "Sec 5; Appendix A.7"
+   },
+   {
+    "finding": "53.57% of staff judged the essay mostly or wholly LLM-written (70.59% of professors vs 27.27% of assistants per the abstract; Sec 6.1 reports 18.18% of assistants for the main LLM-written option), another 35.72% became suspicious only later, and 10.72% had little or no suspicion.",
+    "location": "Abstract; Sec 6.1, Figure 1"
+   },
+   {
+    "finding": "Verification was weak in practice: most staff would not check for plagiarism (57.14% citing no access to a tool, and professors noting no Macedonian-language support), and 42.86% said they lacked time to check facts.",
+    "location": "Sec 6.1, Figures 2 and 5"
+   },
+   {
+    "finding": "Disclosed links were widely distrusted: 60.72% expected students to share only their most credible interaction and 32.14% expected them to create a new one after finishing; staff favoured orals, milestones and fewer traditional seminar papers. The author, with 200+ students in one course, suggests scalable variants such as random oral checks of a subset, brief post-submission discussions, milestone checkpoints and group defences.",
+    "location": "Sec 6.2, Figure 7; Sec 6.1 (end); Sec 8"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Respondents propose tasks that are more interesting and meaningful and that integrate LLM use explicitly instead of banning it.",
+   "capability_verification": "Staff judgement of AI authorship varied with teaching experience, so marker suspicion is a weak basis for verifying independent work.",
+   "integrity_security": "Plagiarism and reference checks are rarely done (no tool, no Macedonian support, lack of time), and stylistic AI markers fade with better prompting.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "Institutional and publisher disclosure rules are inconsistent; FCSE recommends disclosure of AI interactions but staff apply it unevenly.",
+   "scalability": "Oral defence is seen as effective but very hard in courses of 200+ students; sampled orals, brief discussions, checkpoints and group defences are proposed as scalable variants.",
+   "workload": "Many respondents cite lack of time for manual checking of facts, references and plagiarism.",
+   "feasibility": "",
+   "process_visibility": "Shared AI interaction logs can be curated or fabricated after the fact, so they are unreliable as process evidence on their own.",
+   "accessibility_equity": "Students with better tools or prompting skills may gain unfair advantage from fully AI-generated work."
+  },
+  "author_recommendations": [
+   "Develop clear, consistent policies separating supportive AI use from use that replaces independent intellectual work (not tested)",
+   "Favour assessment formats more resistant to unethical AI help: oral exams, project work, in-class activities, students explaining their own process, and continuous milestone-based evaluation (not tested)",
+   "Use scalable oral variants for large courses: random oral checks of a subset, brief post-submission discussions, milestone checkpoints and structured group defences (not tested)",
+   "Build AI literacy for students and give teachers training, support and suitable verification tools (not tested)",
+   "Do not rely on submitted interaction records or automated AI detection alone as evidence of authentic work (not tested)"
+  ],
+  "limitations": "Author-stated: small sample (28), one faculty, low response rate with possible self-selection of more AI-interested staff; stylistic observations are qualitative and not validated markers of AI authorship. Reviewer notes: only one fully AI-generated, machine-translated essay was judged with no human-written control, so detection accuracy and false-positive rates cannot be estimated; respondents knew the survey's purpose; analysis is descriptive percentages only; the mimicked-interaction evidence is a single illustration.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 4,
+   "note": "Appraised from the full text. Clear aims; sample, response rate, instrument (Appendix B) and ethics approval reported; descriptive results match the figures; limitations acknowledged. q2 Unclear because a single AI-only essay without a human-written control cannot measure detection ability, which the abstract frames as a key aim."
+  }
+ },
+ {
+  "record_id": "S119",
+  "title": "Assessment Validity in the Age of Generative AI: A Natural Experiment",
+  "authors": "Håvar Brattli; Alexander Stene Utne; Matthew Lynch",
+  "year": 2026,
+  "venue": "Informatics",
+  "doi": "10.3390/informatics13040056",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/Requested_papers (team-supplied PDF); published MDPI version (Informatics 2026, 13, 56), read as extraction/text/S119.txt",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "IC1 met: compulsory undergraduate course at UiT The Arctic University of Norway. IC2 (revised) met as b: natural-experiment evidence on how a switch from an AI-permissive take-home exam to a supervised closed-book exam changed grades. IC3 met (GenAI). IC4 met (peer-reviewed MDPI Informatics). IC5 met (2026, English). The full text shows the course is BED2302 Organizational Theory and Leadership (business school), so computing = N; under Addendum 2 this record qualifies only as Supporting (non-computing) evidence, although full extraction was done as instructed.",
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Gives real-grade evidence that AI-permissive take-home and AI-restricted supervised exams are not measurement-equivalent near the pass threshold, and argues that designs must state whether the certified construct is unaided mastery or AI-supported performance.",
+  "study_design": "Natural (quasi-) experiment using administrative final-grade data from five cohorts (2021-2025); 2021-2024 pooled as baseline; chi-square tests of independence with Cramér's V and cell-wise contributions; year-by-year comparisons",
+  "country": "Norway",
+  "discipline": "Business (Organizational Theory and Leadership; analysis, theory application and academic writing)",
+  "computing": "N",
+  "level": "Undergraduate (compulsory 7.5-credit course, UiT School of Business and Economics, multiple campuses)",
+  "sample": "N = 1066 final A-F grades from five cohorts (263, 230, 211, 187 and 179 students, 2021-2025) in one course; retrospective anonymised data",
+  "genai_tools": "GenAI generally (ChatGPT named); actual student AI use was not measured",
+  "assessment_types": [
+   "Supervised assessment",
+   "Unsupervised formats"
+  ],
+  "key_findings": [
+   {
+    "finding": "Grades were stable across the four take-home years (failure 2.1-5.7%), then in the 2025 supervised closed-book exam failures rose to 18.4%, B and C grades fell (B 24.6% to 16.8%, C 31.0% to 19.0% versus 2024) and A grades stayed near 7%.",
+    "location": "Sec 4.1, Table 2 (p. 8)"
+   },
+   {
+    "finding": "The baseline-versus-2025 difference was significant (chi-square(5, N = 1066) = 60.62, p < 0.001, Cramér's V = 0.24); failing grades contributed about 81% of the chi-square, and each single year compared with 2025 was also significant (V = 0.24-0.31).",
+    "location": "Sec 4.2-4.3, Tables 3 and 4 (pp. 9-10)"
+   },
+   {
+    "finding": "The failure rate dipped to its lowest in 2024, when national survey data show student AI use rising from about 60% to 80%. The authors read this as AI helping marginal students cross the pass threshold, a certification problem even where no rule was broken.",
+    "location": "Sec 5.1 (p. 10)"
+   },
+   {
+    "finding": "The authors caution that individual AI use was not measured and that the 2025 format also removed all external resources and added time pressure and exam-hall anxiety, which may explain part of the rise in failures; examiners also deliberately tried not to penalise less polished in-person prose.",
+    "location": "Sec 3, Sec 5.2, Sec 6"
+   },
+   {
+    "finding": "Supervised AI-restricted exams are presented as a short-term corrective for threshold decisions, with longer-term designs combining evidence of independent competence with structured AI use, process documentation, oral components or staged submissions.",
+    "location": "Sec 5.3 (pp. 11-12); Sec 7"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Prohibiting tools graduates will use risks less authentic assessment; the authors frame a tension between certification credibility and authenticity.",
+   "capability_verification": "Under supervised AI-restricted conditions, unaided competence near the pass threshold became visible, suggesting some take-home passes did not reflect independent competence.",
+   "integrity_security": "The AI-permissive take-home format appears to have suppressed failure rates, a validity problem whether or not rules were broken.",
+   "lo_alignment": "Learning outcomes, criteria and task structure were held constant; the authors argue that if AI-supported performance is legitimate it must be written into learning outcomes and grading criteria.",
+   "appropriate_ai_use": "Credibility suffers most when AI is permitted in practice but not acknowledged in construct definitions, criteria or credential claims.",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": "Stricter time limits and exam-hall anxiety in the supervised format may weigh most on students near the pass threshold."
+  },
+  "author_recommendations": [
+   "Make assessment designs explicit about the role of AI in what is measured and certified; do not treat AI-permissive take-home and AI-restricted exams as equivalent (not tested)",
+   "Use supervised AI-restricted exams as a short-term corrective for threshold decisions where unaided mastery is the construct (supported by this study's data, not tested as a design)",
+   "Develop hybrid designs combining independent-competence evidence with structured AI use, process documentation, orals or staged submissions (not tested)",
+   "Future research should add direct measures of AI use (surveys, usage traces, drafting histories, orals) and compare disciplines and task types"
+  ],
+  "limitations": "Author-stated: one course at one institution; observational design with possible unobserved confounders and cohort differences; no direct measure of students' AI use; the 2025 change removed all resources, not just GenAI, and added exam-hall pressure. Reviewer notes: the course is non-computing (business); the exam questions themselves changed each year (comparable in structure); the analysis is at distribution level, not individual students.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Appraised from the full text. Explicit research question; natural-experiment design with checked chi-square assumptions and robustness comparisons by year; course, cohorts, exam formats and sample questions (Table 1) reported; interpretation framed as association, not causation; dedicated limitations section."
+  }
+ }
+]

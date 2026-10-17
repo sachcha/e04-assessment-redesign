@@ -1,0 +1,640 @@
+[
+ {
+  "record_id": "R89",
+  "title": "CodeNest: A Web Application for Conducting and Managing Timed Coding Lab Assignments with student-faculty interaction",
+  "authors": "Shripad Bhatlawande; Vaishnavi Deshmukh; Ameya Date; Prutha Deshpande",
+  "year": 2025,
+  "venue": "2025 IEEE International Conference on Emerging Trends in Computing and Communication (ETCOM), Mangalore, India",
+  "doi": "10.1109/ETCOM66606.2025.11436475",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Engineering-institute programming labs (IC1, level not stated); academic integrity of timed online coding assessments is the main focus (IC2); uses Gemini LLM to generate questions, so AI is part of the assessment (IC3, AI in assessment broadly); IEEE conference paper (IC4); 2025, English (IC5). Inclusion is borderline because GenAI misuse by students is not addressed.",
+  "study_design": "System design and development paper with technical performance testing and small-scale usability and instructor feedback",
+  "country": "India",
+  "discipline": "Programming labs (Department of E&TC Engineering)",
+  "computing": "Y",
+  "level": "not reported",
+  "sample": "Inconsistent: abstract reports 15 instructors and 200 students; text reports structured surveys with 12 faculty and usability sessions with 50 students; Table II reports 80 students; 200 submissions used for grading agreement; 50 load-test sessions",
+  "genai_tools": "Google Gemini LLM (instructor-side question generation)",
+  "assessment_types": [
+   "Supervised assessment",
+   "Personalised tasks"
+  ],
+  "key_findings": [
+   {
+    "finding": "Timed coding assessments run in a browser lockdown that blocks full-screen exit, tab switching, copy-paste and developer tools, and auto-submits after three violations or when time expires.",
+    "location": "Sec III; Fig. 2; Algorithm 1"
+   },
+   {
+    "finding": "Questions are uniquely mapped to each learner, and instructors can generate them with Gemini; 83% of generated questions were instructor-acceptable at first generation, but difficulty varied by up to 30% for seemingly identical problems.",
+    "location": "Sec III; Sec IV"
+   },
+   {
+    "finding": "Penetration testing reported that the lockdown prevented 98.7% of bypass attempts with a 0.8% false-positive rate, and the authors claim an 87% reduction in cheating attempts compared with traditional online assessments, without describing the comparison method.",
+    "location": "Sec IV; Table I"
+   },
+   {
+    "finding": "Auto-grading agreed with instructor grading on 97% of 200 submissions but sometimes penalised correct but unorthodox solutions, found through analysis of 150 false negatives.",
+    "location": "Sec IV; Table I"
+   },
+   {
+    "finding": "The system performed best with up to 80 concurrent users and broke at 300.",
+    "location": "Table I; Sec IV"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "Auto-graded timed tasks under lockdown are intended to show individual coding ability; auto-grading mis-scored some unorthodox correct solutions.",
+   "integrity_security": "Browser lockdown, per-student question mapping, submission-history analysis and anomaly dashboards are used to deter and detect cheating.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "Best performance up to 80 concurrent users and a breaking point at 300; optimisation needed for larger deployments.",
+   "workload": "Abstract claims faculty reported a 68% reduction in administrative time; the results section gives only a qualitative quote ('saves hours of preparation time').",
+   "feasibility": "Built on Firebase, Streamlit, React and the Piston API; no critical OWASP vulnerabilities found, though testing of advanced evasion was limited.",
+   "process_visibility": "Submission history and audit logs are tracked for pattern-based anomaly detection.",
+   "accessibility_equity": "Usability sessions identified some accessibility challenges needing refinement."
+  },
+  "author_recommendations": [
+   "Develop more advanced plagiarism detection (not tested)",
+   "Build a difficulty-calibration algorithm for LLM-generated questions (not tested)",
+   "Use more tolerant grading that checks output correctness and execution efficiency rather than implementation patterns (not tested)",
+   "Add collaborative programming support, targeted guidance for common errors, scaling optimisation and offline capability (not tested)"
+  ],
+  "limitations": "Authors note limited instructor sample, accessibility issues, limited testing of advanced evasion, difficulty variance of generated questions, and scalability limits. Further issues: sample sizes are inconsistent across abstract, text and Table II; satisfaction and learning-outcome percentages in the abstract are not supported in the results; the comparison method behind the cheating-reduction claim is not described; student level and course context are not reported; GenAI misuse by students is not considered.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "N",
+   "q4": "N",
+   "q5": "Y",
+   "quality_score": 2,
+   "note": "System aims are clear and technical limitations are listed, but the evaluation design is thinly described, sample figures conflict, and several headline claims are not backed by the data presented."
+  },
+  "ta_decision_B": "Maybe",
+  "ta_exclusion_code_B": "",
+  "ta_reason_B": "Abstract covers an online coding-lab platform focused on academic integrity, with AI question generation and anomaly detection, but does not explicitly state a higher-education context, and its AI role is instructor-side tooling rather than student GenAI use."
+ },
+ {
+  "record_id": "R90",
+  "title": "Designing CS Assignments to Foster Cogitation in the AI Era",
+  "authors": "Jaya Veera Surendra Gupta Kurivella; Rajeshwari Deoraj; Marcia Moraes",
+  "year": 2025,
+  "venue": "2025 IEEE Frontiers in Education Conference (FIE)",
+  "doi": "10.1109/FIE63693.2025.11328715",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "University CS1 course (IC1); main focus is redesigning assignments so AI cannot solve them directly, with academic integrity concerns noted (IC2); ChatGPT-4 performance is the object of study (IC3); peer-reviewed FIE full research paper (IC4); 2025, English (IC5).",
+  "study_design": "AI-capability evaluation: researchers acting as proxy students attempted all CS1 labs with ChatGPT-4 before and after redesign (no student participants)",
+  "country": "USA",
+  "discipline": "Computer science (CS1 Python course serving several STEM majors)",
+  "computing": "Y",
+  "level": "Undergraduate (CS1)",
+  "sample": "11 CS1 lab assignments; two researchers as proxy students; redesign validated by the course instructor; no students",
+  "genai_tools": "ChatGPT-4",
+  "assessment_types": [
+   "Unsupervised formats",
+   "Supervised assessment"
+  ],
+  "key_findings": [
+   {
+    "finding": "ChatGPT-4 solved simple labs with 100% accuracy in one prompt (Labs 02 and 04), but accuracy fell and prompts rose as difficulty increased, reaching 35% accuracy after 10 prompts on the hardest lab (CSV interpretation).",
+    "location": "Sec V; Table II; Fig. 3"
+   },
+   {
+    "finding": "Flowchart-based redesigns, with sequence markers removed and misleading arrows added, made it hardest for ChatGPT to produce correct answers and were the least time-consuming format for educators to design.",
+    "location": "Sec VI-A; Sec VIII"
+   },
+   {
+    "finding": "ChatGPT-4 still solved the scenario-based and diagram-based versions correctly (Listings 1-2), so these formats did not resist AI at CS1 level; authors suggest they may suit advanced courses better.",
+    "location": "Sec VI-B; Sec VI-C"
+   },
+   {
+    "finding": "Redesigned labs needed more prompts than the originals, which the authors use as a proxy for higher cognitive effort, while acknowledging that prompt count alone is not a sufficient measure of critical thinking.",
+    "location": "Sec VI; Fig. 7; Sec VII"
+   },
+   {
+    "finding": "Authors also recommend in-class assignments and auto-graded exams to further reduce AI misuse.",
+    "location": "Sec VIII"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Real-world scenario framing is proposed to encourage applied problem-solving, but ChatGPT solved these easily.",
+   "capability_verification": "Recommends in-class assignments and auto-graded exams to confirm individual learning (not tested).",
+   "integrity_security": "Shows ChatGPT-4 can solve most original take-home CS1 labs; flowchart-based tasks reduced AI success, though authors expect future models to improve.",
+   "lo_alignment": "Redesigns were validated by the instructor to fit course learning objectives.",
+   "appropriate_ai_use": "Frames AI as a supportive tool and suggests future hint-only AI support via RAG (not tested).",
+   "scalability": "",
+   "workload": "Visual diagrams became time-consuming to create for harder labs and were omitted to limit instructor workload; flowcharts were less time-consuming.",
+   "feasibility": "Flowchart redesigns were judged practical; diagrams for complex labs were not.",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Present problems as non-textual flowcharts, scenarios and diagrams to reduce direct AI solvability (tested only against ChatGPT-4, not with students)",
+   "Increase multi-step complexity and incorporate real-world scenarios (not tested with students)",
+   "Encourage collaboration and peer review (not tested)",
+   "Incorporate in-class assignments and auto-graded exams (not tested)",
+   "Explore ChatGPT as a hint provider using RAG instead of a solution provider (not tested)"
+  ],
+  "limitations": "Authors note a single CS1 course; researchers acted as proxy students, so the results may not reflect real learners; predefined labs; prior experience not controlled; ChatGPT responses vary across sessions; prompt count is not a sufficient measure of critical thinking. In addition, claims about student engagement are not tested with students, and the difficulty and accuracy ratings are researcher-assigned.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "Y",
+   "q4": "Unclear",
+   "q5": "Y",
+   "quality_score": 3,
+   "note": "Clear RQs and limitations, but claims about student engagement and critical thinking (RQ3) go beyond the proxy-student AI evaluation; the redesigned-lab accuracy results are shown only in a figure with limited quantification."
+  },
+  "ta_decision_B": "Include",
+  "ta_exclusion_code_B": "",
+  "ta_reason_B": "Abstract evaluates ChatGPT-4 on CS1 lab assignments and proposes redesigning assignments with non-textual elements so AI cannot solve them directly."
+ },
+ {
+  "record_id": "R91",
+  "title": "Encouraging responsible GenAI use in software engineering education: A design-oriented model",
+  "authors": "Vahid Gəruslu (also published as Vahid Garousi); Zafar Jafarov; Aytan Mövsümova; Atif Namazov; Hüseyn Mirzayev",
+  "year": 2026,
+  "venue": "Journal of Systems and Software, 237, Article 112846",
+  "doi": "10.1016/j.jss.2026.112846",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Undergraduate SE course and BSc programme (IC1); substantial focus on redesigning assessed lab work with usage declarations, validation and critique tasks, and rubrics against superficial compliance (IC2); GenAI central (IC3); peer-reviewed journal article that also proposes a formal model (IC4); 2026, English (IC5).",
+  "study_design": "Design-based research: conceptual model (Guide-AI-Ed) plus two illustrative applications (course-level lab redesign with student artefacts, anonymous survey and instructor/TA observations; programme-level curriculum design)",
+  "country": "United Kingdom; Azerbaijan",
+  "discipline": "Software engineering (Software Testing course CSC3056 at QUB; new SE BSc programme at Azerbaijan Technical University)",
+  "computing": "Y",
+  "level": "Undergraduate (final-year course; BSc programme design)",
+  "sample": "Software Testing course with typical enrolment of 150-250 students (exact cohort n not reported); anonymous end-of-semester survey with 72% response rate; lab report excerpts from three students (Table 6); programme-level case is a curriculum design with no student data",
+  "genai_tools": "ChatGPT (GPT-4), GitHub Copilot in VS Code, Google Gemini",
+  "assessment_types": [
+   "AI-use declarations",
+   "Process evidence",
+   "Unsupervised formats"
+  ],
+  "key_findings": [
+   {
+    "finding": "Revised lab assignments (worth 60% of the grade) added required GenAI-use declarations, submission of both raw AI outputs and revised versions, a 10-item AI-artefact inspection checklist, critiques of AI-generated JUnit tests, and career-relevance messaging.",
+    "location": "Sec 4.2.2; Sec 4.2.2.2-4.2.2.4; Table 5"
+   },
+   {
+    "finding": "In the anonymous survey, 79% agreed that validation tasks helped their critical thinking about AI outputs, 74% reported greater awareness of the need to verify outputs, and 61% found the usage declaration useful; item means ranged from 3.2 to 4.1 and Cronbach's alpha was 0.91.",
+    "location": "Sec 4.2.3.3; Table 7"
+   },
+   {
+    "finding": "The lowest-rated item was completing GenAI tasks just to meet the requirement (mean 3.2; 41% agreed), which the authors read as a sign of performative compliance, to be addressed by making rubric expectations more salient with worked examples.",
+    "location": "Sec 4.2.3.3; Table 7"
+   },
+   {
+    "finding": "TAs reported that validation questions exposed students who did not understand their submissions without needing plagiarism detection, and instructors saw fewer generic LLM-style outputs, though some students still used GenAI as a first-draft generator under time pressure.",
+    "location": "Sec 4.2.3.4; Sec 4.2.3.5"
+   },
+   {
+    "finding": "At programme level the model guided mapping of GenAI-related learning outcomes across modules and levels, so AI literacy could be scaffolded over time.",
+    "location": "Abstract; Sec 4.3; Sec 5.1"
+   }
+  ],
+  "evidence_type": "conceptual/framework",
+  "dimensions": {
+   "authenticity": "Labs simulate industry testing with real tools, and career messaging links validating AI output to workplace and interview expectations.",
+   "capability_verification": "Students must justify and critique AI-generated artefacts; TAs say this showed who understood their submissions, but individual competence was not formally measured.",
+   "integrity_security": "Shifts from detection to transparency through declarations and validation tasks; authors note that AI detection remains unreliable.",
+   "lo_alignment": "The model maps instructor practices to learning outcomes (e.g., O4 reflection, O6 verification), and the programme case maps GenAI outcomes to courses and rubrics.",
+   "appropriate_ai_use": "GenAI use is explicitly allowed within defined boundaries and must be declared, validated and cited as draft assistance.",
+   "scalability": "Applied in a course of 150-250 students and at programme level; authors claim transferability to other computing domains.",
+   "workload": "",
+   "feasibility": "Authors report the changes were lightweight and did not dilute rigour or disrupt instructional flow.",
+   "process_visibility": "Students submit raw AI outputs alongside their revised versions, along with reflections on what they accepted, edited or rejected.",
+   "accessibility_equity": "Perceived fairness of policy is listed as a student factor in the model, but no equity data are reported."
+  },
+  "author_recommendations": [
+   "Require students to verify or critique AI-generated artefacts they submit (e.g., 'How did you verify this output?')",
+   "Use peer review of AI-generated artefacts to broaden accountability",
+   "Integrate career-relevant prompts into coursework framing",
+   "Make rubric expectations salient through worked examples and annotated samples to reduce performative compliance (not tested)",
+   "Use Guide-AI-Ed as a design and reflection tool for course and curriculum planning"
+  ],
+  "limitations": "Authors state the model's causal relationships are theoretical and not empirically validated; the applications are illustrative rather than comprehensive empirical studies; observed behaviour may reflect other factors (workload, motivation, prior AI familiarity); results are specific to UK and Azerbaijani contexts; engagement varied and novelty effects are possible; persistence or transfer of practices was not examined. In addition, the survey n is not reported, behaviour changes were not formally measured, and survey results are self-reported perceptions.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Unclear",
+   "q4": "Unclear",
+   "q5": "Y",
+   "quality_score": 3,
+   "note": "Well-grounded framework with an extensive limitations section; course context is described, but the survey sample size is not given and the evidence for the claimed behaviour change is observational and informal."
+  },
+  "ta_decision_B": "Include",
+  "ta_exclusion_code_B": "",
+  "ta_reason_B": "Abstract describes GenAI-aware redesign of SE lab assignments including usage declarations, output validation tasks and peer review in university courses, with student artefacts as evidence."
+ },
+ {
+  "record_id": "R92",
+  "title": "Where Students Draw the Line Between AI Assistance and Cheating in Introductory Programming",
+  "authors": "Traxel Xeniya Alexandrovna; Samat Tankeyev",
+  "year": 2026,
+  "venue": "2026 IEEE 6th International Conference on Smart Information Systems and Technologies (SIST), Astana, Kazakhstan",
+  "doi": "10.1109/SIST61674.2026.11596075",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Undergraduate CS students (IC1); academic integrity boundaries and implications for assessment redesign are the primary focus (IC2); GenAI central (IC3); IEEE conference paper (IC4); 2026, English (IC5).",
+  "study_design": "Quantitative cross-sectional survey with a scenario-based instrument (17 scenarios), chi-square tests and binary logistic regression",
+  "country": "Kazakhstan",
+  "discipline": "Computer science (introductory programming)",
+  "computing": "Y",
+  "level": "Undergraduate (first and second year)",
+  "sample": "118 students at Astana IT University (89 second-year, 29 first-year), anonymous survey in February 2026",
+  "genai_tools": "Generic GenAI (ChatGPT and GitHub Copilot named as examples)",
+  "assessment_types": [
+   "Unsupervised formats",
+   "AI-use declarations",
+   "Oral assessments",
+   "Process evidence"
+  ],
+  "key_findings": [
+   {
+    "finding": "Students broadly accepted AI for explanation and learning (79.7% saw explaining code as help), but 'generate a function and paste it without understanding' split opinion (44.9% cheating, 21.2% help, the rest 'depends' or 'not sure').",
+    "location": "Sec IV-D; Table III; Fig. 2"
+   },
+   {
+    "finding": "Even deliberate deception, rewriting someone else's code to hide similarity, was labelled cheating by only 49.2% of students.",
+    "location": "Sec IV-D; Table III; Fig. 3"
+   },
+   {
+    "finding": "Year of study, self-rated skill, AI-use frequency and foreign status did not predict labelling 'pasting without understanding' as cheating (model chi-square = 1.84, p = 0.606), which the authors read as a cohort-wide shift in norms.",
+    "location": "Sec IV-E; Table IV"
+   },
+   {
+    "finding": "'Allow with disclosure' was the most preferred course policy (32.2%), total bans were rejected by over 92%, and support for a mandatory disclosure rule averaged 3.78/5.",
+    "location": "Sec IV-C; Fig. 1; Table II"
+   },
+   {
+    "finding": "Over 75% used AI at least weekly, and 45% said AI suggestions made up more than a quarter of their project code.",
+    "location": "Sec IV-A; Table I"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "Argues that because students do not see code generation as cheating, assessment must verify understanding through oral defences and code explanation (not tested).",
+   "integrity_security": "Shows that integrity boundaries for take-home programming work are blurred and that product-based plagiarism logic does not fit AI-generated code.",
+   "lo_alignment": "Students moderately agreed that AI should be limited when an assignment measures the ability to write code (mean 3.42).",
+   "appropriate_ai_use": "The boundary map is proposed as a policy tool to specify which AI uses are acceptable, which need disclosure and which need proof of understanding.",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "Recommends version-control logs and development traces as assessment evidence (not tested).",
+   "accessibility_equity": "Students rated the statement 'AI use makes grades less fair' at a mean of 2.95."
+  },
+  "author_recommendations": [
+   "Shift to process-based assessment that prioritises oral defences, version-control logs and code-explanation tasks (not tested)",
+   "Use the scenario-based boundary map to write course rules on which AI uses are acceptable, require disclosure, or require proof of understanding (not tested)",
+   "Adopt 'allowed with disclosure' policies in preference to bans (not tested)",
+   "Do not target AI policies at specific 'at-risk' groups, since judgements were uniform across the cohort"
+  ],
+  "limitations": "No limitations section. Single institution, convenience sample of 118 with few confident programmers; self-report; the instrument's validity and reliability are not reported. Some figures are inconsistent: the text gives a mean of 4.31 for 'If I understand the code, using AI is acceptable' but Table II gives 3.92; regression p-values in the discussion (0.742, 0.518, 0.891) differ from Table IV (0.876, 0.212, 0.688); Table IV is labelled chi-square but reports odds ratios. Authors describe a 44.9% vs 21.2% split as 'almost equally' divided.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Unclear",
+   "q5": "N",
+   "quality_score": 3,
+   "note": "Appropriate survey design with a clearly described sample, but numerical inconsistencies between text and tables weaken confidence in reported results, and limitations are not acknowledged."
+  },
+  "ta_decision_B": "Include",
+  "ta_exclusion_code_B": "",
+  "ta_reason_B": "Abstract surveys 118 undergraduate CS students on where AI assistance becomes cheating and draws implications for assessment redesign (oral defences, process logs)."
+ },
+ {
+  "record_id": "R93",
+  "title": "Integrating AI in Project-Based Engineering Education: Strengthening Course Design and Assessment Integrity",
+  "authors": "Mahnoor Anjum; Tianyi Zhang; Deepak Mishra; Eliathamby Ambikairajah",
+  "year": 2026,
+  "venue": "2026 IEEE Global Engineering Education Conference (EDUCON)",
+  "doi": "10.1109/EDUCON67543.2026.11574256",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Postgraduate engineering course (IC1); framework for task design and assessment integrity, including oral checks, design journals with AI disclosure and a supervised closed-book lab exam (IC2); GenAI central (IC3); IEEE EDUCON paper (IC4); 2026, English (IC5).",
+  "study_design": "Framework proposal with a single-course case study and an anonymous post-course survey (Likert and multiple-choice items)",
+  "country": "Australia",
+  "discipline": "Electrical engineering and telecommunications (design proficiency course with hardware, software-simulation, programming and AI tasks)",
+  "computing": "Partial",
+  "level": "Postgraduate",
+  "sample": "Course with more than 50 graduate students typically enrolled; 39 anonymous survey respondents",
+  "genai_tools": "ChatGPT, Claude, DeepSeek, Gemini, GitHub Copilot, Tabnine, Grammarly, QuillBot, MATLAB AI Chat Playground (named as tools in use); BloomAI planned",
+  "assessment_types": [
+   "Oral assessments",
+   "Practical demonstrations",
+   "Supervised assessment",
+   "Process evidence",
+   "AI-use declarations",
+   "Unsupervised formats"
+  ],
+  "key_findings": [
+   {
+    "finding": "A FATE-aligned three-layer framework covers AI-resistant task design, AI-assisted solution with attribution and documented verification (verbatim AI output prohibited), and assessment that verifies individual understanding without AI.",
+    "location": "Sec I-B; Sec II-B; Fig. 1"
+   },
+   {
+    "finding": "Each task is graded on working demonstration (20%), explanation (40%), answers to 2-4 task-specific questions (20%) and a design journal (20%) that must disclose AI tools, prompts, outputs and how outputs were validated; a supervised closed-book lab exam without internet or AI adds 10%.",
+    "location": "Sec III-C"
+   },
+   {
+    "finding": "Of 39 respondents, 72% agreed AI improved their efficiency, 76% found it helpful for software debugging versus 44% for hardware, and 54% said it reduced their reliance on instructors.",
+    "location": "Sec III-E-1; Sec III-E-2; Fig. 2"
+   },
+   {
+    "finding": "87% reported that AI suggestions frequently or occasionally led to errors or misguidance, 10% did no verification before accepting AI output, and only 21% said they were not too dependent on AI (30% agreed they were too dependent).",
+    "location": "Sec III-E-1; Sec III-E-3; Figs 2 and 4"
+   },
+   {
+    "finding": "AI assisted software programming tasks far more than hardware tasks (85% vs 31%), which the authors flag as a fairness issue across task choices and address by designing software tasks to need nuanced understanding.",
+    "location": "Sec III-E-1; Fig. 3"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "PBL tasks simulate professional engineering design with open-ended problems that need contextual judgement.",
+   "capability_verification": "Oral questioning, reproducing small design variations on request, and a supervised AI-free lab exam are used to verify individual competence.",
+   "integrity_security": "Mandatory AI disclosure, oral checks and investigation of undisclosed use where understanding does not match the submitted work.",
+   "lo_alignment": "Tasks and grading components are mapped to four course learning outcomes.",
+   "appropriate_ai_use": "AI is allowed for brainstorming, debugging and concept clarification with attribution and verification; verbatim output is prohibited.",
+   "scalability": "Authors claim the framework is scalable, but it was applied to a single course of about 50 students.",
+   "workload": "54% reported reduced reliance on instructors, which the authors argue frees staff time; staff marking workload is not measured.",
+   "feasibility": "Implemented across seven tasks using three assessment structures (TLF, UTF, OLF).",
+   "process_visibility": "Design journal records the design process, AI prompts, outputs and validation, and iterations are reviewed in lab sessions.",
+   "accessibility_equity": "Discusses unequal access to premium AI tools and task choice for diverse cohorts; survey showed AI helped software tasks more than hardware tasks, which raises a fairness concern."
+  },
+  "author_recommendations": [
+   "Design PBL tasks so AI outputs are insufficient without student verification and engineering understanding",
+   "Require AI disclosure in design journals, including prompts, outputs, validation and rationale",
+   "Use targeted oral checks (e.g., 'Why was this model chosen?') and a supervised AI-free lab exam",
+   "Adopt a specialised curriculum-aligned AI tutor (e.g., BloomAI) to reduce errors (not tested)",
+   "Introduce structured verification protocols such as mandatory test-case checklists (not tested)",
+   "Collect process evidence such as iteration and error logs and grade design justifications (not tested)"
+  ],
+  "limitations": "No limitations section. Single postgraduate course; self-reported survey from 39 respondents with no stated response rate; the abstract's 'compared with the non-AI framework' claim is not supported by any comparison data; survey use was approved by the course convenor rather than an ethics committee; outcomes are perceptions rather than measured learning or integrity outcomes.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "Y",
+   "q4": "Unclear",
+   "q5": "N",
+   "quality_score": 2,
+   "note": "Clear aims and a well-described course design, but the evaluation rests on a small perception survey that cannot show the framework's effect on integrity or learning, and limitations are not acknowledged."
+  },
+  "ta_decision_B": "Include",
+  "ta_exclusion_code_B": "",
+  "ta_reason_B": "Abstract proposes a framework for AI integration and assessment integrity (structured oral checks, reflective design journal) in a postgraduate engineering course spanning hardware and software, with survey evaluation."
+ },
+ {
+  "record_id": "R94",
+  "title": "GenAI-Driven Game and Viva Assessments for Software Engineering",
+  "authors": "Soma Datta",
+  "year": 2026,
+  "venue": "2026 IEEE Global Engineering Education Conference (EDUCON)",
+  "doi": "10.1109/EDUCON67543.2026.11574097",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Undergraduate and graduate SE courses (IC1); redesign of assessments (oral micro-presentations, viva gameboard, timed case tests) to reduce AI-assisted plagiarism is the primary focus (IC2); GenAI central (IC3); IEEE EDUCON conference paper (IC4); 2026, English (IC5).",
+  "study_design": "Instructor-led practice-based experience report across multiple courses, with aggregate grades and anonymous student feedback",
+  "country": "USA",
+  "discipline": "Software engineering (requirements engineering, agile software development)",
+  "computing": "Y",
+  "level": "Undergraduate and postgraduate",
+  "sample": "129 undergraduate and 65 graduate students across four semesters (abstract also says two academic years); maximum class size 30",
+  "genai_tools": "ChatGPT, GitHub Copilot, Grammarly (named as tools in use); AI permitted for organising study materials",
+  "assessment_types": [
+   "Oral assessments",
+   "Supervised assessment",
+   "Unsupervised formats",
+   "Personalised tasks"
+  ],
+  "key_findings": [
+   {
+    "finding": "After students performed well with AI on a two-page agile writing assignment in Fall 2023, it was replaced in Fall 2024 by randomly drawn topic slips with one minute of preparation and a two-minute oral presentation; about 80% of students earned B or higher.",
+    "location": "Sec IV-A-1; Abstract"
+   },
+   {
+    "finding": "A calibrated-time, essay-type take-home quiz with group-based grading (lowest score dropped) produced an average of about 65%, which the author reads as challenging while maintaining integrity.",
+    "location": "Sec IV-A-3; Abstract"
+   },
+   {
+    "finding": "Viva voce assessments were piloted as GRE-style adaptive questioning and as a gameboard (up to four questions of chosen difficulty, 15 minutes, 100 points); students preferred the gameboard, but some focused only on hard or only on easy questions, so the author plans to move to the GRE-style format.",
+    "location": "Sec IV-A-4; Sec V; Figs 1-3"
+   },
+   {
+    "finding": "Time-limited case-study tests and quiz changes (paraphrasing, hand drawings, randomised order, one-question-at-a-time) were used to limit AI-assisted shortcuts.",
+    "location": "Sec IV-A-2; Sec V"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Short oral presentations are framed as mimicking real-world professional communication.",
+   "capability_verification": "Oral and viva formats with random topics are used to show individual conceptual mastery (about 80% B or higher).",
+   "integrity_security": "Assessments were redesigned to be AI-resistant through oral formats, time limits and quiz modifications.",
+   "lo_alignment": "Preparation and questions are structured by Bloom's taxonomy levels, and students submit their own questions and answers beforehand.",
+   "appropriate_ai_use": "AI is allowed for organising study materials and for practice and feedback, but not as a substitute for comprehension.",
+   "scalability": "Claims a scalable framework, but the maximum class size was 30 and no scalability data are given.",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Use timed oral micro-presentations on randomly selected topics in place of take-home writing",
+   "Adopt GRE-style adaptive viva questioning so students must prepare across all difficulty levels (not tested)",
+   "Structure preparation with Bloom's taxonomy and require students to submit questions and answers before assessments",
+   "Modify quizzes with paraphrasing, hand drawings, randomised order and one-at-a-time questions"
+  ],
+  "limitations": "Short paper with little methodological detail. The abstract mentions threats to validity, but the text does not discuss them. There is no comparison group, results are aggregate grades only, and feedback is anonymous and informal; the timeframe is inconsistent (two academic years vs four semesters); one figure is ambiguous ('80% ... (83%)'); the author acknowledges using GenAI to condense the paper and generate Table 1.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "Unclear",
+   "q4": "Unclear",
+   "q5": "N",
+   "quality_score": 1,
+   "note": "RQs are stated, but methods, data collection and analysis are thin, conclusions about improved comprehension and ethical AI use rest on aggregate grades and informal feedback, and no limitations are given in the text."
+  },
+  "ta_decision_B": "Include",
+  "ta_exclusion_code_B": "",
+  "ta_reason_B": "Abstract reports redesigned SE assessments (timed oral micro-presentations, vivas, calibrated take-home quizzes) to reduce AI-assisted plagiarism in undergraduate and graduate courses."
+ },
+ {
+  "record_id": "R95",
+  "title": "Assessing Student Proficiency in Foundational Developer Tools Through Live Checkoffs",
+  "authors": "Connor McMahon; Lauren Feldman",
+  "year": 2026,
+  "venue": "Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.1 (SIGCSE TS 2026), St. Louis, MO, USA",
+  "doi": "10.1145/3770762.3772618",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Undergraduate CS course (IC1); the paper is about designing and running a live one-on-one assessment format (IC2); GenAI's ability to complete take-home work is given as a stated reason for in-person checkoffs that verify authentic skill (IC3, though AI is a motivating rationale rather than an object of study); peer-reviewed SIGCSE TS experience report (IC4); 2026, English (IC5).",
+  "study_design": "Experience report with descriptive quantitative data (scores, optional post-checkoff surveys, queue/duration logs) and informal TA feedback",
+  "country": "USA",
+  "discipline": "Computer science (Systems Fundamentals course)",
+  "computing": "Y",
+  "level": "Undergraduate (third required course in the CS major)",
+  "sample": "237 enrolled students across two sections, Spring 2025; survey responses 139-168 per checkoff (Tables 4-5); TA feedback from weekly staff meetings",
+  "genai_tools": "Generic GenAI only (no specific tool named; no AI used in the assessment)",
+  "assessment_types": [
+   "Oral assessments",
+   "Practical demonstrations",
+   "Supervised assessment"
+  ],
+  "key_findings": [
+   {
+    "finding": "Three live checkoffs (CLI, debugger, Git) had students demonstrate tool use and verbally explain concepts to a TA using scripted questions and a standardised rubric; the authors present this as a way to verify authentic proficiency when GenAI can complete take-home work.",
+    "location": "Abstract; Sec 1; Sec 4.2; Sec 4.4"
+   },
+   {
+    "finding": "Most students reached baseline proficiency: median first-attempt scores were full marks on all three checkoffs (CLI mean 15.31/16, debugger 14.55/15, Git 43.62/44).",
+    "location": "Sec 6.2.1; Sec 6.3.1; Sec 6.4.2"
+   },
+   {
+    "finding": "Most survey respondents agreed or strongly agreed that preparing for and completing the checkoff improved their skills (88% CLI, 85% debugging, 93% Git), and students reported more office-hours use and a stronger sense of community.",
+    "location": "Table 5; Sec 6.3.2; Sec 7 Conclusion"
+   },
+   {
+    "finding": "Checkoffs ran longer than planned (median 9.5, 19 and 25 min against 5, 15 and 15 min anticipated), demand peaked on the last day, and checkoff appointments took up about 80% of TA office-hour time; switching to booked appointments with a time limit and pair format reduced queue time.",
+    "location": "Table 6; Sec 6.2.4; Sec 6.4.1; Sec 7 TA Staffing"
+   },
+   {
+    "finding": "No integrity violations were observed, but the authors recognise question-sharing risk and plan multiple versions of each checkoff.",
+    "location": "Sec 7 Academic Integrity"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Checkoffs are run in the real tool environments students will use and resemble technical interviews, which the authors argue is more authentic than written exams.",
+   "capability_verification": "Live demonstration plus verbal explanation lets TAs probe understanding and confirm individual baseline proficiency.",
+   "integrity_security": "In-person format is positioned as verifying authentic skill in the GenAI era; question sharing is noted as a residual risk to be handled with multiple versions.",
+   "lo_alignment": "Skills assessed are listed per checkoff and the debugger checkoff was scoped to tool use rather than real-time bug finding to match the learning objectives.",
+   "appropriate_ai_use": "",
+   "scalability": "Ran with 237 students using TAs in office hours; authors call it scalable but report long queues and overrun durations.",
+   "workload": "Checkoff appointments consumed about 80% of TA office-hour time; authors advise avoiding other large deadlines in checkoff week.",
+   "feasibility": "Docker containers, scripts and rubrics standardised delivery; environment setup problems and last-day demand caused bottlenecks.",
+   "process_visibility": "",
+   "accessibility_equity": "Two attempts per question and a full redo reduced stress; a quieter space is recommended for students with accommodations."
+  },
+  "author_recommendations": [
+   "Use appointment-based scheduling with sign-ups closed the week before and a time limit for all checkoffs",
+   "Create multiple versions of each checkoff to reduce question sharing (not tested)",
+   "Raise checkoff weighting to 15% of the course grade and apply a small penalty to second attempts (not tested)",
+   "Avoid large assignment deadlines during checkoff week to manage TA and student workload",
+   "Offer students with accommodations a quieter space (not tested)"
+  ],
+  "limitations": "Single course and single semester; checkoffs were low stakes (1-2% of grade) in this offering; survey was optional and self-reported; ceiling effects in scores; TA feedback was informal; GenAI impact was not measured; no formal limitations section.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Unclear",
+   "quality_score": 4,
+   "note": "Clear experience report with descriptive data that supports its claims; limitations are only implicit in challenges and lessons learned, with no dedicated limitations section."
+  },
+  "ta_decision_B": "Include",
+  "ta_exclusion_code_B": "",
+  "ta_reason_B": "Abstract describes a live one-on-one assessment format in an undergraduate CS course and explicitly frames in-person checkoffs as verifying authentic skill because GenAI can complete take-home work."
+ },
+ {
+  "record_id": "R96",
+  "title": "Generative AI in Programming Education: An Empirical Analysis of Student Performance and Assessment Challenges in the LLM Era",
+  "authors": "Suyang Zhu; Zhengtao Liu",
+  "year": 2026,
+  "venue": "2026 International Conference on Big Data and Informatization Education (ICBDIE 2026), Beijing, China (ACM)",
+  "doi": "10.1145/3806980.3806985",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Undergraduate computing courses (IC1); compares assignment versus invigilated exam performance and argues output-only grading is no longer valid, proposing assessment reform (IC2); LLM use is central (IC3); ACM conference paper (IC4); 2026, English (IC5).",
+  "study_design": "Longitudinal mixed-method observational study across three semesters (questionnaires, lab observation, LMS code-submission data, invigilated exam scores), with pre/post comparison around early 2025",
+  "country": "China",
+  "discipline": "Computer science / AI (NLP, Data Mining, Python Programming)",
+  "computing": "Y",
+  "level": "Undergraduate",
+  "sample": "412 undergraduates across five course offerings (Table 1); 89 pre-watershed questionnaire responses; 3,524 assignment submissions (Table 2); exam comparison of 218 students in NLP and Python courses (Table 4)",
+  "genai_tools": "DeepSeek, Doubao (Dola), ChatGPT, Ernie, Qwen, others; AI-assisted IDEs such as Cursor counted under their underlying model",
+  "assessment_types": [
+   "Supervised assessment",
+   "Unsupervised formats",
+   "AI-use declarations",
+   "Oral assessments",
+   "Process evidence"
+  ],
+  "key_findings": [
+   {
+    "finding": "Frequent use of AI coding assistants rose from 4.5% of the pre-watershed cohort to 89.5% post-watershed, with DeepSeek and Doubao replacing ChatGPT as the main tools.",
+    "location": "Sec 4.1.1; Sec 4.1.2; Figures 1-2"
+   },
+   {
+    "finding": "AI-generated assignment submissions scored higher than self-written ones (mean score rate 0.803 vs 0.644, p < .01) but were submitted only marginally earlier (normalised time 0.855 vs 0.872).",
+    "location": "Sec 4.2.1; Table 2; Sec 4.3; Table 3"
+   },
+   {
+    "finding": "In invigilated closed-book exams with LLMs prohibited, AI-reliant students performed the same as self-sufficient students (0.630 vs 0.632), which the authors interpret as competency hollowing and evidence that assignment output no longer validly measures ability.",
+    "location": "Sec 4.4; Table 4; Sec 4.5.1"
+   },
+   {
+    "finding": "Failures in AI-generated code were mostly API/library misuse (55.9%) and logic errors (43.4%) rather than syntax errors (0.7%), indicating a shift in student effort towards verification and debugging.",
+    "location": "Sec 4.2.2; Figure 3"
+   },
+   {
+    "finding": "Authors propose process-oriented assessment (oral code defence with no credit for unexplained AI code, Git commit-history tracking), reverse-engineering tasks on flawed AI code, and a 3-layer No-AI / AI-assisted / manual-validation curriculum.",
+    "location": "Sec 4.5.3"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Proposes reviewer-style tasks (correcting flawed AI code) as matching the new cognitive role of programmers, but does not evaluate them.",
+   "capability_verification": "Invigilated exams showed no ability gain for AI-reliant students despite higher assignment marks, so the authors argue only controlled or process-based assessment verifies capability.",
+   "integrity_security": "Treats output-only grading of take-home assignments as compromised by ubiquitous LLM use and says bans are futile.",
+   "lo_alignment": "Argues output-based mean-score grading is no longer a valid proxy for computational-thinking outcomes.",
+   "appropriate_ai_use": "Recommends staged AI permission, from No-AI foundations to AI-assisted projects to manual validation of AI code (not tested).",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "Recommends Git commit-history review and oral code defence to make the process visible (not tested).",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Mandatory oral code defence; no credit for AI-generated functions the student cannot explain (not tested)",
+   "Git-based process tracking to distinguish incremental commits from single large AI-code commits (not tested)",
+   "Reverse-engineering tasks in which students find, explain and fix errors in flawed AI-generated solutions (not tested)",
+   "3-layer course structure: No-AI zones for the first 4-6 weeks, then open AI-assisted projects, then constrained manual validation and refactoring of AI code (not tested)"
+  ],
+  "limitations": "No limitations section. Single-instructor, single-institution observational data with non-equivalent cohorts and different courses pre and post; pre-watershed usage based on 89 voluntary questionnaires while post-watershed relied on mandatory disclosure; AI-reliant versus self-written classification is self-reported; the Table 4 standard deviations (0.131/0.109) do not match those in the text (0.167/0.171); a t-test is reported for proportions; confounds such as course difficulty are not addressed.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "Y",
+   "q4": "Unclear",
+   "q5": "N",
+   "quality_score": 2,
+   "note": "Sample and data sources are well described, but the cohort comparison is confounded, some statistics are inconsistent between table and text, and limitations are not acknowledged."
+  },
+  "ta_decision_B": "Include",
+  "ta_exclusion_code_B": "",
+  "ta_reason_B": "Abstract reports undergraduate programming students' LLM use, contrasts assignment and closed-book exam performance, and proposes process-oriented assessment reform."
+ }
+]

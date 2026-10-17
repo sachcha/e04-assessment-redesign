@@ -1,0 +1,34 @@
+{
+ "Supervised assessment": {
+  "scope": "Assessment completed under supervision with AI access controlled: in-person invigilated exams, in-class tests and supervised lab tests.",
+  "includes": "Paper or computer-based exams in an invigilated room; supervised lab tests on controlled machines.",
+  "excludes": "Online or remotely proctored exams and lockdown browsers (treated as weaker variants and named as exceptions, rule C1); vivas (Oral assessments); live demos of the student's own work (Practical demonstrations)."},
+ "Unsupervised formats": {
+  "scope": "Work completed without supervision, where AI use cannot be controlled: take-home programming tasks, take-home lab work, assignments, reports, projects and online quizzes.",
+  "includes": "Take-home lab exercises and notebooks, coursework, capstone and group projects, essays and reports, unsupervised online quizzes.",
+  "excludes": "Any supervised or live verification added to the task (rated under its own type)."},
+ "Oral assessments": {
+  "scope": "Live spoken questioning of the individual student about their knowledge or their own work: vivas, interactive orals, oral defences and code-explanation interviews.",
+  "includes": "In-person or real-time online vivas with unscripted follow-up questions; short sampled oral checks.",
+  "excludes": "Pre-recorded or scripted presentations (more exposed; named as exceptions); written reflections."},
+ "Practical demonstrations": {
+  "scope": "A live demonstration of working skill to an assessor, in person or in real time online, with unscripted questions or change requests: live coding, lab checkoffs, prototype demonstrations, modifying code on request.",
+  "includes": "TA checkoffs, live coding tasks, supervised live demos of a project or prototype.",
+  "excludes": "Recorded demos and screencasts made without an assessor present (treated as a variant of Process evidence and named as exceptions); take-home lab work (Unsupervised formats)."},
+ "Staged submissions": {
+  "scope": "A task split into assessed stages with feedback between them: checkpoints, milestones, drafts and multi-stage projects.",
+  "includes": "Proposal, design, implementation and final stages; draft and revision cycles; milestone reviews.",
+  "excludes": "The verification method used at a checkpoint (for example a viva at a milestone is rated under Oral assessments)."},
+ "Process evidence": {
+  "scope": "Records of how the work was produced, submitted or captured for assessment: version-control histories, development logs, prompt and chat histories, reflective journals, activity logs and recorded screencasts or walkthroughs.",
+  "includes": "Git commit histories, student-kept logs, system-captured editor or keystroke logs, AI chat logs, recorded demos without an assessor present.",
+  "excludes": "Live questioning about the process (Oral assessments or Practical demonstrations)."},
+ "Personalised tasks": {
+  "scope": "Tasks individualised or contextualised to the student, course or local setting, including designs intended to be AI-resistant.",
+  "includes": "Individual topics or datasets, local case studies, course-specific commands or constraints, varied question instances.",
+  "excludes": "Generic tasks with only cosmetic variation."},
+ "AI-use declarations": {
+  "scope": "Requirements for students to disclose and account for their GenAI use: declarations, disclosure statements, AI-use scales (e.g. AIAS), reflections on AI use and critique of AI output.",
+  "includes": "Declaration forms, prompt and output appendices, AI-use reflections, tasks that require critique or correction of AI output.",
+  "excludes": "System-captured logs of AI use (Process evidence)."}
+}

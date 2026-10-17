@@ -1,0 +1,711 @@
+[
+  {
+    "record_id": "R04",
+    "title": "Designing assessments in the generative AI era: A tailored assessment framework for ICT tertiary education",
+    "authors": "Nadeera Ahangama",
+    "year": 2026,
+    "venue": "International Journal of Educational Technology in Higher Education",
+    "doi": "10.1186/s41239-026-00582-0",
+    "fulltext_status": "full text (publisher OA)",
+    "source_used": "Publisher OA PDF (oa_url, link.springer.com); saved as pdfs/R04.pdf; 46 pp. read in full (pp. 1-36 body; appendices skimmed)",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "HE ICT programmes (AQF 7-9, Australia); assessment redesign for GenAI is the primary focus; peer-reviewed framework paper, 2026, English. Meets IC1-IC5.",
+    "study_design": "Qualitative interpretivist web-based document analysis with Braun & Clarke six-phase thematic analysis, used to build a conceptual framework (GENESIS) and an Assessment Design Matrix (ADM)",
+    "country": "Australia",
+    "discipline": "ICT / computing (cybersecurity, software development, data analytics, information systems, ML)",
+    "computing": "Y",
+    "level": "Undergraduate and postgraduate (AQF levels 7-9)",
+    "sample": "80 publicly available English-language web documents (journal articles, university policies/procedures, practice and concept papers, 2023-2025), found by Google searches on 5-9 March 2025; 185 initial codes; saturation reported at 72 documents",
+    "genai_tools": "GenAI generally (ChatGPT, GPT-4, OpenAI Codex mentioned); the author used ChatGPT (GPT-4o) and Gemini 2.5 Flash for copy-editing only",
+    "assessment_types": [
+      "Supervised assessment",
+      "Oral assessments",
+      "Practical demonstrations",
+      "Staged submissions",
+      "Process evidence",
+      "Personalised tasks"
+    ],
+    "key_findings": [
+      {
+        "finding": "The thematic analysis produced 7 key themes and 70 subthemes. The author argues they form a sequence for institution-wide reform: values, governance, support infrastructure, AI-integrated curriculum, then graduate competencies, strategies and methods.",
+        "location": "p. 6 (Results); Table 1, pp. 7-8; Fig. 1"
+      },
+      {
+        "finding": "18 assessment strategies were identified. They include in-person assessment of foundational knowledge, multi-staged connected scaffolding, assessing process over product, personalised authentic contexts, GenAI de-scaffolding, pre-testing tasks with GenAI, and invigilated gatekeeping assessments.",
+        "location": "Theme 6, pp. 17-20; Table 1"
+      },
+      {
+        "finding": "19 assessment methods were listed. Examples are process documentation with iterative evidence, debugging/code-tracing tasks, hackathons, controlled exams, interviews/presentations/demonstrations with Q&A to check authenticity, milestone group projects and multi-stage essays.",
+        "location": "Theme 7, pp. 20-21; Table 1, p. 8"
+      },
+      {
+        "finding": "Securing every task was described as unrealistic. Instead, programmes should identify key stage-gate assessments (e.g. capstones, demonstrations) for heightened security, and use assessment triangulation across the degree.",
+        "location": "Theme 4 (AC4, AC5), pp. 14-15"
+      },
+      {
+        "finding": "Detection tools raised concerns about false positives, bias and fairness, including for non-native English speakers. The sources favour process-oriented, in-person evidence collection over detection.",
+        "location": "Theme 1 (VD2) p. 8; Theme 2 (G3) p. 10"
+      }
+    ],
+    "evidence_type": "conceptual/framework",
+    "dimensions": {
+      "authenticity": "Recommends personalised, authentic-context and real-life problem-solving tasks, mapped to ICT graduate competencies (AS9, AM12, AM16; pp. 19-21).",
+      "capability_verification": "Proposes in-person assessment of foundational ICT knowledge and Q&A in interviews and demonstrations to verify depth of understanding (AS1, AM15; pp. 17, 21).",
+      "integrity_security": "Proposes securing selected gatekeeping assessments through supervision/invigilation rather than every task, and moving away from reliance on detection (AC4, AS18, G3; pp. 10, 14, 20).",
+      "lo_alignment": "The ADM links graduate competencies, strategies and methods, and the author maps it to constructive alignment and evidence-centred design (pp. 26-34; Table 3).",
+      "appropriate_ai_use": "Calls for institutions to quantify the AI use allowed for each assessment type and to treat GenAI literacy and prompt engineering as graduate attributes (G2, AC3, GC1, GC8; pp. 9, 14-17).",
+      "scalability": "Claims the ADM can be scaled and adapted to other disciplines by changing graduate attributes, but this has not been empirically tested (p. 36).",
+      "workload": "Notes the need to recalibrate assessment volume as staged and supervised tasks grow, and lists workload pressure as an implementation challenge (AC2, p. 13; p. 36).",
+      "feasibility": "Names staff resistance, resource limits and workload as practical barriers to implementation (p. 36).",
+      "process_visibility": "Recommends process-over-product assessment using prompts, reflective commentaries, planning notes and time-stamped drafts (AS7, AM1; pp. 18, 20).",
+      "accessibility_equity": "Highlights equitable access to GenAI tools, detector bias against non-native speakers, and challenges for neurodivergent and socially anxious students with new formats such as in-class Q&A (G5, SI3, SI5; pp. 10-12)."
+    },
+    "author_recommendations": [
+      "Adopt the five-pillar GENESIS framework as an institution-wide approach to assessment reform, starting from values and governance (not tested)",
+      "Use the Assessment Design Matrix: select at least one graduate competency, strategy and method per assessment and verify the alignment (not tested)",
+      "Secure key gatekeeping assessments (e.g. capstones, core technical units) through supervision/invigilation rather than securing every task (not tested)",
+      "Pre-test assessment tasks with GenAI before release (not tested)",
+      "Empirically validate GENESIS/ADM through pilots, educator/student feedback and longitudinal mixed-methods studies"
+    ],
+    "limitations": "Author-stated: the derived lists are limited to what the analysed documents covered; data were limited to public, English-language web documents from a short period, which may not reflect internal practice or tacit knowledge; the frameworks have not been empirically validated (p. 36). Reviewer note: single analyst with no reported second coder; the documents were selected by Google search-result order.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Y",
+      "q5": "Y",
+      "quality_score": 5,
+      "note": "Clear RQ; transparent document-analysis/TA procedure with dates, search strings and an 80-document appendix; themes are backed by source excerpts; limitations stated. Caveats: single coder, and the frameworks are unvalidated."
+    }
+  },
+  {
+    "record_id": "R11",
+    "title": "Coauthorship integrity: Reconceptualising assessment validity for the age of generative artificial intelligence",
+    "authors": "Mohsen Ebrahimzadeh; Antonette Shibani; Simon Buckingham Shum",
+    "year": 2026,
+    "venue": "Computers and Education: Artificial Intelligence",
+    "doi": "10.1016/j.caeai.2026.100609",
+    "fulltext_status": "abstract only",
+    "source_used": "Abstract from the OpenAlex record (abstract_inverted_index); landing page context from the UTS CIC project page. The article is listed as gold OA (CC BY-NC-ND), but ScienceDirect returned HTTP 403 to automated access, and no repository or preprint copy was found via OpenAlex, Semantic Scholar or web search. Extraction is from the abstract only.",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "University context (non-proctored assessment); assessment validity and academic integrity are the primary focus; GenAI; peer-reviewed journal; 2026, English. Full text not legally retrievable by automated means, but the abstract is substantive enough to extract, so kept as abstract only.",
+    "study_design": "Conceptual paper with design/development of an AI Viva prototype and a preliminary expert evaluation (qualitative and quantitative)",
+    "country": "Australia (author affiliations)",
+    "discipline": "Not reported (writing assessment generally)",
+    "computing": "N",
+    "level": "Higher education (level not reported in abstract)",
+    "sample": "Expert educators and assessment experts (n not reported in abstract)",
+    "genai_tools": "LLM-based conversational agent ('AI Viva'); specific model not reported in abstract",
+    "assessment_types": [
+      "Unsupervised formats",
+      "Oral assessments"
+    ],
+    "key_findings": [
+      {
+        "finding": "The authors argue that GenAI undermines several forms of validity evidence in non-proctored assessment, and they propose Coauthorship Integrity as a new source of validity evidence. It is violated when students submit AI-generated content they do not understand.",
+        "location": "abstract"
+      },
+      {
+        "finding": "They report developing an 'AI Viva': a conversational agent combining viva-voce elements with comprehension questions of controllable type and difficulty generated from the student's own text, with quantitative and dialogic feedback.",
+        "location": "abstract"
+      },
+      {
+        "finding": "In-depth evaluations with expert educators and assessment experts gave preliminary qualitative and quantitative support for the concept and prototype. Detailed results are not available in the abstract.",
+        "location": "abstract"
+      }
+    ],
+    "evidence_type": "conceptual/framework",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "Proposes verifying students' epistemic ownership and comprehension of their submitted writing through AI-generated viva-style questions (abstract).",
+      "integrity_security": "Reframes integrity in unsupervised contexts as a validity problem: submitting AI content one does not understand (abstract).",
+      "lo_alignment": "",
+      "appropriate_ai_use": "Accepts human/AI coauthorship as pervasive, and locates misuse in a lack of understanding rather than in AI use itself (abstract).",
+      "scalability": "Frames the AI Viva as a practical method that universities could potentially implement at scale (abstract; not demonstrated).",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Adopt Coauthorship Integrity as a conceptual source of validity evidence (not tested)",
+      "Use an AI Viva to gather evidence of students' understanding of their own texts, formatively and potentially summatively (preliminary expert evaluation only)"
+    ],
+    "limitations": "Not reported in the abstract; the full text was not read. The abstract describes the evaluation as preliminary and expert-based (no student outcome data mentioned).",
+    "quality": {
+      "q1": "Y",
+      "q2": "Unclear",
+      "q3": "Unclear",
+      "q4": "Unclear",
+      "q5": "Unclear",
+      "quality_score": 1,
+      "note": "Abstract only: aim is clear, but method details, sample size and limitations cannot be appraised without the full text."
+    }
+  },
+  {
+    "record_id": "R17",
+    "title": "Assessing students' DRIVE: A framework to evaluate learning through interactions with generative AI",
+    "authors": "Manuel Oliveira; Carlos Zednik; Gunter J.T. Bombaerts; Bert M. Sadowski; Rianne Conijn",
+    "year": 2025,
+    "venue": "Computers and Education: Artificial Intelligence",
+    "doi": "10.1016/j.caeai.2025.100497",
+    "fulltext_status": "full text (author/repository copy)",
+    "source_used": "Authors' preprint on PsyArXiv/OSF (osf.io/cne9j_v4, file 'preprint_2025_oliveira_et_al_Assessing_students_DRIVE.pdf', last updated 16 July 2025; OpenAlex lists it as the accepted version). Saved as pdfs/R17.pdf. ScienceDirect and the TU/e repository PDF returned 403 or a bot challenge to automated access. Page numbers below are the preprint's printed page numbers, which may differ from the published version.",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "University courses (BSc/MSc); assessment of learning through graded GenAI interaction logs is the primary focus; GenAI; peer-reviewed journal; 2025, English. Meets IC1-IC5.",
+    "study_design": "Exploratory multi-method study: framework and taxonomy development, plus correlational and descriptive analysis of annotated student-GenAI interaction logs against essay grades",
+    "country": "Netherlands",
+    "discipline": "Philosophy and ethics of AI / data science ethics courses at a STEM university",
+    "computing": "Partial",
+    "level": "Undergraduate (BSc) and postgraduate (MSc)",
+    "sample": "445 students enrolled across 3 course offerings (2023-24, 2024-25); 103 opted to use GenAI; 70 essays with logs annotated (1,450 prompts); 4 annotators; inter-rater subset of 33 logs / 772 annotations",
+    "genai_tools": "ChatGPT (48/70), Claude (1/70), unreported (21/70)",
+    "assessment_types": [
+      "Unsupervised formats",
+      "Process evidence",
+      "AI-use declarations"
+    ],
+    "key_findings": [
+      {
+        "finding": "Process-focused GenAI interaction scores correlated strongly with traditional essay scores (r = 0.54, 95% CI 0.34-0.68, n = 70; Spearman rho = 0.54). The authors interpret this as initial support for grading interaction logs.",
+        "location": "Sec 9.1, p. 17; Fig. 3"
+      },
+      {
+        "finding": "High essay scores were linked to a 'targeted improvement partnership' (text refinement, critical checks, relating concepts). High interaction scores were linked to a 'collaborative intellectual partnership' focused on idea development. Low scores were linked to basic information retrieval or passive task delegation.",
+        "location": "Sec 9.2.2, pp. 22-23; Fig. 5"
+      },
+      {
+        "finding": "The two assessment approaches mostly agreed (21/22 classifications had overlapping CIs). FDR-corrected tests found 5 divergences, with process-focused grading rewarding conceptual and exploratory engagement more than essay grading did.",
+        "location": "Sec 9.2.3, pp. 23-24"
+      },
+      {
+        "finding": "Inter-rater agreement on the taxonomy was moderate (mean Cohen's kappa 0.44), with some subcategories showing very low agreement.",
+        "location": "Sec 7, p. 15; Fig. 2"
+      },
+      {
+        "finding": "Teachers noticed fewer students choosing to use GenAI once interaction logs were formally graded. The authors also flag that fabricated logs ('meta-prompting') threaten validity.",
+        "location": "Sec 10.1, p. 26; Sec 10.2, p. 27"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "GenAI use was permitted in real graded coursework, and assessment considered how students actually worked with AI (Sec 5.2-5.3, pp. 10-11).",
+      "capability_verification": "Interaction logs were used to make students' domain knowledge and reasoning visible (Visible Expertise), alongside the essay (Sec 3.2, pp. 7-8).",
+      "integrity_security": "Notes that logs could be fabricated to match the rubric ('meta-prompting') and suggests adding student reflections (Sec 10.2, p. 27).",
+      "lo_alignment": "The taxonomy and rubric were derived from course learning outcomes on argumentative and ethical reasoning (Sec 5.4, p. 11; Sec 6, p. 12).",
+      "appropriate_ai_use": "Distinguishes productive interaction profiles (directive, idea-developing, critical) from passive delegation and information retrieval (Sec 9.2.2, pp. 22-23).",
+      "scalability": "Suggests automated classification may eventually help, but says human oversight remains essential (Sec 10.1, p. 26).",
+      "workload": "",
+      "feasibility": "About a third of AI users' logs (33/103) were unusable or excluded because of broken links, messy screenshots or negligible content (Sec 5.2, p. 10; Sec 7, p. 14).",
+      "process_visibility": "Central focus: submitted GenAI interaction logs were graded with a rubric as process evidence (Table 2, p. 13).",
+      "accessibility_equity": "All courses included a lecture on argumentative writing and prompting to reduce disparities in GenAI proficiency (Sec 5.3, p. 11)."
+    },
+    "author_recommendations": [
+      "Combine traditional essay assessment with evaluation of interaction logs to capture complementary aspects of learning",
+      "Design AI-use rubrics that distinguish interaction patterns according to course learning goals (not tested beyond this study)",
+      "Explore student perspectives before introducing process-focused grading of AI use (not tested)",
+      "Add student reflections on their AI-assisted process to counter fabricated logs (not tested)",
+      "Refine the taxonomy for other disciplines and remove low-agreement items"
+    ],
+    "limitations": "Author-stated: mainly philosophy/ethics courses at one university, which limits generalisability; subcategories need adjustment for other disciplines; findings reflect one technological moment; risk of fabricated logs; some taxonomy items had low inter-rater agreement (Sec 10.2, pp. 26-27). Reviewer note: self-selected AI users (23%); correlational design.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Y",
+      "q5": "Y",
+      "quality_score": 5,
+      "note": "Clear RQs; appropriate exploratory multi-method design; detailed sample and annotation procedure with reliability; results reported with CIs and FDR correction; limitations explicit. Appraised from the accepted-version preprint."
+    }
+  },
+  {
+    "record_id": "R23",
+    "title": "Embracing a new world: authentic assessment designs in an age of generative artificial intelligence (GenAI)",
+    "authors": "Feng Su; Michael O'Dea; Margaret Wood; Eva Seidl",
+    "year": 2026,
+    "venue": "Perspectives: Policy and Practice in Higher Education",
+    "doi": "10.1080/13603108.2025.2601741",
+    "fulltext_status": "full text (author/repository copy)",
+    "source_used": "Liverpool Hope University repository (HIRA eprint 4834). The file is the published CC BY-NC-ND article PDF. Saved as pdfs/R23.pdf. The T&F oa_url returned a bot-check page. Page numbers are the journal's printed page numbers.",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "HE context; authentic assessment design in response to GenAI is the primary focus; GenAI; peer-reviewed (two anonymous reviewers acknowledged); 2026, English.",
+    "study_design": "Conceptual paper informed by a rapid review (2 journals plus 2 blog platforms), with four illustrative practice scenarios",
+    "country": "UK (England) and Austria",
+    "discipline": "Multi-disciplinary: social sciences, translation/interpreting language education, computer science (databases), applied medical sciences",
+    "computing": "Partial",
+    "level": "Undergraduate (final-year social sciences; second-year CS; second-year medical sciences); language course level not reported",
+    "sample": "Rapid review: 55 articles screened, 12 included (Assessment & Evaluation in HE, IETI; 2022-2024) plus 14 blog pieces (WonkHE, THE Campus; 2023-2024). Scenario cohorts' n not reported.",
+    "genai_tools": "ChatGPT, Gemini, Copilot, DeepSeek (Scenario 1); ChatGPT (Scenarios 3 and 4); unspecified GenAI (Scenario 2)",
+    "assessment_types": [
+      "Oral assessments",
+      "Staged submissions",
+      "Process evidence",
+      "AI-use declarations"
+    ],
+    "key_findings": [
+      {
+        "finding": "The authors argue that GenAI lets authenticity be reconceived as hybrid and relational, shown through transparent and purposeful student interaction with AI.",
+        "location": "p. 2; abstract"
+      },
+      {
+        "finding": "The review literature suggests that AI use cannot be reliably detected, that students are unclear about what use is acceptable, and that tutors may need to combine process, content analysis and direct assessment methods instead of detection tools.",
+        "location": "pp. 5-6"
+      },
+      {
+        "finding": "In Scenario 3 (second-year CS database module), the brief was run through ChatGPT before release. Its output was critiqued in class, students had to produce work better than it, and marks were reweighted towards process justification, evaluation and reflection. The authors report positive student response and less need for the marker to second-guess plagiarism.",
+        "location": "Scenario 3, pp. 8-9"
+      },
+      {
+        "finding": "In Scenario 1, students critiqued a 500-word AI response and wrote AI-free reflections, declaring the tool and prompts used. Students valued the clear guidance, but some raised concerns about unequal access to paid AI tools and inaccurate outputs.",
+        "location": "Scenario 1, p. 7"
+      },
+      {
+        "finding": "The authors conclude that no single solution exists ('silver buckshot'): authentic assessment should be combined with staff and student AI literacy programmes and institution-wide AI assessment frameworks such as the AIAS.",
+        "location": "Concluding remarks, pp. 9-10"
+      }
+    ],
+    "evidence_type": "conceptual/framework",
+    "dimensions": {
+      "authenticity": "Core focus: draws on Ashford-Rowe et al.'s critical elements and McArthur's social-value view, and shows authenticity through AI-integrated tasks (pp. 1-2, 6-9).",
+      "capability_verification": "Cites interactive orals and viva elements as a way to support integrity, and Scenario 1 requires AI-free critical reflection (pp. 4, 7).",
+      "integrity_security": "Argues for moving the focus from detection and misconduct towards integrating GenAI, since detection is unreliable (pp. 5-6).",
+      "lo_alignment": "Scenario 3 adjusted marking criteria to reward higher-order thinking and metacognition (p. 8).",
+      "appropriate_ai_use": "Calls for clear, standardised guidance on when and how students may use GenAI, e.g. adopting the AIAS at institutional level (p. 10).",
+      "scalability": "",
+      "workload": "Cites Tight (2024): fewer but more meaningful assessments to reduce over-assessment (p. 5).",
+      "feasibility": "Scenario 3 reports that adapting an existing authentic assessment needed only a relatively simple change to the marking criteria (p. 8).",
+      "process_visibility": "Scenarios require prompt/tool declarations and reward descriptions of process and justification of decisions (pp. 7-8).",
+      "accessibility_equity": "Raises unequal access to premium AI tools and the potential of GenAI to support students with disabilities such as dyslexia (pp. 4, 6-7)."
+    },
+    "author_recommendations": [
+      "Design GenAI into authentic assessment tasks, e.g. critiquing AI outputs or outperforming an AI baseline (illustrated through scenarios, not formally evaluated)",
+      "Pre-run assessment briefs through GenAI and reweight criteria towards higher-order thinking and process (not tested)",
+      "Develop GenAI literacy for both staff and students (not tested)",
+      "Adopt an institution-wide AI assessment framework (e.g. AIAS) for clarity and transparency of AI use (not tested)",
+      "Leaders should engage with postplagiarism and generativism ideas when rethinking assessment fundamentals (not tested)"
+    ],
+    "limitations": "No explicit limitations section. Reviewer note: the rapid review covered only two journals and two blog platforms; scenario outcomes are anecdotal practitioner reflections with no reported n or systematic data collection.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Unclear",
+      "q4": "Unclear",
+      "q5": "N",
+      "quality_score": 2,
+      "note": "Clear question; conceptual argument grounded in a documented rapid review; but the scenario evidence is anecdotal with unreported samples, and no limitations are acknowledged."
+    }
+  },
+  {
+    "record_id": "R28",
+    "title": "Generative AI in computing education: A systematic review and a framework for responsible integration",
+    "authors": "Arun Kumar; Thakerng Wongsirichot; Aziz Nanthaamornphong",
+    "year": 2026,
+    "venue": "Computers and Education: Artificial Intelligence",
+    "doi": "10.1016/j.caeai.2026.100677",
+    "fulltext_status": "abstract only",
+    "source_used": "No abstract in OpenAlex, Crossref or Semantic Scholar. Abstract content was obtained only indirectly, from a web-search result summarising the ScienceDirect abstract page (pii S2666920X26001396). The article is listed as gold OA (CC BY-NC-ND), but ScienceDirect returned HTTP 403 to automated access, and no repository or preprint copy was found. Extraction is from the abstract only and should be verified against the published abstract.",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "Computing HE; assessment integrity is one of four core synthesis dimensions (a substantial focus); GenAI; peer-reviewed systematic review; 2026, English. Kept as abstract only pending manual retrieval.",
+    "study_design": "Systematic review with quality appraisal and thematic synthesis, plus a proposed framework for responsible integration",
+    "country": "Not reported (authors' affiliations not stated in the retrieved metadata)",
+    "discipline": "Computing education",
+    "computing": "Y",
+    "level": "Not reported in abstract",
+    "sample": "72 primary studies (2022-2026) from 33 venues; quality checklist of 10 items (reported mean 8.32/10); 14 themes",
+    "genai_tools": "GitHub Copilot, ChatGPT (as named in abstract)",
+    "assessment_types": [],
+    "key_findings": [
+      {
+        "finding": "The review synthesises 72 primary studies across four linked areas: learning outcomes, student over-reliance, assessment integrity and pedagogical adaptation, producing 14 themes.",
+        "location": "abstract (as retrieved via search summary)"
+      },
+      {
+        "finding": "GenAI gave consistent efficiency gains, but AI-assisted task completion did not reliably carry over to independent skill.",
+        "location": "abstract (as retrieved via search summary)"
+      },
+      {
+        "finding": "Over-reliance was common. Guardrail tools, self-regulated-learning scaffolding and withdrawing scaffolds appeared promising as interventions.",
+        "location": "abstract (as retrieved via search summary)"
+      },
+      {
+        "finding": "The authors argue that responsible integration needs coordinated action across all four dimensions together.",
+        "location": "abstract (as retrieved via search summary)"
+      }
+    ],
+    "evidence_type": "review",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "Reports that AI-assisted completion does not reliably translate into independent skill, which matters for verifying capability (abstract).",
+      "integrity_security": "Assessment integrity is one of the four synthesis dimensions; specific findings were not available from the abstract.",
+      "lo_alignment": "",
+      "appropriate_ai_use": "Identifies over-reliance as common and points to guardrail tools and scaffold withdrawal (abstract).",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Coordinate responsible GenAI integration across learning outcomes, over-reliance, assessment integrity and pedagogy, using the proposed framework (framework content not available; testing status unknown)"
+    ],
+    "limitations": "Not available. The abstract was obtained only indirectly, and the full text was not read.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Unclear",
+      "q5": "Unclear",
+      "quality_score": 3,
+      "note": "Abstract-level appraisal only, from an indirect source: the aim, a systematic method with quality appraisal, and the sample of studies are reported; support for findings and limitations cannot be judged. Needs verification against the full text."
+    }
+  },
+  {
+    "record_id": "R47",
+    "title": "Using Generative AI to Promote Psychological, Feedback, and Artificial Intelligence Literacies in Undergraduate Psychology",
+    "authors": "Jenny L. Richmond; Kate Nicholls",
+    "year": 2024,
+    "venue": "Teaching of Psychology",
+    "doi": "10.1177/00986283241287203",
+    "fulltext_status": "abstract only",
+    "source_used": "Structured abstract from the OpenAlex record. The SAGE article (listed as hybrid OA, CC BY-NC) and SAGE XML were behind a Cloudflare bot challenge, which was not bypassed. The OSF node osf.io/n5pks holds only supplementary materials (assignment guidelines, templates, rubrics), not the manuscript. No other repository copy was found.",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "Undergraduate psychology (HE); redesign of an assessment integrating GenAI is the primary focus; GenAI; peer-reviewed journal; 2024, English. Non-computing, but meets IC1-IC5.",
+    "study_design": "Teaching-practice evaluation: description of an assessment design, with evaluation of students' rubric-based judgements and a comparison of grades with previous peer-review cohorts",
+    "country": "Australia (author affiliations)",
+    "discipline": "Psychology",
+    "computing": "N",
+    "level": "Undergraduate",
+    "sample": "Not reported in abstract (comparison with earlier cohorts that used peer review)",
+    "genai_tools": "ChatGPT",
+    "assessment_types": [
+      "Staged submissions",
+      "Process evidence"
+    ],
+    "key_findings": [
+      {
+        "finding": "Students generated a media release about a published article with ChatGPT and then wrote a critique of it, using the marking rubric to judge the AI output.",
+        "location": "abstract (Method)"
+      },
+      {
+        "finding": "Students judged the ChatGPT output accurately against the rubric: stylistically good, but lacking accurate coverage of the research aims, methods and results.",
+        "location": "abstract (Results)"
+      },
+      {
+        "finding": "Working with GenAI and the rubric early in the assessment improved performance on later tasks, compared with cohorts who had done peer review instead.",
+        "location": "abstract (Results)"
+      },
+      {
+        "finding": "The authors conclude that permitting GenAI and scaffolding critique and revision built psychological, feedback and AI literacies. They urge educators to look beyond the artefact and assess the learning process.",
+        "location": "abstract (Conclusion, Teaching implications)"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "The task (writing and critiquing a media release about published research) targets psychological literacy in a communication format (abstract).",
+      "capability_verification": "",
+      "integrity_security": "",
+      "lo_alignment": "Students applied the marking rubric to AI output early, building feedback literacy aligned to the task criteria (abstract).",
+      "appropriate_ai_use": "GenAI use was explicitly permitted and scaffolded within a critique-and-revise design (abstract).",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "Recommends designing assessment that lets students showcase their learning process rather than only the artefact (abstract).",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Allow GenAI use and scaffold students' critique and revision of AI output against the rubric (evaluated in this course)",
+      "Design assessment that looks beyond the artefact to showcase the learning process (not tested as a general claim)"
+    ],
+    "limitations": "Not reported in the abstract; the full text was not read. The cohort comparison is non-randomised (historical cohorts).",
+    "quality": {
+      "q1": "Y",
+      "q2": "Unclear",
+      "q3": "Unclear",
+      "q4": "Unclear",
+      "q5": "Unclear",
+      "quality_score": 1,
+      "note": "Abstract only: objective is clear; design, sample and analyses cannot be appraised; the comparison is with historical cohorts."
+    }
+  },
+  {
+    "record_id": "R53",
+    "title": "Comparison of generative AI performance on undergraduate and postgraduate written assessments in the biomedical sciences",
+    "authors": "Andrew Evan Williams",
+    "year": 2024,
+    "venue": "International Journal of Educational Technology in Higher Education",
+    "doi": "10.1186/s41239-024-00485-y",
+    "fulltext_status": "full text (publisher OA)",
+    "source_used": "Publisher OA PDF (oa_url, link.springer.com); saved as pdfs/R53.pdf; 22 pp. read in full",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "UK HE (FHEQ levels 4-7); tests how vulnerable written essay assessments are to GenAI and what that means for assessment validity and integrity, which is a substantial focus; GenAI; peer-reviewed; 2024, English.",
+    "study_design": "Evaluation study: GenAI-generated essays marked blind by four independent markers against FHEQ-mapped criteria, with inter-rater reliability (Kendall's W)",
+    "country": "UK",
+    "discipline": "Biomedical sciences",
+    "computing": "N",
+    "level": "Undergraduate (levels 4, 5, 6) and taught postgraduate (level 7)",
+    "sample": "4 essay questions (one per FHEQ level, UCL courses) x 3 GenAI tools = 12 AI essays, each marked by 4 independent markers; prompts submitted 11 Aug - 9 Sep 2023",
+    "genai_tools": "ChatGPT 3.5 (free), Google Bard, Microsoft Bing (GPT-4 based)",
+    "assessment_types": [
+      "Unsupervised formats"
+    ],
+    "key_findings": [
+      {
+        "finding": "ChatGPT scored highest at every level: total about 70.7% (L4), 70.4% (L5), 71.85% (L6) and 69.75% (L7), i.e. high or borderline-first-class attainment. Bard was next and Bing lowest.",
+        "location": "Tables 2-5, pp. 6-13; Fig. 1, p. 16"
+      },
+      {
+        "finding": "The tools did not perform better or worse in any noticeable way as FHEQ level rose. All three did relatively well at level 7, possibly reflecting the mechanistic topic of that question.",
+        "location": "pp. 15, 19"
+      },
+      {
+        "finding": "No tool supplied appropriate scientific references. Bing produced fully fabricated, realistically formatted references, and Bard misreported its word count.",
+        "location": "pp. 17-18; Table 6"
+      },
+      {
+        "finding": "Weaknesses across tools were mechanistic detail, specific examples from the literature, and critical insight. Coherence and scientific accuracy were generally strong for ChatGPT.",
+        "location": "p. 15; Discussion pp. 18-19"
+      },
+      {
+        "finding": "Marker agreement was high for the undergraduate essays (e.g. total-score W = 0.708-0.877) but lower for level 7 (W = 0.464).",
+        "location": "Tables 2-5; p. 15"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "Shows that free GenAI tools can produce essays meeting high-attainment descriptors, so unsupervised essays alone may not verify student capability (pp. 15, 20).",
+      "integrity_security": "The author frames the findings as having implications for the design, implementation and grading of written assessments and for academic integrity (abstract; Conclusion p. 20).",
+      "lo_alignment": "AI output was benchmarked against FHEQ level descriptors and marking criteria mapped to them (pp. 4-5; Table 1).",
+      "appropriate_ai_use": "Recommends training students on the strengths and limits of LLMs, in the context of institutional integrity policies (pp. 19-20).",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "",
+      "accessibility_equity": "Tools were chosen on the basis of free student access (p. 3)."
+    },
+    "author_recommendations": [
+      "Train students in appropriate use of generative AI and its limitations, within institutional academic integrity policies (not tested)",
+      "Teachers may supervise or guide students' use of GenAI tools to ensure accuracy (not tested)",
+      "Future research should compare AI and student scripts blind, cover other assessment types (short answer, MCQ), and examine AI in assessment design and grading"
+    ],
+    "limitations": "Author-stated: compared AI tools only, with no comparison with student-written scripts at equivalent levels; only essays were tested, not other assessment types (p. 20). Reviewer note: one question per level and single-prompt generation with 2023 tool versions; LLMs have since changed.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Y",
+      "q5": "Y",
+      "quality_score": 5,
+      "note": "Clear aim; blinded multi-marker design with reliability statistics suits the question; materials and prompts fully described; results tabulated; limitations stated. Small item sample (4 questions)."
+    }
+  },
+  {
+    "record_id": "R68",
+    "title": "Assessment Reform for the Age of Artificial Intelligence",
+    "authors": "Jason M. Lodge; Sarah Howard; Margaret Bearman; Phillip Dawson",
+    "year": 2023,
+    "venue": "TEQSA (Tertiary Education Quality and Standards Agency)",
+    "doi": "",
+    "fulltext_status": "full text (publisher OA)",
+    "source_used": "TEQSA PDF (oa_url, teqsa.gov.au); saved as pdfs/R68.pdf; 12 pp. read in full (document dated November 2023). Page numbers are the document's printed page numbers.",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "Australian HE; assessment reform for GenAI is the primary focus; AI; formal expert-consensus framework (principles and propositions) commissioned by the national regulator (IC4 via the formal-framework route, not peer reviewed); 2023, English.",
+    "study_design": "Expert-consensus guidance/framework: two guiding principles and five propositions developed at a two-day TEQSA/UTS expert forum (August 2023), then wider expert consultation and public consultation",
+    "country": "Australia",
+    "discipline": "Cross-disciplinary (examples include commerce, physiotherapy, arts, science, law, journalism, interior design, computer science)",
+    "computing": "Partial",
+    "level": "Higher education (undergraduate and postgraduate examples)",
+    "sample": "Not applicable (expert forum of named contributors plus a wider consultation group and public consultation; no empirical data)",
+    "genai_tools": "Generative AI generally (large language models); no specific tools",
+    "assessment_types": [
+      "Supervised assessment",
+      "Oral assessments",
+      "Staged submissions",
+      "Process evidence",
+      "AI-use declarations"
+    ],
+    "key_findings": [
+      {
+        "finding": "The document states that non-invigilated tasks are hard to design so that they preclude substantial GenAI use, and that reliable detection appears almost impossible. Blanket bans are described as oversimplified.",
+        "location": "Preamble, pp. 1-2"
+      },
+      {
+        "finding": "Guiding principle 2: trustworthy judgements need multiple, inclusive, contextualised assessments, triangulated, because no single assessment type can handle all desirable and undesirable AI use.",
+        "location": "Guiding principles, p. 3"
+      },
+      {
+        "finding": "There are five propositions: appropriate, authentic engagement with AI; a systemic, program-level approach; assessing the process of learning; appropriate collaboration with peers and AI; and security at meaningful points across a program.",
+        "location": "Propositions 1-5, pp. 3-6"
+      },
+      {
+        "finding": "Proposition 5 recommends securing key program-level assessment moments rather than every task, because security is resource-intensive. One example is a computer science capstone secured through interactive code reviews, resourced by removing a first-year exam.",
+        "location": "Proposition 5, p. 6"
+      },
+      {
+        "finding": "The authors acknowledge that workload and accreditation issues will be barriers, and that staff capability building will be needed.",
+        "location": "Conclusion, p. 7"
+      }
+    ],
+    "evidence_type": "guidance",
+    "dimensions": {
+      "authenticity": "Proposition 1 calls for appropriate, authentic engagement with AI aligned with disciplinary or professional values (p. 3).",
+      "capability_verification": "Proposition 5 calls for evidencing what students can do without AI at key progression and completion points (p. 6).",
+      "integrity_security": "Argues for targeted security at meaningful points across a program rather than securing every task (p. 6).",
+      "lo_alignment": "Proposition 2 calls for program-level assessment design aligned with program learning outcomes and qualifications (p. 4).",
+      "appropriate_ai_use": "States that trustworthy assessment requires telling students clearly what is and is not permissible when working with AI (p. 5).",
+      "scalability": "Program-level securing is presented as a response to the infeasibility of applying resource-intensive security to all tasks (p. 6).",
+      "workload": "Acknowledges workload as a barrier to reform at scale (p. 7).",
+      "feasibility": "Acknowledges accreditation barriers and the need to build staff capability (p. 7).",
+      "process_visibility": "Proposition 3 calls for evidencing the learning process over time, e.g. decision trails, logs or diaries of collaboration with AI (pp. 4-5).",
+      "accessibility_equity": "Grounds the reform in fairness, accessibility, equity and inclusion, and says access to and capability with AI should not be assumed (pp. 2, 5)."
+    },
+    "author_recommendations": [
+      "Design assessment for appropriate, authentic engagement with AI, taught explicitly across a program (not tested)",
+      "Take a systemic, program-level approach to assessment (not tested)",
+      "Assess the process of learning, including students' judgement in using AI (not tested)",
+      "Articulate permissible ways of working with peers and AI, e.g. requiring explanation of prompts used (not tested)",
+      "Secure key program-level assessment moments (e.g. capstones via interactive code reviews or targeted exams) rather than every task (not tested)"
+    ],
+    "limitations": "Author-stated: not prescriptive or formulaic; intended to be revisited as technology evolves; workload and accreditation barriers acknowledged (pp. 1, 6-7). Reviewer note: expert opinion with few cited references (3); not peer reviewed; no empirical evaluation.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Unclear",
+      "q3": "Y",
+      "q4": "Unclear",
+      "q5": "Y",
+      "quality_score": 3,
+      "note": "Clear purpose; consensus process described (forum, consultation); but the propositions rest on expert judgement with minimal cited evidence and are not empirically supported; limitations and barriers acknowledged."
+    }
+  },
+  {
+    "record_id": "R76",
+    "title": "AI-Assisted Assessment: A Dual Perspective on Effective Usage Plans for Students and Teachers",
+    "authors": "José Manuel Martins Ferreira",
+    "year": 2025,
+    "venue": "IEEE Global Engineering Education Conference (EDUCON)",
+    "doi": "10.1109/EDUCON62633.2025.11016448",
+    "fulltext_status": "abstract only",
+    "source_used": "Abstract from the OpenAlex record. Closed access per OpenAlex and Semantic Scholar (IEEE Xplore paywall); no OA, preprint or repository copy found via web search.",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "Master's CS course (HE); AI-assisted grading of a major summative project (assessment practice and validity) is the primary focus; AI in assessment; peer-reviewed IEEE conference; 2025, English. Abstract is enough for basic extraction.",
+    "study_design": "Single-course experiment/case study: teacher used NotebookLM to support grading, plus a survey of student perceptions",
+    "country": "Not reported in abstract",
+    "discipline": "Computer Science (Hardware/Software Codesign)",
+    "computing": "Y",
+    "level": "Postgraduate (Master's)",
+    "sample": "Class of 30 students; one project assignment worth 50% of the final grade",
+    "genai_tools": "Google NotebookLM",
+    "assessment_types": [],
+    "key_findings": [
+      {
+        "finding": "The paper evaluates using Google NotebookLM to support the teacher's grading of a project worth 50% of the final grade in a 30-student master's CS course.",
+        "location": "abstract"
+      },
+      {
+        "finding": "The work extends an existing AI-assisted learning strategy from the student side to the teacher's assessment work, and reports students' perceptions of AI-assisted grading. Specific results are not given in the abstract.",
+        "location": "abstract"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "",
+      "integrity_security": "",
+      "lo_alignment": "",
+      "appropriate_ai_use": "Considers usage plans for AI on both the student and teacher sides (abstract/title).",
+      "scalability": "",
+      "workload": "Positions AI-assisted grading as a potential support for teachers' assessment work (abstract; outcomes not reported in abstract).",
+      "feasibility": "",
+      "process_visibility": "",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Not reported in abstract (the paper closes with a reflection on the impact of these technologies on HE)"
+    ],
+    "limitations": "Not available; full text not read. Single course, n = 30.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Unclear",
+      "q3": "Unclear",
+      "q4": "Unclear",
+      "q5": "Unclear",
+      "quality_score": 1,
+      "note": "Abstract only: aim is clear; method, data collection, results and limitations cannot be appraised."
+    }
+  },
+  {
+    "record_id": "R81",
+    "title": "Beyond the Code: Evaluating Alternative Assessment Strategies for Integrity and Authentic Learning in AI-Influenced Programming Tasks",
+    "authors": "Muhammad Hafeez Javed; Taha M. Rajeh; Zaid Al-Huda; Waseem Ahmed Abbasi; Joao Fialho; Martin Konan",
+    "year": 2026,
+    "venue": "2026 4th UK-China Teaching, Learning, and Educational Technology (TILE-TEC)",
+    "doi": "10.1109/TILE-TEC70450.2026.11682137",
+    "fulltext_status": "abstract only",
+    "source_used": "Abstract from Semantic Scholar Graph API. Closed access per OpenAlex and Semantic Scholar (IEEE); no OA, preprint or repository copy found via web search. Pages 100-105 per Crossref.",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "Undergraduate programming (HE); assessment integrity and validity under GenAI is the primary focus; GenAI; peer-reviewed IEEE conference proceedings; 2026, English.",
+    "study_design": "Two-phase action research",
+    "country": "UK (most author affiliations per OpenAlex; study site not stated in abstract)",
+    "discipline": "Computing (programming)",
+    "computing": "Y",
+    "level": "Undergraduate",
+    "sample": "60 undergraduate students in a programming-focused course",
+    "genai_tools": "Generative AI coding tools (unspecified in abstract)",
+    "assessment_types": [
+      "Supervised assessment",
+      "Oral assessments",
+      "Practical demonstrations",
+      "Process evidence"
+    ],
+    "key_findings": [
+      {
+        "finding": "Phase 1 found a gap between take-home programming submissions and students' ability to explain or reproduce their work under controlled conditions.",
+        "location": "abstract"
+      },
+      {
+        "finding": "Phase 2 introduced the TAP (Trace-Articulate-Perform) framework, combining repository submissions with version control, structured vivas and live code demonstrations, scored through a composite Learning Integrity Score.",
+        "location": "abstract"
+      },
+      {
+        "finding": "The authors report that the revised model narrowed the gap between submitted and demonstrated performance, improved supervised-task outcomes, and improved students' perceptions of fairness and learning effectiveness.",
+        "location": "abstract"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "Positions the alternative assessments as supporting authentic learning beyond final-output code (abstract/title).",
+      "capability_verification": "Uses vivas and live code demonstrations to check that students can explain and reproduce their submitted work (abstract).",
+      "integrity_security": "Notes that functional AI-produced code means correct submissions no longer reliably show understanding; uses triangulated evidence instead (abstract).",
+      "lo_alignment": "",
+      "appropriate_ai_use": "",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "Uses repository-based submissions with version control as a trace of process (abstract).",
+      "accessibility_equity": "Reports improved student perceptions of fairness under the revised model (abstract)."
+    },
+    "author_recommendations": [
+      "Move programming assessment beyond evaluating final output towards process-oriented, triangulated evidence (version control, viva, live demonstration) (evaluated in this action research)"
+    ],
+    "limitations": "Not available; full text not read. Single course, n = 60, action-research design.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Unclear",
+      "q4": "Unclear",
+      "q5": "Unclear",
+      "quality_score": 2,
+      "note": "Abstract only: clear aim; an action-research design suits the question; sample size and context partly reported, but data collection, analysis and limitations cannot be appraised."
+    }
+  }
+]

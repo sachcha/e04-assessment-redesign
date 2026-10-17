@@ -1,0 +1,279 @@
+{
+ "assessment_type": "Process evidence",
+ "n_studies_in_pack": 68,
+ "cells": [
+  {
+   "dimension": "capability_verification",
+   "rating": "Weak (unassessed or student-kept records) / Moderate (system-captured, staff-assessed)",
+   "confidence": "Medium / Low",
+   "literature": "[L] In a computing cohort, students with high take-home marks often could not explain or reproduce their own code, and the Learning Integrity Score rose from about 11.7 to 45.3 only when repository history was triangulated with a structured viva and supervised live demo [R81]. Students' accounts of their own contribution did not match their shared GenAI traces [R12], and some AI-use reflections described a tool the students could not have used [R45]. Graded interaction logs did correlate moderately with essay scores (r = 0.54, n = 70) in mainly philosophy courses [R17], while AI-reliant programming students gained higher assignment marks but no advantage in invigilated exams [R96].",
+   "dataset": "[D] In StudyChat, no logged AI-usage measure was clearly associated with assignment marks, exam marks or the assignment-exam gap (all 45 correlations Holm p >= 0.89; largest rho = 0.20) [D26], and dialogue-act features did not identify which students had larger gaps [J6]. These logs came from an optional course chatbot, were never assessed, and were analysed as automated counts of prompt types, so they show the limits of unassessed logs, not of interaction records that staff assess for quality.",
+   "interpretation": "[I] Unassessed or student-kept records verify capability poorly. System-captured interaction records that staff assess against a rubric are more promising [R17], and for the learning outcome of critical and responsible AI use they are direct evidence of the outcome itself. For independent knowledge and coding skill they should inform, not replace, an individual check [R81].",
+   "key_studies": [
+    "R81",
+    "R12",
+    "R45",
+    "R17",
+    "R96"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 2,
+   "core_studies": 2,
+   "conflicts": "Graded interaction logs tracked essay scores in mainly philosophy courses (r = 0.54) [R17]; no computing study has tested staff-assessed interaction records, hence Low confidence for that form. D26 and J6 apply only to unassessed logs. R17 also reports that fewer students chose GenAI once logs were graded and warns that logs can be staged (meta-prompting).",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "genai_exposure",
+   "rating": "Weak",
+   "confidence": "Medium",
+   "literature": "[L] Reflective writing remained high-risk for GenAI completion in a multi-institution benchmark [S001]. Students submitted AI-use reflections claiming use of a bespoke tool that none had accessed [R45], and authors warn that interaction logs and prompt histories can be fabricated or curated to fit a rubric [R17], [S457]. In a computing deployment students circumvented copy-paste restrictions, and about half of the detected cases were manual transcription of AI-generated code, although keystroke monitoring still flagged them [R77].",
+   "dataset": "[D] Among StudyChat chatbot users, on average 14.5% of new code lines in submissions matched the student's own chatbot replies verbatim, and 23.2% of submissions had 25% or more overlap [J1].",
+   "interpretation": "[I] Student-written process artefacts such as reflections and journals can be produced or polished by GenAI; only system-captured telemetry resists this, and then only in part.",
+   "key_studies": [
+    "S001",
+    "R45",
+    "R17",
+    "S457",
+    "R77"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 1,
+   "core_studies": 1,
+   "conflicts": "R77 shows platform-captured keystroke logs detected transcribed AI code, so exposure is lower where logs are captured by the system rather than written by the student.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authorship_assurance",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Keystroke-log monitoring in a computing course identified anomalous authorship with 87.13% accuracy (precision 93.67%, recall 90.24%, N = 101), but falsely flagged honest students with heavy delete-and-rewrite styles [R77]. Student-curated records were weaker: AI-interaction documentation was generally poor [R72], only one group fully documented prompts and outputs [R27], about a third of AI users' logs were unusable [R17], and some tool-use claims were fabricated [R45]. One author warns that chat logs are curatable and should not be the main evidence in misconduct decisions [S457].",
+   "dataset": "[D] On average 14.5% of new submitted code lines matched the student's own chatbot replies verbatim, yet assignment marks did not respond to this overlap (-1.0 points from 0% to 100% overlap, 95% CI -4.3 to +2.3) [J1].",
+   "interpretation": "[I] Assurance depends on whether the record is captured by a system (version control, course chatbot, instrumented editor) or written by the student, and on whether staff examine it. Tracing each part of a submission to the captured record, and checking any unexplained content in a live conversation, would strengthen assurance (proposal) [R77], [J1], [R81].",
+   "key_studies": [
+    "R77",
+    "R72",
+    "R27",
+    "R17",
+    "R45",
+    "S457"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 2,
+   "core_studies": 1,
+   "conflicts": "System-captured logs performed well [R77]; self-documented records were incomplete or fabricated [R72], [R27], [R45].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "lo_alignment",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Computing redesigns tied process evidence to outcomes such as explaining logic, justifying design and critically evaluating AI output [R81], [R09], [R91], and a computing framework recommends assessing process over product [R04]. A rubric derived from course learning outcomes was used to grade interaction logs [R17]. Output-based grading of take-home programming was argued to be no longer a valid proxy for computational-thinking outcomes [R96].",
+   "dataset": "[D] Logged AI-use behaviour in StudyChat was not associated with assignment or exam marks [D26], and did not identify students with larger assignment-exam gaps [J6].",
+   "interpretation": "[I] Process evidence aligns with process and judgement outcomes when the rubric targets them, but a log of AI use alone does not measure attainment of the intended computing outcomes.",
+   "key_studies": [
+    "R81",
+    "R09",
+    "R91",
+    "R04",
+    "R17",
+    "R96"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 5,
+   "core_studies": 5,
+   "conflicts": "Alignment is mostly claimed by design; D26 and J6 show logged use does not track measured attainment.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authenticity",
+   "rating": "Strong",
+   "confidence": "Low",
+   "literature": "[L] Repository submissions with commit histories [R81] and labs that validate AI-generated tests with real tools [R91] are framed as mirroring software engineering practice. GenAI assessments in a software apprenticeship were motivated by industry demand for GenAI skills [R09]. Reviews and frameworks argue that process logs and prompt records reflect professional knowledge work with AI [R16], [R28].",
+   "dataset": "[D] 92.7% of capstone students reported using GenAI in their project [D12]. Seven of 11 clients wanted students supported to use GenAI, while 4 of 11 named traceability as a concern [D20], although client support may be inflated by the questionnaire framing [J5].",
+   "interpretation": "[I] Keeping version-control and AI-use records matches how developers work with AI, but no study tested authenticity directly.",
+   "key_studies": [
+    "R81",
+    "R91",
+    "R09",
+    "R16",
+    "R28"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 4,
+   "core_studies": 3,
+   "conflicts": "Calibration C4: rating rests on author framing of designs, not on tested outcomes, so confidence is Low.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "appropriate_ai_use",
+   "rating": "Strong",
+   "confidence": "Medium",
+   "literature": "[L] In computing courses that required documented and critiqued AI use, 79% agreed that validation tasks helped their critical thinking [R91], most learners critiqued ChatGPT output (76%, rising to 81%) [R09], and marks rewarded checking AI output for bias and hallucination [R15]. A health-science package of verification logs and checkpoints was associated with higher report scores (d = 0.96) [S140], but this is abstract-only. However, 41% agreed they completed GenAI tasks just to meet the requirement [R91], and assessors judged only about one in ten students to show critical evaluation of AI [R45].",
+   "dataset": "[D] In an unassessed course-chatbot log, verification requests made up only 3.7% of prompts [D22]. In capstone students' own advice, 'Retain Understanding' was the most frequent directive (39.3%) [D19].",
+   "interpretation": "[I] Process evidence permits AI and can reward verification and critique, but this depends on rubric criteria that assess judgement rather than mere compliance.",
+   "key_studies": [
+    "R91",
+    "R09",
+    "R15",
+    "S140",
+    "R45",
+    "R17"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 3,
+   "core_studies": 3,
+   "conflicts": "Performative compliance [R91], low assessor-rated critical evaluation [R45] and sparse documentation [R27] temper the positive perception data.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "process_visibility",
+   "rating": "Strong",
+   "confidence": "High",
+   "literature": "[L] Code replay from editing logs reconstructed how solutions developed [R77], repository histories captured incremental development [R81], and marked prompting journeys [R09], raw AI outputs submitted with revised versions [R91] and graded interaction logs [R17] made AI use assessable. Screen recordings and prompt logs revealed authorship decisions that were invisible in final texts [S451]. Visibility was limited by documentation quality: logs were often poor, partial or unusable [R72], [R27], [R17].",
+   "dataset": "[D] Course-chatbot logs made the purpose of prompts visible, with 47.1% for understanding and 31.2% asking the AI to write or edit [D22], and verbatim reuse of chatbot code in submissions could be measured from them [J1].",
+   "interpretation": "[I] Visibility of process and AI interaction is the main strength of this type, though what is visible does not by itself show learning [D26], [J6].",
+   "key_studies": [
+    "R77",
+    "R81",
+    "R09",
+    "R91",
+    "R17",
+    "S451"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 4,
+   "core_studies": 4,
+   "conflicts": "Completeness depends on student compliance with documentation [R72], [R27].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 1
+  },
+  {
+   "dimension": "scalability",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] A keystroke-log platform sustained 200 concurrent users at about 400 ms latency in a load test [R77], an AI-artefact validation design ran in a course with a typical enrolment of 150-250 students [R91], and a staged AI-critique task ran with 363 students [R47]. Others report that process-oriented approaches are hard to implement in large classes [S342] and that process logs, reflections and oral defences can be impractical in large cohorts [R16]; long submitted conversations slowed marking in a 119-student course [S123].",
+   "dataset": "[D] StudyChat chat logs were collected automatically through a course chatbot across a whole course, though their analysis relied on automated GPT-4.1 labelling [D22].",
+   "interpretation": "[I] Capturing process data scales well with automation, but careful human reading of it does not.",
+   "key_studies": [
+    "R77",
+    "R91",
+    "R47",
+    "S342",
+    "R16",
+    "S123"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 3,
+   "core_studies": 2,
+   "conflicts": "Technical scaling is shown [R77], [R91]; scaling of human review is questioned [S342], [R16].",
+   "cohort_note": "Small (<50): manual review of journals and AI-interaction logs is feasible, as in a course of typically 25-35 students and cohorts of 14 and 15 [R72], [R79]. Medium (50-200): repository history was triangulated with other evidence for 60 students [R81], and courses of 88 and 119 students point to the need for structured formats and length limits on submitted conversations [R15], [S123]. Large (>200): depends on automated capture and analytics, with staff reviewing flagged or sampled cases [R77], [R91], [R47]; manual review of every record is reported as impractical [S342], [R16].",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "workload",
+   "rating": "Weak",
+   "confidence": "Medium",
+   "literature": "[L] Submitted AI conversations were long, variable and sometimes photos of screens, which made marking much slower and more subjective [S123]. Process-oriented approaches were reported to increase teaching and monitoring time [S342], practitioners raised concerns about marking multiple drafts [R24], and markers found dual evaluation of AI and student work demanding [S108]. Proposed mitigations include dashboards with alerts and code replay [R77] and embedding transparency requirements into existing tasks [R16].",
+   "dataset": "",
+   "interpretation": "[I] Reading process records is labour-intensive unless the format is structured or analytics triage the records first.",
+   "key_studies": [
+    "S123",
+    "S342",
+    "R24",
+    "S108",
+    "R16"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 1,
+   "core_studies": 0,
+   "conflicts": "R91 describes its changes as lightweight; the R77 dashboard is intended to reduce review effort but was not evaluated for workload. Rating rests mainly on non-computing evidence.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "feasibility",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Computing modules implemented process evidence within normal delivery [R81], [R15], [R09], and one team described the changes as lightweight [R91]. Costs fall on staff time and platforms: submitted AI conversations made marking much slower [S123], capturing keystroke logs required the custom Superlit web editor [R77], logs were made unusable by broken links and screenshots [R17], and IDE and prompt-log analytics raise privacy and consent requirements [R28]. On licences and tools, a framework recommends institutionally provided AI and embedding process evidence in existing tasks rather than adding new ones [R16], and one computing module required tools that are free to students [R15].",
+   "dataset": "[D] In the capstone survey, 74.7% used general chatbots and 46.0% integrated coding tools, while only 5.3% used the university-hosted instance [D14].",
+   "interpretation": "[I] Commit histories and reflections need little new infrastructure, but complete AI-interaction records require students to export logs or to work in institution-controlled tools, which brings platform, licence and privacy costs; cost evidence is limited, because no study reported these costs or staff marking hours in measured terms.",
+   "key_studies": [
+    "R81",
+    "R15",
+    "R09",
+    "R91",
+    "R77",
+    "R17",
+    "R28",
+    "R16",
+    "S123"
+   ],
+   "n_supporting": 9,
+   "computing_studies": 6,
+   "core_studies": 5,
+   "conflicts": "Workload is rated Weak because reading process records is slow [S123], [S342], so feasibility including cost cannot be Strong. Limited supervisor AI know-how was also a barrier [R27].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "accessibility_equity",
+   "rating": "Moderate",
+   "confidence": "Low",
+   "literature": "[L] Keystroke monitoring falsely flagged honest students with atypical delete-and-rewrite styles [R77]. Unequal access to free versus paid tools was raised in several studies [R20], [S123], [R16], and one computing module required that tools be free to students [R15]. Triangulating process evidence with other modes was intended to avoid relying on vivas that can reflect anxiety or language proficiency [R81], but treating chat logs as misconduct evidence may disadvantage multilingual students [S457].",
+   "dataset": "",
+   "interpretation": "[I] Equity depends on equal tool access, tolerance of varied working styles and not using logs punitively.",
+   "key_studies": [
+    "R77",
+    "R20",
+    "S123",
+    "R15",
+    "R81",
+    "S457",
+    "R16"
+   ],
+   "n_supporting": 7,
+   "computing_studies": 3,
+   "core_studies": 3,
+   "conflicts": "Few studies measured equity outcomes; most evidence is concerns or untested proposals.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  }
+ ],
+ "evaluation_finding": "Process evidence is strong at making the working process and AI interactions visible [R77], [R81], [R91], [R17] and fits professional, AI-permitted computing practice [R09], [R91]. Its value as evidence of capability depends on its form: unassessed or student-kept records verify capability poorly [R12], [R45], [D26], [J6], while system-captured interactions that staff assess for quality are promising but untested in computing [R17]. It works best when triangulated with an oral or supervised check [R81], and its marking burden grows with cohort size unless capture and triage are automated [S123], [S342], [R77].",
+ "strengths": [
+  "Makes development history and AI interactions visible and assessable, for example through code replay, commit histories and graded interaction logs [R77], [R81], [R17].",
+  "Permits GenAI use and can reward verification and critique of AI output [R09], [R91], [R15].",
+  "Mirrors professional software practice, where version control and AI tools are routine [R81], [R91], [D12].",
+  "System-captured logs can reveal AI-authored content, such as transcribed AI code or verbatim chatbot reuse [R77], [J1].",
+  "For the outcome of critical and responsible AI use, staff-assessed interaction records are direct evidence of how a student frames a problem, guides the AI and checks its output [R17], [R91]."
+ ],
+ "limitations": [
+  "Unassessed logs did not reveal learning: in one computing course, no automated usage measure from an optional, ungraded chatbot was associated with marks or the assignment-exam gap [D26], [J6].",
+  "Student-curated records can be incomplete, fabricated or misjudged by the students themselves [R45], [R12], [R27], [R17].",
+  "Reflective and documentary artefacts are themselves exposed to GenAI [S001], [S457].",
+  "Process data is only useful if marking responds to it; verbatim AI-authored code did not change marks [J1].",
+  "Behavioural flags can produce false positives for honest students with atypical working styles [R77].",
+  "Once logs are graded, students may avoid AI or stage their interactions for the marker, so rubrics and a paired check are needed [R17]."
+ ],
+ "practical_considerations": [
+  "Pair process evidence with a short viva or live demonstration to verify understanding [R81], [R79].",
+  "Use structured formats and length limits for submitted AI conversations to keep marking time manageable [S123].",
+  "For large cohorts, rely on automatically captured logs and dashboards, with staff reviewing flagged or sampled cases, and budget for the platform this needs [R77], [R91].",
+  "Most students use external chatbots and coding tools rather than university-hosted ones, so plan how logs will be collected and whether institutional tool access is needed [D14], [R16].",
+  "Address privacy, consent and equal tool access before collecting IDE or prompt-log data [R28], [R15], [R20]."
+ ],
+ "evidence_gaps": [
+  "No study tested whether assessing process evidence improves computing learning outcomes compared with product-only assessment.",
+  "No study measured staff marking time for process evidence in large computing cohorts.",
+  "The validity of rubrics for grading AI-interaction logs has not been tested in computing; the main study was in philosophy and ethics courses with moderate inter-rater agreement.",
+  "Keystroke-log detection was evaluated only on instructed rather than naturally occurring misconduct, in one deployment.",
+  "Dataset evidence on logs and learning comes from one AI course with opt-in sharing and automated labelling, so it may not generalise.",
+  "Equity effects, such as on students with disabilities or English as an additional language, were not measured."
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "rating_scale": "High = the option fully meets the criterion for this project; Medium = partly meets it, or only with extra effort; Low = does not meet it. Ratings are qualitative judgements against the project's own constraints (10 weeks, five students, no new ethics approval, eight assessment types, client deliverables D1 to D3), not scores.",
+ "decisions": [
+  {"id": "M1", "decision": "Review type for the evidence base (D1)",
+   "criteria": ["Fit to the research questions (evaluate and recommend)", "Rigour and reproducibility", "Fit to mixed, mostly descriptive evidence", "Feasible in 10 weeks with five people", "Supports graded recommendations"],
+   "options": [
+    {"option": "Structured systematic review with narrative/framework synthesis (chosen)", "ratings": ["High", "High", "High", "Medium", "High"], "note": "Explicit criteria, dual screening and PRISMA reporting give rigour; synthesis copes with heterogeneous designs."},
+    {"option": "Scoping review", "ratings": ["Medium", "Medium", "High", "High", "Low"], "note": "Maps the field but does not appraise quality or support graded recommendations [Arksey & O'Malley 2005; Grant & Booth 2009]."},
+    {"option": "Narrative or rapid review only", "ratings": ["Medium", "Low", "High", "High", "Medium"], "note": "Fast, but selection is not reproducible; we borrowed one rapid-review method only (light extraction) [Garritty et al. 2021]."},
+    {"option": "Meta-analysis", "ratings": ["Medium", "High", "Low", "Low", "High"], "note": "Needs comparable effect sizes; no included computing redesign study had a control group, so pooling was not possible."}],
+   "choice_and_justification": "A structured systematic review, reported with PRISMA 2020 [Page et al. 2021], was the only option rated at least Medium on all five criteria. It is the method the proposal committed to and it supports the graded ratings the client needs.",
+   "trade_off": "Higher workload than a scoping review. Reduced by AI-assisted screening with human adjudication and by proportionate (light) extraction for non-computing studies."},
+  {"id": "M2", "decision": "Synthesis method for the Evaluation Framework (D2)",
+   "criteria": ["Produces the required matrix (type x dimension)", "Traceable to sources", "Handles qualitative and quantitative findings", "Feasible within the timeline"],
+   "options": [
+    {"option": "Framework synthesis with a priori dimensions (chosen)", "ratings": ["High", "High", "High", "High"], "note": "Dimensions taken from the proposal, Project Context and the data lead's framework; each cell traced to studies [Gale et al. 2013]."},
+    {"option": "Thematic synthesis", "ratings": ["Medium", "High", "Medium", "Medium"], "note": "Themes emerge inductively, so they do not map cleanly onto the agreed assessment types and dimensions [Thomas & Harden 2008]."},
+    {"option": "Vote counting", "ratings": ["Medium", "Medium", "Low", "High"], "note": "Ignores study quality and size."},
+    {"option": "Statistical pooling", "ratings": ["Low", "High", "Low", "Low"], "note": "Not possible without comparable effect sizes (see M1)."}],
+   "choice_and_justification": "Framework synthesis fits a pre-defined matrix and keeps every rating traceable.",
+   "trade_off": "Pre-set dimensions can miss new themes, so evidence gaps are listed for each type."},
+  {"id": "M3", "decision": "Certainty and quality assessment",
+   "criteria": ["Suited to mixed and qualitative evidence", "Transparent rules", "Feasible", "Recognised standard"],
+   "options": [
+    {"option": "Adapted MMAT 2018 / CASP checklist plus simplified GRADE-CERQual (chosen)", "ratings": ["High", "High", "High", "High"], "note": "MMAT covers qualitative, quantitative and mixed designs [Hong et al. 2018]; CERQual rates confidence in synthesis findings [Lewin et al. 2018]."},
+    {"option": "GRADE (quantitative)", "ratings": ["Low", "High", "Medium", "High"], "note": "Designed for effect estimates from trials, which this evidence lacks."},
+    {"option": "No formal appraisal", "ratings": ["Low", "Low", "High", "Low"], "note": "Would make all studies count equally regardless of quality."}],
+   "choice_and_justification": "The only option rated High on all four criteria.",
+   "trade_off": "Both tools are simplified (5-item checklist; rule-based confidence), which the report states."},
+  {"id": "M4", "decision": "Screening approach",
+   "criteria": ["Reliability (measurable agreement)", "Time within the semester", "Transparency and auditability", "Scales to the update search (494 records)"],
+   "options": [
+    {"option": "Two independent AI-assisted screeners with human adjudication (chosen)", "ratings": ["High", "High", "High", "High"], "note": "Kappa 0.80 to 0.88; every decision logged with a reason; disagreements adjudicated by a team member."},
+    {"option": "Two independent human screeners", "ratings": ["High", "Low", "High", "Low"], "note": "Standard practice, but not feasible for 586 records in the remaining weeks."},
+    {"option": "Single human screener", "ratings": ["Low", "Medium", "Medium", "Low"], "note": "No agreement measure; higher risk of missed studies."}],
+   "choice_and_justification": "Kept dual, independent screening with a measurable agreement statistic while fitting the timeline. AI assistance is disclosed as an ethical requirement.",
+   "trade_off": "AI screeners can share systematic biases; reduced by blinding, written criteria, human adjudication and full-text checks."},
+  {"id": "M5", "decision": "Second evidence stream",
+   "criteria": ["Direct evidence on GenAI and assessment", "No new ethics approval needed", "Time and cost", "Reproducible by others"],
+   "options": [
+    {"option": "Secondary analysis of public datasets (chosen)", "ratings": ["Medium", "High", "High", "High"], "note": "Released data with licences; our code reproduces every figure."},
+    {"option": "Primary data (surveys or interviews at Adelaide University)", "ratings": ["High", "Low", "Low", "Medium"], "note": "Most direct, but needs human research ethics approval and recruitment time beyond a 10-week project."},
+    {"option": "Literature only", "ratings": ["Medium", "High", "High", "High"], "note": "Misses the chance to test claims against real student and AI data."}],
+   "choice_and_justification": "Public datasets added real behavioural evidence (StudyChat links AI use to grades) without ethics delay.",
+   "trade_off": "Datasets come from other institutions and contexts; findings are labelled observational and context-specific."},
+  {"id": "M6", "decision": "Dataset selection",
+   "criteria": ["Currency (GenAI era)", "Linked to assessment outcomes", "Licence and access", "Relevance to computing"],
+   "options": [
+    {"option": "EPFL / NLP4Education (chosen)", "ratings": ["Medium", "Medium", "Medium", "High"], "note": "GPT-3.5/GPT-4 on 5,175 real university questions; CC BY-NC-ND; a floor on AI capability."},
+    {"option": "Hannover capstone survey (Mircea et al.) (chosen)", "ratings": ["High", "Low", "High", "High"], "note": "2025/26 capstone; student and client views; self-report only."},
+    {"option": "StudyChat (chosen)", "ratings": ["High", "High", "High", "High"], "note": "Real student prompts linked to grades; CC BY 4.0."},
+    {"option": "CS1QA (excluded)", "ratings": ["Low", "Low", "Medium", "High"], "note": "2022, before GenAI; cannot inform GenAI vulnerability."},
+    {"option": "CodeAid, ProgFeed (not used)", "ratings": ["Medium", "Low", "Medium", "High"], "note": "Considered in the Project Context; not linked to assessment outcomes."}],
+   "choice_and_justification": "The three chosen datasets cover what AI can do (EPFL), what students and clients say (Hannover) and what students actually do (StudyChat).",
+   "trade_off": "EPFL models are from 2023, so exposure is likely understated; this is stated in every related cell."},
+  {"id": "M7", "decision": "Project management method",
+   "criteria": ["Fits research tasks of uncertain length", "Low process overhead", "Visible progress and blockers", "Handles scope change"],
+   "options": [
+    {"option": "Kanban in Jira (chosen in the proposal)", "ratings": ["High", "High", "High", "High"], "note": "Continuous flow suits searching, screening and analysis whose duration is hard to predict."},
+    {"option": "Scrum", "ratings": ["Medium", "Low", "High", "Medium"], "note": "Fixed sprints and ceremonies add overhead for a part-time student team."},
+    {"option": "Waterfall", "ratings": ["Low", "High", "Medium", "Low"], "note": "Sequential stages cannot absorb changes such as the approved scope change."}],
+   "choice_and_justification": "Kanban was chosen in the proposal and suited a research workflow with an approved mid-project scope change.",
+   "trade_off": "Kanban has no fixed deadlines inside the flow, so milestones were tracked separately in the Gantt chart. Actual use is reflected on in the project management section (team data needed)."}
+ ],
+ "references_verified": "See method_references_verified.csv (Crossref, 17 Oct 2026)."
+}

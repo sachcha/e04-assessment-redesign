@@ -1,0 +1,708 @@
+[
+  {
+    "record_id": "R08",
+    "title": "Computing Education in the Era of Generative AI",
+    "authors": "Paul C. Denny; James E. Prather; Brett A. Becker; James Finnie-Ansley; Arto Hellas; Juho Leinonen; Andrew Luxton-Reilly; Brent N. Reeves; Eddie Antonio Santos; Sami Sarsa",
+    "year": 2024,
+    "venue": "Communications of the ACM",
+    "doi": "10.1145/3624720",
+    "fulltext_status": "full text (author/repository copy)",
+    "source_used": "arXiv author version 2306.02608v1 (accepted CACM version); the ACM DL PDF link (oa_url) returned an HTML page, not a PDF. Page numbers refer to the arXiv PDF.",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "HE introductory programming; academic integrity and the effectiveness of existing assessments under code-generation LLMs is a substantial section (Sec 2.2) alongside opportunities; refereed CACM review article, 2024.",
+    "study_design": "Conceptual/review article summarising the authors' own prior empirical studies (Codex on CS1 exam questions and Rainfall variants; LLM-generated exercises and code explanations) plus wider literature",
+    "country": "Multinational authors (New Zealand, USA, Ireland, Finland); summarised exam study from University of Auckland (New Zealand)",
+    "discipline": "Computer science (introductory programming, CS1)",
+    "computing": "Y",
+    "level": "Undergraduate (introductory programming)",
+    "sample": "Not applicable for the article overall; the summarised exam study compared Codex with 71 CS1 students on two Python exams; 350 Rainfall responses; 240 generated exercises",
+    "genai_tools": "OpenAI Codex, GitHub Copilot, ChatGPT, GPT-4 (also mentions AlphaCode, CodeWhisperer)",
+    "assessment_types": [
+      "Unsupervised formats",
+      "Supervised assessment",
+      "Process evidence"
+    ],
+    "key_findings": [
+      {
+        "finding": "Codex scored 78.5% and 78.0% on two real CS1 Python exams, ranking 17th of 71 students (top quartile), though it struggled with tasks that banned certain language features or needed inferred ASCII formatting.",
+        "location": "p. 3 / Sec 2.1.1 / Fig 1"
+      },
+      {
+        "finding": "Codex produced highly varied solutions to the same prompt, and common code-plagiarism detection tools are reported to be ineffective against AI-generated code, undermining similarity-based integrity checks.",
+        "location": "pp. 3-4 / Sec 2.1.2, 2.2, 2.2.1"
+      },
+      {
+        "finding": "Authors anticipate institutional shifts to secure assessment conditions and possible use of keystroke/activity data, and question where acceptable machine-generated code ends and misconduct begins.",
+        "location": "p. 4 / Sec 2.2.2"
+      },
+      {
+        "finding": "Suggested assessment shifts include judging style/quality across multiple correct solutions, critique of AI-generated solutions, specification-focused tasks and rewarding incremental testing.",
+        "location": "pp. 7-8 / Sec 3.3, 3.4.2, 3.4.5"
+      },
+      {
+        "finding": "Authors conclude many existing assessment approaches may no longer be effective and argue educators must incorporate the tools and teach responsible use.",
+        "location": "p. 9 / Sec 4"
+      }
+    ],
+    "evidence_type": "conceptual/framework",
+    "dimensions": {
+      "authenticity": "Argues the professional reality of AI-assisted coding should shape tasks (reading, testing, refactoring AI code).",
+      "capability_verification": "Codex reaching top-quartile CS1 exam scores shows typical programming assessments may no longer verify individual capability.",
+      "integrity_security": "Plagiarism detectors are reported ineffective on AI code and AI use is low-risk compared with contract cheating; secure conditions anticipated.",
+      "lo_alignment": "Questions whether code-writing outcomes remain appropriate; argues code literacy (read, test, verify) stays essential.",
+      "appropriate_ai_use": "Raises the unresolved question of which machine-generated code suggestions are acceptable and how attribution should work.",
+      "scalability": "Notes LLMs could generate a near-endless supply of novel exercises, reducing the cost of fresh assessment items.",
+      "workload": "Generating exercises/explanations with LLMs may reduce instructor effort; filtering poor outputs is still required.",
+      "feasibility": "",
+      "process_visibility": "Mentions keystroke data and incremental test-writing as possible ways to evidence student process.",
+      "accessibility_equity": "Notes bias in generated code and comments, and greater access for learners without formal education."
+    },
+    "author_recommendations": [
+      "Get ahead of the tools and incorporate them into classrooms from the start, teaching responsible use (not tested)",
+      "Shift assessment toward judging quality/style across multiple solutions and critiquing AI-generated code (not tested)",
+      "Use specification-focused tasks and renewed test-driven development with rewards for incremental testing (not tested)",
+      "Teach the wider societal, legal and ethical implications of generative AI (not tested)"
+    ],
+    "limitations": "Not explicitly stated. The article reflects early-2023 models (Codex) and largely summarises prior studies; integrity proposals are speculative.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Unclear",
+      "q4": "Y",
+      "q5": "N",
+      "quality_score": 3,
+      "note": "Conceptual review grounded in the authors' empirical studies and cited literature; summarised studies only briefly described; no limitations section."
+    }
+  },
+  {
+    "record_id": "R14",
+    "title": "Themes in the Declared Use of Generative Artificial Intelligence in Assessment",
+    "authors": "Joseph Maguire; Rosanne English; Qi Ping Cao; Chee Kiat Seow",
+    "year": 2024,
+    "venue": "Computing Education Practice (CEP '25), ACM",
+    "doi": "10.1145/3702212.3702217",
+    "fulltext_status": "full text (author/repository copy)",
+    "source_used": "University of Glasgow Enlighten repository PDF (eprints.gla.ac.uk/344038), found via OpenAlex locations; CC BY 4.0 version of record. Printed proceedings pages 17-20.",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "HE computing course; assessment redesign requiring GenAI declarations is the primary focus; peer-reviewed ACM CEP paper; published Jan 2025 (record year 2024), English.",
+    "study_design": "Practice/experience report with qualitative review of student GenAI declarations (themes identified; analysis procedure not detailed)",
+    "country": "UK/Singapore (University of Glasgow transnational programme with Singapore Institute of Technology)",
+    "discipline": "Computing science (digital forensics / cyber security course)",
+    "computing": "Y",
+    "level": "Undergraduate (final year of three-year degree)",
+    "sample": "More than 140 students in 37 teams (3-4 members); 74 submissions; 29 teams declared GenAI use",
+    "genai_tools": "ChatGPT, Grammarly, Phind, Google Gemini, GitHub Copilot",
+    "assessment_types": [
+      "AI-use declarations",
+      "Unsupervised formats"
+    ],
+    "key_findings": [
+      {
+        "finding": "Teams could use GenAI but had to declare, for each interaction, the system, rationale, prompt and output, modelled on Monash University guidance.",
+        "location": "p. 19 / Sec 5"
+      },
+      {
+        "finding": "29 of 37 teams declared GenAI use; ChatGPT was most common, and several teams used multiple tools for different purposes.",
+        "location": "p. 19 / Sec 6"
+      },
+      {
+        "finding": "Four themes emerged: written quality; research assistance and knowledge building; legal, privacy and ethical concerns; presentation and script creation. One team also used AI to judge its work against the rubric.",
+        "location": "pp. 19-20 / Sec 6.0.1-6.0.5"
+      },
+      {
+        "finding": "Authors interpret GenAI as mostly a starting point rather than a shortcut, and argue declarations help educators check that the assessment measures what was intended.",
+        "location": "p. 20 / Sec 7"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "Scenario-based team tasks (designing a forensic process for a fictional healthcare organisation; critiquing an investigation).",
+      "capability_verification": "Declarations reveal some teams used GenAI to produce parts of the written submission, which bears on whose capability is assessed.",
+      "integrity_security": "Declaration replaces prohibition; 8 teams declared no use and this was assumed true, so non-declaration was not verified.",
+      "lo_alignment": "Declarations are used to judge whether the assessment assesses what the setter intended and to refine it.",
+      "appropriate_ai_use": "Students were permitted to use GenAI openly with structured disclosure (system, rationale, prompt, output).",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "The approach was implemented in an existing intensive block-mode course without redesigning the tasks.",
+      "process_visibility": "Declared prompts and outputs gave educators visibility of how students approached the assessment.",
+      "accessibility_equity": "Background notes paid GenAI tiers may advantage some students, likened to more sophisticated calculators."
+    },
+    "author_recommendations": [
+      "Educators in computing outside programming may consider asking students to declare and explain GenAI use (not tested beyond this single course)",
+      "Use declarations to reflect on and continually refine assessments rather than to make them AI-resilient (not tested)"
+    ],
+    "limitations": "Single course in a single institution run in block mode; team-level declarations; no formal analytic method described; self-declaration not verified.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Unclear",
+      "q3": "Y",
+      "q4": "Y",
+      "q5": "Y",
+      "quality_score": 4,
+      "note": "Short experience report; theme derivation method not described."
+    }
+  },
+  {
+    "record_id": "R20",
+    "title": "Reinventing assessments with ChatGPT and other online tools: Opportunities for GenAI-empowered assessment practices",
+    "authors": "Dennis Foung; Linda Lin; Julia Chen",
+    "year": 2024,
+    "venue": "Computers and Education: Artificial Intelligence",
+    "doi": "10.1016/j.caeai.2024.100250",
+    "fulltext_status": "full text (author/repository copy)",
+    "source_used": "Hong Kong Polytechnic University institutional repository (ira.lib.polyu.edu.hk/bitstream/10397/110034) copy of the published CC BY-NC-ND article, found via OpenAlex.",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "HE course with assessments redesigned to incorporate GenAI and other AI tools; assessment redesign is the primary focus; peer-reviewed 2024 journal article.",
+    "study_design": "Qualitative study: thematic analysis of student written reflections and focus group interviews",
+    "country": "Hong Kong",
+    "discipline": "English communication course; students mostly from hard sciences incl. engineering, computing, biochemistry",
+    "computing": "Partial",
+    "level": "Undergraduate (Senior Year Admitted students)",
+    "sample": "74 student reflections; 4 focus groups with 28 students; summer semester 2022-23",
+    "genai_tools": "ChatGPT (3.5), Grammarly (incl. Premium), WeCheck! (in-house), QuillBot, Just The Word, Thesaurus",
+    "assessment_types": [
+      "Personalised tasks",
+      "AI-use declarations",
+      "Process evidence",
+      "Unsupervised formats"
+    ],
+    "key_findings": [
+      {
+        "finding": "Assessments were redesigned using four features (multimodal, context-specific, learner-specific, multi-source), removing components answerable directly by GenAI and adding personal-experience and lecture-content requirements.",
+        "location": "p. 3 / Sec 2.1"
+      },
+      {
+        "finding": "Students had to reflect on their use of AI tools as part of a writing assessment worth 45%; 456 coded items yielded four themes: perception/use, critical evaluation, limitations, and versions of tools.",
+        "location": "pp. 3-4 / Sec 2.3, 3.1 / Table 1"
+      },
+      {
+        "finding": "Students used GenAI for planning and drafting and other tools for grammar/style, and showed critical selection of tools and awareness of wrong information and fake citations.",
+        "location": "pp. 4-5 / Sec 3.2-3.3"
+      },
+      {
+        "finding": "Students appreciated explicit instructions and in-class demonstrations on constructive GenAI use and linked them to constructive use.",
+        "location": "p. 5 / Sec 3.4"
+      },
+      {
+        "finding": "Differences between free and paid tool versions raised equity concerns; authors suggest institutions provide premium access.",
+        "location": "p. 5 / Sec 3.5, Sec 4"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "Learner-specific and context-specific requirements tied tasks to personal experience and course content.",
+      "capability_verification": "",
+      "integrity_security": "The redesign aimed to remove components for which GenAI could directly supply answers.",
+      "lo_alignment": "Assessment was redesigned to pursue writing and AI-literacy aims while permitting tools.",
+      "appropriate_ai_use": "Students were openly allowed and trained to use GenAI and other AI tools constructively and to reflect on their use.",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "Redesigned assessments had been run for two semesters.",
+      "process_visibility": "Required reflections showed how tools were used at each writing stage.",
+      "accessibility_equity": "Free vs premium versions created a perceived digital divide; low-proficiency EFL students felt tools levelled the field."
+    },
+    "author_recommendations": [
+      "Adopt a balanced approach allowing flexible use of various AI tools in assessments (supported only by perceptions in this study)",
+      "Institutions provide premium versions of AI tools to all students to ensure equity (not tested)",
+      "Integrate AI literacy into HE curricula (not tested)",
+      "Re-formulate assessment policies so assessments become opportunities to practise using AI (not tested)"
+    ],
+    "limitations": "Single course with SYA students of similar language proficiency limits generalisability; the interviewer was a course instructor and the interviewer/coder could influence results; no performance outcome data.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Y",
+      "q5": "Y",
+      "quality_score": 5,
+      "note": "Clear qualitative design with two data sources and author verification of coding; limitations stated."
+    }
+  },
+  {
+    "record_id": "R25",
+    "title": "Online assessment in the age of artificial intelligence",
+    "authors": "Alexander Stanoyevitch",
+    "year": 2024,
+    "venue": "Discover Education",
+    "doi": "10.1007/s44217-024-00212-9",
+    "fulltext_status": "full text (publisher OA)",
+    "source_used": "Springer OA PDF (oa_url), CC BY 4.0",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "HE online exam integrity with ChatGPT and exam-help platforms, plus strategies including for CS/coding questions; peer-reviewed case study 2024.",
+    "study_design": "Single-instructor retrospective observational case study of exam grade distributions, plus in-exam item-modification experiments and experience-based recommendations",
+    "country": "USA",
+    "discipline": "Mathematics/statistics; upper-level machine learning course with programming (R)",
+    "computing": "Partial",
+    "level": "Undergraduate (introductory statistics and upper-level courses)",
+    "sample": "Introductory statistics large lecture of 120-150 students per semester (2020-2021 online semesters); upper-level ML course of 20-30 students; exact n per exam not reported",
+    "genai_tools": "ChatGPT (3.5/4); also third-party homework/exam assistance platforms",
+    "assessment_types": [
+      "Unsupervised formats",
+      "Supervised assessment",
+      "Oral assessments"
+    ],
+    "key_findings": [
+      {
+        "finding": "Unproctored online multiple-choice exams produced markedly higher grades than the same exams in person; reusing an old exam online gave a distribution where A was the most common grade.",
+        "location": "pp. 6-7 / Sec 4.1 / Figs 2-4"
+      },
+      {
+        "finding": "When a parameter was changed so the old correct option became wrong, on average 72% of students chose the previously correct answer, indicating reliance on exam-help platforms.",
+        "location": "p. 7 / Sec 4.1"
+      },
+      {
+        "finding": "The ChatGPT-specific evidence is one example: ChatGPT solved a standard dice question but failed a modified version; most quantitative data predate ChatGPT.",
+        "location": "pp. 8-9 / Sec 4.2"
+      },
+      {
+        "finding": "Recommendations for online exams: no question reuse, tight time limits, screening questions in ChatGPT, and using graphics/unusual symbols; the author notes this adds preparation effort.",
+        "location": "p. 9 / Sec 4.3"
+      },
+      {
+        "finding": "For coding questions, require executable code using only taught constructs, with possible follow-up oral explanation, or cap marks for non-compliant code.",
+        "location": "p. 10 / Sec 5"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "Concludes assessment should shift from rote recall toward analysis, application and synthesis.",
+      "capability_verification": "Proposes calling students in to explain code that goes beyond the constructs taught.",
+      "integrity_security": "Shows unproctored online exams were heavily compromised; lockdown browsers can be bypassed and malfunction for about 2-3% of students.",
+      "lo_alignment": "Course-specific vocabulary and taught constructs used to anchor questions to course teaching.",
+      "appropriate_ai_use": "",
+      "scalability": "Strategies were applied in a large lecture of 120-150 students using automated MC grading.",
+      "workload": "Integrity measures need substantial extra question-writing effort, traded against saved grading time.",
+      "feasibility": "Lockdown browser issues required special accommodations and instructor availability during exams.",
+      "process_visibility": "",
+      "accessibility_equity": "Notes harder/shorter exams risk penalising honest students, and lockdown failures affect students through no fault of their own."
+    },
+    "author_recommendations": [
+      "Never reuse exam questions; write new or parameter-modified items (partly tested via in-course experiments)",
+      "Impose strict exam time limits to deter live tutoring (not formally tested)",
+      "Screen exam questions with ChatGPT and replace those it answers correctly (not tested)",
+      "Require executable code limited to taught constructs, with oral explanation if in doubt (not formally evaluated)"
+    ],
+    "limitations": "Author acknowledges an observational design without randomisation and alternative explanations (e.g., better home study). Further: single instructor, no inferential statistics, ChatGPT evidence is anecdotal, and the abstract's pre/post-ChatGPT framing is not matched by the data (mainly pandemic-era).",
+    "quality": {
+      "q1": "Y",
+      "q2": "Unclear",
+      "q3": "Unclear",
+      "q4": "Unclear",
+      "q5": "Y",
+      "quality_score": 2,
+      "note": "Observational grade comparisons without statistical testing; ChatGPT claims rest on a single example."
+    }
+  },
+  {
+    "record_id": "R39",
+    "title": "Impact of ChatGPT on learning outcomes and performance of students in computer programming courses: a mixed-method approach",
+    "authors": "Omobola O. Gambo; Olabamiji John Onifade; Wasiu. Olanrewaju-Smart; Odianose John Abuya; Rukayat Enitan Salawu; Rhodes Massenon; Ishaya Gambo",
+    "year": 2026,
+    "venue": "Discover Education",
+    "doi": "10.1007/s44217-026-01142-4",
+    "fulltext_status": "full text (publisher OA)",
+    "source_used": "Springer OA PDF (link.springer.com/content/pdf/10.1007/s44217-026-01142-4.pdf), CC BY-NC-ND 4.0",
+    "ft_decision": "Exclude",
+    "ft_exclusion_code": "E2",
+    "ft_reason": "Primary focus is ChatGPT's effect on learning outcomes, perceptions and scores; assessment design/validity and integrity are only touched on through a few instructor items (reliance, code similarity) and future-work remarks, not a substantial focus.",
+    "study_design": "Cross-sectional mixed methods: student survey (40 items), instructor survey, course scores; descriptive, correlation, OLS regression and thematic coding",
+    "country": "Nigeria",
+    "discipline": "Computer programming (Python) course across Science, Technology, Environmental Design and Management, and Education faculties",
+    "computing": "Y",
+    "level": "Undergraduate (mandatory Computer Programming course)",
+    "sample": "1889 invited, 1200 responded, 855 valid student responses; 17 instructors; 2023/2024 second semester",
+    "genai_tools": "ChatGPT (GPT-3.5 and GPT-4)",
+    "assessment_types": [
+      "Unsupervised formats"
+    ],
+    "key_findings": [
+      {
+        "finding": "Students reported positive perceptions (enjoyment mean 3.93, motivation 3.75, confidence 3.72 on 5-point scales).",
+        "location": "pp. 17-18 / Sec 4.1.1 / Fig 4"
+      },
+      {
+        "finding": "ChatGPT-related perceptions did not predict programming scores (R2 = 0.006, no significant predictors).",
+        "location": "pp. 23-24 / Sec 4.2.3; also p. 16 / Sec 3.7.4"
+      },
+      {
+        "finding": "Instructors strongly agreed that students rely on ChatGPT solutions without understanding them (mean 4.29) and often saw significant similarities in submitted code (mean 3.94).",
+        "location": "pp. 25-26 / Sec 4.3.1 / Figs 10-11"
+      },
+      {
+        "finding": "Authors call for new assessment frameworks that can separate genuine understanding from AI-assisted outputs.",
+        "location": "p. 31 / Sec 6"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "The gap between perceived usefulness and scores, plus instructor reports of reliance without understanding, suggests assignments may not verify capability.",
+      "integrity_security": "Instructors report frequent code similarity across submissions and integrity concerns; not directly measured.",
+      "lo_alignment": "",
+      "appropriate_ai_use": "Calls for guidelines on responsible use and structured integration of ChatGPT.",
+      "scalability": "Large cohort of 1889 students across four faculties.",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Develop assessment frameworks that distinguish genuine understanding from AI-assisted output (not tested)",
+      "Use assignments that require students to critically evaluate, refine or justify AI-generated content (not tested)",
+      "Conduct experimental/longitudinal multi-institution studies (not tested)"
+    ],
+    "limitations": "Authors note cross-sectional design, self-report bias, single institution and course, few instructors, low R2, non-normal residuals and ceiling effects. Also, it is unclear how anonymous survey responses were linked to scores, and Sec 3.7.5 overstates effects given the non-significant regression.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Unclear",
+      "q3": "Y",
+      "q4": "N",
+      "q5": "Y",
+      "quality_score": 3,
+      "note": "Linkage of scores to the anonymous survey is unclear; some interpretations (Sec 3.7.5) are not supported by the non-significant results."
+    }
+  },
+  {
+    "record_id": "R50",
+    "title": "How should we change teaching and assessment in response to increasingly powerful generative Artificial Intelligence? Outcomes of the ChatGPT teacher survey",
+    "authors": "Matt Bower; Jodie Torrington; Jennifer W. M. Lai; Peter Petocz; Mark Alfano",
+    "year": 2024,
+    "venue": "Education and Information Technologies",
+    "doi": "10.1007/s10639-023-12405-0",
+    "fulltext_status": "full text (publisher OA)",
+    "source_used": "Springer OA PDF (oa_url), open access",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "Most respondents are university teachers (222/318); how assessment should change under GenAI is a primary research question; peer-reviewed 2024 journal article.",
+    "study_design": "Mixed-methods survey: general linear models on Likert impact ratings; inductive thematic analysis and UTAUT2-coded motivations with inter-rater reliability",
+    "country": "International (Macquarie University, Australia-led; respondents from the Americas, Australasia, Europe, other)",
+    "discipline": "Mixed (Arts & Humanities 71, Life Sciences 14, Physical Sciences 40, Social Sciences 129, Technology 59)",
+    "computing": "Partial",
+    "level": "Mixed: 222 university, 82 high school, 14 primary teachers",
+    "sample": "318 educators (from 763 responses), collected 24 Jan-9 Mar 2023",
+    "genai_tools": "ChatGPT (GPT-3.5 era)",
+    "assessment_types": [
+      "Oral assessments",
+      "Supervised assessment",
+      "Process evidence",
+      "Personalised tasks",
+      "Staged submissions"
+    ],
+    "key_findings": [
+      {
+        "finding": "61% of respondents rated GenAI's impact on assessment as major (38%) or profound (23%); only 7% said none.",
+        "location": "pp. 15416-15417 / Sec 4.2.1 / Fig 2"
+      },
+      {
+        "finding": "Greater awareness of GenAI predicted higher perceived impact (an 'ignorance effect'); gender, region and teaching level also influenced perceived impact.",
+        "location": "p. 15417 / Sec 4.2.1; Sec 5.1"
+      },
+      {
+        "finding": "Suggested assessment changes: higher-order thinking (n=71), more supervision/invigilation (n=69), authentic tasks (n=65), process focus (n=50), personalised tasks (n=35), spoken tasks such as mini-vivas (n=29), exams (n=21).",
+        "location": "p. 15418 / Sec 4.2.2"
+      },
+      {
+        "finding": "54 respondents proposed embedding AI in assessment, e.g., students drafting with ChatGPT and then showing how they improved the draft.",
+        "location": "p. 15418 / Sec 4.2.2"
+      },
+      {
+        "finding": "Over 70% of motivations to change assessment were performance expectancy, mainly for students; authors stress the suggestions are perceptions, not evidence of efficacy.",
+        "location": "pp. 15418-15419 / Sec 4.2.3; p. 15421 / Sec 5.3"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "Authentic tasks were the third most frequent suggested assessment change (n=65).",
+      "capability_verification": "Spoken tasks/mini-vivas and invigilated exams proposed to confirm students' own work.",
+      "integrity_security": "Teachers' proposed changes were driven by plagiarism/unauthorised AI-use concerns, with a widespread call for more supervision.",
+      "lo_alignment": "Higher-order and critical thinking emphasised in redesigned assessment content.",
+      "appropriate_ai_use": "Some teachers proposed integrating AI into tasks, with students showing how they enhanced AI drafts.",
+      "scalability": "",
+      "workload": "Some teachers expected AI to make assessment and feedback more efficient (effort expectancy n=15).",
+      "feasibility": "",
+      "process_visibility": "Process-focused assessment (drafting, research booklets) suggested by 50 respondents.",
+      "accessibility_equity": "Literature review notes unequal access to AI may widen gaps for disadvantaged groups; not a survey finding."
+    },
+    "author_recommendations": [
+      "Provide teacher professional learning on AI for assessment, built around performance-expectancy motivations (not tested)",
+      "Shift assessment toward in-person/invigilated, authentic, personalised, higher-order tasks with source disclosure (teacher perceptions, not tested)",
+      "Research the efficacy of teacher-proposed GenAI design patterns (not tested)"
+    ],
+    "limitations": "Self-selected social-media sample, not representative; small subgroup sizes; exploratory results; suggestions are perceptions only; early-2023 data (GPT-3.5).",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Y",
+      "q5": "Y",
+      "quality_score": 5,
+      "note": "Rigorous mixed methods with reported kappa; HE not isolated in all analyses."
+    }
+  },
+  {
+    "record_id": "R55",
+    "title": "Can you spot the bot? Identifying AI-generated writing in college essays",
+    "authors": "Tal Waltzer; Celeste Pilegard; Gail D. Heyman",
+    "year": 2024,
+    "venue": "International Journal for Educational Integrity",
+    "doi": "10.1007/s40979-024-00158-3",
+    "fulltext_status": "full text (publisher OA)",
+    "source_used": "BMC/Springer OA PDF (oa_url), CC BY 4.0",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "HE academic integrity: whether instructors can detect ChatGPT-written essays, with implications for assessment; peer-reviewed 2024.",
+    "study_design": "Pre-registered online experiment (AI Identification Test of 6 essay pairs) with attitude survey (Study 1) and repeated ChatGPT sessions (Study 2)",
+    "country": "USA",
+    "discipline": "Psychology essays; instructors from psychology and other subjects incl. computer science",
+    "computing": "N",
+    "level": "Undergraduate (college)",
+    "sample": "140 college instructors and 145 undergraduates (Study 1, Mar-Apr 2023); 40 ChatGPT sessions (Study 2); stimuli from 50 students' proctored exam essays",
+    "genai_tools": "ChatGPT (early 2023)",
+    "assessment_types": [
+      "Unsupervised formats",
+      "Supervised assessment"
+    ],
+    "key_findings": [
+      {
+        "finding": "Instructors identified the ChatGPT essay 70% of the time, students 60% and ChatGPT itself 63%; all above chance but far from reliable.",
+        "location": "p. 8 / Study 1 Results; p. 11 / Study 2 Results"
+      },
+      {
+        "finding": "Neither ChatGPT experience nor subject expertise improved accuracy; general pre-test confidence did not predict performance, but item-level confidence did.",
+        "location": "pp. 8-9 / Study 1 Results"
+      },
+      {
+        "finding": "Instructors found pairs with higher-graded student essays harder to tell apart from ChatGPT text.",
+        "location": "p. 9 / Student essay quality; p. 15"
+      },
+      {
+        "finding": "ChatGPT reported much higher confidence than humans and overestimated its performance by about 28%.",
+        "location": "p. 11 / Study 2"
+      },
+      {
+        "finding": "Authors are sceptical of AI detection tools because they are imperfect and false accusations cause harm; they favour redesigning assessments and incentivising cognitive engagement.",
+        "location": "p. 14 / Practical implications"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "Instructors cannot reliably tell student writing from ChatGPT writing, so unsupervised essays cannot verify authorship; some instructors suggested pairing writing with oral exams.",
+      "integrity_security": "Provides evidence that ChatGPT poses a significant threat to essay-based integrity; both human and ChatGPT-based detection are unreliable.",
+      "lo_alignment": "",
+      "appropriate_ai_use": "Instructors and students rated direct submission very bad, edited AI essays bad, and AI-generated practice problems good; both groups wanted guidance.",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "",
+      "accessibility_equity": "Non-native English speakers used ChatGPT more and viewed the vocabulary-improvement use more positively."
+    },
+    "author_recommendations": [
+      "Avoid relying on AI detection tools, including asking ChatGPT, to identify AI writing (not tested beyond ChatGPT self-detection)",
+      "Develop and share assessment designs that incentivise cognitive engagement and teach AI use as a problem-solving tool (not tested)",
+      "Provide clear institutional guidance on acceptable AI uses (not tested)"
+    ],
+    "limitations": "Convenience/snowball sample; psychology essays only; student essays were handwritten in exams and lightly corrected; unedited ChatGPT text; unclear why instructors outperform students.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Y",
+      "q5": "Y",
+      "quality_score": 5,
+      "note": "Pre-registered design with open materials and appropriate statistics."
+    }
+  },
+  {
+    "record_id": "R72",
+    "title": "Work in Progress: Integration of AI Tools on an Open-Ended Computer Programming Project",
+    "authors": "Emily Hammond; Courtney J. Faber",
+    "year": 2024,
+    "venue": "2024 IEEE Frontiers in Education Conference (FIE)",
+    "doi": "10.1109/FIE61694.2024.10892956",
+    "fulltext_status": "abstract only",
+    "source_used": "Abstract via OpenAlex metadata; no legal OA copy found (OpenAlex closed; no Semantic Scholar record; web search found no author or repository copy). Extracted from the abstract only.",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "HE intro programming; assessment design allowing AI on an open-ended project while banning it on homework; peer-reviewed FIE work-in-progress paper 2024. Extracted from the abstract only.",
+    "study_design": "Work-in-progress innovative practice paper describing course assessment design with grade comparisons (details not reported)",
+    "country": "USA (University at Buffalo, from author affiliations)",
+    "discipline": "Computer programming (introduction to programming)",
+    "computing": "Y",
+    "level": "Undergraduate (introductory programming)",
+    "sample": "not reported",
+    "genai_tools": "ChatGPT and other AI tools",
+    "assessment_types": [
+      "Unsupervised formats",
+      "Supervised assessment"
+    ],
+    "key_findings": [
+      {
+        "finding": "AI was banned for structured weekly homework (easily solved by AI) but encouraged for an open-ended code-design project judged harder for AI to complete.",
+        "location": "abstract"
+      },
+      {
+        "finding": "Students who reported AI use used it to start the project or part of it and to help with debugging.",
+        "location": "abstract"
+      },
+      {
+        "finding": "Project grades were similar to previous years; midterm two (after the project) scores were higher than midterm one and previous years, but authors do not know whether the project caused this.",
+        "location": "abstract"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "",
+      "integrity_security": "Structured homework judged vulnerable to AI solutions, which motivated the ban.",
+      "lo_alignment": "AI permission was tied to task type, with the project's learning objective focused on code design.",
+      "appropriate_ai_use": "Differentiated rules: no AI on homework, AI encouraged on the open-ended project.",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Reuse the AI-integrated open-ended project in future semesters (not tested beyond first implementation)",
+      "Collect data on how AI use in the project supports learning (planned)"
+    ],
+    "limitations": "Abstract only; work in progress; no causal attribution of the exam improvement; sample and methods not reported.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Unclear",
+      "q3": "Unclear",
+      "q4": "Unclear",
+      "q5": "Unclear",
+      "quality_score": 1,
+      "note": "Abstract only; appraisal limited."
+    }
+  },
+  {
+    "record_id": "R78",
+    "title": "CAP: AI-Augmented Curriculum-Aware Platform for Code Evaluation",
+    "authors": "Rekha Chaturvedi; Kalpana Mishra; Preeti Sharma; Abhay Sharma; Anubhava Srivastava",
+    "year": 2026,
+    "venue": "2026 IEEE Madhya Pradesh Section Conference (MPCON)",
+    "doi": "10.1109/MPCON69668.2026.11508237",
+    "fulltext_status": "abstract only",
+    "source_used": "Abstract via Semantic Scholar API (no abstract in OpenAlex); no legal OA copy found (OpenAlex closed; no Semantic Scholar OA PDF; web search found no preprint). Extracted from the abstract only.",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "Programming education platform for AI-assisted code evaluation and integrity monitoring (code-aware proctoring); HE assumed from the academic programming context and author affiliations (not explicit in abstract); IEEE conference 2026. Extracted from the abstract only.",
+    "study_design": "System design and technical evaluation (prototype platform tested on standard programming tasks against existing tools)",
+    "country": "India (from author affiliations)",
+    "discipline": "Programming education / computer science",
+    "computing": "Y",
+    "level": "not reported",
+    "sample": "not reported (standard programming tasks)",
+    "genai_tools": "AI reasoning components with retrieval-augmented code comparison (specific models not reported)",
+    "assessment_types": [
+      "Supervised assessment",
+      "Process evidence"
+    ],
+    "key_findings": [
+      {
+        "finding": "CAP combines heuristic static analysis, retrieval-augmented code comparison and real-time editor feedback for formative, curriculum-aligned code evaluation.",
+        "location": "abstract"
+      },
+      {
+        "finding": "It links behavioural proctoring features to code activity for context-aware integrity monitoring.",
+        "location": "abstract"
+      },
+      {
+        "finding": "Authors report better feedback relevance, fewer false positives and efficient real-time performance than existing analysis tools (metrics not given in the abstract).",
+        "location": "abstract"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "",
+      "integrity_security": "Code-aware proctoring links behaviour to code activity; lower false positives reported.",
+      "lo_alignment": "Evaluation is explicitly aligned to the curriculum rather than to competitive programming.",
+      "appropriate_ai_use": "",
+      "scalability": "Modular microservices architecture with real-time performance reported.",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "Monitors in-editor code activity during work rather than only final submissions.",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Use curriculum-aligned AI-assisted code evaluation combined with code-aware proctoring (evaluated only on standard tasks per the abstract)"
+    ],
+    "limitations": "Abstract only; prototype; evaluation details, sample and HE deployment not reported; privacy implications of proctoring not discussed in the abstract.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Unclear",
+      "q3": "Unclear",
+      "q4": "Unclear",
+      "q5": "Unclear",
+      "quality_score": 1,
+      "note": "Abstract only; appraisal limited."
+    }
+  },
+  {
+    "record_id": "R83",
+    "title": "A Framework for Assessment Design in the Era of Generative AI: Case Study of Take-Home Assignment in Software-related Courses",
+    "authors": "Anna Lyza Felipe; Ushik Shrestha Khwakhali; Thanh Ngoc Nguyen",
+    "year": 2025,
+    "venue": "International STEM Education Conference (iSTEM-Ed)",
+    "doi": "10.1109/iSTEM-Ed65612.2025.11129352",
+    "fulltext_status": "abstract only",
+    "source_used": "Abstract via OpenAlex and Semantic Scholar; no legal OA copy found (closed in OpenAlex/Semantic Scholar; web search found no author or repository copy). Extracted from the abstract only.",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "HE software courses (BIT/BSE); framework for GenAI-era take-home assignment design that preserves integrity; IEEE conference framework paper 2025. Extracted from the abstract only.",
+    "study_design": "Framework development with a case study of three courses; described as an experimental approach with qualitative analysis",
+    "country": "Vietnam (RMIT Vietnam, from author affiliations); one author at University of Wollongong",
+    "discipline": "Information technology / software engineering (BIT and BSE programs)",
+    "computing": "Y",
+    "level": "Undergraduate (BIT and BSE programs)",
+    "sample": "Three selected courses; student numbers not reported",
+    "genai_tools": "Generative AI (specific tools not reported)",
+    "assessment_types": [
+      "Unsupervised formats"
+    ],
+    "key_findings": [
+      {
+        "finding": "Proposes a framework for take-home assignments in software courses that incorporate GenAI while promoting integrity and curbing plagiarism.",
+        "location": "abstract"
+      },
+      {
+        "finding": "The framework recommends designing assessments at Bloom's taxonomy levels 3-6 to integrate GenAI while keeping integrity and alignment with course learning objectives.",
+        "location": "abstract"
+      }
+    ],
+    "evidence_type": "conceptual/framework",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "",
+      "integrity_security": "Aims to curb AI-enabled plagiarism in take-home assignments.",
+      "lo_alignment": "The framework explicitly ensures alignment with course learning objectives via Bloom's levels.",
+      "appropriate_ai_use": "The framework integrates GenAI into assignments rather than banning it.",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Design take-home assignments at Bloom's levels 3-6 to integrate GenAI while preserving integrity (evaluation details not reported in the abstract)"
+    ],
+    "limitations": "Abstract only; method, sample and evaluation outcomes not reported.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Unclear",
+      "q3": "Unclear",
+      "q4": "Unclear",
+      "q5": "Unclear",
+      "quality_score": 1,
+      "note": "Abstract only; appraisal limited."
+    }
+  }
+]

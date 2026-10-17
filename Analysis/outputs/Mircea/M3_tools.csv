@@ -1,0 +1,4 @@
+tool_type,n_yes,pct_all_students,n_yes_among_users,pct_of_users,n_yes_among_non_users,denominator_all,denominator_users
+"General chatbots (ChatGPT, Gemini, Claude, Le Chat)",112,74.66666666666667,110,79.13669064748201,2,150,139
+"Integrated or specialised tools (GitHub Copilot, Cursor)",69,46.0,69,49.64028776978417,0,150,139
+University-hosted ChatGPT instance (LUHKI),8,5.333333333333334,8,5.755395683453238,0,150,139

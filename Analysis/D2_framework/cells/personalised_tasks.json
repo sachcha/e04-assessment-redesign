@@ -1,0 +1,266 @@
+{
+ "assessment_type": "Personalised tasks",
+ "n_studies_in_pack": 21,
+ "cells": [
+  {
+   "dimension": "capability_verification",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Personalised designs are proposed to show the student's own work when students must justify their choices or verify AI output against their own research [R73], [R15], but these claims were not tested or rest on student self-report [R71]. Stronger evidence appears when personalisation is applied to questioning: viva questions generated from each student's own project reached QWK 0.782 agreement with human grades [S156], and experts rated text-specific open-ended comprehension items highly for checking understanding [R11].",
+   "dataset": "[D] In one AI course, students averaged 94.8% on AI-permitted take-home assignments but 86.3% on proctored exams [D24], and assignment marks did not respond to the share of verbatim AI-authored content [J1].",
+   "interpretation": "[I] A personalised artefact alone says little about individual understanding; credibility depends on adding explanation, justification or questioning tied to the student's own work.",
+   "key_studies": [
+    "S156",
+    "R11",
+    "R73",
+    "R15",
+    "R71"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 3,
+   "core_studies": 3,
+   "conflicts": "Most claims for the task itself are untested proposals or self-report [R73], [R71]; code-specific verification questions in R77 were not evaluated [R77]. S156 and R11 concern personalised questioning rather than personalised tasks.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "genai_exposure",
+   "rating": "Weak",
+   "confidence": "Medium",
+   "literature": "[L] Authors argue that any homework can be passed to an AI tool, and that students can prompt AI to simplify code so it looks like novice work [R73]; R15 notes that authenticity alone does not protect integrity [R15]. Lecturers found personal reflective statements especially open to AI misuse [S208], and practitioners doubted that portfolios resist GenAI [R24]. Resistance was reported only where tasks used application-specific commands that general LLMs are not trained on, and this rests on student self-report [R71].",
+   "dataset": "[D] Under a best-of-8 adversary, item-format features explained little of AI resistance (pseudo R2 0.12-0.15), while resistance varied between courses from 4.3% to 47.4%: security does not reside in question format [J3]. GPT-4 fully answered 85.6% of CS questions when the best of 8 prompts could be chosen [D03].",
+   "interpretation": "[I] Personalising or contextualising the question is not in itself a security measure, and any resistance that depends on what current models do not know is likely to be temporary.",
+   "key_studies": [
+    "R73",
+    "R15",
+    "S208",
+    "R24",
+    "R71"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 2,
+   "core_studies": 3,
+   "conflicts": "R71 students rated custom commands as a strong barrier to copy-paste (B2 4.57), but this is self-report with no misconduct data [R71]. Delegation to AI was lowest in applied scenarios requiring explanations, but this is descriptive only (12 units) [J2]. The EPFL data use 2023 models and exam-style items, not personalised tasks [D03], [J3].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authorship_assurance",
+   "rating": "Weak",
+   "confidence": "Medium",
+   "literature": "[L] Personalisation does not by itself establish who produced the work: detecting AI-generated code was described as challenging and often impractical [R73], and the only misconduct check in R15 relied on detectors its authors call unreliable [R15]. GenAI declarations were judged ineffective, whereas named marking by tutors who know the students reportedly coincided with fewer misconduct cases [R24]. Reviews report that AI detectors are unreliable [R01], [R51].",
+   "dataset": "[D] In one course, within-assignment marks did not respond to the share of verbatim chatbot code in submissions (-1.0 points from 0% to 100% overlap, 95% CI -4.3 to +2.3) [J1].",
+   "interpretation": "[I] Authorship assurance has to come from paired measures such as process logs or questioning on the work, not from the personal content of the task.",
+   "key_studies": [
+    "R73",
+    "R15",
+    "R24",
+    "R01",
+    "R51"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 2,
+   "core_studies": 2,
+   "conflicts": "R77 shows that activity logs detected most instructed plagiarism, including transcribed AI code (F1 91.93%), but this is process evidence rather than personalisation [R77].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "lo_alignment",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] The GENESIS design matrix maps personalised authentic contexts to ICT graduate competencies [R04], and course-specific tasks are argued to preserve the trial-and-error and conceptual learning that copy-paste would bypass [R71], [R73]. Implemented personalised tasks were linked to computing benchmark expectations and AI-literacy aims [R15], [R20]. However, GenAI use can mean students demonstrate prompting skill rather than the targeted sub-skills [R51].",
+   "dataset": "[D] In one course, AI-permitted assignment marks bunched near the top and agreed only moderately with exam marks (rho = 0.53) [D25].",
+   "interpretation": "[I] Alignment is good when the personal or local context carries the intended reasoning, and weaker when personalisation only changes surface details of a product-focused task.",
+   "key_studies": [
+    "R04",
+    "R71",
+    "R73",
+    "R15",
+    "R20",
+    "R51"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 3,
+   "core_studies": 4,
+   "conflicts": "Alignment is argued rather than measured in all studies [R04], [R71].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authenticity",
+   "rating": "Strong",
+   "confidence": "Low",
+   "literature": "[L] Personalised, authentic-context and real-life problem tasks are widely recommended as more valid [R04], [R01], [R03], and authentic tasks were the third most frequent change teachers suggested (n = 65) [R50]. Computing examples drew on realistic scenarios such as a customer-data GUI with messy names and addresses [R73], and students perceived AI-resistant tasks as more authentic tests of their ability [R71]. Tasks that permit GenAI were argued to fit workplaces where graduates will use it [R19], [R51].",
+   "dataset": "[D] Most capstone clients (7 of 11) wanted students to be supported to use GenAI [D20], although this figure may be inflated by the questionnaire framing [J5].",
+   "interpretation": "[I] Contextualised tasks with AI available resemble professional computing work, but the rating rests on recommendations and perceptions rather than measured authenticity.",
+   "key_studies": [
+    "R04",
+    "R01",
+    "R03",
+    "R50",
+    "R73",
+    "R71"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 2,
+   "core_studies": 3,
+   "conflicts": "R15 notes that authenticity alone does not protect integrity [R15]. AI-resistant variants that rely on custom commands [R71] or lecture-only edge cases [R73] may be less like practice where AI is available. Calibration C4: rating rests on author framing of designs, not on tested outcomes, so confidence is Low.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "appropriate_ai_use",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Some personalised tasks required GenAI use and gave marks for checking AI output for completeness, bias and hallucinations [R15], or trained students to use tools constructively and reflect on that use [R20]. Others aim to make AI fail, through lecture-specific details [R73] or custom commands, where the author proposes mixing AI-easy and AI-hard tasks to build AI literacy [R71]. Frameworks place personal and contextual tasks in an 'Avoid' category separate from AI-integrated 'Adopt' tasks [R19].",
+   "dataset": "[D] In capstone students' own advice, the most frequent directives were 'Retain Understanding' (39.3%) and 'Reviewing Outputs' (29.2%) [D19].",
+   "interpretation": "[I] Performance depends on whether the design integrates AI with explicit critique or tries to keep AI out.",
+   "key_studies": [
+    "R15",
+    "R20",
+    "R71",
+    "R73",
+    "R19"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 2,
+   "core_studies": 3,
+   "conflicts": "AI-integrated and AI-resistant versions of the type pull in opposite directions [R15], [R73].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "process_visibility",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Personalised tasks became process-visible only when process requirements were added: R15 gave marks for search evidence, prompts, AI outputs and reflection [R15], and R20 required reflections showing tool use at each writing stage [R20]. Students in R71 suggested asking for explanations of the process leading to a result [R71].",
+   "dataset": "",
+   "interpretation": "[I] Personalisation itself exposes only the product; process visibility depends on pairing it with process evidence.",
+   "key_studies": [
+    "R15",
+    "R20",
+    "R71",
+    "R19"
+   ],
+   "n_supporting": 4,
+   "computing_studies": 1,
+   "core_studies": 2,
+   "conflicts": "Lecturers found reflective statements especially open to AI misuse, so reflections may not reliably show process [S208].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "scalability",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] LLM generation can give each learner unique questions: 83% were instructor-acceptable at first generation, but difficulty varied by up to 30% and the platform broke at 300 concurrent users [R89]. A divergent topic per student ran in an 88-student module [R15], and project-specific viva questions were generated for over 250 students in 67 groups [S156]. Other personalised designs were tested only in classes of up to 30 students [R94] and in one course of 44 [R71].",
+   "dataset": "",
+   "interpretation": "[I] Personalisation scales with automation, but quality control of individual versions becomes the limiting factor in large cohorts.",
+   "key_studies": [
+    "R89",
+    "R15",
+    "S156",
+    "R94",
+    "R71"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 4,
+   "core_studies": 4,
+   "conflicts": "R94 claims a scalable framework but its maximum class size was 30 [R94].",
+   "cohort_note": "Small (<50): hand-designed personalised or contextualised tasks are workable [R94], [R71]. Medium (50-200): a different topic per student has been run with 88 students [R15]. Large (>200): needs automated generation or questioning, tested with over 250 students [S156], with difficulty calibration and platform capacity as risks [R89].",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "workload",
+   "rating": "Moderate",
+   "confidence": "Low",
+   "literature": "[L] Redesigning assessments and marking multiple drafts were constrained by time and hiring freezes [R24], and design-based measures were said to demand substantial teacher time [S105]; R04 lists workload pressure as an implementation challenge [R04]. LLM question generation was claimed to cut administrative time by 68%, but the results give only a qualitative quote [R89].",
+   "dataset": "",
+   "interpretation": "[I] Personalisation shifts burden to preparation, difficulty calibration and marking divergent work; automation may reduce it but this is unproven.",
+   "key_studies": [
+    "R24",
+    "S105",
+    "R89",
+    "R04"
+   ],
+   "n_supporting": 4,
+   "computing_studies": 2,
+   "core_studies": 2,
+   "conflicts": "R89's workload claim differs between abstract and results [R89]; no study measured staff time.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "feasibility",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Contextualisation was the most common adaptation in practice: departments mostly changed task requirements, such as context-specific prompts, rather than task types, which needed academic board approval [R24]. Personalised designs ran in real modules for one to two semesters, including an 88-student module [R15], [R20]. Cost falls mainly on staff time and, for tool-based variants, on platforms: AI-resistant variants needed a purpose-built programming environment [R71], per-student generation used a custom platform built on Firebase, Streamlit, React and the Piston API [R89], and automated viva questioning used Streamlit, LangChain, FAISS and ChatGPT [S156]. On licences, one design required tools that are free to students [R15], while another suggested institutions provide premium access [R20].",
+   "dataset": "",
+   "interpretation": "[I] Low-tech contextualisation is feasible within existing structures at little cost, while tool-based variants need platforms, skills and possibly licences; cost evidence is limited, because no study reported staff hours or platform or licence costs in money terms.",
+   "key_studies": [
+    "R24",
+    "R15",
+    "R20",
+    "R71",
+    "R89",
+    "S156"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 3,
+   "core_studies": 3,
+   "conflicts": "Design-based measures are said to demand substantial teacher time [S105], and the one workload claim for automated generation (a 68% cut in administrative time) is not supported in the results [R89].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "accessibility_equity",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Students' fairness ratings of AI-resistant tasks were divided (C4 3.48; about 60% agreed) [R71], and LLM-generated per-student questions varied in difficulty by up to 30% for seemingly identical problems [R89]. Where AI use was permitted, free versus premium tools created a perceived divide, although low-proficiency EFL students felt tools levelled the field [R20]; requiring free tools was one response [R15], [R19].",
+   "dataset": "",
+   "interpretation": "[I] Equity depends on calibrating difficulty across individual versions and on equal AI access.",
+   "key_studies": [
+    "R71",
+    "R89",
+    "R20",
+    "R15",
+    "R19"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 2,
+   "core_studies": 3,
+   "conflicts": "No study measured outcomes for students with disabilities or anxiety in personalised tasks.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  }
+ ],
+ "evaluation_finding": "Personalised tasks are strong on authenticity and can align well with computing outcomes [R04], [R73], [R50], but personalisation of the task gives weak protection against GenAI and does not establish authorship [R73], [R15], [S208], [J3]. Their value comes from pairing them with justification, process evidence or questioning tied to the student's own work [S156], [R15], [R11].",
+ "strengths": [
+  "Widely recommended as authentic and closer to real-world problem solving [R04], [R01], [R50].",
+  "Can be designed to require and assess critical evaluation of GenAI output [R15], [R20].",
+  "Simple contextualisation is a low-change adaptation within existing task types [R24].",
+  "Students reported deeper thinking and debugging when AI was less useful [R71]."
+ ],
+ "limitations": [
+  "Personalisation of the question is not a security measure; format features explain little of AI resistance [J3], [R73].",
+  "Personal reflections and portfolios remain open to AI misuse [S208], [R24].",
+  "A personalised artefact does not show who produced it or how AI was used [R73], [J1].",
+  "AI resistance from obscure commands depends on what current models do not know [R71].",
+  "Most evidence is conceptual, self-reported or untested [R73], [R19], [S105]."
+ ],
+ "practical_considerations": [
+  "Pair personalised tasks with follow-up questioning or vivas on the student's own work [S156], [R24], [R11].",
+  "Test tasks against GenAI before use [R73], [R51].",
+  "For large cohorts, automated per-student generation needs difficulty calibration, capacity planning and a supported platform [R89], [S156].",
+  "Allow staff time for preparing and marking divergent tasks [R24], [S105].",
+  "Specify AI tools that all students can access free of charge, or budget for institutional access [R15], [R20]."
+ ],
+ "evidence_gaps": [
+  "No study measured whether personalised tasks reduce GenAI misuse compared with standard tasks.",
+  "No study tested personalised tasks against current GenAI models with repeated prompting.",
+  "No study measured staff workload for preparing or marking personalised tasks.",
+  "No study measured effects for students with disabilities, anxiety or English as an additional language.",
+  "Evidence from large computing cohorts (>200) is limited to automated questioning [S156]."
+ ]
+}

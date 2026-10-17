@@ -1,0 +1,166 @@
+Search ID,decision,exclusion_code,computing,reason
+S001,Include,,Partial,GenAI performance on engineering assessments incl. programming; integrity security matrix
+S004,Exclude,E2,N,LLM accuracy on medical entrance exam; no assessment design or integrity focus
+S007,Maybe,,N,Survey links ChatGPT use to integrity; perception-focused; venue peer review unclear
+S010,Include,,Partial,LLM performance on CS and biomedical essay assessments; integrity vulnerability
+S013,Exclude,E2,N,Theoretical adoption/task-fit framework; assessment angle is test automation
+S016,Exclude,E2,N,LLM accuracy on residency exam questions; not assessment integrity
+S019,Include,,Y,ICT students' views on GenAI and academic integrity
+S022,Include,,N,Scoping review of GenAI in psychology assessment methods
+S025,Maybe,,N,Governance framework; assessment redesign is one component among many
+S028,Include,,Y,Student GenAI use in programming assessments with recommendations
+S031,Exclude,E2,N,General LLM integration in midwifery education; assessment not primary
+S034,Exclude,E4,N,Special issue editorial introduction
+S037,Include,,Y,Position paper on ChatGPT cheating and assessment in programming education
+S040,Exclude,E2,Y,LLM code benchmark from exams; focus on model capability not assessment
+S043,Exclude,E4,N,Zenodo upload; not peer reviewed
+S046,Include,,N,Conceptual validity reasoning for assessment redesign under GenAI
+S049,Include,,N,ChatGPT performance across accounting assessments; assessment design implications
+S052,Include,,N,ChatGPT advice on cheating and evading detection in assignments
+S055,Exclude,E2,Y,GenAI agents for code grading and feedback; not integrity
+S058,Include,,N,Accounting educators on GenAI integrity threats and new assessments
+S061,Exclude,E2,N,GenAI clinical reasoning training model; not assessment integrity
+S064,Exclude,E2,N,GenAI system analysing exam performance; not integrity or redesign
+S067,Exclude,E2,N,ChatGPT effect on writing skills; learning-effect study
+S070,Exclude,E2,N,Learning strategy with peer assessment and ChatGPT; learning outcomes
+S073,Exclude,E2,Partial,ChatGPT as virtual peer for learning; learning-effect RCT
+S076,Include,,N,Detecting ChatGPT-written papers with TurnItIn; integrity focus
+S079,Exclude,E1,N,Clinical CT examination workflow; not education
+S082,Exclude,E2,Y,LLM automated code grading framework; not integrity or redesign
+S085,Exclude,E2,N,Surgical education conference abstracts; not GenAI assessment integrity
+S088,Include,,Partial,Open vs closed-book exams review considering LLM threat to validity
+S091,Exclude,E2,N,LLM plant taxonomy benchmark; not assessment
+S094,Exclude,E2,Y,LLM assistant for academic information system; not assessment
+S097,Include,,N,GPT-4 attempts entire physics degree; argues assessment reform
+S100,Include,,N,ChatGPT aces economics test; implications for assessment redesign
+S103,Exclude,E4,N,Self-described opinion piece on MCQ design
+S106,Exclude,E2,Y,LLM grading of programming assignments; not integrity
+S109,Include,,N,AI-integrated coursework assessment case study with student perspectives
+S112,Include,,N,GenAI interaction stages and academic integrity violation points
+S115,Include,,N,Institutional guidance analysis yielding AI-aware assessment design patterns
+S118,Exclude,E2,N,Technology acceptance of ChatGPT for assignments; not assessment design
+S121,Exclude,E2,Y,LLM fuzzy grading of programming assignments; not integrity
+S124,Include,,N,Compares grades on GenAI-secure versus unsecure assessments
+S127,Include,,N,Reflective paper on GenAI complicating take-home exams; assessment proposals
+S130,Exclude,E2,N,Predictors of ChatGPT adoption intention; no assessment focus
+S133,Maybe,,N,Pharmacology review; source-checking process for AI-permitted coursework
+S136,Maybe,,N,No abstract; chapter on assessing learning in GenAI era
+S139,Maybe,,N,No abstract; student GenAI disclosure topic relevant
+S142,Exclude,E2,N,Pre-service teacher AI literacy curriculum; not assessment
+S145,Exclude,E2,Y,GenAI to grade design patterns in code; not integrity
+S148,Exclude,E2,N,Nursing student perceptions of ChatGPT; no abstract; not assessment
+S151,Exclude,E2,Y,LLM-assisted grading of OOP exams; not integrity
+S154,Maybe,,N,LLM performance on dental MCQ/SAQ/oral assessments; vulnerability implicit
+S157,Exclude,E2,Partial,Acceptance of GPT teaching tools; not assessment integrity
+S160,Exclude,E4,N,Humanities commentary essay; not peer-reviewed research
+S163,Exclude,E2,N,LLMs in nucleic acid research; not education
+S166,Exclude,E2,N,GenAI scaffolding for statistics learning; learning-effect study
+S169,Exclude,E2,N,VR and GenAI clinical training platform perceptions
+S172,Exclude,E2,N,ChatGPT in plastic surgery research
+S175,Exclude,E1,N,Secondary vocational school ChatGPT training
+S178,Exclude,E1,N,Clinical decision support; not education
+S181,Exclude,E4,Y,Zenodo preprint of SLR on LLM tools in computing education
+S184,Include,,N,Faculty/student integrity perceptions linked to assessment redesign
+S187,Exclude,E4,N,Zenodo upload; not peer reviewed
+S190,Exclude,E2,N,ML and GenAI in learning analytics review
+S193,Include,,N,GenAI risks to academic integrity and process-oriented assessment redesign
+S196,Include,,N,Student/instructor boundaries between GenAI support and misconduct
+S199,Include,,Y,Process-evidence portfolio redesign for CS group project integrity
+S202,Exclude,E2,N,General faculty perceptions survey; integrity only one concern
+S205,Exclude,E2,Y,LLMs simplifying process-mining graphs for learning analytics
+S208,Include,,N,Lecturers' assessment redesign responses to GenAI
+S211,Include,,N,Review on assessment integrity and process-aware pedagogy
+S214,Include,,N,Systematic review proposing AI-resilient assessment framework
+S217,Include,,N,Faculty sensemaking on GenAI assessment redesign and integrity
+S220,Exclude,E2,N,Think Aloud intervention for ethical AI use; pedagogy focus
+S223,Exclude,E2,N,Review of student over-reliance on GenAI; not assessment
+S226,Exclude,E2,N,GenAI management education framework; not assessment integrity
+S229,Exclude,E2,N,Teacher mediator role with GenAI; assessment peripheral
+S232,Exclude,E2,N,Introductory book chapter; no abstract; general GenAI in education
+S235,Exclude,E2,Partial,Smart engineering classroom framework; learning outcomes
+S238,Exclude,E2,N,ChatGPT use and critical thinking survey
+S241,Exclude,E2,N,Student engagement with GenAI qualitative study
+S244,Exclude,E2,N,Distance learning tutoring framework
+S247,Exclude,E2,N,Teacher support and GenAI in fashion design learning
+S250,Exclude,E2,N,Psychometric simulation of human-GenAI interaction
+S253,Exclude,E2,N,AI literacy profiles survey; assessment only mentioned
+S256,Exclude,E2,N,Review of LLM automated grading; not integrity or redesign
+S259,Exclude,E1,N,Clinical COVID risk assessment app
+S262,Exclude,E2,Y,LLM auto-evaluation of programming assignments; no abstract
+S265,Exclude,E1,N,GenAI in Chinese schools; not higher education focus
+S268,Maybe,,Y,No abstract; LLM-driven authentic assessment in data science ITS
+S271,Exclude,E1,Y,High school IT question generation
+S274,Exclude,E2,Y,Personalisation in CS education review; integrity only a risk
+S277,Exclude,E2,N,AI versus human graders comparison; grading focus
+S280,Exclude,E2,Y,Opinion piece on GenAI and CS education theories
+S283,Exclude,E2,Y,General opportunities/challenges review in programming education
+S286,Exclude,E1,N,Clinical LLM technical note
+S289,Exclude,E2,N,LLM chatbots in teacher training
+S292,Maybe,,N,Opinion article on GenAI and integrity; review status unclear
+S295,Exclude,E2,Y,Opportunities of AIGC in programming courses; not integrity
+S298,Exclude,E2,N,General perspectives on GenAI in eLearning
+S301,Exclude,E2,N,GenAI in educator preparation programs
+S304,Include,,N,MSc assessments redesigned process-based to incorporate GenAI
+S307,Include,,N,Global institutional GenAI policies emphasising integrity and authentic assessment
+S310,Exclude,E2,Y,Learning burnout from GenAI misuse; integrity secondary
+S313,Exclude,E2,N,Broad GenAI education review; assessment only mentioned
+S316,Include,,N,JUDGE assessment framework for validity under GenAI
+S319,Exclude,E2,N,Attitudes to ChatGPT feedback; not assessment integrity
+S322,Exclude,E2,N,General book chapter on GenAI in education
+S325,Exclude,E2,N,GenAI in foreign language education review
+S328,Exclude,E2,Partial,ChatGPT as question-authoring tool; not assessment security
+S331,Include,,Y,Programming guidelines addressing assessing AI-assisted work and integrity
+S334,Exclude,E2,N,AI instructional design for early childhood teacher training
+S337,Exclude,E2,N,How health students use GenAI for learning
+S340,Exclude,E2,Y,AI-integrated programming course design; learning focus
+S343,Exclude,E1,N,Image GenAI in tourism marketing
+S346,Exclude,E1,N,K-12 teacher and student perspectives
+S349,Exclude,E2,Y,ChatGPT improving programming skills; learning effect
+S352,Exclude,E2,N,TAM perceptions of GenAI tools
+S355,Exclude,E4,N,Zenodo upload; not peer reviewed
+S358,Exclude,E2,Y,ChatGPT-enhanced critiques readability; learning focus
+S361,Exclude,E2,N,ChatGPT generating formative quiz questions
+S364,Exclude,E2,Y,ChatGPT question generation for Python practice
+S367,Exclude,E2,N,ChatGPT formative feedback perceptions
+S370,Exclude,E4,N,Zenodo upload; not peer reviewed
+S373,Exclude,E2,N,GenAI tool in maths teacher lesson design
+S376,Exclude,E2,N,Medical postgraduates' chatbot adoption survey
+S379,Exclude,E2,N,Pre-service teachers' GenAI adoption intentions
+S382,Exclude,E2,N,Faculty GenAI workshop beliefs; integrity only measured concern
+S385,Exclude,E2,Y,ChatGPT supporting self-regulated coding learning
+S388,Exclude,E2,N,Narrative review of ChatGPT value and regulation
+S391,Exclude,E2,N,ChatGPT in teacher training competencies
+S394,Exclude,E2,N,LLMs in vocational education chapter
+S397,Exclude,E1,N,LLM in rehabilitation serious games
+S400,Exclude,E2,N,ChatGPT in medical education general review
+S403,Exclude,E2,N,Broad SLR of ChatGPT in higher education
+S406,Exclude,E4,N,Institutional report; grey literature
+S409,Exclude,E1,N,ChatGPT answers to patient questions
+S412,Exclude,E2,N,ChatGPT for professor-student collaboration
+S415,Include,,N,AI Assessment Scale pilot reduced GenAI misconduct
+S418,Include,,N,US university GenAI policies on integrity and disclosure
+S421,Exclude,E2,N,Predictors of ethical GenAI use survey
+S424,Exclude,E2,N,LLM university counselling
+S427,Maybe,,N,Book chapter on inclusive integrity and AI declarations; review unclear
+S430,Include,,N,SAGE-AP staged AI-assisted assessment policy framework
+S433,Include,,N,University GenAI guidelines on disclosure and plagiarism
+S436,Include,,N,US policy analysis: disclosure and assessment redesign for integrity
+S439,Maybe,,N,Institutional GenAI governance review; integrity standards one theme
+S442,Exclude,E2,N,Nigerian GenAI awareness/use review; integrity peripheral
+S445,Include,,N,Policy framing of GenAI for integrity and fair assessment
+S448,Maybe,,N,Policy document review incl. integrity and disclosure; chapter format
+S451,Include,,N,EFL students' authorship and integrity in GenAI-assisted writing tasks
+S454,Include,,N,Disclosure versus detection of GenAI use in academia
+S457,Include,,N,Assessment design and integrity policy for EAL GenAI use
+S460,Include,,N,Students' disclosure of GenAI use and integrity
+S463,Exclude,E4,N,Policy memo; not peer-reviewed research
+S466,Exclude,E2,N,Philosophical Derridean essay; assessment only one strand
+S469,Exclude,E2,N,No abstract; general GenAI course integration chapter
+S472,Include,,N,GenAI declarations across redesigned physics assessments
+S475,Include,,N,Developmental assessment framework with AIAS for validity
+S478,Exclude,E2,N,LLM-as-judge empathy scoring reliability; not integrity
+S481,Include,,N,Student attitudes to declaring GenAI use in academic writing
+S484,Exclude,E6,N,Indonesian-language article on AI literacy and assessment design
+S487,Exclude,E4,Partial,Lecture slides on Zenodo
+S490,Include,,N,Broken and Repair assessment with GenAI usage declaration
+S493,Exclude,E2,Partial,Civil engineering LLM usage survey; disclosure minor

@@ -1,0 +1,5 @@
+model,scope,courses_with_10plus_questions,courses_zero_shot_mean_ge_0.5,courses_best_of_8_mean_ge_0.5,median_course_zero_shot_mean,min_course_zero_shot_mean,max_course_zero_shot_mean
+ChatGPT,All courses,50,18,49,0.46930735930735934,0.2222222222222222,0.7637142857142857
+ChatGPT,Computer Science,17,8,17,0.49139622641509434,0.25,0.7637142857142857
+GPT-4,All courses,50,35,50,0.5552047337278107,0.3148148148148148,0.8114285714285715
+GPT-4,Computer Science,17,13,17,0.5636094674556213,0.36036036036036034,0.8114285714285715

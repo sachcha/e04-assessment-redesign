@@ -1,0 +1,33 @@
+category,label,turns,turn_share
+writing_request,writing_request>Write Code,2534,0.15037683223547563
+conceptual_questions,conceptual_questions>Python Library,1788,0.10610646252447926
+writing_request,writing_request>Write English,1340,0.07952050323422942
+conceptual_questions,conceptual_questions>Programming Language,1271,0.07542579075425791
+conceptual_questions,conceptual_questions>Computer Science,1178,0.06990683045516587
+contextual_questions,contextual_questions>Assignment Clarification,1076,0.06385377722390363
+provide_context,provide_context>Error Message,979,0.058097442288291494
+contextual_questions,contextual_questions>Code Explanation,950,0.05637647617352086
+provide_context,provide_context>Other,919,0.05453682274049018
+provide_context,provide_context>Code,696,0.041303186754495284
+contextual_questions,contextual_questions>Interpret Output,513,0.030443297133701263
+conceptual_questions,conceptual_questions>Programming Tools,484,0.028722331018930628
+provide_context,provide_context>Assignment Information,434,0.02575514806242953
+verification,verification>Verify Code,420,0.02492433683460922
+contextual_questions,contextual_questions>Other,399,0.02367811999287876
+writing_request,writing_request>Code/Data Conversion,347,0.020592249718117617
+conceptual_questions,conceptual_questions>Other Concept,323,0.019168001898997093
+editing_request,editing_request>Edit Code,213,0.012640199394694678
+editing_request,editing_request>Edit English,197,0.011690700848614325
+conceptual_questions,conceptual_questions>Mathematics,155,0.009198267165153403
+off_topic,off_topic>Chit-Chat,102,0.0060530532312622395
+verification,verification>Verify Report,100,0.005934365913002196
+off_topic,off_topic>Greeting,84,0.004984867366921844
+verification,verification>Verify Output,77,0.004569461753011691
+writing_request,writing_request>Other,63,0.0037386505251913835
+writing_request,writing_request>Summarize,52,0.003085870274761142
+verification,verification>Other,50,0.002967182956501098
+off_topic,off_topic>Gratitude,35,0.0020770280695507687
+misc,misc>Other,30,0.0017803097739006587
+off_topic,off_topic>Other,29,0.0017209661147706368
+editing_request,editing_request>Other,8,0.00047474927304017565
+misc,misc>error,5,0.00029671829565010977

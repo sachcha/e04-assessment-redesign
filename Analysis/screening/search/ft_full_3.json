@@ -1,0 +1,751 @@
+[
+  {
+    "record_id": "S008",
+    "title": "Evaluating ChatGPT-4 Vision on Brazil's National Undergraduate Computer Science Exam",
+    "authors": "Nabor C. Mendonça",
+    "year": 2024,
+    "venue": "ACM Transactions on Computing Education",
+    "doi": "10.1145/3674149",
+    "fulltext_status": "full text (author/repository copy)",
+    "source_used": "arXiv preprint 2406.09671v1 (oa_url); author-accepted version of the ACM TOCE article",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "HE computing (Brazilian BCS national exam); evaluates a GenAI model on a real high-stakes assessment, which directly informs exam vulnerability; peer reviewed (ACM TOCE); 2024; English.",
+    "redesign_relevance": "b_informs_redesign",
+    "redesign_note": "Shows a multimodal LLM scoring in the top 10% on a real national CS exam, including visual and open questions, so exam formats assumed to resist AI are vulnerable.",
+    "study_design": "Experimental evaluation of an LLM on a real exam (zero-shot chain-of-thought prompting, reassessment step, independent expert panel review of disagreements)",
+    "country": "Brazil",
+    "discipline": "Computer Science",
+    "computing": "Y",
+    "level": "Undergraduate (Bachelor in Computer Science, national exit exam ENADE 2021)",
+    "sample": "ENADE 2021 BCS specific-knowledge component: 3 open questions and multiple-choice questions (19 scored, 6 excluded by the exam's own psychometrics); human reference group of 10,119 participants from over 300 institutions (Sec 3.1)",
+    "genai_tools": "ChatGPT-4 Vision (answering); ChatGPT-4 Turbo (reflection on performance)",
+    "assessment_types": [
+      "Supervised assessment"
+    ],
+    "key_findings": [
+      {
+        "finding": "ChatGPT-4 Vision reached a final weighted score of 66.3 against a participant mean of 36.7, placing it in the top 10 percentile of exam takers.",
+        "location": "Sec 5.4, Table 9"
+      },
+      {
+        "finding": "On open questions it averaged 54.2/100 (participant mean 15.2), in the top 8 percentile; on 19 scored multiple-choice items it scored 68.4% correct.",
+        "location": "Sec 5.1-5.2, Tables 6-7"
+      },
+      {
+        "finding": "It answered 75.0% of questions with visual elements correctly versus 63.6% of text-only questions, so image-based items did not protect against the model.",
+        "location": "Sec 5.2, Table 7"
+      },
+      {
+        "finding": "Accuracy fell as item difficulty rose (100% Easy to 0% Very Hard), and its errors came from question interpretation, logical reasoning and visual acuity.",
+        "location": "Sec 5.2, Sec 5.5, Table 10"
+      },
+      {
+        "finding": "Expert review of disagreements exposed vague or ambiguous exam questions; the author suggests LLMs could be used to pre-test exam items.",
+        "location": "Sec 5.3, Sec 6.2, Table 8"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "A current multimodal LLM outperforms most candidates on a national CS exam, so exam scores may not verify human capability where AI access is possible.",
+      "integrity_security": "Multimodal (image-based) questions do not resist GenAI; the model did better on visual than on text-only items.",
+      "lo_alignment": "",
+      "appropriate_ai_use": "",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "Running exam items through an LLM before administration is proposed as a practical check of question quality.",
+      "process_visibility": "",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Use multimodal LLMs to test and refine exam questions before administration, to detect ambiguity (not tested)",
+      "Keep human oversight to verify model accuracy and protect fairness in high-stakes exams (not tested)",
+      "Future work: compare other multimodal models, use repeated attempts and advanced prompting (not tested)"
+    ],
+    "limitations": "Single run per question with zero-shot CoT prompts; one model family only; no traditional exam-validation benchmark; Portuguese exam translated for reporting; a single exam year (Sec 6.3).",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Y",
+      "q5": "Y",
+      "quality_score": 5,
+      "note": "Clear RQs, transparent procedure with open materials, explicit limitations; the evidence is about AI capability rather than student behaviour."
+    }
+  },
+  {
+    "record_id": "S013",
+    "title": "The Pedagogical Fit Of Generative Artificial Intelligence: Rethinking Assessment And Learning In Higher Education",
+    "authors": "Theodore J. Blackmoor",
+    "year": 2026,
+    "venue": "The American Journal of Engineering And Technology",
+    "doi": "not reported",
+    "fulltext_status": "full text (publisher OA)",
+    "source_used": "Publisher PDF (oa_url, theamericanjournals.com, CC BY 4.0)",
+    "ft_decision": "Exclude",
+    "ft_exclusion_code": "E2",
+    "ft_reason": "Amendment 3: a theoretical synthesis of GenAI adoption (task-technology fit, TAM/UTAUT); it argues summative assessment is misaligned with GenAI but proposes no specific redesign and gives no evidence on assessment vulnerability, so it is c_not_redesign.",
+    "redesign_relevance": "c_not_redesign",
+    "redesign_note": "Offers only a general claim that GenAI fits formative feedback well and summative assessment poorly; no design is proposed or evaluated.",
+    "study_design": "Conceptual / theoretically integrative qualitative synthesis (no primary data)",
+    "country": "Norway (author affiliation); international literature",
+    "discipline": "Information Systems / higher education generally",
+    "computing": "Partial",
+    "level": "Higher education (general)",
+    "sample": "No primary data; a 'reference corpus' of studies and reports, with no stated search strategy or number of sources (Sec 2)",
+    "genai_tools": "Generative AI / LLMs in general",
+    "assessment_types": [
+      "Unsupervised formats"
+    ],
+    "key_findings": [
+      {
+        "finding": "The synthesis argues GenAI fits formative tasks such as feedback and drafting well, but fits summative assessment poorly because the tool can perform the task being measured.",
+        "location": "Sec 3 Results; Sec 4 Discussion (pp. 242-244)"
+      },
+      {
+        "finding": "Fit is said to differ by discipline: computing and engineering students see GenAI as a legitimate aid, while humanities settings are more sceptical.",
+        "location": "Sec 3 Results (pp. 242-243)"
+      },
+      {
+        "finding": "An analogy with AI-driven behaviour-driven test automation is used to argue that AI should run human-defined criteria rather than generate the assessed work.",
+        "location": "Sec 3-4 (pp. 243-244)"
+      }
+    ],
+    "evidence_type": "conceptual/framework",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "",
+      "integrity_security": "Argues that letting GenAI produce assessable outputs makes summative assessment invalid; no data.",
+      "lo_alignment": "",
+      "appropriate_ai_use": "Argues for AI use in formative and feedback roles rather than for producing assessed outputs.",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Use GenAI for formative feedback and scaffolding rather than for producing summative outputs (not tested)",
+      "Extend acceptance models with task legitimacy and academic integrity constructs (not tested)"
+    ],
+    "limitations": "Secondary synthesis with no reported search or selection method; relies on self-reported survey literature and rests heavily on one software-testing analogy; acknowledged as quickly dated (Sec 2, Sec 4).",
+    "quality": {
+      "q1": "Y",
+      "q2": "Unclear",
+      "q3": "N",
+      "q4": "Unclear",
+      "q5": "Y",
+      "quality_score": 2,
+      "note": "Conceptual paper; the corpus is not described and the claims are only loosely tied to cited evidence."
+    }
+  },
+  {
+    "record_id": "S019",
+    "title": "Academic integrity surrounding the use of generative AI in higher education: Lenses from ICT college students",
+    "authors": "Lanie P. Plecerda",
+    "year": 2024,
+    "venue": "Environment and Social Psychology",
+    "doi": "10.59429/esp.v9i12.3177",
+    "fulltext_status": "full text (publisher OA)",
+    "source_used": "Publisher PDF (oa_url, esp.as-pub.com, diamond OA)",
+    "ft_decision": "Exclude",
+    "ft_exclusion_code": "E2",
+    "ft_reason": "Amendment 3: a qualitative study of ICT students' perceptions of GenAI and academic integrity; it offers attitudes and perceptions only, with no assessment design and no evidence of actual use on assessed work, so it is c_not_redesign.",
+    "redesign_relevance": "c_not_redesign",
+    "redesign_note": "Student views that schools and teachers should set rules for when AI use is acceptable; nothing about how to redesign assessment.",
+    "study_design": "Exploratory qualitative study; semi-structured interviews; thematic analysis",
+    "country": "Philippines (Eastern Visayas)",
+    "discipline": "Information and Communication Technology (ICT)",
+    "computing": "Y",
+    "level": "Undergraduate (college ICT programmes)",
+    "sample": "30 ICT students from several universities in Eastern Visayas, chosen by purposive and convenience sampling; one-on-one recorded interviews (Sec 3.2-3.4)",
+    "genai_tools": "Generative AI in general; ChatGPT shown as an example (Figure 1)",
+    "assessment_types": [
+      "AI-use declarations"
+    ],
+    "key_findings": [
+      {
+        "finding": "Students saw GenAI as helpful for generating ideas, speeding up work and giving support in ICT learning.",
+        "location": "Sec 4, Objective 1 themes"
+      },
+      {
+        "finding": "Students named overreliance, dishonesty (copying AI output into assignments unchanged) and learning insufficiency as the main integrity risks.",
+        "location": "Sec 4, Objective 2 themes"
+      },
+      {
+        "finding": "Students wanted schools to set clear AI-use rules, including citation and acceptable AI input, and teachers to explain where use becomes misuse.",
+        "location": "Sec 4, Objective 3 themes (Role of Schools; Role of Teachers)"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "",
+      "integrity_security": "Students perceive that peers copy AI-generated content into assignments without changes (perception only).",
+      "lo_alignment": "",
+      "appropriate_ai_use": "Students ask for institutional and teacher guidance that defines acceptable AI use and citation.",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Institutions should adopt structured guidelines and policies for responsible GenAI use (not tested)",
+      "Educators should integrate discussion of ethics and critical thinking about AI into teaching (not tested)"
+    ],
+    "limitations": "Small purposive sample of Filipino ICT students only; perceptions captured at an early stage of GenAI adoption; analysis procedure briefly described (Sec 6).",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Y",
+      "q5": "Y",
+      "quality_score": 5,
+      "note": "Adequate small qualitative study, but the analytic procedure and reflexivity are thinly reported."
+    }
+  },
+  {
+    "record_id": "S029",
+    "title": "Generative AI Adoption and Self-Reported Academic Integrity Risk: A Student Taxonomy in Latin American Higher Education",
+    "authors": "Juan Carlos Torres-Díaz; Diana Rivera; Ana María Beltrán Flandoli",
+    "year": 2026,
+    "venue": "Education Sciences",
+    "doi": "10.3390/educsci16091397",
+    "fulltext_status": "abstract only",
+    "source_used": "OpenAlex abstract (abstract_inverted_index); the MDPI full text and PDF returned HTTP 403 (bot protection), and no repository copy was found",
+    "ft_decision": "Exclude",
+    "ft_exclusion_code": "E2",
+    "ft_reason": "Amendment 3: a survey taxonomy of general GenAI adoption and self-reported delegation tendency; it is not about assessed work or assessment design, so it is c_not_redesign (general adoption). Decided from the abstract only.",
+    "redesign_relevance": "c_not_redesign",
+    "redesign_note": "Gives adoption profiles and self-reported intellectual delegation, which could at most inform differentiated AI literacy; there is no assessment-specific evidence.",
+    "study_design": "Quantitative cross-sectional survey; k-means cluster analysis",
+    "country": "Ecuador",
+    "discipline": "Multidisciplinary (seven UNESCO knowledge areas)",
+    "computing": "Partial",
+    "level": "Undergraduate (university students)",
+    "sample": "3415 students from eight Ecuadorian public universities, quota-balanced by discipline (abstract)",
+    "genai_tools": "GenAI across text, mathematics, programming, image and music generation (abstract)",
+    "assessment_types": [],
+    "key_findings": [
+      {
+        "finding": "Clustering on five multimodal use variables gave four profiles: Passive 44.3%, Artist 24.4%, Technical 18.3% and Comprehensive 13%.",
+        "location": "abstract"
+      },
+      {
+        "finding": "Profile membership was associated with discipline (chi2 = 517.85; Cramer's V = 0.225).",
+        "location": "abstract"
+      },
+      {
+        "finding": "The Comprehensive profile reported the highest self-reported intellectual delegation to AI (eta2 = 0.114); the authors link ethical risk to whether outputs are directly presentable.",
+        "location": "abstract"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "",
+      "integrity_security": "Self-reported delegation to AI varies by user profile, suggesting integrity risk is unevenly distributed (abstract only).",
+      "lo_alignment": "",
+      "appropriate_ai_use": "",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Differentiate AI literacy programmes and institutional governance by student profile (not tested)"
+    ],
+    "limitations": "Abstract only. Self-reported cross-sectional data from one country; limitations could not be checked against the full text.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Unclear",
+      "q5": "Unclear",
+      "quality_score": 3,
+      "note": "Abstract only; the design and sample look sound but the analysis and limitations could not be checked."
+    }
+  },
+  {
+    "record_id": "S040",
+    "title": "Java academic benchmark: Exam-based evaluation of LLMs on object-oriented programming",
+    "authors": "Alessio Cocchieri; Luca Ragazzi; Gianluca Aguzzi; Giacomo Frisoni; Lorenzo Molfetta; Gianluca Moro",
+    "year": 2026,
+    "venue": "Journal of Systems and Software",
+    "doi": "10.1016/j.jss.2026.113033",
+    "fulltext_status": "abstract only",
+    "source_used": "OpenAlex abstract; publisher PDF (hybrid OA, CC BY) and the ScienceDirect page returned HTTP 403/bot check; no arXiv or repository copy found",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "HE computing (bachelor OOP exams); evaluates 27 LLMs on 103 authentic university Java exams, which directly informs how vulnerable programming exams are to GenAI; peer reviewed (JSS); 2026; English. Abstract is substantive enough to extract.",
+    "redesign_relevance": "b_informs_redesign",
+    "redesign_note": "Shows that large closed LLMs match or beat bachelor-level students on a decade of real Java OOP exams, especially when used agentically with compiler and test feedback.",
+    "study_design": "Benchmark construction and evaluation of LLMs (execution-based JUnit scoring plus an LLM-as-a-Judge framework, KODE)",
+    "country": "not reported in abstract",
+    "discipline": "Computer Science / Software Engineering (object-oriented programming in Java)",
+    "computing": "Y",
+    "level": "Undergraduate (bachelor-level OOP course exams)",
+    "sample": "103 authentic Java exams collected over a decade at one large university, with 506 expert-written JUnit tests; 27 LLMs evaluated (abstract)",
+    "genai_tools": "27 LLMs (open and closed models; not named in abstract)",
+    "assessment_types": [
+      "Supervised assessment",
+      "Practical demonstrations"
+    ],
+    "key_findings": [
+      {
+        "finding": "Larger closed LLMs matched or exceeded bachelor-level students on authentic OOP exam tasks, especially in agentic mode with compiler and test feedback.",
+        "location": "abstract"
+      },
+      {
+        "finding": "Smaller open models lagged behind students.",
+        "location": "abstract"
+      },
+      {
+        "finding": "The class-level design exposed recurring OOP misconceptions in model outputs; a separate LLM judge (KODE) scored OOP adherence on four pedagogical dimensions.",
+        "location": "abstract"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "Real programming exam tasks can be solved by frontier LLMs at or above student level, so unsupervised code submissions do not verify capability (abstract only).",
+      "integrity_security": "Agentic use (iterating with compiler and test feedback) further raises LLM success on exam tasks (abstract only).",
+      "lo_alignment": "",
+      "appropriate_ai_use": "",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "not reported (abstract only)"
+    ],
+    "limitations": "Abstract only; results are 'under our evaluation protocol' from one university's exams; limitations could not be checked against the full text.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Unclear",
+      "q5": "Unclear",
+      "quality_score": 3,
+      "note": "Abstract only; a large, transparent benchmark with Open Science validation, but the details could not be checked."
+    }
+  },
+  {
+    "record_id": "S088",
+    "title": "STEM exam performance: Open‐ versus closed‐book methods in the large language model era",
+    "authors": "Rasi Mizori; Muhayman Sadiq; Malik Takreem Ahmad; Anthony Siu; Reubeen Rashid Ahmad; Zijing Yang",
+    "year": 2024,
+    "venue": "The Clinical Teacher",
+    "doi": "10.1111/tct.13839",
+    "fulltext_status": "full text (author/repository copy)",
+    "source_used": "PubMed Central copy PMC11663729 via Europe PMC render (the Wiley pdfdirect link was blocked)",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "HE STEM (mostly health sciences; partial computing relevance); compares open-book and closed-book exam formats and discusses LLM-era validity at length; peer-reviewed systematic review with meta-analysis; 2024; English. Included because the format evidence and the LLM-era recommendations inform exam redesign, although the included studies predate LLMs.",
+    "redesign_relevance": "b_informs_redesign",
+    "redesign_note": "Meta-analytic evidence that open-book exams give higher marks and may measure different competencies, plus an untested proposal for a hybrid AI-open then closed-book exam.",
+    "study_design": "Systematic review with random-effects meta-analysis (PRISMA; Newcastle-Ottawa risk of bias)",
+    "country": "UK (review team); included studies from USA (5), UK (2), Saudi Arabia (1)",
+    "discipline": "STEM (medicine, psychology, chemistry, biochemistry, anatomy)",
+    "computing": "Partial",
+    "level": "Undergraduate / university STEM students",
+    "sample": "8 studies (searched in PubMed, Scopus and ERIC, Feb-May 2023; English, 2013 onwards); all single-institution (Sec 2, Sec 3.1)",
+    "genai_tools": "LLMs in general (GPT-3, ChatGPT) discussed; none used in included studies",
+    "assessment_types": [
+      "Supervised assessment",
+      "Unsupervised formats",
+      "Oral assessments"
+    ],
+    "key_findings": [
+      {
+        "finding": "Open-book exams gave higher marks than closed-book exams (mean difference 5.91, 95% CI 2.79 to 9.04), with very high heterogeneity (I2 = 97%).",
+        "location": "Sec 3.4.1-3.4.2, Figure 2a"
+      },
+      {
+        "finding": "The effect held in both observational (MD 6.89) and quasi-experimental (MD 3.79) subgroups, with no significant subgroup difference.",
+        "location": "Sec 3.4.3, Figure 2b"
+      },
+      {
+        "finding": "Included studies reported proctoring effects, technical problems and cheating in online exams; varying the questions was used to reduce cheating.",
+        "location": "Sec 3.4.3 (narrative)"
+      },
+      {
+        "finding": "All included studies predate widespread LLMs; the authors argue that unproctored open-book recall questions are especially exposed to LLM score inflation.",
+        "location": "Sec 4; Sec 4.1"
+      }
+    ],
+    "evidence_type": "review",
+    "dimensions": {
+      "authenticity": "Open-book exams are argued to reflect real-world information access, but LLMs may erode that authenticity advantage.",
+      "capability_verification": "LLMs could inflate open-book scores without deep understanding, which undermines what the exam verifies.",
+      "integrity_security": "Unproctored open-book formats are flagged as most exposed to unchecked AI use; proctoring or restrictions are suggested.",
+      "lo_alignment": "Open-book and closed-book exams are inferred to assess different competencies, so the choice of format should follow intended outcomes.",
+      "appropriate_ai_use": "",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "Open-book exams cut invigilation cost, but they need secure platforms, faculty training and technical support.",
+      "process_visibility": "",
+      "accessibility_equity": "The authors call for equitable access to the technology that advanced test formats need."
+    },
+    "author_recommendations": [
+      "Use closed-book or AI-restricted invigilated formats for short-answer and recall questions (not tested)",
+      "Reserve open-book formats for long-answer, higher-order questions (not tested)",
+      "A hybrid exam: a timed phase with AI and internet access to gather information, then a closed-book synthesis phase (not tested)",
+      "Research the integrity of open-book exams with respect to AI use (not tested)"
+    ],
+    "limitations": "Only 8 heterogeneous single-institution studies from three countries, all before LLMs; I2 = 97%; LLM implications are speculative (Sec 4.1).",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Y",
+      "q5": "Y",
+      "quality_score": 5,
+      "note": "Sound review method; the GenAI conclusions go beyond the pre-LLM evidence."
+    }
+  },
+  {
+    "record_id": "S113",
+    "title": "Rethinking Assessment for Engineering Students in Higher Education in the Age of Generative AI: A Critical Narrative Review",
+    "authors": "Iman Farshchi",
+    "year": 2026,
+    "venue": "Asian Journal of Education and Social Studies",
+    "doi": "10.9734/ajess/2026/v52i93311",
+    "fulltext_status": "abstract only",
+    "source_used": "OpenAlex abstract; the publisher PDF (journalajess.com) and HAL copies (hal-05738214, hal-05747639) were behind bot-check pages, which were not bypassed",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "HE engineering assessment redesign for GenAI; proposes an assessment architecture (Dual-Assurance) drawing on a dated literature search; peer-reviewed journal; 2026; English. Abstract is detailed enough to extract.",
+    "redesign_relevance": "a_redesign",
+    "redesign_note": "Proposes a Dual-Assurance Assessment Architecture: protected evidence of independent competence plus AI-integrated evidence of professional judgement, triangulated through staged work, orals, live demonstration and provenance.",
+    "study_design": "Critical narrative review (literature 1 Jan 2018 to 27 Jun 2026)",
+    "country": "not reported (abstract only)",
+    "discipline": "Engineering (including code and technical reports)",
+    "computing": "Partial",
+    "level": "Higher education (engineering programmes)",
+    "sample": "Literature published 1 January 2018 to 27 June 2026 plus earlier foundational work; number of sources not reported in abstract",
+    "genai_tools": "General-purpose and specialised GenAI/AI systems (not named)",
+    "assessment_types": [
+      "Supervised assessment",
+      "Unsupervised formats",
+      "Oral assessments",
+      "Practical demonstrations",
+      "Staged submissions",
+      "Process evidence"
+    ],
+    "key_findings": [
+      {
+        "finding": "Neither blanket prohibition nor unrestricted adoption is a defensible general approach; authenticity alone is insufficient because realistic take-home tasks stay open to undisclosed AI help.",
+        "location": "abstract"
+      },
+      {
+        "finding": "The review proposes separating protected evidence of independent competence (threshold and safety-relevant skills) from AI-integrated evidence of professional judgement.",
+        "location": "abstract"
+      },
+      {
+        "finding": "Evidence should be triangulated through staged work, oral explanation, live demonstration, provenance and programme-level assessment mapping.",
+        "location": "abstract"
+      },
+      {
+        "finding": "AI detectors are judged too unreliable and potentially inequitable to serve as stand-alone evidence of misconduct; AI-assisted grading needs human oversight.",
+        "location": "abstract"
+      }
+    ],
+    "evidence_type": "review",
+    "dimensions": {
+      "authenticity": "Authentic take-home tasks are not enough on their own because they stay open to undisclosed AI use.",
+      "capability_verification": "Calls for protected evidence of independent competence for threshold and safety-relevant capabilities.",
+      "integrity_security": "Detectors are too unreliable to serve as stand-alone evidence of misconduct.",
+      "lo_alignment": "Reform should focus on the validity of inferences about student capability, with programme-level assessment mapping.",
+      "appropriate_ai_use": "AI-integrated tasks are proposed where responsible tool use is itself an intended learning outcome.",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "Staged work and provenance are proposed as evidence alongside the final product.",
+      "accessibility_equity": "Detector inequity is flagged as a concern."
+    },
+    "author_recommendations": [
+      "Adopt a Dual-Assurance Assessment Architecture, presented as an evidence-derived organising model rather than a validated framework (not tested)",
+      "Triangulate staged work, oral explanation, live demonstration and provenance (not tested)",
+      "Do not use AI detectors as stand-alone evidence of misconduct (not tested)"
+    ],
+    "limitations": "Abstract only. A narrative (not systematic) review; the authors say the architecture is not validated; full-text limitations could not be checked.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Unclear",
+      "q4": "Unclear",
+      "q5": "Y",
+      "quality_score": 3,
+      "note": "Abstract only; the explicit statement that the model is unvalidated counts as an acknowledged limitation."
+    }
+  },
+  {
+    "record_id": "S156",
+    "title": "A Hybrid LLM-Optimized Framework for Autonomous Viva Assessment Using Retrieval Augmented Generation and Prompt Engineering",
+    "authors": "Dhanushka Balasingham; Jaliya L. Wijayaraja; Chathurangika Kahandawaarachchi; Nuwan Kodagoda",
+    "year": 2026,
+    "venue": "IEEE Access",
+    "doi": "10.1109/access.2026.3731386",
+    "fulltext_status": "full text (publisher OA)",
+    "source_used": "IEEE Access publisher PDF (gold OA, CC BY) via the Crossref full-text link (ieeexplore ielx8, arnumber 11683425)",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "HE computing (4th-year IoT module); implements and evaluates an LLM-based system that generates personalised viva questions from each student's submission and scores the answers; peer reviewed; 2026; English. Borderline under Amendment 3, because it is partly an AI-grading tool and is framed by workload and examiner bias rather than GenAI integrity. Coded a_redesign because it evaluates a scalable oral-assessment design.",
+    "redesign_relevance": "a_redesign",
+    "redesign_note": "Evaluates a way to scale viva voce assessment with LLM-generated, submission-specific questions and automated scoring; relevant to oral verification at scale, though not framed as an integrity response.",
+    "study_design": "Design science / system development with comparative evaluation against human grading and alternative prompting methods",
+    "country": "Sri Lanka",
+    "discipline": "Computing (Internet of Things module, Faculty of Computing, SLIIT)",
+    "computing": "Y",
+    "level": "Undergraduate (fourth-year elective)",
+    "sample": "Over 250 students in 67 groups; 670 viva question-answer pairs; 200 generated questions for comparing methods; 160 manually graded responses from 4 examiners; 50 feedback triplets reviewed by an expert (Sec III-C)",
+    "genai_tools": "ChatGPT as the underlying LLM, with LangChain, FAISS and RAG; ChatGPT, Claude, Grok and Gemini compared for variability",
+    "assessment_types": [
+      "Oral assessments",
+      "Personalised tasks"
+    ],
+    "key_findings": [
+      {
+        "finding": "The hybrid method (prompt engineering, RAG and few-shot calibration) produced the most relevant questions: 74.3% relevance to the assignment and 66.6% to the student's proposal.",
+        "location": "Abstract; Sec IV-A; Sec VI"
+      },
+      {
+        "finding": "Hybrid dynamic prompting reached QWK 0.782 agreement with human grades, a 29.9% improvement over static prompting, with 89.57% mark-distribution overlap.",
+        "location": "Abstract; Sec IV-B"
+      },
+      {
+        "finding": "Variability across four LLMs (CoV 8.44%) was much lower than among human examiners (CoV 32.69%).",
+        "location": "Abstract; Sec IV-B; Sec VI"
+      },
+      {
+        "finding": "Generated feedback had 92.0% expert agreement, but the system sometimes asked students to repeat answers already given to linked questions.",
+        "location": "Abstract; Sec IV-C; Sec VI"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "Viva questions tied to each student's own project are generated and scored automatically, supporting oral checks of understanding.",
+      "integrity_security": "",
+      "lo_alignment": "Questions are grounded in assignment content and the student's submission through RAG.",
+      "appropriate_ai_use": "",
+      "scalability": "Designed to scale viva assessment as enrolment grows; tested with over 250 students in 67 groups.",
+      "workload": "Motivated by the examiner hours vivas need; at least two evaluators per session under the current practice (Sec III-B, Figure 4).",
+      "feasibility": "Implemented with Streamlit, LangChain, FAISS and ChatGPT; currently text-only, without the planned avatar or speech interface.",
+      "process_visibility": "",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Add an avatar-based front end with speech-to-text for spoken viva interaction (not tested)",
+      "Add memory of earlier answers so linked questions are not re-asked (not tested)",
+      "Extend to other modules and LLM architectures (not tested)"
+    ],
+    "limitations": "One module at one institution; text-only interaction; feedback errors on connected questions; small expert-review subsets; not evaluated for integrity or GenAI-misuse outcomes (Sec VI).",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Y",
+      "q5": "Y",
+      "quality_score": 5,
+      "note": "Well-reported system evaluation; its relevance to secure assessment is indirect."
+    }
+  },
+  {
+    "record_id": "S268",
+    "title": "LLM-driven authentic assessment of machine learning programs in the LearnMatic data science ITS",
+    "authors": "Hasan M. Jamil",
+    "year": 2026,
+    "venue": "Information Sciences",
+    "doi": "10.1016/j.ins.2026.123783",
+    "fulltext_status": "abstract only",
+    "source_used": "None reachable: SSRN preprint (oa_url) returned 'Content Blocked' / HTTP 403; Elsevier page 403; no abstract in OpenAlex, Crossref or Semantic Scholar; title and metadata only",
+    "ft_decision": "Exclude",
+    "ft_exclusion_code": "E7",
+    "ft_reason": "No legal full text and no abstract could be retrieved, so the title alone is too thin to judge eligibility or extract (E7). The title suggests an LLM-based grading tool in an intelligent tutoring system, which would be c_not_redesign under Amendment 3; this is provisional and needs human checking if a copy becomes available.",
+    "redesign_relevance": "c_not_redesign",
+    "redesign_note": "Provisional, from the title only: appears to be LLM-driven automated assessment of student ML programs in a tutoring system (an AI grading tool), not an assessment redesign.",
+    "study_design": "not reported",
+    "country": "not reported (OpenAlex lists a US affiliation)",
+    "discipline": "Data science / machine learning programming",
+    "computing": "Y",
+    "level": "not reported",
+    "sample": "not reported",
+    "genai_tools": "LLMs (from title; specifics not reported)",
+    "assessment_types": [],
+    "key_findings": [
+      {
+        "finding": "No findings could be extracted; only the title and bibliographic metadata were available.",
+        "location": "title/metadata only"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "",
+      "integrity_security": "",
+      "lo_alignment": "",
+      "appropriate_ai_use": "",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [],
+    "limitations": "Not assessable; no abstract or full text retrieved.",
+    "quality": {
+      "q1": "Unclear",
+      "q2": "Unclear",
+      "q3": "Unclear",
+      "q4": "Unclear",
+      "q5": "Unclear",
+      "quality_score": 0,
+      "note": "Not appraisable without abstract or full text."
+    }
+  },
+  {
+    "record_id": "S331",
+    "title": "Guidelines for Integrating Generative AI Into Programming Education at The Diploma Level in Malaysian Polytechnics: Balancing Benefits and Risks",
+    "authors": "WAN SALMIZI WAN MAHMOOD; Nor Farahwahida Mohd Noor; NIK RAHAYA NIK ISHAK",
+    "year": 2025,
+    "venue": "Journal of STEM and Education",
+    "doi": "not reported",
+    "fulltext_status": "full text (publisher OA)",
+    "source_used": "Publisher PDF (oa_url, journalstem.net)",
+    "ft_decision": "Include",
+    "ft_exclusion_code": "",
+    "ft_reason": "Tertiary (diploma-level polytechnic) programming education; proposes guidelines that explicitly include assessment redesign (live coding, oral defences, debugging exercises) and AI-use citation; peer-reviewed journal; 2025; English.",
+    "redesign_relevance": "a_redesign",
+    "redesign_note": "A guideline framework, validated in focus groups, that recommends live coding assessments, oral defences, debugging exercises and AI-citation rules in programming courses.",
+    "study_design": "Qualitative multi-phase guideline development: systematic literature review (15 papers), semi-structured interviews, focus groups",
+    "country": "Malaysia",
+    "discipline": "Programming / computing (diploma level)",
+    "computing": "Y",
+    "level": "Diploma (polytechnic, sub-degree tertiary)",
+    "sample": "15 papers in the SLR; 10 programming instructors interviewed (purposive); 2 focus groups with 5 educators and 5 students (Methodology)",
+    "genai_tools": "Generative AI in general (no specific tools named)",
+    "assessment_types": [
+      "Supervised assessment",
+      "Oral assessments",
+      "Practical demonstrations",
+      "Process evidence",
+      "AI-use declarations"
+    ],
+    "key_findings": [
+      {
+        "finding": "Instructors found AI-assisted work hard to assess because AI code looks well structured and error-free; some had already added oral explanations and debugging exercises.",
+        "location": "Results and Discussion: Insights from Semi-Structured Interviews"
+      },
+      {
+        "finding": "In focus groups, students admitted relying on AI without fully understanding its code, and educators backed the redesigned assessment methods in the guidelines.",
+        "location": "Results and Discussion: Validation from FGDs"
+      },
+      {
+        "finding": "The guidelines tell educators to redesign assessments with live coding, oral defences and debugging exercises, and tell institutions to define acceptable AI use and require AI citation.",
+        "location": "Table 1"
+      }
+    ],
+    "evidence_type": "guidance",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "Live coding, oral defences and debugging exercises are proposed to check genuine comprehension.",
+      "integrity_security": "Educators report difficulty telling student effort from AI assistance in submitted code.",
+      "lo_alignment": "",
+      "appropriate_ai_use": "Students should attempt problems before using AI, and should cite and modify AI-generated code; institutions should define acceptable use.",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "Focus groups judged the guidelines practical; AI literacy training for staff is seen as a prerequisite.",
+      "process_visibility": "Process-based evaluation is named as a future assessment direction.",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Redesign programming assessments with live coding, oral defences and debugging exercises (not tested)",
+      "Institutions should define acceptable and unacceptable AI use and require citation of AI-generated code (not tested)",
+      "Make AI literacy training mandatory for educators and students (not tested)",
+      "Pilot the guidelines and run controlled and longitudinal trials (not tested)"
+    ],
+    "limitations": "Small qualitative samples; the SLR method is thinly reported; the guidelines are validated only by perception in focus groups and not piloted; limitations are not discussed explicitly beyond future-research needs.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Unclear",
+      "q5": "N",
+      "quality_score": 3,
+      "note": "Clear aim and mixed qualitative design, but the analysis is thinly reported and there is no limitations section."
+    }
+  },
+  {
+    "record_id": "S462",
+    "title": "Analysis of Generative Artificial Intelligence Governance in Publicly Available Documentation of Global and Saudi Universities Offering Health Informatics Programs",
+    "authors": "Alhur AA; Al-Kahtani NK",
+    "year": 2026,
+    "venue": "DOAJ (DOAJ: Directory of Open Access Journals)",
+    "doi": "10.2147/AMEP.S632635",
+    "fulltext_status": "full text (publisher OA)",
+    "source_used": "Dove Medical Press publisher PDF (OpenAlex location for DOI 10.2147/AMEP.S632635; the queue had no DOI and the DOAJ record has no full-text link)",
+    "ft_decision": "Exclude",
+    "ft_exclusion_code": "E2",
+    "ft_reason": "Amendment 3: a comparative analysis of published institutional GenAI governance documents; it covers policy content, not an assessment design or evidence on assessment vulnerability, use on assessed work, or policy outcomes, so it is c_not_redesign.",
+    "redesign_relevance": "c_not_redesign",
+    "redesign_note": "Reports how often university policies cover assessment governance and disclosure, which is useful policy context but not evidence for redesign.",
+    "study_design": "Qualitative document analysis and comparative policy analysis (directed content analysis, nine domains; Fisher's exact tests)",
+    "country": "Saudi Arabia and 30 international universities (North America, Europe, Asia, Australia)",
+    "discipline": "Health Informatics and related programs",
+    "computing": "Partial",
+    "level": "Higher education institutions (policy level)",
+    "sample": "46 universities (30 international chosen via QS 2025 subject rankings; 16 Saudi); 117 public governance sources (111 international, 6 Saudi), retrieved March-May 2026; inter-coder kappa 0.96 (Methods)",
+    "genai_tools": "GenAI in general (ChatGPT, LLMs)",
+    "assessment_types": [
+      "AI-use declarations"
+    ],
+    "key_findings": [
+      {
+        "finding": "All 30 international universities had public GenAI governance, against 6 of 16 Saudi universities (37.5%).",
+        "location": "Results; Table 1"
+      },
+      {
+        "finding": "Assessment Governance was covered by 72.1% of international and 66.7% of Saudi sources; Academic Integrity by 86.5% and 66.7%.",
+        "location": "Table 2"
+      },
+      {
+        "finding": "Transparency and Disclosure (87.4% vs 33.3%, p = 0.005) differed most; international sources more often required students to disclose and cite AI use.",
+        "location": "Table 2; Results (Governance-Domain Coverage)"
+      }
+    ],
+    "evidence_type": "empirical",
+    "dimensions": {
+      "authenticity": "",
+      "capability_verification": "",
+      "integrity_security": "Academic integrity provisions appear in most sources; Saudi sources focus on discipline and monitoring.",
+      "lo_alignment": "",
+      "appropriate_ai_use": "International policies more often combine acceptable-use rules with disclosure, human oversight and approved platforms; Saudi sources stress sanctions.",
+      "scalability": "",
+      "workload": "",
+      "feasibility": "",
+      "process_visibility": "",
+      "accessibility_equity": ""
+    },
+    "author_recommendations": [
+      "Universities without formal GenAI governance should publish institution-wide policies covering transparency, disclosure, ethics and AI literacy (not tested)",
+      "Accreditation bodies should add discipline-specific AI-governance expectations to Health Informatics programme standards (not tested)"
+    ],
+    "limitations": "Public documents only, so internal policy and actual practice are not captured; only six Saudi sources; the maturity score is not validated.",
+    "quality": {
+      "q1": "Y",
+      "q2": "Y",
+      "q3": "Y",
+      "q4": "Y",
+      "q5": "Y",
+      "quality_score": 5,
+      "note": "Rigorous document analysis with reliability testing; out of scope for assessment redesign."
+    }
+  }
+]

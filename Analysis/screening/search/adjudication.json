@@ -1,0 +1,17 @@
+{
+ "S464": {
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E4",
+  "ft_reason": "Adjudicated 17 Oct 2026: defective reporting (unfilled template text in validation results, no sample sizes); not credible as peer-reviewed evidence."
+ },
+ "S279": {
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E4",
+  "ft_reason": "Adjudicated 17 Oct 2026: short position/opinion paper without an evidence base; fails IC4."
+ },
+ "S088": {
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E3",
+  "ft_reason": "Adjudicated 17 Oct 2026: all pooled primary studies predate LLMs; excluded under the currency rule applied to CS1QA and R75; cited as background only."
+ }
+}

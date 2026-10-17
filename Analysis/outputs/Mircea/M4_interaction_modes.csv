@@ -1,0 +1,14 @@
+measure,value
+"Mean rating AI-first (1 = never, 5 = very frequently)",2.9133333333333336
+Mean rating student-first,3.006666666666667
+Median AI-first,3.0
+Median student-first,3.0
+Students rating student-first higher than AI-first,46.0
+Students rating both modes the same,62.0
+Students rating AI-first higher than student-first,42.0
+Students using AI-first frequently+ AND student-first never/rarely,8.0
+Students using both modes frequently+,25.0
+Students using neither mode more than rarely,32.0
+Wilcoxon signed-rank W (student-first vs AI-first),1655.0
+Wilcoxon p,0.19516960347262047
+Denominator,150.0

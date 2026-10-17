@@ -1,0 +1,270 @@
+{
+ "assessment_type": "AI-use declarations",
+ "n_studies_in_pack": 63,
+ "cells": [
+  {
+   "dimension": "capability_verification",
+   "rating": "Weak",
+   "confidence": "Medium",
+   "literature": "[L] Student self-reports of AI use did not match assessors' judgements, and 16 of 118 students claimed to have used a tool no student had accessed [R45]. Practitioners judged declarations ineffective [R24], and when 28 staff in a computer science faculty judged one fully AI-generated essay with no human-written control, 53.57% judged it mostly or wholly AI-written at once, 35.72% became suspicious only later and 10.72% had little or no suspicion, so marker suspicion is a weak check [S006]. When declarations were paired with critique and validation tasks, TAs said these exposed students who did not understand their submissions, but competence was not formally measured [R91].",
+   "dataset": "[D] Logged AI-use behaviour did not identify which students had larger assignment-exam gaps [J6], and no usage measure was clearly associated with exam marks [D26].",
+   "interpretation": "[I] A declaration records what a student says they did, not what they understand, so it needs pairing with critique tasks or a viva to verify capability.",
+   "key_studies": [
+    "R45",
+    "R24",
+    "S006",
+    "R91"
+   ],
+   "n_supporting": 4,
+   "computing_studies": 2,
+   "core_studies": 1,
+   "conflicts": "R91 reports that validation questions within declarations exposed weak understanding (TA reports, not measured).",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "genai_exposure",
+   "rating": "Weak",
+   "confidence": "Medium",
+   "literature": "[L] Declarations do not change the underlying task, and AI-generated programming submissions scored higher than self-written ones [R96]. Reflections, logs and disclosed interactions can themselves be fabricated or mimicked [R45], [S006], [R17], [S457]. Critique tasks that require students to outperform a pre-run AI answer were reported to reduce second-guessing, but only anecdotally [R23].",
+   "dataset": "[D] With several prompts, GPT-4 fully answered 85.6% of CS questions [D03], and on average 14.5% of new submitted code lines matched students' own chatbot replies verbatim [J1].",
+   "interpretation": "[I] Declarations add transparency, not resistance; GenAI exposure depends on the task they are attached to.",
+   "key_studies": [
+    "R96",
+    "R45",
+    "S006",
+    "R17",
+    "S457"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 2,
+   "core_studies": 1,
+   "conflicts": "",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authorship_assurance",
+   "rating": "Weak",
+   "confidence": "High",
+   "literature": "[L] A multidisciplinary scoping review of 11 studies (only one from computing) found compliance with transparency mechanisms was often not assessed (27.3%) or relied on unverified self-disclosure (18.2%) [S423]. In computing courses, teams declaring no use were assumed truthful [R14], compliance with permitted limits could not be checked [S028], and undisclosed AI use is commonly 45-65% [R28]. Students under-declare because of fear of judgement, peer norms and low trust [S449], [S460], [S481], and fabricated declarations were observed [R45].",
+   "dataset": "[D] Marking did not respond to AI-authored content: moving from 0% to 100% verbatim overlap changed assignment scores by only -1.0 points [J1]. Traceability was a concern for 4 of 11 capstone clients [D20].",
+   "interpretation": "[I] Declarations cannot on their own establish who produced the work or how AI was used, because they rest on unverifiable self-report.",
+   "key_studies": [
+    "S423",
+    "R14",
+    "S028",
+    "R28",
+    "R45",
+    "S460"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 3,
+   "core_studies": 0,
+   "conflicts": "",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "lo_alignment",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Declarations helped a computing course team judge whether an assessment measured what was intended [R14], and validation and reflection tasks were mapped to explicit outcomes [R91]. Scales such as the AIAS set permitted AI levels according to learning outcomes [R10], [S028], [S069]. However, GenAI use can mean students show prompting skill rather than the targeted sub-skills [R51].",
+   "dataset": "",
+   "interpretation": "[I] Alignment depends on whether the declared use and any AI critique are tied to graded outcomes; a bare statement measures nothing.",
+   "key_studies": [
+    "R14",
+    "R91",
+    "R10",
+    "S028",
+    "R51"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 3,
+   "core_studies": 1,
+   "conflicts": "R51 notes a validity threat when AI use substitutes for the targeted skill.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authenticity",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Declaring, validating and critiquing AI output is linked to workplace expectations in software testing [R91] and to everyday validation of AI content [R15]. Conceptual work treats declared, scrutinised AI use as mirroring professional knowledge work [R16], [R10], [R51]. These claims are mostly author arguments and were not tested.",
+   "dataset": "[D] 92.7% of capstone students used GenAI in their project [D12], and 7 of 11 clients wanted GenAI use supported, though 4 of 11 named traceability as a concern [D20], [J5].",
+   "interpretation": "[I] Transparent AI use resembles practice, but a formal declaration is an academic artefact, so authenticity rests on the critique task more than the statement.",
+   "key_studies": [
+    "R91",
+    "R15",
+    "R16",
+    "R10"
+   ],
+   "n_supporting": 4,
+   "computing_studies": 2,
+   "core_studies": 2,
+   "conflicts": "",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "appropriate_ai_use",
+   "rating": "Strong",
+   "confidence": "Medium",
+   "literature": "[L] In a computing course, 79% said validation tasks helped critical thinking about AI output and 61% found the declaration useful [R91]; 'allow with disclosure' was students' preferred policy and bans were rejected by over 92% [R92]. A use statement plus verification log was associated with stronger disclosure, attribution and verification practices [S140], and AI-related misconduct fell after the AIAS was introduced [S415]. However, only about one in ten students showed critical evaluation of AI [R45], and some students completed tasks only to meet the requirement [R91].",
+   "dataset": "[D] Verification requests were only 3.7% of students' chatbot prompts [D22], while students' own advice stressed retaining understanding and reviewing outputs [D19].",
+   "interpretation": "[I] Declarations with required critique are the clearest way to permit and develop responsible AI use, but the effect depends on making critique graded rather than performative.",
+   "key_studies": [
+    "R91",
+    "R92",
+    "S140",
+    "S415",
+    "R45",
+    "R10"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 2,
+   "core_studies": 2,
+   "conflicts": "Performative compliance [R91], low critical sensemaking [R45] and confounded misconduct counts [S415].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "process_visibility",
+   "rating": "Moderate",
+   "confidence": "High",
+   "literature": "[L] Declared prompts and outputs gave educators visibility of how students approached tasks [R14], [R91], [R45], [S472]. But documentation was often poor [R72], only one of several groups fully documented prompts and outputs [R27], and about a third of logs were unusable [R17]. Logs and disclosed interactions can be mimicked or curated [S006], [S457].",
+   "dataset": "[D] Only 5.3% of capstone students used the university-hosted AI tool, with most using general chatbots [D14], so logs are not centrally captured.",
+   "interpretation": "[I] Declarations make part of the process visible, but the view is partial, student-curated and of uneven quality.",
+   "key_studies": [
+    "R14",
+    "R91",
+    "R45",
+    "R72",
+    "R27",
+    "R17"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 3,
+   "core_studies": 1,
+   "conflicts": "Visibility gains are offset by poor compliance and fabrication risk.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "scalability",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Declarations ran in a software testing course with a typical enrolment of 150-250 students [R91], with group prompt submission for over 750 students alongside vivas [R80], and almost all of 21 universities in one sample required disclosure [S115]. The AIAS is described as quick to implement institutionally [R10]. Reviewing process logs and reflections is reported to be hard or impractical in large cohorts [R16], [S342].",
+   "dataset": "",
+   "interpretation": "[I] Collecting declarations scales easily; reading and grading detailed logs or reflections does not.",
+   "key_studies": [
+    "R91",
+    "R80",
+    "S115",
+    "R10",
+    "R16",
+    "S342"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 3,
+   "core_studies": 2,
+   "conflicts": "",
+   "cohort_note": "Small (<50): full logs and reflections can be read and graded, as in a course of typically 25-35 students [R72]. Medium (50-200): feasible with rubrics and checklists, as in an 88-student module [R15] and a course of typically 150-250 students [R91]. Large (>200): simple declarations scale [R80], [S115], but detailed log review becomes impractical [R16].",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "workload",
+   "rating": "Moderate",
+   "confidence": "Low",
+   "literature": "[L] Workload or acceptability evidence for transparency mechanisms was not reported in 7 of 11 studies (63.6%) in a multidisciplinary scoping review [S423]. Some redesigns were described as lightweight or a simple change to marking criteria [R91], [R23], but markers found dual evaluation of AI and student work demanding [S108], and marking multiple drafts raised concerns [R24].",
+   "dataset": "",
+   "interpretation": "[I] A plain declaration costs little, but grading prompts, logs and critique adds marking time that has not been measured.",
+   "key_studies": [
+    "S423",
+    "R91",
+    "R23",
+    "S108",
+    "R24"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 1,
+   "core_studies": 1,
+   "conflicts": "Lightweight claims [R91], [R23] versus reported marking burden [S108], [R24].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "feasibility",
+   "rating": "Strong",
+   "confidence": "Medium",
+   "literature": "[L] Declarations were added to an existing computing course without redesigning tasks [R14], and redesign changes were reported as lightweight [R91] or a simple marking change [R23]. They need no invigilation, venues or new platforms; the main costs reported are staff time, as one faculty used champions and expert support to add standard permitted-use text to all syllabi within 4 months [S069], and staff AI literacy, which is a prerequisite [S331], [R27]. Disclosure is already near-universal in sampled guidance [S115], but a multidisciplinary scoping review found no workload or acceptability evidence in 7 of 11 studies (63.6%) [S423], and fair use may require institutions to provide premium tool access [R20] or to permit only free tools [R15].",
+   "dataset": "[D] Only 5.3% of capstone students used the university-hosted AI tool, with most using general chatbots [D14].",
+   "interpretation": "[I] A plain declaration needs little infrastructure and has low direct cost, though consistent policy, staff training and any marking of logs add staff time; cost evidence is limited, because no study measured these costs or licence spending directly.",
+   "key_studies": [
+    "R14",
+    "R91",
+    "R23",
+    "S069",
+    "S115",
+    "S423"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 2,
+   "core_studies": 1,
+   "conflicts": "Inconsistent policies and limited staff know-how [S006], [S482], [R27]. Markers found dual evaluation of AI and student work demanding [S108].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "accessibility_equity",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Disclosure-based approaches avoid reliance on detectors, which are reported to be biased against non-native English writers [R15], [R28], [S467], and purpose-based rules can protect legitimate language support for EAL students [S457], [S028]. However, unequal access to paid tools is a recurring concern [R20], [R14], [R10], multilingual writers report stigma [S482], fear of judgement drives under-declaration [S449], and weaker writers may be disadvantaged in written reflections [R45].",
+   "dataset": "",
+   "interpretation": "[I] Declarations are fairer than detection, but their fairness depends on equal tool access and on disclosure carrying no penalty.",
+   "key_studies": [
+    "R15",
+    "R28",
+    "S457",
+    "R20",
+    "R10",
+    "S482"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 2,
+   "core_studies": 1,
+   "conflicts": "Language support versus stigma for multilingual students [S457], [S482].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  }
+ ],
+ "evaluation_finding": "AI-use declarations are a low-infrastructure way to permit and shape responsible GenAI use in computing assessment, although direct cost evidence is limited [R91], [R92], [S140], [R10], [S423]. They give little assurance of authorship or individual capability, because self-disclosure is often unverified, under-reported or fabricated [S423], [R45], [R28], [J1]. They work best as one layer combined with graded critique of AI output and an individual check such as a viva [R80], [R79], [R93].",
+ "strengths": [
+  "Permit and develop responsible use: students valued validation tasks and preferred 'allow with disclosure' policies [R91], [R92].",
+  "Associated with stronger disclosure, attribution and verification practices when combined with logs and checkpoints [S140].",
+  "Low infrastructure and easy to add to existing tasks [R14], [R91], [S069].",
+  "Avoid reliance on biased, unreliable AI detectors [R28], [R15], [S454].",
+  "Give educators partial insight into how students used AI and help refine assessments [R14], [R45]."
+ ],
+ "limitations": [
+  "Rest on unverified self-report; compliance is often not checked [S423], [R14], [S028].",
+  "Students under-declare because of fear, peer norms and low trust [S449], [S460], [S481].",
+  "Declarations, reflections and logs can be fabricated or curated [R45], [S006], [S457].",
+  "Risk of performative compliance and shallow critique [R91], [R45].",
+  "Do not reduce GenAI's ability to complete the underlying task [R96], [D03]."
+ ],
+ "practical_considerations": [
+  "Pair declarations with graded critique of AI output and an individual viva or code walkthrough [R80], [R79], [R93].",
+  "Make disclosure safe and non-punitive, with clear task-level rules, to encourage honesty [S416], [S428], [S460].",
+  "Keep declarations short and structured for large cohorts; reserve detailed log review for small cohorts or sampling [R16], [S342], [R10].",
+  "Model the expected documentation format and weight it in the rubric, as compliance was poor otherwise [R72], [R27], [R91].",
+  "Budget for equitable tool access and staff AI literacy training, which are the main costs beyond marking time [R20], [R10], [S331], [S069]."
+ ],
+ "evidence_gaps": [
+  "No controlled computing study shows that declarations improve learning or integrity outcomes; S140 is non-computing and abstract-only.",
+  "Staff workload for reading and grading declarations, logs and reflections has not been measured.",
+  "No study in the pack verifies declarations against actual AI use in computing at scale.",
+  "Effects on students with disabilities or anxiety are not reported.",
+  "Most computing evidence comes from single-course practice reports of quality 2-3."
+ ]
+}

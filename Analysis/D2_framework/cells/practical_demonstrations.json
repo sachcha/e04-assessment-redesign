@@ -1,0 +1,284 @@
+{
+ "assessment_type": "Practical demonstrations",
+ "n_studies_in_pack": 20,
+ "cells": [
+  {
+   "dimension": "capability_verification",
+   "rating": "Strong",
+   "confidence": "High",
+   "literature": "[L] In a 60-student programming module, take-home scores averaged about 83.8% but live code demonstrations averaged about 43.9%, and many high scorers could not explain or reproduce their own code [R81]. Live checkoffs with scripted questions let TAs confirm individual baseline proficiency in real tools for 237 students [R95], and individual vivas with real-time code modification separated students within the same group [R80], [R79]. A systematic review reports that live coding and oral defence are the most AI-resistant checks of understanding because they need real-time independent reasoning [R28], [S097].",
+   "dataset": "[D] Students scored a median 7.7 points higher on AI-permitted take-home assignments than on proctored exams, and assignment marks agreed only moderately with exam marks [D24], [D25]. Marking did not respond to verbatim AI-authored content in submissions [J1].",
+   "interpretation": "[I] Live demonstration with questioning is one of the few formats that tests whether students can explain, justify and adapt their own work, although checkoff ceiling effects mean it confirms baseline rather than graded proficiency [R95].",
+   "key_studies": [
+    "R81",
+    "R95",
+    "R80",
+    "R79",
+    "R28",
+    "S097",
+    "R72",
+    "R04",
+    "S331"
+   ],
+   "n_supporting": 9,
+   "computing_studies": 7,
+   "core_studies": 4,
+   "conflicts": "Median first-attempt checkoff scores were full marks, so scores discriminate little above baseline [R95]; R81 phases are confounded and descriptive only.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 1
+  },
+  {
+   "dimension": "genai_exposure",
+   "rating": "Strong",
+   "confidence": "Medium",
+   "literature": "[L] In whole-programme benchmarking, GPT-4 would have passed most of a degree and failed only because of in-person laboratory and viva hurdles [S097]. Tasks needing in-person work stayed hard for GenAI, and reviews rate live or face-to-face discussion and live coding as least affected by GenAI [S001], [R03], [R28]. However, AI-written scripts can support presentations, and unsupervised online interviews may become open to real-time AI help [S001].",
+   "dataset": "[D] With several prompting attempts, GPT-4 fully answered 85.6% of CS questions, so the artefact being demonstrated is itself highly exposed [D03].",
+   "interpretation": "[I] The live explanation and modification component resists GenAI, but this holds only for supervised, real-time demos; recorded or scripted walkthroughs and the underlying artefact remain exposed [S001], [R81].",
+   "key_studies": [
+    "S097",
+    "S001",
+    "R28",
+    "R03",
+    "R81",
+    "S405"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 2,
+   "core_studies": 1,
+   "conflicts": "No included study tested GenAI directly against a live computing demonstration; evidence is indirect and mostly from non-computing or mixed disciplines [S097], [S001]. Recorded walkthroughs [R72], [R82] are more exposed than live demos.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authorship_assurance",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] A Learning Integrity Score comparing submissions with supervised viva and demo performance rose from about 11.7 to about 45.3 after redesign, and the authors warn no single mode should be treated as decisive [R81]. Individual vivas distinguished contributions within group projects [R80], [R79], and a mismatch between understanding and submitted work triggered investigation of undisclosed AI use [R93]. How AI was used was visible only when demos were paired with prompt logs, and log compliance was weak in one course [R72], [R79].",
+   "dataset": "[D] A capstone course used a rotating 5-15 minute tutor conversation on artefacts and commit history to verify individual contributions; this shows feasibility, not effectiveness [J4].",
+   "interpretation": "[I] Demonstrations establish whether a student owns and understands the work, but not who produced each part or how AI was used unless paired with repository history or AI logs.",
+   "key_studies": [
+    "R81",
+    "R80",
+    "R79",
+    "R93",
+    "R72"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 3,
+   "core_studies": 2,
+   "conflicts": "LIS is an ad hoc formula from a single cohort [R81].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "lo_alignment",
+   "rating": "Strong",
+   "confidence": "High",
+   "literature": "[L] Checkoff skills were listed per checkoff, and the debugger checkoff was deliberately scoped to the stated learning objectives [R95]. Demo and viva designs were grounded in constructive alignment, assessing explanation of logic, justification of design and adaptation of code rather than output alone [R81], [R79], and graded components were mapped to course outcomes [R93], [R04]. Rubric scores from screencast demos gave more meaningful outcome data than autograded instruments [R82].",
+   "dataset": "",
+   "interpretation": "[I] Demonstrations align well with computing outcomes that involve reasoning and tool use, though a narrowly scoped checkoff can reduce coverage to a small skill set [R95].",
+   "key_studies": [
+    "R95",
+    "R81",
+    "R79",
+    "R93",
+    "R82",
+    "R04"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 4,
+   "core_studies": 4,
+   "conflicts": "Alignment is asserted by design in all studies; none formally validated it against independent measures.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authenticity",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Checkoffs ran in the real tool environments students will use and resembled technical interviews [R95]. Demos of working ESP32 prototypes and of a Java maths-learning app, with selected apps to be trialled by a partner school, tied the demo to real constraints and users [R79], [R80], and open-ended projects were framed as closer to career problems [R72], [R93]. One study notes a tension, as authentic take-home work may increase vulnerability and some rote mastery testing may be needed [S097].",
+   "dataset": "[D] 7 of 11 capstone clients named lack of independent understanding in client meetings as a concern, which mirrors the explanation demanded in demos [D20].",
+   "interpretation": "[I] Authenticity depends on design: demos of AI-assisted projects resemble practice, while AI-free tool checkoffs test skills under conditions unlike AI-available work.",
+   "key_studies": [
+    "R95",
+    "R79",
+    "R80",
+    "R72",
+    "R93",
+    "R16",
+    "S097"
+   ],
+   "n_supporting": 7,
+   "computing_studies": 3,
+   "core_studies": 2,
+   "conflicts": "Authenticity claims are mainly author framing rather than measured [R95], [R72].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "appropriate_ai_use",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Several designs permitted GenAI on the project and used the demo or viva to check understanding, together with prompt submission, disclosure and justification [R80], [R79], [R93], [R81]. Design-first projects that encouraged GenAI for low-level functions were assessed via screencast demos [R82]. Uptake was uneven: AI documentation was generally poor [R72], and 10% of surveyed students did no verification of AI output [R93].",
+   "dataset": "[D] In a capstone survey, students frequently used both AI-first and student-first review modes [D15], and their most common advice to peers was to retain understanding [D19].",
+   "interpretation": "[I] The demonstration itself does not develop AI use; it supports responsible use only when it sits on top of an AI-permitted task with disclosure and verification requirements.",
+   "key_studies": [
+    "R80",
+    "R79",
+    "R93",
+    "R81",
+    "R82",
+    "R72",
+    "S140"
+   ],
+   "n_supporting": 7,
+   "computing_studies": 4,
+   "core_studies": 3,
+   "conflicts": "Live tool checkoffs did not address AI use at all [R95].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "process_visibility",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Screencast code tours and design-phase deliverables exposed students' process [R82], and live explanation reveals reasoning in real time [R81]. AI interactions became visible only when demos were combined with repository history, evidence boards, prompt logs or design journals [R81], [R79], [R93]. Recorded walkthroughs and video of students doing the work are proposed to back up products [R16], [S001].",
+   "dataset": "",
+   "interpretation": "[I] Demos make reasoning visible at one point in time, but the development process and AI use need companion process evidence.",
+   "key_studies": [
+    "R82",
+    "R81",
+    "R79",
+    "R93",
+    "R72",
+    "R16",
+    "S001"
+   ],
+   "n_supporting": 7,
+   "computing_studies": 3,
+   "core_studies": 2,
+   "conflicts": "",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "scalability",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Live checkoffs ran for 237 students, but sessions overran plans (median 9.5-25 min against 5-15 min) and demand peaked on the last day [R95]. Ten-minute individual vivas with live code modification ran for over 750 students across two campuses [R80]. Most other implementations were small or medium, from cohorts of 14 and 15 to about 60 students [R79], [R72], [R93], [R81], and process-heavy formats with oral defences are noted as impractical in large cohorts [R16].",
+   "dataset": "[D] A capstone course ran rotating 5-15 minute tutor conversations at about one tutor per three teams of 9-10 students [J4].",
+   "interpretation": "[I] Demonstrations can scale with short, booked, rubric-based slots and enough tutors, but cost rises roughly with cohort size.",
+   "key_studies": [
+    "R95",
+    "R80",
+    "R81",
+    "R79",
+    "R72",
+    "R93",
+    "R16"
+   ],
+   "n_supporting": 7,
+   "computing_studies": 4,
+   "core_studies": 3,
+   "conflicts": "R80 reports scale but gives no data on staff time; R95 calls checkoffs scalable while reporting long queues.",
+   "cohort_note": "Small (<50): well evidenced and workable, in courses of typically 25-35 students and cohorts of 14 and 15 [R72], [R79]. Medium (50-200): workable with scheduled slots, as in courses of about 50 and 60 students [R93], [R81], [J4]. Large (>200): shown feasible with short timed slots, appointments and many TAs, but queues and overruns are reported [R95], [R80].",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "workload",
+   "rating": "Weak",
+   "confidence": "Medium",
+   "literature": "[L] Checkoff appointments took up about 80% of TA office-hour time, and the authors advise avoiding other large deadlines in checkoff week [R95]. Conceptual and guidance papers report that oral defences and related measures need substantial staff time and institutional recognition of workload [R16], [S105], [R04]. One course reported rubric grading of screencast demos as its only added burden, and a review places code-explanation components as a lower-effort entry point than full oral defence [R82], [R28].",
+   "dataset": "[D] A capstone course needed about one tutor per three teams for its rotating conversations [J4].",
+   "interpretation": "[I] Live demos are staff-intensive per student; booked appointments, pair formats and short recorded walkthroughs reduce but do not remove the burden [R95], [R82].",
+   "key_studies": [
+    "R95",
+    "R16",
+    "S105",
+    "R04",
+    "R82",
+    "R28"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 4,
+   "core_studies": 3,
+   "conflicts": "R82 reports low added burden for screencast demos, against the high live-checkoff burden in R95.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "feasibility",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Demonstrations were run within normal module delivery in several computing courses [R81], [R80], [R95], [R72], and little policy change was needed. Their main implementation cost is staff time: checkoff appointments took about 80% of TA office-hour time, and Docker containers, scripts and rubrics were needed to standardise delivery, although environment setup problems still caused bottlenecks [R95]. Platform and equipment costs were kept low with low-cost ESP32 hardware [R79] and screencast demos marked by rubric, whose only reported extra burden was rubric grading [R82]. Faculty workshops produced oral-defence templates rated implementable within one semester [R28], while staff resistance, resource limits and the need for staff AI literacy training are reported barriers [R04], [S331].",
+   "dataset": "[D] A capstone course embedded tutor conversations on artefacts within its existing assessment [J4].",
+   "interpretation": "[I] Little policy or licence change is needed, but demos depend on TA or tutor time, scheduling and prepared environments, so feasibility including cost is Moderate; cost evidence is limited, because no study reported staff hours per student at scale or costs in money terms.",
+   "key_studies": [
+    "R95",
+    "R81",
+    "R80",
+    "R79",
+    "R82",
+    "R28",
+    "R04",
+    "S331"
+   ],
+   "n_supporting": 8,
+   "computing_studies": 7,
+   "core_studies": 5,
+   "conflicts": "Workload is rated Weak because of live staff contact time [R95], which rules out a Strong rating. The 750-student implementation gave no staff-time data [R80].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 1
+  },
+  {
+   "dimension": "accessibility_equity",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Live oral performance can reflect anxiety, hesitation or language proficiency, so one design triangulated evidence instead of relying on the viva; 86.7% of its students rated it fair [R81]. Two attempts per question and a full redo reduced stress in checkoffs, and a quieter space was recommended for students with accommodations [R95]. In-class Q&A and oral formats may disadvantage neurodivergent or socially anxious students while helping others [R04], [S001], and accessible alternatives are recommended [R16].",
+   "dataset": "",
+   "interpretation": "[I] Demonstrations carry known risks for anxious students and those with English as an additional language, which design measures such as reattempts and triangulation can reduce.",
+   "key_studies": [
+    "R81",
+    "R95",
+    "R04",
+    "S001",
+    "R16",
+    "R93"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 3,
+   "core_studies": 3,
+   "conflicts": "No study measured outcomes for specific equity groups; fairness evidence is self-reported perception [R81].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  }
+ ],
+ "evaluation_finding": "Practical demonstrations give some of the strongest evidence of individual understanding in computing, exposing large gaps between submitted code and the ability to explain or reproduce it [R81], [R95], [R28]. Their GenAI resistance depends on being live and supervised [S097], [S001]. Their main costs are staff time and scheduling, and they show AI use and process only when paired with logs or repository evidence [R95], [R79], [R81].",
+ "strengths": [
+  "Reveal whether students can explain, justify and modify their own code, which take-home marks do not show [R81], [R80], [D24].",
+  "Live, in-person demos were the hurdles GenAI could not pass in whole-programme benchmarking [S097], [R28].",
+  "Align well with computing outcomes involving reasoning and real tool use [R95], [R79], [R82].",
+  "Can sit on top of AI-permitted projects, so AI use is allowed while understanding is still checked [R80], [R79], [R93]."
+ ],
+ "limitations": [
+  "High staff time: checkoffs took about 80% of TA office-hour time and ran over schedule [R95].",
+  "Recorded or scripted walkthroughs and unsupervised online demos are more exposed to AI support [S001], [R72].",
+  "Demonstrations alone do not show how AI was used; that needs logs, journals or repository history [R81], [R79], [R72].",
+  "Oral and live formats can disadvantage anxious students and those with lower language proficiency [R81], [R04], [S001].",
+  "Ceiling effects limit discrimination above baseline proficiency [R95]."
+ ],
+ "practical_considerations": [
+  "Use booked appointments with time limits, pair formats and closed sign-ups to manage queues in large cohorts [R95].",
+  "Keep slots short (about 5-15 minutes) and rubric-based; this has been run for over 750 students [R80], [J4].",
+  "Budget TA or tutor time for live slots, since checkoffs took about 80% of TA office-hour time, and prepare standardised environments such as Docker containers and scripted questions, with several versions to limit question sharing [R95].",
+  "Triangulate the demo with repository history and AI logs rather than treating it as sole proof of integrity [R81], [R79].",
+  "Offer reattempts and quieter spaces to reduce anxiety and support students with accommodations [R95]."
+ ],
+ "evidence_gaps": [
+  "No study directly tested current GenAI tools against live computing demonstrations, including real-time AI assistance during remote demos.",
+  "No controlled comparison of learning or integrity outcomes between demo-based and other assessment designs in computing; R81 and R80 lack control groups.",
+  "Staff time per student was not measured in large-cohort implementations.",
+  "No study measured outcomes for students with disabilities, anxiety or English as an additional language.",
+  "Inter-rater reliability of demo and checkoff rubrics was not reported."
+ ]
+}

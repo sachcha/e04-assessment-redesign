@@ -1,0 +1,527 @@
+[
+ {
+  "record_id": "R15",
+  "title": "The Summative Assessment of Generative AI Usage within Academic Writing in a Computing Foundation Year",
+  "authors": "Tom Prickett; Carly Foster",
+  "year": 2025,
+  "venue": "Proceedings of the 10th Computing Education Practice Conference (CEP '26), ACM",
+  "doi": "10.1145/3772338.3772347",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Computing foundation year at a UK university (HE); summative assessment design that requires and evidences GenAI use, with declaration and integrity discussion; ACM CEP practice paper (peer reviewed); 2026 proceedings; English.",
+  "study_design": "Practice report (CEP 'what/why/does it work' format) describing a redesigned assessment, with end-of-module student perception survey results and module outcome data",
+  "country": "UK",
+  "discipline": "Computing (digital society / social and professional issues module in a computing foundation year)",
+  "computing": "Y",
+  "level": "Undergraduate (foundation year)",
+  "sample": "88 foundation-year students in one 12-week module, semester 1 2024-25; module survey had 19 responses (22%) in 24-25, compared with 19 responses (20%) in 23-24",
+  "genai_tools": "Student choice of free GenAI tools; PREP & EDIT prompting framework taught; Turnitin AI checker used in marking; Claude since provided to students (future work)",
+  "assessment_types": [
+   "Unsupervised formats",
+   "Process evidence",
+   "Personalised tasks",
+   "AI-use declarations"
+  ],
+  "key_findings": [
+   {
+    "finding": "Assessment 1 (80%) required GenAI use. Marks were spread over the search process, evidence of web and library search, the prompts used and AI outputs, and a reflection checking AI output for completeness, bias and hallucinations.",
+    "location": "Sec 1.1"
+   },
+   {
+    "finding": "Each student had to pick a different technology for the individual part, making the task divergent. The authors cite this as a way to promote authenticity and reduce cheating.",
+    "location": "Sec 1.1"
+   },
+   {
+    "finding": "In both assessments students had to declare and evidence any GenAI use. For the reflective report (20%), AI drafts had to be appended and the report personalised with module evidence.",
+    "location": "Sec 1, Sec 1.2"
+   },
+   {
+    "finding": "Student satisfaction items improved on the previous year: 100% agreed or mostly agreed in 24-25, compared with 68-79% in 23-24 (n=19 each year). All students who completed every component passed; the module mean was 60% (SD 15).",
+    "location": "Sec 4, Table 1"
+   },
+   {
+    "finding": "No misconduct was detected by the Turnitin AI checker or manual scrutiny. The authors note that detectors give false positives and negatives and may be biased against non-native writers.",
+    "location": "Sec 4"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Argues the task is authentic because validating AI-generated content is a challenge adult citizens face (Wiggins sense), while noting authenticity alone does not protect integrity (Sec 2).",
+   "capability_verification": "Students must independently verify AI output against traditional research and show evidence of it, which the authors argue AI would find hard to produce (Sec 1.1, Sec 2).",
+   "integrity_security": "No misconduct detected via Turnitin AI checker and manual review; authors acknowledge detector limits and plan face-to-face demos/walkthroughs because written tasks are increasingly challenged (Sec 4, Sec 6).",
+   "lo_alignment": "Links tasks to QAA computing benchmark expectations for written communication and module aims on information and AI literacy (Sec 1).",
+   "appropriate_ai_use": "GenAI use is required in assessment 1 and encouraged in assessment 2, with explicit teaching of ethical use, prompting frameworks and misconduct avoidance (Sec 1, Sec 2).",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "Implemented in a real 88-student module with outcomes in line with institutional norms (Sec 3, Sec 4).",
+   "process_visibility": "Marks are given for the research process, prompt logs and search evidence rather than only the end product (Sec 1.1, Sec 2).",
+   "accessibility_equity": "Requires that tools used are free to students; notes detector bias against non-native English speakers (Sec 1, Sec 4)."
+  },
+  "author_recommendations": [
+   "Embed required, declared and evidenced GenAI use in assessed academic writing in computing programmes, with marks for evaluating AI output (tested descriptively in one module)",
+   "Use divergent individual tasks (a different topic per student) to support authenticity and reduce cheating (not tested separately)",
+   "Supplement written assessments with face-to-face demonstration or walkthrough (not tested)",
+   "Extend the approach to later degree stages and research student perceptions of AI teaching (not tested)"
+  ],
+  "limitations": "Single module and single cohort; low survey response (19 of 88); comparison with the previous year is descriptive only; misconduct outcome depends on AI detectors the authors themselves call unreliable; no formal limitations section. 4-page practice report.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "Y",
+   "q4": "Unclear",
+   "q5": "N",
+   "quality_score": 2,
+   "note": "Clear aim and well-described context (n=88, module, assessment weights). Evaluation is thin: 22% survey response, no inferential analysis, and a misconduct claim resting on AI detection. Study limitations are not discussed."
+  }
+ },
+ {
+  "record_id": "R28",
+  "title": "Generative AI in computing education: A systematic review and a framework for responsible integration",
+  "authors": "Arun Kumar; Thakerng Wongsirichot; Aziz Nanthaamornphong",
+  "year": 2026,
+  "venue": "Computers and Education: Artificial Intelligence",
+  "doi": "10.1016/j.caeai.2026.100677",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Systematic review of GenAI in computing/programming education, primarily HE; RQ3 on assessment redesign and integrity is a substantial strand (AI-resistant assessment is the densest theme); peer-reviewed journal (CAEAI); 2026; English.",
+  "study_design": "Systematic literature review (Kitchenham & Charters; Wohlin snowballing from 7 seeds; PRISMA 2020 reporting) with 10-item quality appraisal, thematic synthesis (Cruzes & Dyba) and a derived framework (VIE)",
+  "country": "Not applicable (review); authors based in India and Thailand; corpus mainly North America, Northern Europe and Australasia",
+  "discipline": "Computing and programming education",
+  "computing": "Y",
+  "level": "Primarily higher education (CS1 30 studies, mixed 34, intermediate 5, advanced 3); limited secondary/vocational coverage",
+  "sample": "72 primary studies (2022-2026) from 33 venues, out of 99 candidates; mean QA 8.32/10; 61 full-weight studies",
+  "genai_tools": "ChatGPT/GPT-3.5/GPT-4 (33 studies), GitHub Copilot (12), Codex (9), multiple tools (30)",
+  "assessment_types": [
+   "Unsupervised formats",
+   "Oral assessments",
+   "Practical demonstrations",
+   "Staged submissions",
+   "Process evidence",
+   "AI-use declarations"
+  ],
+  "key_findings": [
+   {
+    "finding": "Thirteen studies show most standard programming assessments can be completed by current GenAI. Visual-spatial tasks and under-specified problems are partial exceptions, and one study found authentic context-specific tasks had 41% AI completion versus 82% for standard exam tasks.",
+    "location": "Sec 4.2.4, Sec 4.4.1, Table 5"
+   },
+   {
+    "finding": "AI-resistant assessment design is the most densely evidenced theme (26 studies). Strategies include process-visible work (staged portfolios, code journals), oral defence/viva and live coding (endorsed by 12 studies), authentic contextualised tasks, Prompt Problems and perturbation.",
+    "location": "Sec 4.4.5, Fig. 7"
+   },
+   {
+    "finding": "Self-reported undisclosed AI use on assessments is commonly 45-65% (13 studies). Policy ambiguity predicts it, and peer norms were the strongest predictor of misconduct intention in one SEM study.",
+    "location": "Sec 4.4.2, Sec 4.4.4"
+   },
+   {
+    "finding": "AI detection is thinly evidenced (3 studies). The best result reported was 89% accuracy with an 8% false-positive rate. The authors argue false positives fall unevenly on students such as non-native speakers and that accuracy decays across model generations.",
+    "location": "Sec 4.4.3"
+   },
+   {
+    "finding": "The VIE framework (Verification, Implementation, Equity) requires graded, observable critical engagement with AI output, institutional capacity (policy, faculty development, assessment redesign) and equity-aware design. Each is treated as interdependent.",
+    "location": "Sec 5.1, Fig. 8"
+   }
+  ],
+  "evidence_type": "review",
+  "dimensions": {
+   "authenticity": "Authentic, context-specific tasks needing local knowledge are among the most AI-resistant strategies; one primary study showed roughly half the AI completion rate of standard tasks (Sec 4.4.1, Sec 4.4.5).",
+   "capability_verification": "Finds submitted code no longer reliably shows skill; oral defence and live coding are the most AI-resistant in practice because they require real-time independent reasoning (Sec 1, Sec 4.4.5).",
+   "integrity_security": "Synthesises assessment vulnerability, misconduct prevalence (45-65%), weak detection and policy landscape; argues redesign and norm-shifting outperform detection-centric enforcement (Sec 4.4).",
+   "lo_alignment": "Argues GenAI fuses tool use, learning and assessment in computing, so artefact-based assessment cannot separate learning from delegation (Sec 1).",
+   "appropriate_ai_use": "Recommends graduated, competence-gated AI access and explicit AI literacy; notes a contested minority view favouring fully AI-permitted assessment (Sec 4.4.5, Sec 4.5.1, Sec 4.5.2).",
+   "scalability": "",
+   "workload": "Fig. 7 positions strategies by implementation effort; code-explanation components are a lower-effort entry point than oral defence; AI-assisted grading reported to reduce instructor workload (Sec 4.4.5, Fig. 7).",
+   "feasibility": "Faculty workshops produced oral-defence and portfolio templates rated implementable within one semester; faculty development is a documented gap (Sec 4.5.4, Sec 5.4).",
+   "process_visibility": "Process-visible assessments (staged portfolios, code journals, think-aloud) and IDE/prompt-log analytics are proposed to make verification observable, subject to privacy and consent (Sec 4.4.5, Sec 5.5).",
+   "accessibility_equity": "Equity is a co-equal VIE requirement covering skill-gap and resource-gap mechanisms; detector false positives may disproportionately affect non-native speakers (Sec 4.4.3, Sec 5.1)."
+  },
+  "author_recommendations": [
+   "Redesign at least one high-stakes assessment per course to include an oral component or process-visible element (not tested by the review)",
+   "Introduce GenAI gradually after foundational competence, with course-level differentiated access policies (not tested by the review)",
+   "Teach AI literacy explicitly, including prompt engineering and AI error analysis (not tested by the review)",
+   "Prefer assessment redesign and norm-shifting (honour codes, pledges, modelled disclosure) over detection-centric enforcement (not tested)",
+   "Invest in tiered, role-aware faculty development and equity-of-access policies; address seven research gaps such as longitudinal and cross-national studies (not tested)"
+  ],
+  "limitations": "Snowballing from 7 seeds may miss papers outside citation chains; English-only; screening and QA by a single rater (second coder for thematic coding only on 18 studies, kappa 0.62); QA for some papers without full text was based on venue and extraction data; Table 4 counts flagged as needing re-tally after the supplementary search; constructs are heterogeneously operationalised; corpus skewed to English-speaking, well-resourced contexts.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Explicit RQs, protocol, PRISMA flow, QA instrument, IRR and replication package; corpus well described (Tables 2-4). Threats to validity discussed in depth. Minor concerns: single-rater screening/QA and an internally inconsistent Table 4 note."
+  }
+ },
+ {
+  "record_id": "R71",
+  "title": "Educational Effects of Animated Output and Application-Specific Commands in Programming Classes in the Age of Generative AI",
+  "authors": "Kazunari Ito",
+  "year": 2026,
+  "venue": "International Conference on Information and Education Technology (ICIET)",
+  "doi": "10.1109/ICIET69664.2026.11561661",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Third- and fourth-year undergraduates at a Japanese university (HE); programming assignments designed to be AI-resistant to protect learning and deter copy-paste (assessment design/integrity); GenAI focus; IEEE ICIET conference paper; 2026; English.",
+  "study_design": "Single-group exploratory case study with an end-of-course Likert questionnaire (13 items) and two open-ended items analysed thematically; no control group",
+  "country": "Japan",
+  "discipline": "Programming within an interdisciplinary Social Informatics course (mixed humanities and science majors)",
+  "computing": "Partial",
+  "level": "Undergraduate (third and fourth year)",
+  "sample": "44 students in one course, April 2025, 11 weeks (7 lessons)",
+  "genai_tools": "Generative AI services such as ChatGPT (students free to use them in class); Pictogramming web apps with custom commands (JavaScpict, Picthon, Picby, etc.)",
+  "assessment_types": [
+   "Unsupervised formats",
+   "Personalised tasks"
+  ],
+  "key_findings": [
+   {
+    "finding": "Assignments used application-specific commands (e.g., pic.RW, pic.M) and animated output. General LLMs are not trained on these, so they tend to produce plausible but non-working code, which forces students to verify and debug.",
+    "location": "Sec II.C, Table II"
+   },
+   {
+    "finding": "Most students tried to get complete code from GenAI (A1 mean 4.34), but strongly agreed that it needed modification (A2 mean 4.52). They rated custom commands as effective against copy-paste submissions (B2 mean 4.57, the highest item).",
+    "location": "Sec III.C, Table V"
+   },
+   {
+    "finding": "Students reported thinking more deeply (C1 4.39) and better debugging practice (C3 4.18) when AI was less useful. Fairness (C4 3.48) and motivation (B3 3.45) were more divided.",
+    "location": "Sec III.C, Table V"
+   },
+   {
+    "finding": "Students agreed AI-resistant tasks were more effective for learning (D1 4.02) but were lukewarm about having more of them in future (D2 3.32). The author reads this as a call for a balanced mix.",
+    "location": "Sec III.C, Table V"
+   },
+   {
+    "finding": "Students suggested further designs: self-defined specifications, personal experience, multi-phase changing conditions, explaining the process, and deliberately flawed code to debug.",
+    "location": "Sec III.D, Table VII"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Students perceived AI-resistant tasks as more authentic assessments of their ability (open-ended responses) (Sec III.D).",
+   "capability_verification": "Custom commands make AI output fail, requiring students to show their own debugging and understanding; based on self-report only (Sec II.C, Table V).",
+   "integrity_security": "Students rated custom commands as a strong barrier to naive copy-paste (B2 4.57); no misconduct data collected (Table V).",
+   "lo_alignment": "Argues the design preserves trial-and-error and conceptual learning that copy-paste would bypass (Sec I, Sec II.C).",
+   "appropriate_ai_use": "AI use was permitted; the author proposes a hybrid model mixing AI-easy and AI-hard tasks to build AI literacy (Sec III.A, Sec IV).",
+   "scalability": "",
+   "workload": "Some students appeared to want a lighter, balanced workload, per the gap between D1 and D2 (Sec III.C).",
+   "feasibility": "Relies on an existing purpose-built web environment (Pictogramming series) which other courses would need to have (Sec II).",
+   "process_visibility": "Students suggested asking for explanations of the process leading to a result (Table VII).",
+   "accessibility_equity": "Fairness perceptions were divided (C4 3.48; about 60% agreed) (Sec III.C)."
+  },
+  "author_recommendations": [
+   "Use application-specific custom commands and animated output to make programming assignments resistant to AI outsourcing (evaluated by student self-report only)",
+   "Adopt a hybrid curriculum combining AI-solvable and AI-resistant tasks to build AI literacy (not tested)",
+   "Run comparative experiments with control groups and wider age ranges (not tested)"
+  ],
+  "limitations": "Small sample (n=44), single course, no control group (acknowledged). Outcomes are self-reported perceptions only, with no performance or misconduct data. Non-validated questionnaire. The author built the tool. Resistance depends on LLMs not knowing the custom syntax, which may not last.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Unclear",
+   "q5": "Y",
+   "quality_score": 4,
+   "note": "Clear aim, appropriate exploratory design, sample and instrument described. Interpretation sometimes goes beyond the perception data (e.g., claims of learning effects and integrity). Limitations acknowledged."
+  }
+ },
+ {
+  "record_id": "R75",
+  "title": "Toward Human-AI Collaboration: A Recommender System to Support CS1 Instructors to Select Problems for Assignments and Exams",
+  "authors": "Filipe Dwan Pereira; Luiz Rodrigues; Marcelo Henrique Oliveira Henklain; Hermino Barbosa de Freitas Júnior; David Fernandes Oliveira; Alexandra Ioana Cristea; Leandro Silva Galvão de Carvalho; Seiji Isotani; Aileen Benedict; Mohsen Dorodchi; Elaine Oliveira",
+  "year": 2022,
+  "venue": "IEEE Transactions on Learning Technologies",
+  "doi": "10.1109/TLT.2022.3224121",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "CS1 at a Brazilian university (HE); AI recommender to build equivalent assignment/exam variants, motivated by plagiarism mitigation and fairness across versions (assessment design/integrity); AI in assessment (deep-learning topic detection plus effort-based recommendation, not GenAI); IEEE TLT journal; published online Nov 2022; English.",
+  "study_design": "Design and evaluation of an AI recommender system: data-driven effort modelling plus CNN topic classifier, evaluated in a single-blind, counterbalanced experiment with CS1 instructors against a state-of-the-art baseline (binomial multilevel regression)",
+  "country": "Brazil (data from Federal University of Amazonas; instructors from Brazilian universities)",
+  "discipline": "Computer science (CS1 introductory programming, Python)",
+  "computing": "Y",
+  "level": "Undergraduate (CS1); evaluation participants were instructors",
+  "sample": "IDE log data from 2714 students (2016-1 to 2019-2) on 1026 distinct CodeBench problems; 35 CS1 instructors in the blind evaluation (5 groups of 7; 1 excluded for acquiescence); 210 problem pairs rated; 5-instructor think-aloud pilot",
+  "genai_tools": "Not GenAI; CNN text classifier (NLP on problem descriptions, F1 0.90) with fine-grained effort features, truncated SVD and cosine nearest-neighbour recommendation",
+  "assessment_types": [
+   "Supervised assessment",
+   "Personalised tasks"
+  ],
+  "key_findings": [
+   {
+    "finding": "At UFAM, instructors make many variants of each computer-based assignment and on-campus exam to reduce plagiarism. Choosing equivalent problems by topic and effort is slow and depends on expert judgement.",
+    "location": "Sec I, Sec III.A"
+   },
+   {
+    "finding": "Instructors judged 87.6% of problems recommended by the method as interchangeable with the target problem, against about 38% for the baseline (p = 1.66e-10).",
+    "location": "Sec VI, Table V, Fig. 2"
+   },
+   {
+    "finding": "The method also beat the baseline on equivalence of coding effort (81.0% vs 32.4%), resolution time (82.4% vs 50.5%), hit rate (79.1% vs 44.7%) and topic (92% vs 48%). All differences were significant.",
+    "location": "Sec VI, Table V, Figs. 3-6"
+   },
+   {
+    "finding": "The authors argue that a large enough pool could give each student a different but equivalent assignment or exam, discouraging plagiarism. Instructors stay in the loop to validate and correct recommendations.",
+    "location": "Sec IX"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "Proposes using equivalent-problem pools to expose fragile learning when students cannot solve an equivalent problem (Sec VII.B, not tested).",
+   "integrity_security": "Generating equivalent assessment variants (potentially one per student) is presented as a proactive plagiarism-mitigation measure (Sec III.A, Sec IX).",
+   "lo_alignment": "Equivalence is defined by CS1 syllabus topic plus effort so variants assess the same content at similar difficulty (Sec IV).",
+   "appropriate_ai_use": "Human-AI collaboration: AI proposes problems, instructor validates and can relabel to improve the model (Sec IV, Sec IX).",
+   "scalability": "Designed for large CS1 classes using POJs; cold-start limits use on new problems without student log data (Sec I, Sec VIII).",
+   "workload": "Aims to cut the time-consuming, high-cognitive-load task of selecting problems for variants (Sec I).",
+   "feasibility": "Requires a POJ with fine-grained IDE logging and an annotated problem bank (Sec III, Sec VIII).",
+   "process_visibility": "",
+   "accessibility_equity": "Variants are intended to be fair to all students regardless of which version they receive (Sec I)."
+  },
+  "author_recommendations": [
+   "Use effort-and-topic-based AI recommendations to compose equivalent or personalised assignment/exam variants (tested with instructor ratings, not with students)",
+   "Create per-student assessments from a large equivalent-problem pool to discourage plagiarism (not tested)",
+   "Use equivalent-problem pools for testing-effect practice, detecting fragile learning, and pre/post tests in research (not tested)",
+   "Let instructors relabel topics and reward or penalise recommendations to improve the AI (not tested)"
+  ],
+  "limitations": "35 instructors; each problem pair rated by only one instructor (no inter-rater agreement); seven variants per topic only; no evaluation with students or of actual plagiarism reduction; single institution's problem bank and data; cold-start for new problems; contribution of effort features apart from topic detection not isolated. Pre-GenAI; addresses plagiarism generally, not AI misuse.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Explicit RQ and hypothesis, blind counterbalanced design with a pilot, appropriate multilevel analysis, detailed data description, and a substantive limitations section. Relevance to GenAI-era integrity is indirect."
+  }
+ },
+ {
+  "record_id": "R78",
+  "title": "CAP: AI-Augmented Curriculum-Aware Platform for Code Evaluation",
+  "authors": "Rekha Chaturvedi; Kalpana Mishra; Preeti Sharma; Abhay Sharma; Anubhava Srivastava",
+  "year": 2026,
+  "venue": "2026 IEEE Madhya Pradesh Section Conference (MPCON)",
+  "doi": "10.1109/MPCON69668.2026.11508237",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Programming education in higher education (authors at Indian universities; platform for academic coursework); AI-assisted code evaluation and code-aware proctoring for academic integrity (assessment/integrity); AI in assessment, including a lightweight LLM in a RAG feedback step; IEEE MPCON conference; 2026; English.",
+  "study_design": "System design paper with a prototype platform (microservices) and technical evaluation on benchmark problems with simulated submissions against default-configured static analysis tools; partly qualitative",
+  "country": "India (author affiliations; no classroom deployment)",
+  "discipline": "Computer science / programming education",
+  "computing": "Y",
+  "level": "Higher education (introductory and intermediate coursework targeted); no students involved",
+  "sample": "Benchmark problems on arrays, simple hashing and control flow, several reference solutions per problem, simulated correct, partially correct and suboptimal submissions; numbers of problems and submissions not reported",
+  "genai_tools": "Lightweight LLM (unnamed) used only at the reasoning step of retrieval-augmented comparison; vector embeddings; AST-based static analysis; proctoring with identity checks and code snapshots",
+  "assessment_types": [
+   "Supervised assessment",
+   "Process evidence"
+  ],
+  "key_findings": [
+   {
+    "finding": "CAP combines curriculum-aware static analysis with confidence-weighted severity, retrieval-augmented comparison against instructor-verified reference solutions, and real-time editor feedback. It also includes code-aware proctoring that links identity and activity signals to code snapshots.",
+    "location": "Sec III, Sec IV, Figs. 1-5"
+   },
+   {
+    "finding": "Integrity alerts escalate only when cumulative confidence passes a threshold, so single low-confidence events do not trigger penalties. AST-normalised structural comparison detects duplicates that have cosmetic changes such as renamed variables.",
+    "location": "Sec IV.D-E, Sec V"
+   },
+   {
+    "finding": "On correct submissions the platform reportedly flagged fewer errors than baseline static analysis tools. Retrieval-augmented feedback was judged less generic, but only qualitatively, and no numbers are reported.",
+    "location": "Sec V"
+   },
+   {
+    "finding": "The authors say tests were in controlled settings, the proctoring and some AI features are not fully implemented, and the results show design feasibility rather than educational impact.",
+    "location": "Sec V.A, Sec VI"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "Proposes code-aware proctoring and AST-based plagiarism detection with confidence-thresholded alerts; tested only in a prototype, non-adversarial setting (Sec IV.D-E, Sec V).",
+   "lo_alignment": "Feedback rules are selected by course level and topic so warnings match curriculum learning goals (Sec IV.A).",
+   "appropriate_ai_use": "LLM is constrained to reference-guided reasoning to avoid unconstrained generation and support explainable feedback (Sec IV.B).",
+   "scalability": "Microservices architecture intended for independent scaling; not evaluated at scale (Sec III).",
+   "workload": "Motivated by reducing the burden of using separate coding, feedback and proctoring tools (Sec I).",
+   "feasibility": "Real-time feedback ran without disrupting editing in tests; proctoring is a partially integrated prototype (Sec III.B, Sec V).",
+   "process_visibility": "Records code snapshots and activity patterns during assessments and correlates them with behavioural signals (Sec IV.D).",
+   "accessibility_equity": "Cites privacy, false-positive and stress concerns with webcam proctoring as motivation for less intrusive monitoring (Sec I, Sec II)."
+  },
+  "author_recommendations": [
+   "Integrate curriculum-aligned feedback and code-aware integrity monitoring in one platform (prototype only; not tested with students)",
+   "Use confidence-based aggregation so isolated events do not lead to penalties (tested only in simulation)",
+   "Deploy in real classrooms, complete AI modules, improve structural plagiarism detection and add privacy-preserving integrity roles (not tested)"
+  ],
+  "limitations": "No students or classroom data; simulated submissions; numbers of problems and quantitative results (false positives, latency, detection rates) not reported in the text; proctoring and some AI components only partly implemented; baselines run with default rules only; authors acknowledge results are not evidence of educational impact.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "N",
+   "q4": "N",
+   "q5": "Y",
+   "quality_score": 2,
+   "note": "Aim is clear and limitations are acknowledged. The evaluation dataset is not quantified and no numerical results are given for claims of lower false positives or efficient performance, so the claims are not supported by the data shown."
+  }
+ },
+ {
+  "record_id": "R81",
+  "title": "Beyond the Code: Evaluating Alternative Assessment Strategies for Integrity and Authentic Learning in AI-Influenced Programming Tasks",
+  "authors": "Muhammad Hafeez Javed; Taha M. Rajeh; Zaid Al-Huda; Waseem Ahmed Abbasi; Joao Fialho; Martin Konan",
+  "year": 2026,
+  "venue": "2026 4th UK-China Teaching, Learning, and Educational Technology (TILE-TEC)",
+  "doi": "10.1109/TILE-TEC70450.2026.11682137",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Undergraduate programming module (HE); redesign of programming assessment for integrity and validity under GenAI (viva, live demo, repository history); IEEE TILE-TEC conference; 2026; English.",
+  "study_design": "Two-phase practitioner action research (baseline take-home plus viva and live demo; then the redesigned TAP framework) with descriptive comparison of assessment scores, a composite Learning Integrity Score and a student perception questionnaire",
+  "country": "Not reported (authors at University of Stirling, UK, and a partner college in Chengdu, China; study site not stated)",
+  "discipline": "Computing (programming-focused module)",
+  "computing": "Y",
+  "level": "Undergraduate",
+  "sample": "60 undergraduates in one programming module taught by the researcher (convenience sample); assessment data anonymised",
+  "genai_tools": "Generative AI / LLM coding tools in general (none named); AI use not prohibited",
+  "assessment_types": [
+   "Unsupervised formats",
+   "Oral assessments",
+   "Practical demonstrations",
+   "Process evidence",
+   "Supervised assessment"
+  ],
+  "key_findings": [
+   {
+    "finding": "In Phase 1, take-home scores averaged about 83.8% but viva scores averaged about 35.2% and live code demonstration about 43.9%. Students with high take-home marks often could not explain or reproduce their own code.",
+    "location": "Sec IV.A, Figs. 2-4"
+   },
+   {
+    "finding": "A Learning Integrity Score (LIS) measured agreement between the submission and supervised performance. In Phase 1, 45% of students had an LIS of zero and only 10% scored above 50.",
+    "location": "Sec IV.B, Eq. 2, Fig. 5"
+   },
+   {
+    "finding": "After the TAP redesign (repository with version history, structured viva, supervised live demo), averages were about 63% (repository), 56% (viva) and 58% (demo). Mean LIS rose from about 11.7 to about 45.3.",
+    "location": "Sec IV.C, Figs. 8-9"
+   },
+   {
+    "finding": "Of the students, 91.7% agreed or strongly agreed that the revised assessment improved learning, 86.7% rated it fair or very fair, and 83.3% preferred it to the traditional take-home model.",
+    "location": "Sec IV.D, Fig. 6"
+   },
+   {
+    "finding": "Viva performance can reflect anxiety, hesitation or language proficiency. TAP therefore triangulates three kinds of evidence instead of using the viva alone as a proxy for integrity.",
+    "location": "Sec II, Sec III, Sec IV.E"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Framed as moving to authentic, process-oriented evidence of learning rather than product-only grading (Sec I, Sec V).",
+   "capability_verification": "Viva and live demonstration revealed large gaps between submitted code and the ability to explain or reproduce it; triangulation narrowed the gap (Sec IV.A-C).",
+   "integrity_security": "LIS used as an indicator of authorship/integrity; mean LIS rose from about 11.7 to 45.3 after redesign (Sec IV.C).",
+   "lo_alignment": "Grounded in constructive alignment: programming outcomes include explaining logic, justifying design and adapting code, not only correct output (Sec I).",
+   "appropriate_ai_use": "AI use was not banned; students instead had to demonstrate understanding, ownership and process alongside the product (Sec II, Sec IV.C).",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "Implemented within normal module delivery for a 60-student cohort (Sec II).",
+   "process_visibility": "Repository submission with commit and revision history captures incremental development as process evidence (Sec II, Sec III).",
+   "accessibility_equity": "Acknowledges oral formats may disadvantage anxious students or those with lower language proficiency; triangulation is intended to be fairer and more inclusive; 86.7% rated it fair (Sec II, Sec IV.D)."
+  },
+  "author_recommendations": [
+   "Replace product-only take-home programming assessment with the triangulated TAP model: repository history, structured viva and supervised live demo (tested in one cohort)",
+   "Do not treat any single mode, especially the viva, as decisive evidence of integrity (design principle)",
+   "Move programming assessment toward process-oriented, multi-modal evidence of capability (general recommendation)"
+  ],
+  "limitations": "Single cohort and module, convenience sample, practitioner-researcher; no control group. Phases are confounded (different task formats and weights; Phase 1 already included viva and demo). Descriptive statistics only. LIS is an ad hoc formula. Questionnaire not described. GenAI use was not measured directly. Workload and scalability were not reported, and no explicit study limitations section.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Unclear",
+   "q4": "Unclear",
+   "q5": "Y",
+   "quality_score": 3,
+   "note": "Clear aim and suitable action-research design. Context is thin (country, course level, AI use and questionnaire not described). Claims of improved validity rest on descriptive comparisons of non-equivalent phases using an ad hoc index. Limitations of oral formats are discussed."
+  }
+ },
+ {
+  "record_id": "R84",
+  "title": "Can We Design AI-Resilient Programming Assessments? Reflections from a Front-End Web Development Course",
+  "authors": "Chengcheng Han; Xinfeng Ye; Sathiamoorthy Manoharan",
+  "year": 2026,
+  "venue": "2026 IEEE Engineering Education World Conference (EDUNINE)",
+  "doi": "10.1109/EDUNINE62390.2026.11547103",
+  "fulltext_status": "full text (team-supplied PDF)",
+  "source_used": "Papers/ folder (team-supplied PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Third-year undergraduate course at a New Zealand university (HE); AI-resilient take-home programming assessment design and integrity; LLMs tested on the actual assignment; IEEE EDUNINE conference; 2026; English.",
+  "study_design": "Case study: classroom observation of a skewed score distribution, followed by a comparative evaluation of 13 LLM variants given the same assignment prompt, with overlay tests, MOSS similarity checks and follow-up re-prompting and self-correction trials",
+  "country": "New Zealand (University of Auckland)",
+  "discipline": "Computing (front-end web development: HTML, CSS, SVG)",
+  "computing": "Y",
+  "level": "Undergraduate (third year)",
+  "sample": "One assignment from a third-year Client Development course taken by 314 students (student scores not reported); 13 model variants from OpenAI, Anthropic, DeepSeek, Google, xAI and Alibaba accessed via web interfaces in October 2025",
+  "genai_tools": "ChatGPT 5 / 5 Thinking; Claude Opus 4, Sonnet 4.5, Sonnet 4 (thinking and non-thinking); DeepSeek-V3.2-Exp; Gemini 2.5 Flash and Pro; Grok 4 / Grok 4 Heavy Thinking; Qwen3 Max; Qwen2.5-VL",
+  "assessment_types": [
+   "Unsupervised formats",
+   "Supervised assessment",
+   "Oral assessments"
+  ],
+  "key_findings": [
+   {
+    "finding": "Given one unmodified prompt, every model produced working HTML/CSS. Most also correctly handled semantic structure, Flexbox layout, embedded media and the data-driven SVG line graph.",
+    "location": "Sec IV.A-B, Table I, Fig. 2"
+   },
+   {
+    "finding": "No model met the core constraint of rebuilding the logo from higher-level SVG primitives. Only Grok 4 Heavy Thinking matched it visually, and it did so by tracing dense polygons, which is equivalent to the banned path element.",
+    "location": "Sec IV.C, Figs. 3-4"
+   },
+   {
+    "finding": "Supplying the reference logo directly improved outputs, but all still failed the overlay test. Asking models to critique and fix their own output did not fix the real problems and often added new errors.",
+    "location": "Sec V.B, Fig. 6"
+   },
+   {
+    "finding": "MOSS found no similarity in AI-generated HTML or SVG, but CSS from different models was notably similar (up to 40% between DeepSeek and Qwen). AI boilerplate such as a placeholder student ID line could signal AI use.",
+    "location": "Sec IV.D, Sec V.C, Fig. 5"
+   },
+   {
+    "finding": "Interviews and fully supervised tests are effective but costly to scale; the cited estimate is about 1,000 minutes for 10-minute interviews with 100 students. The authors favour tasks needing visual-spatial reasoning but warn this resistance may be short-lived.",
+    "location": "Sec II, Sec V.C, Sec VI"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "Tasks requiring geometric decomposition separated what LLMs could produce from what students could do after classroom practice; oral interviews are noted as an effective check on authorship (Sec II, Sec IV.C).",
+   "integrity_security": "Shows that structured take-home web tasks are fully AI-completable and that similarity detection mostly fails on AI output, apart from CSS overlap and leftover boilerplate (Sec IV, Sec V.C).",
+   "lo_alignment": "The logo task targets geometric decomposition with higher-level primitives; polygon tracing meets the visual requirement but not the learning intent (Sec IV.C).",
+   "appropriate_ai_use": "",
+   "scalability": "Supervised tests and interviews are effective but resource-intensive and hard to scale to large cohorts (Sec II, Sec V.C).",
+   "workload": "Cites about 1,000 minutes of instructor time for 10-minute interviews with 100 students; supervised tests need invigilation, facilities and timetabling (Sec II, Sec V.C).",
+   "feasibility": "Proposes redesigning take-home tasks around visual and integrative reasoning as a more practical option than eliminating take-home work (Sec V.C).",
+   "process_visibility": "Recommends iterative project reviews and tasks foregrounding intermediate representations or explainable design processes (Abstract, Sec VII).",
+   "accessibility_equity": "Notes heavy reliance on high-stakes supervised testing can cause stress and limit creativity and reflection (Sec V.C)."
+  },
+  "author_recommendations": [
+   "Include visual-spatial or geometric reasoning tasks in take-home assignments to resist AI completion (tested only against LLMs, not students)",
+   "Combine supervised evaluations, iterative project reviews and hands-on tasks; increase the weight of supervised assessment (not tested)",
+   "Use MOSS on CSS files and look for AI boilerplate as signals of AI use (not tested as an integrity process)",
+   "Treat AI-resilient designs as adaptive and re-check them as models improve (not tested)"
+  ],
+  "limitations": "The student observation is anecdotal and no student score data are presented. One prompt and one run per model. The authors judged outputs themselves, with no rubric scores or inter-rater check. Table I omits some listed models. The initial logo failures were partly caused by models being unable to fetch a linked file. Results are a snapshot in time (acknowledged).",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Unclear",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 4,
+   "note": "Clear aim and well-specified LLM testing procedure (models, dates, prompts). The motivating student evidence is not reported. Single-run testing; limitations section acknowledges temporal validity."
+  }
+ }
+]

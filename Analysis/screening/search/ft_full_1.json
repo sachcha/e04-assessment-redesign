@@ -1,0 +1,781 @@
+[
+ {
+  "record_id": "S001",
+  "title": "ChatGPT, Copilot, Gemini, SciSpace and Wolfram versus higher education assessments: an updated multi-institutional study of the academic integrity impacts of Generative Artificial Intelligence (GenAI) on assessment, teaching and learning in engineering",
+  "authors": "Sasha Nikolic; Carolyn Sandison; Rezwanul Haque; Scott Daniel; Sarah Grundy; Marina Belkina",
+  "year": 2024,
+  "venue": "Australasian journal of engineering education",
+  "doi": "10.1080/22054952.2024.2372154",
+  "fulltext_status": "full text (author/repository copy)",
+  "source_used": "OpenAlex location: UTS OPUS repository (submitted version PDF); publisher version also OA (hybrid) at doi.org",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Engineering degrees at seven Australian universities (IC1); academic integrity and assessment security of real assessment tasks is the main focus (IC2); benchmarks ChatGPT-3.5/4, Copilot, Gemini, Wolfram and SciSpace (IC3); peer-reviewed journal article (IC4); 2024, English (IC5). Computing is partial: one introductory Python programming subject among ten.",
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Tests five GenAI tools against every assessment task in ten engineering subjects and turns the results into a GenAI Assessment Security & Opportunity Matrix of short- and long-term security options per assessment type.",
+  "study_design": "Multi-institutional benchmarking study: subject coordinators submitted their own assessment tasks to GenAI tools with iterative prompt engineering (Feb-Mar 2024), repeating a Q1 2023 ChatGPT-3.5 benchmark",
+  "country": "Australia",
+  "discipline": "Engineering (physics, maths, introductory programming, manufacturing, lab, design, power, impact of technology, WIL, research)",
+  "computing": "Partial",
+  "level": "Undergraduate and postgraduate",
+  "sample": "10 subjects from 7 Australian universities; 9 academics (the subject coordinators); all assessment tasks in each subject outline across 9 assessment-type categories (Tables 1-9)",
+  "genai_tools": "ChatGPT-3.5 (2023 and 2024), ChatGPT-4, Microsoft Copilot, Google Gemini, Wolfram GPT plugin, SciSpace GPT plugin; brief retest with GPT-4o",
+  "assessment_types": [
+   "Supervised assessment",
+   "Unsupervised formats",
+   "Oral assessments",
+   "Practical demonstrations",
+   "Process evidence"
+  ],
+  "key_findings": [
+   {
+    "finding": "ChatGPT-4 improved on ChatGPT-3.5 by an average of 24% on online quizzes and 41% on numerical assignments and exams, which the authors describe as moving from a pass to a credit.",
+    "location": "Results: Online Quiz; Numerical; Conclusion; Tables 1-2"
+   },
+   {
+    "finding": "Written research-based tasks, which were secure in the 2023 benchmark, became passable because newer tools cite real recent literature and hallucinate less; online quizzes, numerical tasks and reflective writing remained high risk.",
+    "location": "Results: Written (Research-based); Written (Reflective); Conclusion; Tables 8-9"
+   },
+   {
+    "finding": "Tasks needing in-person work (laboratory experimentation, interviews, strictly specified visual evidence) and a heavily constrained CSV-based programming project stayed hard for GenAI; no tool passed the two programming projects (0% and 7-33%).",
+    "location": "Results: Programming; Visual; Written (Experimentation-based); Tables 4-6"
+   },
+   {
+    "finding": "Oral presentations can be supported with AI-written scripts, so interview-style orals with impromptu questions were judged the most secure oral format; unsupervised online interviews may become vulnerable to real-time AI help and deepfakes.",
+    "location": "Results: Oral; Table 3; Table 10"
+   },
+   {
+    "finding": "The paid ChatGPT-4 gave a clear advantage over free tools, which the authors flag as an equity concern when GenAI use is allowed.",
+    "location": "Platform Choices, Limitations and Ethics; Conclusion"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Authentic tasks with lab work, specific visual evidence or real experience were harder for GenAI, but written components of these tasks were still at risk.",
+   "capability_verification": "High-stakes unsupervised quizzes and numerical tasks give little evidence of competency; supervised exams and interviews are recommended where capability must be confirmed.",
+   "integrity_security": "Risk level and short- and long-term security options are rated for each assessment type in the Security & Opportunity Matrix (Table 10).",
+   "lo_alignment": "Script support for presentations is acceptable only where the learning outcome is presentation skill rather than knowledge.",
+   "appropriate_ai_use": "The matrix pairs each assessment type with uses of GenAI that support learning (tutoring, brainstorming, feedback, initial code).",
+   "scalability": "",
+   "workload": "Evaluation was done by subject coordinators without research assistants, which limited the number of tools tested.",
+   "feasibility": "Short-term fixes such as complex figures and unique required structures are expected to erode as image understanding improves.",
+   "process_visibility": "Visual evidence (photos, portfolio screenshots, certificates) and video of students doing the work are suggested to back up written submissions.",
+   "accessibility_equity": "Paid tools outperformed free ones, raising inequity; orals may disadvantage some neurodivergent or anxious students but help others."
+  },
+  "author_recommendations": [
+   "Supervise high-stakes quizzes and numerical exams or use proven proctoring; keep unsupervised online quizzes for low-stakes formative use (not tested)",
+   "Use interview-style orals and vivas with impromptu questions to confirm understanding, preferably face to face (not tested)",
+   "Require supporting visual or video evidence and student presence in videos for authentic tasks (not tested)",
+   "Mandate unique, strict structures for literature and reflective writing as a short-term measure (partly observed: all tools struggled with the structured research components)",
+   "Institutions should run assessment security audits now (not tested)"
+  ],
+  "limitations": "Results date quickly as tools change; tasks were all treated as if done with GenAI access even where originally in-person; only some tools were tested (mostly free tiers); assessment categories overlap; pass/fail judgements were made by the authors, who knew outputs were AI-generated; programming represented by a single subject.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Full text read (repository submitted version). Two explicit RQs; documented benchmarking procedure with input/output logs; subjects and tools described; tables support conclusions; limitations section and ethics discussion. Subjective pass/fail grading by authors is a source of bias."
+  }
+ },
+ {
+  "record_id": "S009",
+  "title": "Machine vs Machine: Large Language Models (LLMs) in Applied Machine Learning High-Stakes Open-Book Exams",
+  "authors": "Keith Quille; Csanad Alattyanyi; Brett A. Becker; Róisín Faherty; Damien Gordon; Miriam Harte",
+  "year": 2024,
+  "venue": "Revista de Educación a Distancia (RED)",
+  "doi": "10.6018/red.603001",
+  "fulltext_status": "full text (author/repository copy)",
+  "source_used": "OpenAlex location: ARROW@TU Dublin repository PDF of the published article (CC BY-NC 4.0)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Final-year BSc (Hons) Computing module in Ireland (IC1); validity of high-stakes open- vs closed-book exams and AI detection is the main focus (IC2); ChatGPT-3.5/4 and Bing Chat (IC3); peer-reviewed journal (IC4); 2024, English (IC5).",
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Shows which open- and closed-book exam question types LLMs fail, how badly detectors perform after light tampering, and describes an open-book exam design with randomly pre-selected post-exam vivas.",
+  "study_design": "Staff-student partnership benchmarking study: six years of exam papers answered by three LLMs and graded by two academics, compared with student grades; AI detectors tested on raw and student-tampered outputs",
+  "country": "Ireland",
+  "discipline": "Computing (Applied Machine Learning)",
+  "computing": "Y",
+  "level": "Undergraduate (final year, NFQ Level 8)",
+  "sample": "6 exam papers (2019-2020 proctored closed-book; 2021-2023 open-book), 3 LLMs = 18 scripts; student cohorts of 17-34 per year (Table 1); 8 staff and 6 student researchers; 4 detectors",
+  "genai_tools": "ChatGPT 3.5, ChatGPT 4, Bing Chat; detectors Turnitin (via Urkund), GPTZero, Writer.com, Sapling.ai; QuillBot used for tampering",
+  "assessment_types": [
+   "Supervised assessment",
+   "Unsupervised formats",
+   "Oral assessments"
+  ],
+  "key_findings": [
+   {
+    "finding": "Averaged across six years, the LLMs scored 83% against a student average of 54%, with a large effect size (Cohen's d = 4.05).",
+    "location": "Sec 5.1.1; Table 1"
+   },
+   {
+    "finding": "LLMs did somewhat worse on open-book than closed-book papers (e.g., GPT-4 98% vs 88%); the difference was not significant (p = 0.1511) but the effect size was large (d = 1.31).",
+    "location": "Sec 5.1.2; Tables 2-3"
+   },
+   {
+    "finding": "LLMs struggled with questions that required reading figures, calculating confusion-matrix metrics and choosing a model, and with open-book questions on ML bias tied to the given data, giving generic answers.",
+    "location": "Sec 5.1.3; Tables 4-8; Sec 7"
+   },
+   {
+    "finding": "Turnitin flagged only about 6% of raw AI output on average; Sapling's average detection fell from about 87% on raw output to about 33% after students spent about one minute per sub-question tampering.",
+    "location": "Sec 5.2; Tables 9-10"
+   },
+   {
+    "finding": "The open-book exam design included a ten-minute Socratic viva for a randomly pre-selected 20% of each cohort straight after the exam; no plagiarism concerns were raised by the vivas or by similarity checking.",
+    "location": "Sec 3.3"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Open-book questions asking students to apply concepts to a given dataset or figure were harder for LLMs than definition questions.",
+   "capability_verification": "Random post-exam Socratic vivas were used to check that students could explain their exam reasoning.",
+   "integrity_security": "LLMs outscored students on both proctored-format and open-book papers, and AI detectors were unreliable, especially after tampering.",
+   "lo_alignment": "Exam questions span Bloom's levels and are mapped to the module's four learning outcomes; definition-type items were most vulnerable.",
+   "appropriate_ai_use": "",
+   "scalability": "Vivas were limited to a random 20% sample of each cohort, a way to keep oral checking manageable.",
+   "workload": "",
+   "feasibility": "Open-book exam needed Head of Department or Academic Council approval, a sample paper, revision sessions and extra time.",
+   "process_visibility": "",
+   "accessibility_equity": "Open-book format was designed with student consultation, extra time, questions read aloud and accessibility-tool training for students with additional needs."
+  },
+  "author_recommendations": [
+   "Design exam questions around figures, calculations and data-specific application, which LLMs answered poorly (not tested as a redesign)",
+   "Do not rely on AI detectors, since light tampering sharply reduces detection (evidence from this study)",
+   "Use short random post-exam vivas alongside open-book exams as an integrity check (implemented; no concerns found, effect on cheating not measured)"
+  ],
+  "limitations": "Graders were not the original examiner; GPTZero excluded and some detector scores missing (NA) because of time constraints; students tampered outputs in different ways; LLM statistics rest on 3 models and 6 papers; images were not input to the LLMs; findings come from one ML module.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Full text read (repository copy of published article). Two explicit research goals; co-designed protocol with face-validity meetings; papers, grades and outputs shared online; threats to validity section. Statistical tests use very small n (3 LLMs, 6 exams) and some detector data are missing."
+  }
+ },
+ {
+  "record_id": "S015",
+  "title": "Generative Artificial Intelligence and Introductory Programming Education at Universities: Content, Assignments, Assessment",
+  "authors": "M. S. Dolinsky",
+  "year": 2025,
+  "venue": "WSEAS TRANSACTIONS ON ADVANCES in ENGINEERING EDUCATION",
+  "doi": "10.37394/232010.2025.22.5",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "DOI landing page (resolves directly to the WSEAS PDF, CC BY 4.0)",
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E2",
+  "ft_reason": "University introductory programming (IC1) and GenAI (IC3), but the paper is a brief narrative overview of course content, learning tools, automated assessment systems and GenAI-generated formative feedback. It does not propose or evaluate an assessment redesign for the GenAI era or give evidence on vulnerability, detection or student use in assessed work, so it fails revised IC2 (Amendment 3: AI feedback tools = c_not_redesign).",
+  "redesign_relevance": "c_not_redesign",
+  "redesign_note": "Offers a summary of literature on GenAI for programming exercises and formative feedback; nothing on redesigning summative assessment for integrity.",
+  "study_design": "Narrative literature overview (no stated search method)",
+  "country": "Belarus (author affiliation); reviewed studies from several countries",
+  "discipline": "Computing (introductory programming)",
+  "computing": "Y",
+  "level": "Undergraduate",
+  "sample": "Not applicable (narrative overview of 41 cited sources)",
+  "genai_tools": "ChatGPT/GPT-4 and GenAI generally (as described in cited studies)",
+  "assessment_types": [],
+  "key_findings": [
+   {
+    "finding": "The paper summarises studies using GenAI to generate programming exercises, explain errors, review code and give formative feedback, stressing the need for carefully designed pre-prompts.",
+    "location": "Sec 3.4; Sec 3.5"
+   },
+   {
+    "finding": "It notes one cited system that uses GenAI to check whether a student may have used GenAI to write the code, but gives no evaluation.",
+    "location": "Sec 3.5"
+   }
+  ],
+  "evidence_type": "review",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "Mentions plagiarism-control features of cited automated assessment systems.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "Automated assessment and GenAI feedback are presented as ways to cope with large classes and limited staff.",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Use GenAI with specially developed pre-prompts to give accurate, helpful formative feedback on programming work (not tested)"
+  ],
+  "limitations": "Narrative overview without a search method, appraisal or synthesis; no limitations stated.",
+  "quality": {
+   "q1": "Y",
+   "q2": "N",
+   "q3": "N",
+   "q4": "Unclear",
+   "q5": "N",
+   "quality_score": 1,
+   "note": "Full text read. Aim is clear but the review method is not described; studies are listed rather than appraised; no own data; no limitations acknowledged. Excluded at full text (E2)."
+  }
+ },
+ {
+  "record_id": "S020",
+  "title": "Evaluating Large Language Models in Engineering Education: A Multi-Course Assessment Across Bloom’s Taxonomy",
+  "authors": "Ghazal Barari; Debarati Basu; Yuetong Lin; Jorge Ortega-Moody",
+  "year": 2026,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2026.3686339",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "DOI landing page -> IEEE Xplore open-access PDF (IEEE Access, CC BY 4.0)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Undergraduate engineering courses in the USA including Computer Programming (IC1); measures LLM capability on instructor-designed Bloom-aligned assessment items and compares with students, which counts as vulnerability evidence under revised IC2 (b); GPT-5, Claude, Grok (IC3); peer-reviewed IEEE Access (IC4); 2026, English (IC5). Borderline: the framing is AI-assisted learning rather than integrity, and items were written for the study.",
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Shows that current LLMs answer MCQs at all Bloom levels, including Evaluate and Create, at or above student level, so MCQ-based unsupervised assessment offers little protection.",
+  "study_design": "Cross-sectional comparative evaluation of three LLMs on 48 MCQs under zero-shot and context-assisted prompting, rubric-scored, plus a proctored human benchmark",
+  "country": "USA",
+  "discipline": "Engineering (Thermodynamics, Computer Programming, Systems and Control, Circuits)",
+  "computing": "Partial",
+  "level": "Undergraduate",
+  "sample": "48 instructor-designed MCQs (12 per course across Bloom levels); 3 LLMs each run once per condition; 11 students who had completed Computer Programming (IRB-approved proctored session)",
+  "genai_tools": "GPT-5 (ChatGPT), Claude, Grok (public interfaces, default settings)",
+  "assessment_types": [
+   "Supervised assessment",
+   "Unsupervised formats"
+  ],
+  "key_findings": [
+   {
+    "finding": "On the 12 Computer Programming MCQs, Claude was correct on all items at every Bloom level and GPT-5 nearly all, both above the 11 proctored students; Grok was weaker on Apply and Create items.",
+    "location": "Sec III-E; Fig. 14"
+   },
+   {
+    "finding": "All three models scored highly on recall and application items across courses, and GPT-5 and Claude reached the maximum rubric score on Evaluate items, so higher Bloom levels in MCQ form did not reliably defeat the models.",
+    "location": "Sec III-A, III-B; Figs. 4-10"
+   },
+   {
+    "finding": "Supplying course content improved GPT-5's programming accuracy and explanations but made little difference for Claude or Grok.",
+    "location": "Sec III-D; Figs. 12-13"
+   },
+   {
+    "finding": "Weak points included numerical root-finding in control questions, interpreting code from images (Grok) and drawing correct diagrams, with inconsistent self-corrections.",
+    "location": "Sec IV (Thermodynamics; Computer Programming; Systems and Control)"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "LLMs outperformed students on the same MCQ set, so MCQ scores taken without supervision cannot verify individual capability.",
+   "integrity_security": "Proctoring was used for the human benchmark to make sure participants did not consult LLMs.",
+   "lo_alignment": "Items were mapped to Bloom's levels; the authors argue AI use must be aligned with learning outcomes and Bloom levels.",
+   "appropriate_ai_use": "Table 3 gives guidelines that position LLMs as learning partners requiring verification, justification and reflection.",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "For higher-order objectives, design guided prompts and tasks that require reasoning steps, annotated figures and explicit justification (not tested)",
+   "Have students interrogate and critique AI explanations in assignments and lab reports (not tested)",
+   "Follow the Bloom-aligned guidelines for integrating LLMs in engineering courses (Table 3) (not tested)"
+  ],
+  "limitations": "Small instructor-made item bank (one item each at Evaluate and Create per course); single run per item; no inter-rater reliability or item psychometrics; human benchmark only 11 non-randomly sampled students in one course; text-based items only.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Unclear",
+   "q5": "Y",
+   "quality_score": 4,
+   "note": "Full text read. Four explicit RQs; design suited to exploratory comparison; items, models, prompt and human sample described; limitations section is thorough. Results are given mostly as approximate figure readings and CPI only for Thermodynamics, so q4 is Unclear."
+  }
+ },
+ {
+  "record_id": "S030",
+  "title": "Analysis of ChatGPT Performance in Computer Engineering Exams",
+  "authors": "Roberto Rodríguez-Echeverría; Juan D. Gutiérrez; José M. Conejero; Álvaro E. Prieto",
+  "year": 2024,
+  "venue": "IEEE Revista Iberoamericana de Tecnologias del Aprendizaje",
+  "doi": "10.1109/rita.2024.3381842",
+  "fulltext_status": "full text (author/repository copy)",
+  "source_used": "OpenAlex location: Minerva (Universidade de Santiago de Compostela) repository, accepted author version",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Software Engineering degree at a Spanish university (IC1); impact of ChatGPT on exam-based assessment and exam question design is the main focus (IC2); ChatGPT (IC3); peer-reviewed IEEE RITA (IC4); 2024, English (IC5).",
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Measures ChatGPT performance on real exams from 15 computing subjects by question and application type and derives six exam question design recommendations.",
+  "study_design": "Experimental benchmarking: real 2021-22 exams transcribed to text, answered by ChatGPT (Dec 2022 version) and graded by the subjects' teaching staff; multiple-choice items repeated 100 times via API to analyse non-determinism",
+  "country": "Spain",
+  "discipline": "Computing (Software Engineering)",
+  "computing": "Y",
+  "level": "Undergraduate (years 1-4)",
+  "sample": "Exams from 15 of 17 Software Engineering subjects (13 graded by staff); 230 questions in the main analysis (155 multiple-choice, 70 problems, 9 short answer); 147 MCQs in the non-determinism analysis",
+  "genai_tools": "ChatGPT (GPT-3.5, 15 Dec 2022 release) and ChatGPT API",
+  "assessment_types": [
+   "Supervised assessment",
+   "Unsupervised formats"
+  ],
+  "key_findings": [
+   {
+    "finding": "ChatGPT passed 8 of 15 exams and answered 129 of 230 questions (56%) correctly without any course-specific training.",
+    "location": "Sec III-A; Table I; Fig. 2"
+   },
+   {
+    "finding": "Short-answer (literal definition) questions were answered best (89%), multiple-choice 58%, and problems below 50%; code analysis (62%) and code generation (70%) items did well, while multi-step algorithm, calculation and diagram items did poorly.",
+    "location": "Sec III-A; Figs. 3-5"
+   },
+   {
+    "finding": "Asking each MCQ 100 times changed 39.5% of answers and raised the incorrect rate from 41.5% to 48.3%, so single-run benchmarks can misstate performance.",
+    "location": "Sec III-B; Figs. 6-8"
+   },
+   {
+    "finding": "A misleading function name acted as a distractor: renaming it raised the share of correct answers from 24% to 69%.",
+    "location": "Sec III-B; Figs. 9-10"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Elaborate practical scenarios (e.g., database design problems) were harder for ChatGPT.",
+   "capability_verification": "",
+   "integrity_security": "Many real computing exams could be passed by ChatGPT; risk differs between face-to-face and virtual exams and self-assessment tests.",
+   "lo_alignment": "Questions categorised by Bloom-type knowledge (literal vs applied definition) and application type to show which item types are vulnerable.",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "Recommendations must be rechecked against each new ChatGPT version.",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Avoid literal-definition short-answer questions (not tested)",
+   "Reduce questions that only involve code analysis or generation; combine them with applying a multi-step algorithm, operational semantics or calculation (not tested)",
+   "Use step-by-step algorithm problems, complex calculations, diagrams of specific data-structure instances and elaborate practical scenarios (not tested)",
+   "Check recommendations against the latest model versions (not tested)"
+  ],
+  "limitations": "Single early ChatGPT version; figures replaced by text descriptions whose fidelity is uncertain; two subjects ungraded; detailed per-subject analysis given only for one subject; no explicit limitations section.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Unclear",
+   "quality_score": 4,
+   "note": "Full text read (accepted author version). Five RQs; staff-graded real exams; adaptation guidelines and question coding described; non-determinism analysed. Limitations are mentioned only in passing (diagram transcription, model versions)."
+  }
+ },
+ {
+  "record_id": "S048",
+  "title": "Assessment Redefined: Educational Assessment Meets AI - ChatGPT Challenges",
+  "authors": "Κλεοπάτρα Νικολοπούλου",
+  "year": 2025,
+  "venue": "Current Perspectives in Educational Research",
+  "doi": "10.46303/cuper.2025.2",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "oa_url (journal PDF, CC BY 4.0)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Higher education focus (IC1); proposes alternative assessment practices in response to ChatGPT (IC2, a_redesign); GenAI (IC3); journal article (IC4); 2025, English (IC5). Computing is partial: one subject-specific section on computer science and engineering.",
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Sets out alternative assessment formats (oral, project, real-world, in-class, skills-based, collaborative, reflective/portfolio) and subject-specific examples, including computer science tasks built around critiquing AI output.",
+  "study_design": "Conceptual paper with narrative literature review",
+  "country": "Greece (author); not country-specific",
+  "discipline": "Multi-disciplinary (includes Computer Science & Engineering section)",
+  "computing": "Partial",
+  "level": "Higher education (unspecified)",
+  "sample": "Not applicable (conceptual)",
+  "genai_tools": "ChatGPT / generative AI generally",
+  "assessment_types": [
+   "Supervised assessment",
+   "Oral assessments",
+   "Process evidence",
+   "Personalised tasks",
+   "AI-use declarations"
+  ],
+  "key_findings": [
+   {
+    "finding": "Traditional essays, multiple-choice and fact-recall tasks are argued to be vulnerable because AI answers predictable questions easily.",
+    "location": "Introduction"
+   },
+   {
+    "finding": "Proposed alternatives include oral exams and presentations, project-based, real-world, real-time in-class, skills-based, collaborative, peer and self-assessment, ethical/reflective essays and portfolios, several of which use ChatGPT as a tool whose role students document and critique.",
+    "location": "Sec 'Alternative assessment approaches-practices in the era of AI'"
+   },
+   {
+    "finding": "For computer science and engineering, suggested tasks include documenting prompt-engineering experiments, co-developing programs with ChatGPT and explaining algorithm and debugging choices, and critiquing AI-written code.",
+    "location": "Sec 'Subject-specific examples' (Computer Science and Engineering)"
+   },
+   {
+    "finding": "Empirical studies cited support AI as a marking assistant rather than a replacement for human markers, alongside a need for clear guidelines on acceptable AI use.",
+    "location": "Sec 'Recent empirical research'"
+   }
+  ],
+  "evidence_type": "conceptual/framework",
+  "dimensions": {
+   "authenticity": "Real-world, open-ended problem tasks and case studies are argued to be harder for AI and more authentic.",
+   "capability_verification": "Oral exams and presentations with live questioning let students show and defend understanding.",
+   "integrity_security": "Alternative formats are proposed to reduce cheating and over-reliance on AI.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "Many tasks have students use ChatGPT, then critique, revise and justify their use of its output; clear expectations for AI use are urged.",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "Documenting the learning process, prompts and decisions, and reflective journals or portfolios are recommended.",
+   "accessibility_equity": "Ethical section raises algorithmic bias, accessibility and inclusion when AI is used in assessment."
+  },
+  "author_recommendations": [
+   "Shift assessment from recall to skills, process and critical evaluation of AI output (not tested)",
+   "Use oral, project-based, real-time in-class and portfolio assessments (not tested)",
+   "Require students to document and justify how they used ChatGPT (not tested)",
+   "Update academic honesty policies and train staff and students in AI literacy (not tested)"
+  ],
+  "limitations": "Conceptual proposals not evaluated; no method for the literature selection; computing coverage is a short subsection.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "N",
+   "q4": "Unclear",
+   "q5": "Unclear",
+   "quality_score": 2,
+   "note": "Full text read. Clear aim; argument grounded in cited recent literature; conceptual, so no data (q3 N); proposals are not evaluated (q4 Unclear); only a brief note that research is early-stage (q5 Unclear)."
+  }
+ },
+ {
+  "record_id": "S097",
+  "title": "Can ChatGPT pass a physics degree? Making a case for reformation of assessment of undergraduate degrees",
+  "authors": "Kevin A. Pimbblet; Lesley J. Morrell",
+  "year": 2024,
+  "venue": "European Journal of Physics",
+  "doi": "10.1088/1361-6404/ad9874",
+  "fulltext_status": "full text (author/repository copy)",
+  "source_used": "OpenAlex location: arXiv preprint 2412.01312 (version of the European Journal of Physics article)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "UK physics BSc (IC1); tests whether GPT-4 can pass every summative assessment of a degree and argues for assessment reform (IC2); GPT-4 (IC3); peer-reviewed European Journal of Physics (IC4); 2024, English (IC5). Computing is partial: several Python programming and computational modules.",
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Shows which assessment formats across a whole degree GPT-4 can pass under 'maximal cheating' and concludes only invigilated exams, vivas, lab skills tests and presentations are robust.",
+  "study_design": "Whole-programme benchmarking: authors answered all summative assessments of a BSc with GPT-4 using a 'maximal intelligent cheating' approach (Nov 2023-Feb 2024) and marked them against published criteria",
+  "country": "UK",
+  "discipline": "Physics (including Python programming and computational modules)",
+  "computing": "Partial",
+  "level": "Undergraduate (BSc Hons, all three years)",
+  "sample": "All modules of the University of Hull BSc (Hons) Physics (six 20-credit modules per year over three years) and their summative assessments (Table 1)",
+  "genai_tools": "ChatGPT GPT-4 with plugins, coaching and custom instructions (image input not available at the time)",
+  "assessment_types": [
+   "Supervised assessment",
+   "Unsupervised formats",
+   "Oral assessments",
+   "Practical demonstrations"
+  ],
+  "key_findings": [
+   {
+    "finding": "Apart from compulsory laboratory elements and the project viva, GPT-4 would have earned about 65% overall, an upper second-class degree; it fails the degree only because of these in-person hurdles.",
+    "location": "Sec 5; Table 1"
+   },
+   {
+    "finding": "Python coding assignments scored very highly (e.g., 85-100%), as did single-step problems and many descriptive questions, while multi-step problems, interdisciplinary problems and complex diagrams scored worst.",
+    "location": "Sec 4 (Electricity and Magnetism with Computation; Intermediate Quantum Mechanics; Numerical Modelling); Sec 6; Table 2"
+   },
+   {
+    "finding": "Take-home open-book exams and most coursework, including literature reviews with real sources and reflective writing, were judged highly vulnerable.",
+    "location": "Sec 4 (Numerical Modelling and Simulation with Project Planning); Sec 6 (Path 1)"
+   },
+   {
+    "finding": "The authors argue AI detection is unreliable and biased against non-native English writers, so in-person assessment is needed to defend outcomes.",
+    "location": "Sec 3; Sec 6 (Path 1)"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Authors note a tension: pre-2022 authentic assessment recommendations may now increase vulnerability, and some testing of rote mastery may be needed.",
+   "capability_verification": "Invigilated in-person exams, vivas, laboratory skills tests and presentations are presented as the formats that still verify individual mastery.",
+   "integrity_security": "GPT-4 could pass most coursework and unsupervised exams; only in-person hurdles stopped it.",
+   "lo_alignment": "Compulsory lab and viva elements tied to programme outcomes acted as the effective safeguard.",
+   "appropriate_ai_use": "Path 2 proposes embedding AI tools into the discipline with critical-literacy support once mastery is assured in person.",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "Recommends strategic in-person assessment at the end of each year rather than everywhere.",
+   "process_visibility": "",
+   "accessibility_equity": "Detectors may be biased against non-native English writers."
+  },
+  "author_recommendations": [
+   "Use invigilated in-person exams, vivas, lab skills tests and presentations strategically, e.g., at the end of each year, with an in-person viva for projects (not tested)",
+   "Treat in-person project vivas as non-negotiable (supported indirectly: the viva was the element GPT-4 could not pass)",
+   "Embed AI tools in the discipline with critical-literacy support alongside in-person checks of mastery (not tested)"
+  ],
+  "limitations": "Authors, not original examiners, did the marking; staff insight gives an 'upper threshold' advantage over a typical student; full results not published at colleagues' request; no image input; a single degree at one university; exams normally invigilated were treated as unsupervised.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Full text read (arXiv version of the published article). Clear question; transparent 'maximal cheating' protocol; programme and assessment weights described (Table 1); module-level results support the conclusion; limitations of the approach are discussed. Marking by the authors and partial reporting are the main weaknesses."
+  }
+ },
+ {
+  "record_id": "S119",
+  "title": "Assessment Validity in the Age of Generative AI: A Natural Experiment",
+  "authors": "Håvar Brattli; Alexander Stene Utne; Matthew Lynch",
+  "year": 2026,
+  "venue": "Informatics",
+  "doi": "10.3390/informatics13040056",
+  "fulltext_status": "abstract only",
+  "source_used": "OpenAlex abstract (abstract_inverted_index). The MDPI PDF (oa_url) and article page returned HTTP 403 (bot protection), which was not bypassed; no repository copy found via OpenAlex, Semantic Scholar or arXiv.",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Compulsory undergraduate course (IC1); assessment validity under a change from AI-permissive take-home to AI-restricted supervised exam (IC2, b); GenAI (IC3); peer-reviewed MDPI Informatics (IC4); 2026, English (IC5). Decision based on the abstract only; the course discipline (computing relevance) could not be checked.",
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Natural-experiment evidence that grades from AI-permissive take-home and AI-restricted supervised exams are not measurement-equivalent, which directly bears on the choice of exam format.",
+  "study_design": "Natural experiment using five years of exam grade records (2021-2025), with chi-square analysis",
+  "country": "not reported",
+  "discipline": "not reported in abstract (compulsory undergraduate course)",
+  "computing": "Partial",
+  "level": "Undergraduate",
+  "sample": "N = 1066 exam grades from one compulsory undergraduate course over five cohorts (2021-2025)",
+  "genai_tools": "Generative AI generally (specific tools not reported in abstract)",
+  "assessment_types": [
+   "Supervised assessment",
+   "Unsupervised formats"
+  ],
+  "key_findings": [
+   {
+    "finding": "When the course moved in 2025 from an AI-permissive take-home exam to an AI-restricted supervised in-person exam, with content, outcomes, criteria and examiners held stable, failure rates rose sharply and mid-range grades fell, while the share of top grades barely changed.",
+    "location": "abstract"
+   },
+   {
+    "finding": "Exam period was significantly associated with grade outcome (chi-square(5, N = 1066) = 60.62, p < 0.001; Cramer's V = 0.24), driven mainly by more fails.",
+    "location": "abstract"
+   },
+   {
+    "finding": "The authors conclude the two formats may not be measurement-equivalent under widespread GenAI use, raising concerns about construct validity and grade credibility, and a tension between certification and authenticity.",
+    "location": "abstract"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "Abstract notes a tension between certification credibility and assessment authenticity.",
+   "capability_verification": "Supervised exam grades suggest take-home grades overstated independent competence for some students.",
+   "integrity_security": "AI-permissive take-home exams appear to have inflated pass and mid-range grades relative to supervised exams.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Not extractable from the abstract beyond the concern that AI-permissive and AI-restricted formats should not be treated as equivalent for certification"
+  ],
+  "limitations": "Abstract only. Observational natural experiment with no randomisation; cohort differences and the 2025 cohort's adjustment to an in-person format cannot be ruled out from the abstract; one course; discipline not stated.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Unclear",
+   "quality_score": 4,
+   "note": "Appraised from abstract only. Clear aim; natural-experiment design suits the question; sample and context stated; reported statistics support the claims. Limitations cannot be judged from the abstract."
+  }
+ },
+ {
+  "record_id": "S199",
+  "title": "Using Generative Artificial Intelligence to Enhance Integrity, Inclusivity, and Sustainability in Computing Higher Education",
+  "authors": "Shelan S. Jeawak; Elias Pimenidis",
+  "year": 2026,
+  "venue": "IT Professional",
+  "doi": "10.1109/mitp.2026.3702499",
+  "fulltext_status": "abstract only",
+  "source_used": "OpenAlex abstract (abstract_inverted_index). The UWE repository accepted-manuscript PDF (oa_url) is behind a Cloudflare bot check and the output page returned HTTP 403; neither was bypassed. No arXiv copy found.",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Computer Science group project module in higher education (IC1); assessment redesign to secure integrity against GenAI misuse (IC2, a_redesign); GenAI (IC3); IEEE IT Professional article (IC4); 2026, English (IC5). Decision based on the abstract only.",
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Describes a collaborative, process-centric redesign of a high-stakes CS group project: a three-component Group Project Portfolio demanding verifiable process evidence, clear GenAI-use boundaries, and GenAI-supported formative feedback.",
+  "study_design": "Practice/case report of a module assessment redesign (design details and any evaluation not available from abstract)",
+  "country": "UK (inferred from the authors' university repository, UWE Bristol)",
+  "discipline": "Computing (Computer Science group project module)",
+  "computing": "Y",
+  "level": "not reported (higher education)",
+  "sample": "not reported in abstract",
+  "genai_tools": "Generative AI generally (specific tools not reported in abstract)",
+  "assessment_types": [
+   "Process evidence",
+   "Staged submissions",
+   "AI-use declarations"
+  ],
+  "key_findings": [
+   {
+    "finding": "Rather than relying on AI detection, the module redesigned its assessment to require verifiable process evidence and higher-order skills, with integrity secured through a Group Project Portfolio with three components intended to reduce GenAI dependency.",
+    "location": "abstract"
+   },
+   {
+    "finding": "The redesign sets clear boundaries for responsible GenAI use as a professional, collaborative tool, and uses GenAI to give more inclusive formative feedback to reduce reliance on AI for content creation.",
+    "location": "abstract"
+   }
+  ],
+  "evidence_type": "guidance",
+  "dimensions": {
+   "authenticity": "GenAI is framed as a professional, collaborative tool within a group project.",
+   "capability_verification": "",
+   "integrity_security": "Integrity is pursued through portfolio assessment design rather than AI detection.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "Clear boundaries for responsible GenAI use are set.",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "The portfolio requires verifiable process evidence.",
+   "accessibility_equity": "GenAI is used to make formative feedback more inclusive."
+  },
+  "author_recommendations": [
+   "Replace detection with process-centric assessment that demands verifiable process evidence (implemented; outcomes not reported in abstract)",
+   "Use GenAI to provide formative feedback so students rely less on it for content (implemented; outcomes not reported in abstract)"
+  ],
+  "limitations": "Abstract only; portfolio components, cohort, evaluation data and outcomes are not available; appears to be a single-module practice report.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "Unclear",
+   "q4": "Unclear",
+   "q5": "Unclear",
+   "quality_score": 1,
+   "note": "Appraised from abstract only. Aim is clear, but method, sample, evidence and limitations cannot be judged without the full text."
+  }
+ },
+ {
+  "record_id": "S279",
+  "title": "Research on the Reform of Programming Courses Driven by Generative Artificial Intelligence",
+  "authors": "He Wang",
+  "year": 2025,
+  "venue": "Journal of Artificial Intelligence Practice",
+  "doi": "10.23977/jaip.2025.080119",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "oa_url (Clausius Scientific Press PDF)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "University programming courses in China (IC1); proposes reform of the course assessment system in response to GenAI and integrity problems (IC2, a_redesign, though only one short section); GenAI incl. DeepSeek (IC3); journal article (IC4, peer review not described); 2025, English (IC5). Weak inclusion: brief opinion piece.",
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Briefly proposes cutting take-home programming assignments and paper exams in favour of open-ended projects with presentations, in-class practice and tasks that require AI use.",
+  "study_design": "Short position/discussion paper",
+  "country": "China",
+  "discipline": "Computing (programming courses)",
+  "computing": "Y",
+  "level": "Undergraduate",
+  "sample": "Not applicable (no data)",
+  "genai_tools": "DeepSeek-R1/V3, GPT-4 and generative AI generally",
+  "assessment_types": [
+   "Supervised assessment",
+   "Oral assessments",
+   "Practical demonstrations"
+  ],
+  "key_findings": [
+   {
+    "finding": "Students copying and submitting AI-generated code is identified as the main integrity problem, and AI-content detection is described as unreliable and prone to false accusations, especially for similar solutions to basic exercises.",
+    "location": "Sec 3.2; Sec 4.2"
+   },
+   {
+    "finding": "The paper proposes weighting open-ended projects with presentations, reducing paper exams and take-home assignments, moving basic practice into supervised class time, and adding tasks that assess problem solving with AI tools.",
+    "location": "Sec 5.3"
+   }
+  ],
+  "evidence_type": "conceptual/framework",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "Basic programming practice is moved into class to supervise foundational skill development.",
+   "integrity_security": "Take-home programming assignments are seen as vulnerable to submitting AI code; detection is considered unreliable.",
+   "lo_alignment": "Course objectives should shift from code writing to problem analysis, algorithm design and system architecture.",
+   "appropriate_ai_use": "Assessment should include tasks requiring AI tools to evaluate human-AI collaboration skills.",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Reduce paper exams and take-home programming assignments; emphasise open-ended projects with presentations (not tested)",
+   "Include assessment tasks that require using AI tools to solve problems (not tested)"
+  ],
+  "limitations": "Short opinion piece with few citations, no data and no limitations stated.",
+  "quality": {
+   "q1": "Y",
+   "q2": "N",
+   "q3": "N",
+   "q4": "Unclear",
+   "q5": "N",
+   "quality_score": 1,
+   "note": "Full text read. Aim is clear, but the argument draws on a handful of citations; no data; proposals unevaluated; no limitations acknowledged."
+  }
+ },
+ {
+  "record_id": "S342",
+  "title": "The Influence of GenAI on the Evaluation of Computer Programming Students in Higher Education",
+  "authors": "Terroso, Teresa; Pinto, Mário",
+  "year": 2025,
+  "venue": "DROPS (Schloss Dagstuhl, Leibniz Center for Informatics)",
+  "doi": "10.4230/oasics.icpec.2025.18",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "oa_url (Dagstuhl DROPS PDF, OASIcs ICPEC 2025, CC BY 4.0)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Portuguese higher-education programming courses (IC1); reports how instructors changed evaluation methods and strategies because of GenAI (IC2, a_redesign as self-reported practice); GenAI tools (IC3); peer-reviewed conference proceedings (IC4); 2025, English (IC5).",
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Survey of programming instructors showing that 68% changed assessment, mainly towards oral assessments, written tests, more complex projects, explanation of reasoning and, where AI is allowed, prompt submission and reflection.",
+  "study_design": "Cross-sectional online survey of instructors (closed and open questions)",
+  "country": "Portugal",
+  "discipline": "Computing (programming-related courses, incl. introductory programming and web development)",
+  "computing": "Y",
+  "level": "Higher professional technical (TeSP), undergraduate and master's",
+  "sample": "31 instructors from 12 Portuguese higher-education institutions; recruited via institutional websites and personal academic networks",
+  "genai_tools": "ChatGPT, GitHub Copilot, Google Gemini, DeepSeek, Tabnine (as reported student use)",
+  "assessment_types": [
+   "Supervised assessment",
+   "Oral assessments",
+   "Process evidence",
+   "AI-use declarations"
+  ],
+  "key_findings": [
+   {
+    "finding": "Instructors reported ChatGPT (all respondents) and GitHub Copilot as the tools students use, mostly in projects, lab exercises, homework and reports.",
+    "location": "Sec 5.2; Fig. 2"
+   },
+   {
+    "finding": "68% had partly or substantially changed their assessment methods; those who changed substantially tended to use oral assessments or written tests, more complex projects, stricter controls and no AI in assessments.",
+    "location": "Sec 5.3; Figs. 3-4"
+   },
+   {
+    "finding": "Instructors who permit AI in some assessments tended to stress project work and critical engagement, such as requiring students to submit prompts or reflect on AI's role.",
+    "location": "Sec 5.3"
+   },
+   {
+    "finding": "The top concern was students not gaining fundamental skills (84%), followed by unfair assessment between AI users and non-users (32%), difficulty detecting AI use (29%) and ensuring authorship (12%); 61% said institutional support was urgent.",
+    "location": "Sec 5.4"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "Oral assessments, written tests and explanation of reasoning are used to check students' own understanding.",
+   "integrity_security": "Instructors reported stricter control measures and bans on AI in some assessment moments; detection and authorship remain concerns.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "Some instructors allow AI in projects with prompt submission and reflection on its role.",
+   "scalability": "Literature reviewed notes process-oriented approaches are hard to implement in large classes.",
+   "workload": "Process-oriented approaches increase demands on teaching time and monitoring (from literature reviewed).",
+   "feasibility": "",
+   "process_visibility": "Process-oriented practices such as reasoning and process description and prompt analysis are reported as emerging.",
+   "accessibility_equity": "32% of instructors worried about unfair assessment between students who use AI and those who do not."
+  },
+  "author_recommendations": [
+   "Move towards reflective, process-oriented, diversified assessment that measures both code and understanding (reported as practice; outcomes not evaluated)",
+   "Provide institution-level support: training, shared strategies and good practice (not tested)"
+  ],
+  "limitations": "Small convenience sample (31) concentrated in two institutions; self-reported practices; no student data or outcome evaluation; descriptive analysis only.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Full text read. Four explicit RQs; survey design and sections described; sample and recruitment reported; findings follow the reported percentages; small sample acknowledged. Evidence is self-reported and descriptive."
+  }
+ }
+]

@@ -1,0 +1,15 @@
+category,code,n_statements,pct_of_statements,denominator
+directives,Retain Understanding,35,39.325842696629216,89
+directives,Reviewing Outputs,26,29.213483146067414,89
+directives,Appropriate Degree Of Usage,22,24.719101123595507,89
+directives,Improving Solutions,10,11.235955056179776,89
+directives,Use Own Solutions,9,10.112359550561798,89
+directives,Appropriate Context,8,8.98876404494382,89
+directives,Project-Wide Consistency,4,4.49438202247191,89
+directives,Careful Choice Of Models,3,3.3707865168539324,89
+use_cases,Learning,19,21.348314606741575,89
+use_cases,Debugging,13,14.606741573033707,89
+use_cases,High-Level Design,12,13.48314606741573,89
+use_cases,Trivial Tasks,6,6.741573033707865,89
+use_cases,Documentation,5,5.617977528089888,89
+use_cases,User Interface,2,2.247191011235955,89

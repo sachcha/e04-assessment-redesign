@@ -1,0 +1,280 @@
+{
+ "assessment_type": "Unsupervised formats",
+ "n_studies_in_pack": 76,
+ "cells": [
+  {
+   "dimension": "capability_verification",
+   "rating": "Weak",
+   "confidence": "High",
+   "literature": "[L] In a 60-student computing module, take-home scores averaged about 83.8% while viva and live-demonstration scores averaged about 35.2% and 43.9%, and many high scorers could not explain or reproduce their own code [R81]. AI-generated assignment submissions scored higher than self-written ones, yet AI-reliant students did no better in invigilated exams, and unsupervised instruments produced misleading outcome-attainment data [R96], [R82]. Studies and reviews report that submitted code no longer reliably shows skill and that take-home grades can overstate independent competence [R28], [R08], [S037], [S101], [R12], [S020], and in a non-computing business course failures rose from 2.1-5.7% to 18.4% when a take-home exam became supervised, a rise partly confounded by removing all resources and adding time pressure [S119].",
+   "dataset": "[D] In StudyChat, students averaged 94.8% on AI-permitted take-home assignments against 86.3% on proctored exams, assignment marks bunched near the top and agreed only moderately with exam marks (rho = 0.53) [D24], [D25]. Marking did not respond to the share of AI-authored code in submissions [J1].",
+   "interpretation": "[I] A correct unsupervised artefact on its own says little about what the individual student understands, unless it is paired with a check such as a viva or demonstration.",
+   "key_studies": [
+    "R81",
+    "R96",
+    "R82",
+    "R08",
+    "R28",
+    "S119",
+    "S101"
+   ],
+   "n_supporting": 7,
+   "computing_studies": 5,
+   "core_studies": 4,
+   "conflicts": "Early-2024 psychology data found secure and unsecure grades positively correlated [S124]. Redesigns that mark critique of AI output or use tools AI does not know were reported to expose understanding, but mostly through self-report or descriptive data [R09], [R71], [R44], [S123].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "genai_exposure",
+   "rating": "Weak",
+   "confidence": "High",
+   "literature": "[L] Benchmarks show GenAI completing structured take-home programming work: every one of 13 models produced working HTML/CSS for a web assignment, ChatGPT-4 solved simple CS1 labs in one prompt, and an obfuscated programming assignment was solved instantly [R84], [R90], [R82]. A systematic review of computing studies found most standard programming assessments can be completed by current GenAI [R28], and coursework, take-home exams, online quizzes and Python assignments were judged highly vulnerable across disciplines [S001], [S097], [S009], [S037], [R83], [R08]. Unproctored quizzes and whole online courses were also passed with GenAI [S020], [S149].",
+   "dataset": "[D] With 2023 models, GPT-4 fully answered 46.7% of EPFL CS questions in one attempt and 85.6% under best of 8 prompts [D02], [D03]. AI resistance varied mainly between courses (4.3%-47.4%) rather than with question format [J3].",
+   "interpretation": "[I] A capable student with GenAI can complete most conventional unsupervised computing tasks, and the few resistant designs rely on constraints that newer models may overcome.",
+   "key_studies": [
+    "R84",
+    "R90",
+    "R82",
+    "R28",
+    "S001",
+    "S097",
+    "S009"
+   ],
+   "n_supporting": 7,
+   "computing_studies": 5,
+   "core_studies": 3,
+   "conflicts": "Some designs resisted AI: a geometric-decomposition logo constraint [R84], the hardest CS1 lab (35% accuracy after 10 prompts) and flowchart-based redesigns [R90], Pep/8 Assembly [R09], application-specific commands [R71], and heavily constrained programming projects [S001]. Authentic context-specific tasks showed 41% AI completion against 82% for standard tasks [R28]. Several authors expect these defences to erode [R83], [S030].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authorship_assurance",
+   "rating": "Weak",
+   "confidence": "High",
+   "literature": "[L] Code-similarity tools are reported to be ineffective against AI-generated code, and MOSS found no similarity in AI-generated HTML or SVG [R08], [R84], [R73]. Turnitin flagged only about 6% of raw AI output, detection fell sharply after light tampering, and detection evidence overall is thin and inequitable [S009], [R28]; markers could not reliably tell AI from student work [R55], [R52], [S108], and when staff judged one fully AI-generated essay with no human-written control, only 53.57% judged it mostly or wholly AI-written at once [S006]. Self-declarations were unverified or unverifiable, and some AI-use reflections appeared fabricated [R14], [S028], [R45].",
+   "dataset": "[D] In StudyChat, on average 14.5% of new code lines matched the student's own chatbot replies verbatim, yet assignment marks did not respond to this overlap [J1]. Logged AI-use behaviour did not identify which students had larger assignment-exam gaps [J6].",
+   "interpretation": "[I] Without an added check, staff cannot establish who produced an unsupervised submission or how GenAI was used.",
+   "key_studies": [
+    "R08",
+    "R84",
+    "S009",
+    "R28",
+    "R55",
+    "R52",
+    "R45"
+   ],
+   "n_supporting": 7,
+   "computing_studies": 4,
+   "core_studies": 2,
+   "conflicts": "Some detectors performed well on purely AI or purely human essays, but not on mixed texts [R54]. An early study found Turnitin flagged ChatGPT essays (abstract only, early tool) [S076].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "lo_alignment",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] When output alone is graded, unsupervised programming work is argued to be no longer a valid proxy for computational-thinking outcomes, and tasks GenAI can complete bypass the intended learning [R96], [R12]; polygon tracing met a visual requirement but not the learning intent [R84], and AI use can mean students show prompting skill rather than the targeted sub-skill [R51]. Redesigns that mark critique of AI output, prompt quality, verification or design phases target evaluation and reasoning outcomes [R09], [R91], [R82], [R44]. Some courses tied AI permission to task purpose, such as no AI on practice tasks and AI on design-focused projects [R72], [S028].",
+   "dataset": "[D] Production delegation and verbatim reuse were lowest in applied tasks needing explanations or reports and highest in a scaffolded tutorial notebook [J2].",
+   "interpretation": "[I] Alignment depends on design: product-only grading measures a narrow output, while tasks that mark reasoning, critique and verification can align with intended computing outcomes.",
+   "key_studies": [
+    "R96",
+    "R82",
+    "R84",
+    "R12",
+    "R09",
+    "R91"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 5,
+   "core_studies": 5,
+   "conflicts": "The alignment benefits of redesigns are mostly descriptive or untested [R09], [R91].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authenticity",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Open-ended projects with GenAI permitted are framed as closer to the ill-structured problems and AI-assisted coding of professional practice [R72], [R08], [R82], and implemented project tasks included industry-style testing with real tools and an app to be trialled by a partner school [R91], [R80]. Industry partners and apprentices wanted GenAI skills, although only 2 of 13 industry respondents reported GenAI use at their workplace [R09]. The type also covers short structured homework set for practice [R72] and online multiple-choice tests that the author argues should move from recall towards analysis and application [R25], and some students completed open-book online quizzes by pasting questions into GenAI [R12].",
+   "dataset": "[D] In a software engineering capstone, 92.7% of students used GenAI, and 7 of 11 clients wanted students supported in using it [D12], [D20].",
+   "interpretation": "[I] Authenticity depends on the form: project-style unsupervised work with AI available resembles professional computing practice, while online quizzes and structured homework do so far less, so the typical form is rated Moderate.",
+   "key_studies": [
+    "R72",
+    "R08",
+    "R82",
+    "R91",
+    "R80",
+    "R09",
+    "R25"
+   ],
+   "n_supporting": 7,
+   "computing_studies": 6,
+   "core_studies": 5,
+   "conflicts": "The high authenticity of projects rests on how authors frame their tasks, not on any test of authenticity [R72], [R08], [R91]. Authenticity does not protect integrity: authentic tasks were still easily reproduced with GenAI [R52], [S097], a narrative review argues that realistic take-home tasks stay open to undisclosed AI help [S113], and real-world scenario framing did not stop ChatGPT solving CS1 labs [R90].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "appropriate_ai_use",
+   "rating": "Moderate",
+   "confidence": "High",
+   "literature": "[L] Unsupervised formats host most AI-integrated designs: students critiqued AI output and reflected on prompting [R09], submitted raw and revised AI outputs with validation tasks (79% said this helped critical thinking) [R91], declared and evidenced required GenAI use [R15], [R80], and steered ChatGPT for credit [S123], [S028], [R72]. Without such design, students pasted quiz questions into GenAI or copied AI answers unadapted [R12], [S101], and only about one in ten showed critical evaluation of AI [R45].",
+   "dataset": "[D] In StudyChat only 3.7% of prompts were verification requests [D22]. In the capstone, AI-first and student-first interaction modes were used about equally [D15].",
+   "interpretation": "[I] Unsupervised formats permit GenAI use, but they develop responsible, critical use only when the task requires and marks verification and critique.",
+   "key_studies": [
+    "R09",
+    "R91",
+    "R15",
+    "R80",
+    "R12",
+    "R45"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 4,
+   "core_studies": 4,
+   "conflicts": "Even in designed tasks, some students completed GenAI requirements performatively [R91], and AI documentation was often poor [R72].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "process_visibility",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] By default only the product is seen, and authors recommend adding commit histories or oral defence to expose process (mostly not tested) [R96], [R92], [R84]. Required prompt logs, raw AI outputs, declarations and reflections gave staff some visibility of how students used AI [R09], [R91], [R80], [R14], [R15], [S123], [R17]. These records were often poor, partly unusable or open to fabrication [R72], [R17], [R45], [S006].",
+   "dataset": "[D] Logged AI-use behaviour did not identify students with larger assignment-exam gaps [J6].",
+   "interpretation": "[I] Process visibility depends on adding logs, declarations or staged evidence, and even then it shows only what students choose or manage to record.",
+   "key_studies": [
+    "R96",
+    "R91",
+    "R09",
+    "R17",
+    "R45",
+    "R72"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 4,
+   "core_studies": 3,
+   "conflicts": "Process-focused log scores correlated with essay scores (r = 0.54) [R17], but about a third of logs were unusable and logs could be fabricated [R17], [R45].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "scalability",
+   "rating": "Strong",
+   "confidence": "Medium",
+   "literature": "[L] Unsupervised formats were run in a statistics lecture of 120-150 students using automated MCQ grading [R25], in a software testing course with a typical enrolment of 150-250 [R91] and with over 750 students across two campuses [R80]. Open-ended projects can prevent autograding [R82], and the checks that restore assurance (interviews, supervised tests, highly authentic tasks) are costly to scale [R84], [R52].",
+   "dataset": "[D] Adding verification has a staffing cost: the Hannover capstone used a rotating 5-15 minute tutor conversation with about one tutor per three teams [J4].",
+   "interpretation": "[I] The format itself scales well, but the add-ons needed for assurance reduce that advantage.",
+   "key_studies": [
+    "R25",
+    "R91",
+    "R80",
+    "R82",
+    "R84"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 4,
+   "core_studies": 4,
+   "conflicts": "The 750-student case relied on 10-minute individual vivas, which are a separate assessment type [R80].",
+   "cohort_note": "Small (<50): workable, as in a course of typically 25-35 students that added video code walkthroughs [R72]. Medium (50-200): workable with automated grading [R25]. Large (>200): workable as reported [R91], [R80], but rubric-marked projects and any viva or interview add-on raise cost [R82], [R84].",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "workload",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Supervision is not needed, but redesigned unsupervised tasks add burden: rubric marking replaced autograding [R82], long AI conversation submissions made marking much slower [S123], and integrity measures needed substantial extra question writing [R25]. Visual lab redesigns became time-consuming to create [R90], and manual scrutiny for AI work, multiple drafts and dual evaluation of AI and student work added time [R26], [R24], [S108].",
+   "dataset": "",
+   "interpretation": "[I] Workload is low for conventional auto-marked tasks but rises with AI-resilient redesign, process evidence and manual checks.",
+   "key_studies": [
+    "R82",
+    "S123",
+    "R25",
+    "R90",
+    "S108"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 2,
+   "core_studies": 2,
+   "conflicts": "One computing redesign was reported as lightweight [R91], and flowchart redesigns were the least time-consuming to design [R90].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "feasibility",
+   "rating": "Strong",
+   "confidence": "Medium",
+   "literature": "[L] Unsupervised formats are already standard and were run within normal module delivery, including a declaration approach added without redesigning tasks [R14], [R81], [R09], [R15], [R72], and AI-integrated changes to labs were reported as lightweight [R91]. They need no invigilation or venues, but costs arise elsewhere: staff time for extra question writing [R25], slower marking of AI-conversation submissions [S123], and about 1,000 minutes of staff time per 100 students if 10-minute interviews are added for assurance [R84]. Some designs depend on purpose-built platforms [R71], and fair AI use may need institutions to provide premium tool access or to permit only free tools [R20], [R15].",
+   "dataset": "[D] Only 5.3% of capstone students used the university-hosted GenAI instance [D14].",
+   "interpretation": "[I] Keeping the format needs little infrastructure, venue or policy change, but keeping it valid requires repeated redesign and staff time; cost evidence is limited, because no study reported licence or platform costs in money terms.",
+   "key_studies": [
+    "R14",
+    "R91",
+    "R81",
+    "R09",
+    "R15",
+    "R25",
+    "S123"
+   ],
+   "n_supporting": 7,
+   "computing_studies": 5,
+   "core_studies": 4,
+   "conflicts": "AI-resistant design rules are expected to erode with new models and must be rechecked [R83], [S030], [S001]. Some designs depend on purpose-built environments [R71].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "accessibility_equity",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Unsupervised formats avoid the stress of high-stakes supervised testing and the disadvantage that oral or in-class formats may pose for non-native speakers and students with disabilities [R84], [R51], and students reported GenAI helping those with ADHD, autism, anxiety or English as an additional language [R57], [R12], [S028]. However, paid tools outperformed free ones and unequal access raised fairness concerns [S001], [R20], [R10], and detector use can disadvantage non-native writers [R15], [R28]. Honest students may be penalised on suspicion, and students were divided on fairness [R52], [R71].",
+   "dataset": "[D] Most capstone students used general chatbots (74.7%), and only 5.3% used the university-hosted instance [D14].",
+   "interpretation": "[I] Equity depends on providing equal tool access and avoiding detector-based judgements.",
+   "key_studies": [
+    "R84",
+    "R51",
+    "R57",
+    "S001",
+    "R20",
+    "R28"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 2,
+   "core_studies": 1,
+   "conflicts": "Evidence points both ways (flexibility and assistive use against unequal access and suspicion), and rests mainly on perceptions and non-computing studies.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  }
+ ],
+ "evaluation_finding": "Unsupervised formats are scalable and cheap to run, and open-ended projects resemble professional practice, but GenAI can complete most conventional take-home computing tasks and staff cannot reliably establish authorship [R28], [R84], [S009], [R72]. Take-home marks therefore overstate individual capability compared with supervised checks [R81], [R96], [D24]. Their value under GenAI depends on designs that mark critique, verification and process, combined with a separate individual check, and these add staff time [R91], [R09], [R81], [R84].",
+ "strengths": [
+  "Open-ended projects resemble professional practice where AI is available [R72], [R91], [R80], [D12].",
+  "Scale to large cohorts with automated or rubric marking [R25], [R91], [R80].",
+  "Host most designs that build critical, declared GenAI use [R09], [R91], [R15].",
+  "Need no invigilation or venues and run within normal delivery [R14], [R81], [R91].",
+  "Avoid the time pressure and oral demands that may disadvantage some students [R84], [R51]."
+ ],
+ "limitations": [
+  "GenAI can complete most standard take-home programming tasks [R28], [R84], [R90], [D03].",
+  "Take-home marks overstate individual capability compared with vivas and supervised exams [R81], [R96], [D24]; confounded non-computing grade data point the same way [S119].",
+  "Similarity tools, detectors and markers cannot reliably identify AI-produced work [R08], [S009], [R52], [J1].",
+  "Online quizzes and structured homework are far less authentic than projects, and the authenticity of projects rests on author framing rather than tests [R72], [R25], [R12].",
+  "Declarations and AI logs can be poor, unusable or fabricated, and unequal access to paid AI tools raises fairness concerns [R45], [R17], [R72], [S001], [R20]."
+ ],
+ "practical_considerations": [
+  "Pair unsupervised work with an individual check such as a viva, demonstration or tutor conversation, and budget the staff time it needs [R81], [R80], [R84], [J4].",
+  "Pre-test tasks against current GenAI tools and recheck each cycle, because defences erode [R82], [R83], [S030].",
+  "Mark critique, verification and design reasoning rather than only the final output [R09], [R91], [R44].",
+  "Structure and limit AI-log submissions to keep marking manageable [S123], [R17].",
+  "Keep unsupervised online quizzes for low-stakes formative use, and permit only tools that all students can access [S001], [R12], [R15], [R20]."
+ ],
+ "evidence_gaps": [
+  "No controlled computing study compares learning or capability outcomes between redesigned and conventional unsupervised tasks.",
+  "Most capability benchmarks use 2023-2024 models, so current GenAI exposure is likely underestimated.",
+  "Staff workload and monetary costs (licences, platforms) for AI-resilient unsupervised tasks are rarely measured directly.",
+  "Equity evidence is mainly perception data from non-computing settings.",
+  "There is little evidence on whether declarations or AI logs reliably reflect actual AI use."
+ ]
+}

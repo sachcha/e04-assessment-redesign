@@ -1,0 +1,58 @@
+Record ID,redesign_relevance,note
+R01,a_redesign,Review synthesising AI-resistant and process-based assessment strategies
+R03,b_informs_redesign,Scoping review of GenAI exam performance and integrity challenges
+R04,a_redesign,GENESIS framework and Assessment Design Matrix for ICT assessment
+R07,c_not_redesign,Pre-GenAI review of AI-enabled assessment systems
+R08,b_informs_redesign,Codex performance on real CS1 exams; plagiarism detectors ineffective
+R09,a_redesign,Implemented summative assessment requiring critique of ChatGPT output
+R10,a_redesign,AI Assessment Scale framework for permitted use per task
+R11,a_redesign,Coauthorship integrity validity framework and AI Viva prototype
+R12,b_informs_redesign,How students actually use GenAI on assessment tasks
+R14,b_informs_redesign,Student declarations of GenAI use under permitted-use policy
+R15,a_redesign,Redesigned writing assessment requiring declared and evaluated GenAI use
+R16,a_redesign,Design patterns for authentic assessment beyond detection
+R17,a_redesign,DRIVE framework for grading student-GenAI interaction logs
+R19,a_redesign,"Against, Avoid, Adopt assessment redesign principle"
+R20,a_redesign,Redesigned writing assessments with AI-use reflection
+R21,a_redesign,Adapts assessment strategies to build evaluative judgement with GenAI
+R23,a_redesign,Authentic assessment designs illustrated through practice scenarios
+R24,a_redesign,EAP departments' implemented assessment adaptations to GenAI
+R25,b_informs_redesign,Online exam grade inflation and vulnerability evidence; mostly pre-ChatGPT
+R26,b_informs_redesign,ChatGPT essays evade Turnitin and pass human markers
+R27,a_redesign,Piloted AI-acknowledged project assessment; actual student use examined
+R28,a_redesign,Systematic review with VIE framework for AI-resistant assessment
+R33,a_redesign,Evaluates exam tasks correcting LLM-generated code
+R44,a_redesign,Pilot task critically evaluating ChatGPT-generated essays
+R45,a_redesign,Evaluates authentic assessment with AI-use reflection; fabricated claims found
+R47,a_redesign,Staged assignment redesign with ChatGPT draft critique evaluated
+R49,b_informs_redesign,Educator and student views on GenAI-adapted versus original prompts
+R50,b_informs_redesign,Teacher survey on perceived impact and suggested assessment changes
+R51,b_informs_redesign,Review of university guidelines on GenAI and assessment design
+R52,b_informs_redesign,Marker detection limits; authentic assessment not a safeguard
+R53,b_informs_redesign,GenAI performance on real biomedical written assessments
+R54,b_informs_redesign,GPT-4 essays versus students; marker and detector accuracy
+R55,b_informs_redesign,Humans unreliable at identifying AI-generated essays
+R56,c_not_redesign,Dishonesty and risk perceptions predicting ChatGPT use
+R57,b_informs_redesign,Reports how students use chatbots on assessments
+R68,a_redesign,TEQSA expert propositions for assessment reform
+R71,a_redesign,AI-resistant programming assignments with custom commands evaluated
+R72,a_redesign,AI-permitted open-ended project with documentation and video explanation
+R73,a_redesign,Homework design recommendations from ChatGPT versus instructor solutions
+R76,c_not_redesign,AI-assisted grading with NotebookLM
+R77,b_informs_redesign,Activity-log detection performance including transcribed AI code
+R78,c_not_redesign,Code evaluation and feedback platform prototype
+R79,a_redesign,Traceable GenAI use with demo and individual viva
+R80,a_redesign,GenAI-permitted project with prompt submission and individual viva
+R81,a_redesign,TAP triangulated redesign evaluated against take-home baseline
+R82,a_redesign,Program assessment adaptation; instruments replaced after ChatGPT testing
+R83,a_redesign,Five-rule take-home assessment design framework
+R84,b_informs_redesign,LLM capability on a real web development assignment
+R88,a_redesign,Tiered governance and Swiss-cheese framework for assessment integration
+R89,c_not_redesign,Lockdown coding lab platform; not GenAI redesign
+R90,a_redesign,Lab redesigns evaluated against ChatGPT-4 solvability
+R91,a_redesign,Guide-AI-Ed model with redesigned labs evaluated
+R92,b_informs_redesign,Student boundaries of AI cheating and actual AI use in projects
+R93,a_redesign,Three-layer PBL assessment framework with case study
+R94,a_redesign,Oral micro-presentations and viva formats replacing take-home writing
+R95,a_redesign,Live checkoffs verifying tool proficiency evaluated
+R96,b_informs_redesign,AI-reliant submissions score higher but exams show no gain

@@ -1,0 +1,3 @@
+model,n_single_answer_mcq,median_options,expected_pct_correct_by_chance,pct_correct_zero_shot,pct_correct_best_of_8
+GPT-4,2852,4.0,26.529662450945757,52.24403927068724,88.60448807854138
+ChatGPT,2852,4.0,26.529662450945757,48.70266479663394,86.25525946704067

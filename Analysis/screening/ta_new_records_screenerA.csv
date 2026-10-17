@@ -1,0 +1,9 @@
+Record ID,ta_decision,exclusion_code,reason
+R89,Include,,Timed coding-lab platform with individualised challenges and anomaly detection for integrity; AI question generation
+R90,Include,,"CS1 assignment redesign (flowcharts, diagrams, real scenarios) after testing ChatGPT-4 on standard problems"
+R91,Include,,"Design model for responsible GenAI use in SE courses: usage declarations, output-validation tasks, peer review of AI artefacts"
+R92,Include,,118 CS students: scenario map of where AI help becomes cheating; argues for verifying understanding over policing tools
+R93,Include,,Framework for AI in postgraduate project-based engineering: structured oral checks and reflective design journal
+R94,Include,,Software engineering assessments redesigned as timed oral micro-presentations and quiz-bowl vivas over two years
+R95,Include,,"In-person live checkoffs (demonstrate and verbalise) to verify skills in a CS course of 237 students, framed against GenAI-completable take-home work"
+R96,Include,,"412 CS students: LLM-assisted assignment scores much higher, but no advantage in closed-book exams; proposes process-oriented assessment"

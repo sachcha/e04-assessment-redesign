@@ -1,0 +1,7 @@
+Datasets/*
+!Datasets/.gitkeep
+__pycache__/
+*.pyc
+~$*
+Analysis/outputs/EPFL/question_level_scores.csv
+Analysis/outputs/StudyChat/student_level_features.csv

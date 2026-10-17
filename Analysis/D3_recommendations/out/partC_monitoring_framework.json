@@ -1,0 +1,94 @@
+{
+ "purpose": "To give staff trustworthy evidence of how each student used GenAI in unsupervised work, without relying on self-reported declarations or AI detectors. The system captures the evidence itself, makes faking costlier than honest work, and uses the record to target a short individual check, which makes the final judgement.",
+ "status": "Conceptual proposal (approved scope change, not a deployed system)",
+ "scope_note": "Not an AI detector and not surveillance for its own sake. It applies to unsupervised assessment where AI use is permitted. Student-completed declarations alone are not treated as evidence of how AI was used: 16 of 118 students in one study described a tool nobody had accessed [R45].",
+ "evidence_status": "Proposal (not yet tested)",
+ "evidence_status_basis": "Layers 2 and 4 have been implemented separately in computing courses [R77], [R81], [S156]; graded interaction records in another discipline [R17]; provenance accounting and the integrated system are untested. A pilot in one computing course is needed.",
+ "core_limitation": "No system can make faking impossible: a student can still use an outside AI on another device. The design therefore aims to make faking hard, costly and likely to be noticed, and keeps the individual check as the deciding evidence. Each layer has been tried separately [R77], [R81], [R17], [S156], [J1]; the integrated system has not.",
+ "components": [
+  {
+   "component": "Layer 1: Controlled workspace",
+   "description": "Assignment materials are available only inside a university-managed environment: a university AI account and a university-hosted coding workspace (for example cloud notebooks or an online IDE), accessed through university sign-in. Records are captured on the server, time-stamped and read-only to students.",
+   "what_it_can_evidence": "That the record was produced in the workspace by the signed-in student. It also gives every student equal access to the same AI tool.",
+   "what_it_cannot": "It cannot stop students copying material into outside tools or using a second device. When a university tool was optional, only 5.3% of capstone students used it [D14]. Capture must stay inside this University-controlled workspace to remain lawful under the Surveillance Devices Act 2016 (SA) s8.",
+   "evidence": "Project Context Strategy D (concept). System-captured records are harder to curate than student-kept ones [R77], [R72], [R27]. Equal access matters because paid tools outperform free ones [R20].",
+   "evidence_status": "Proposal (not yet tested)"
+  },
+  {
+   "component": "Layer 2: Capture the whole working process",
+   "description": "Capture every prompt and response in the university AI tool, autosaved versions and Git commits as the work progresses, and editing behaviour such as paste size, typing bursts and deletions.",
+   "what_it_can_evidence": "How the student framed the problem, guided the AI, verified output and developed the solution over time.",
+   "what_it_cannot": "Behavioural signals are not proof. Keystroke monitoring flagged anomalous authorship with 93.67% precision and 90.24% recall, but only against instructed cheating, and it falsely flagged honest students with atypical working styles [R77].",
+   "evidence": "Code replay and keystroke features [R77]; repository history [R81]; graded interaction logs [R17].",
+   "evidence_status": "Implemented in computing (descriptive evidence), components separately"
+  },
+  {
+   "component": "Layer 3: Provenance accounting (unexplained content)",
+   "description": "Each part of the submission is traced to one of three sources: typed and developed in the workspace, a logged AI response, or staff-provided starter code. Content with none of these sources, for example a large block with no editing history and no matching AI output, is reported as unexplained content.",
+   "what_it_can_evidence": "Where content most likely came from outside the system, which is the signal that should trigger a check.",
+   "what_it_cannot": "It does not judge understanding, and unexplained content can have innocent causes such as offline work or pasted notes, so it only triggers a conversation.",
+   "evidence": "The matching method exists: on average 14.5% of new submitted code lines matched the student's own chatbot replies verbatim [J1]. Here it is reversed to measure what cannot be accounted for.",
+   "evidence_status": "Proposal (not yet tested)"
+  },
+  {
+   "component": "Layer 4: Short live check built from the record",
+   "description": "A 5 to 10 minute viva or walkthrough with questions drawn from the student's own record, for example why an AI suggestion was rejected at a given step, or how a specific bug was fixed.",
+   "what_it_can_evidence": "Whether the student made and understands the decisions in the record. Answers about decisions the student did not make are hard to stage.",
+   "what_it_cannot": "It samples understanding rather than proving it, and orals raise anxiety and language-related equity concerns that need accommodations.",
+   "evidence": "Repository history plus viva plus live demo [R81]; submission-specific viva questions generated automatically [S156]; 10-minute vivas run at scale [R80]; staff time about 1,000 minutes per 100 students [R84].",
+   "evidence_status": "Implemented in computing (descriptive evidence)"
+  },
+  {
+   "component": "Graded AI-use criterion",
+   "description": "A published rubric criterion for the quality of AI use: framing the problem, verifying output, correcting errors and justifying what was accepted or rejected. Its weight is set by the learning outcome: high for critical and responsible AI use and for design tasks, low or zero where the outcome is independent skill. Students who choose not to use AI earn the same marks by showing their own verification and reasoning process.",
+   "what_it_can_evidence": "The student's skill in working with AI, which for some outcomes is the outcome itself.",
+   "what_it_cannot": "Graded logs change behaviour: fewer students chose GenAI once logs were graded, and logs can be staged for the marker [R17]. Marker agreement on interaction quality was only moderate (kappa 0.44) [R17], so moderation is needed.",
+   "evidence": "Process-focused grading of interactions tracked essay grades (r = 0.54) [R17]; critique and correction of AI output marked in computing tasks [R09], [R91], [R15].",
+   "evidence_status": "Implemented in another discipline (descriptive evidence)"
+  },
+  {
+   "component": "Triage and proportionate verification",
+   "description": "All records are captured automatically and AI-use quality is marked for everyone. The live check covers every student in small cohorts, and a random sample in larger ones plus every student with substantial unexplained content or a mismatch between record and viva. A record or flag alone is never the basis of a misconduct finding.",
+   "what_it_can_evidence": "It directs limited staff time to where the evidence is weakest.",
+   "what_it_cannot": "No included study measured whether sampled checks deter misuse.",
+   "evidence": "Flags are not proof [R77], [S457]; long AI-log submissions slow marking [S123]; triangulated checks narrowed the gap between take-home and supervised performance [R81].",
+   "evidence_status": "Proposal (not yet tested)"
+  }
+ ],
+ "how_it_combines_with_verification": "Monitoring informs the check, and the check decides. The captured record shapes the questions asked in the live check, selects who is checked in larger cohorts, and supports marking of AI-use quality. Understanding is judged in the individual check, not inferred from the record.",
+ "privacy_ethics_legal_requirements": [
+  "Surveillance law: keystroke and prompt loggers are data surveillance devices under the Surveillance Devices Act 2016 (SA) s8, which applies to students. Capture only inside the University-controlled workspace, where the University's consent is likely to apply (IT Acceptable Use Policy s3.6), and install nothing on a student's own device without express consent.",
+  "Privacy regime: Adelaide University follows APP-consistent practice under its Privacy Policy, but the Privacy Act 1988 applies only to Commonwealth-funded activities and the SA Information Privacy Principles Instruction may or may not apply. Confirm the regime with the University privacy office. The current policy covers metadata logging, so prompt and keystroke capture needs a specific collection notice and purpose statement. The Commonwealth statutory tort for serious invasions of privacy (from 2025) is a further reason to minimise collection.",
+  "Disability adjustments: under the Disability Standards for Education 2005 (as amended 2025) s3.4 and s3.5, consult students about reasonable adjustments to live checks, and expect assistive technology (dictation, screen readers) to produce unusual editing logs that must not be read as suspicious.",
+  "Contestability and human decision: students must be able to explain or challenge anything raised from their record in the live check, and a person makes every judgement (AI Ethics Principles: contestability and human oversight; UNESCO 2023 human agency).",
+  "Indigenous data: do not break records down by Aboriginal or Torres Strait Islander status without Indigenous governance and consultation (CARE and Maiam nayri Wingara principles).",
+  "Complete a privacy impact assessment (PIA or DPIA) and vet the AI platform before any prompt, editor or interaction data is collected [R16]. Confirm, rather than assume, what the platform records, who can access it and whether it can be audited, as Strategy D notes that platform capabilities, auditing and privacy requirements need verification (Project Context section 11).",
+  "Comply with University privacy, security and academic integrity policies, and with applicable law, as Strategy D requires (Project Context section 11). The inputs do not set out the specific legal requirements; these must be confirmed with the University's privacy and legal staff.",
+  "Obtain informed consent, or give clear notice where consent is not the legal basis, and tell students in plain language what is recorded, why, who sees it and how it is used in marking. IDE and prompt-log analytics are proposed subject to privacy and consent [R28], and consent and retention were among the least addressed ethical provisions in university GenAI guidance [S115].",
+  "Set and publish a data retention period, collect only what the assessment needs, and delete records once the assessment and any appeal period are complete. The inputs give no evidence-based retention period, so this is a team recommendation to be set with University policy [S115].",
+  "Use records for learning and verification, not surveillance. Transparency mechanisms were judged more feasible when proportionate, clearly specified, aligned with the assessment design and free of punitive or surveillant dynamics [S423]. Make honest disclosure safe, because disclosure promotes transparency only when honesty carries no penalty [S416], [S460].",
+  "Do not use logs, indicators or detector output as the main evidence in misconduct decisions. Chat logs are curatable [S457], behavioural flags falsely flagged honest students with atypical working styles [R77], and detectors are reported to be biased against non-native English writers [R15], [R28].",
+  "Ensure equal access to AI tools. Unequal access to free versus paid tools is a recurring concern [R20], [R10], [S001]; institutions can provide premium access or permit only tools that are free to all students [R20], [R15], [R16]. Students who do not use the University tool must not be disadvantaged in marking.",
+  "Protect equity for multilingual students and students with disabilities or anxiety. Purpose-based rules can protect legitimate language support for students with English as an additional language [S457], and verification should offer accessible alternatives because viva performance can reflect anxiety or language proficiency [R81], [R16]. Equity effects of process monitoring have not been measured in the inputs.",
+  "Recognise and budget staff workload. Reading process records is slow unless formats are structured [S123], process-oriented approaches increase teaching and monitoring time [S342], markers found dual evaluation of AI and student work demanding [S108], and staff AI literacy is a prerequisite [S331], [R27]. Staff marking time for process evidence in large computing cohorts has not been measured."
+ ],
+ "implementation_steps": [
+  "Agree the purpose and the permitted AI-use level for each task before choosing any monitoring, using a purpose-first approach [S416] and a scale such as the AIAS [R10]. Name the level plainly, for example \"AI permitted with declaration\" or \"AI integrated and assessed (critique or correction of AI output)\".",
+  "Run the privacy impact assessment, platform vetting and policy checks in the requirements list, and confirm what the candidate University tool can record, export and audit (Strategy D, Project Context section 11) [R16].",
+  "Provide equal access to the University AI tool and accept declared use of external tools, since most students used general chatbots rather than the university-hosted instance [D14], [R20].",
+  "Design structured templates for declarations, verification logs and justifications, model them for students and weight them in the rubric, as compliance was poor otherwise [R72], [R27], [R91], [S123].",
+  "Build the verification layer into the course plan: universal short vivas or demonstrations in small cohorts, and sampled plus prioritised checks in medium and large cohorts, with staff time budgeted using the available estimates [R84], [R95], [J4], [R80].",
+  "Train staff in AI literacy, in reading the records and in running fair verification conversations, with calibration for borderline cases [S331], [R27], [R79].",
+  "Pilot the framework in one or two computing courses before any wider use, with monitoring used only for learning and verification during the pilot. The inputs do not identify a specific course; the choice of pilot course is for the University.",
+  "Evaluate the pilot against the validation questions below, then revise. Recheck tasks against current GenAI tools each cycle, because AI-resistant defences are expected to erode [R83], [S030]."
+ ],
+ "open_questions_and_validation_needed": [
+  "Does provenance accounting identify students who later struggle in the live check, and how often does it flag honest students?",
+  "How much staff time do record review, rubric marking of AI use and sampled checks take per 100 students?",
+  "How far do students route work through outside tools when the workspace is the only route to assignment materials?",
+  "Does grading AI-use quality change how students use AI, including staged prompting [R17]?",
+  "What inter-marker agreement can a moderated AI-use rubric reach?",
+  "What do students with disabilities, anxiety or English as an additional language experience, and are accommodations sufficient?",
+  "What retention period, access controls and consent wording satisfy University policy and privacy law?"
+ ]
+}

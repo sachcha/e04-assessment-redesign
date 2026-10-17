@@ -1,0 +1,16 @@
+question,response,n,pct,denominator
+attitude,Very pessimistic,0,0.0,11
+attitude,Rather pessimistic,2,18.181818181818183,11
+attitude,Neutral,0,0.0,11
+attitude,Rather optimistic,4,36.36363636363637,11
+attitude,Very optimistic,5,45.45454545454545,11
+risk,Concerning,0,0.0,11
+risk,Rather concerning,0,0.0,11
+risk,Neutral,3,27.272727272727273,11
+risk,Rather unconcerning,4,36.36363636363637,11
+risk,Unconcerning,4,36.36363636363637,11
+project_included_genai_component,Yes,6,54.54545454545455,11
+project_included_genai_component,No,5,45.45454545454545,11
+wish_for_next_year,Students should be actively supported and encouraged to use GenAI,7,63.63636363636363,11
+wish_for_next_year,Students should use GenAI as they see fit,3,27.272727272727273,11
+wish_for_next_year,Students should use GenAI rarely and with appropriate caution,1,9.090909090909092,11

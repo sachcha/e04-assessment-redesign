@@ -1,0 +1,8 @@
+purpose,n_yes,pct_all_students,n_yes_among_users,pct_of_users,n_yes_among_non_users,denominator_all,denominator_users
+Generating or debugging code,97,64.66666666666666,97,69.7841726618705,0,150,139
+Learning (e.g. new frameworks or languages),96,64.0,95,68.34532374100719,1,150,139
+Generating or improving documentation,72,48.0,71,51.07913669064749,1,150,139
+Solving technical problems (not code-related),61,40.666666666666664,61,43.884892086330936,0,150,139
+Improving code quality or testing code,51,34.0,51,36.69064748201439,0,150,139
+"High-level design (architecture, technology choices)",27,18.0,27,19.424460431654676,0,150,139
+Requirements elicitation or analysis,25,16.666666666666664,25,17.985611510791365,0,150,139

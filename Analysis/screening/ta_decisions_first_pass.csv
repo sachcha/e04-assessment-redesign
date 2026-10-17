@@ -1,0 +1,76 @@
+Record ID,ta_decision,exclusion_code,reason,assessment_types,computing,priority
+R12,Include,,HE students' GenAI use on assessment tasks (26 interviews using chat-history scroll-back); judgement and misattribution of AI work,Unsupervised formats; Process evidence; AI-use declarations,N,High
+R14,Include,,Computing assessment allowing GenAI with mandatory declaration and explanation of use,AI-use declarations; Unsupervised formats,Y,High
+R15,Include,,Summative assessment of GenAI use in academic writing in a computing foundation year,AI-use declarations; Unsupervised formats,Y,High
+R16,Include,,Redesign of authentic assessment beyond detection: critique of AI output; process logs; oral defences,Personalised tasks; Process evidence; Oral assessments; AI-use declarations,N,High
+R17,Include,,DRIVE framework assessing learning from GenAI interaction logs; interaction quality correlated with essay scores,Process evidence; AI-use declarations,N,High
+R19,Include,,Against/Avoid/Adopt principles for assessment redesign in tertiary education,Supervised assessment; Unsupervised formats; AI-use declarations,N,Medium
+R20,Include,,Writing assessments redesigned to incorporate GenAI with student reflection (74 reflections + focus groups); equity of free vs paid tools,AI-use declarations; Unsupervised formats,N,Medium
+R21,Include,,Conceptual: assessment to develop evaluative judgement of GenAI outputs and processes,AI-use declarations; Process evidence,N,Medium
+R22,Maybe,,Policy analysis of intergovernmental guidelines on learning design and assessment; unclear whether HE-specific (IC1),AI-use declarations,N,Low
+R23,Include,,Rapid review and four authentic assessment scenarios incl. a computer science database assignment,Personalised tasks; AI-use declarations,Partial,Medium
+R24,Include,,EAP assessment changes in Scottish HE; declarations seen as weak; context-specific prompts and spontaneous speaking seen as effective,AI-use declarations; Personalised tasks; Oral assessments,N,Medium
+R25,Include,,Observational: online exam scores rose vs in-person exams of same difficulty; secure online assessment strategies,Supervised assessment; Unsupervised formats,N,Medium
+R26,Include,,Quasi-experiment: ChatGPT essays to a typical brief graded and plagiarism-checked; framework for AI-assisted assessment,Unsupervised formats,N,Medium
+R27,Include,,Project-based multimedia assessment with AI allowance; logbooks document process,Process evidence; Unsupervised formats,N,Low
+R29,Exclude,E2,Systematic review of GenAI in programming education focused on learning; integrity only mentioned as a concern,,Y,
+R30,Exclude,E2,Systematic review of GenAI effects on learning and problem-solving in CS education; not about assessment,,Y,
+R31,Maybe,,Review of GenAI in programming education; reports that integration depends on thoughtfully designed assessments; check full text for assessment findings,Unsupervised formats,Y,Low
+R32,Exclude,E2,Review of AI/ML tools across the teaching process (2012-2024); assessment covered only as auto-grading tools,,Y,
+R33,Include,,Students correcting LLM-generated code in programming exams were significantly harder than standard exam tasks,Supervised assessment; AI-use declarations,Y,High
+R34,Maybe,,AI-interaction profiles from prompt logs linked to post-test scores in programming; relevant to process evidence but not assessment design,Process evidence,Y,Medium
+R35,Exclude,E2,Quasi-experiment on ChatGPT-facilitated programming behaviours and performance; learning focus,,Y,
+R36,Maybe,,Scoping review of ChatGPT in programming education; automated assessment and integrity are two of several themes,Unsupervised formats,Y,Low
+R37,Exclude,E2,Systematic review of GenAI learning outcomes in programming; assessment mentioned only in passing,,Y,
+R39,Include,,Mandatory programming course (N=855): ChatGPT usage and perceptions did not predict final scores; integrity concerns; triangulates StudyChat finding,Unsupervised formats; Process evidence,Y,High
+R40,Exclude,E2,Systematic review of ChatGPT effects on critical and creative thinking; learning focus,,N,
+R41,Exclude,E2,Meta-analysis of GenAI effects on STEM cognitive learning outcomes; not about assessment design,,Partial,
+R44,Include,,Assessment task in which students critically evaluate AI-generated essays; marks for critical evaluation increased,AI-use declarations; Personalised tasks,N,Medium
+R45,Include,,500-word reflections on AI use compared with assessor evaluations (118 PG students),AI-use declarations,N,Medium
+R46,Exclude,E2,Quality of AI vs human formative feedback; not assessment design or integrity,,N,
+R47,Include,,Assessment integrating ChatGPT output critique against the marking rubric,AI-use declarations,N,Medium
+R48,Exclude,E2,Development of a GenAI literacy test instrument; not course assessment design,,N,
+R49,Include,,"Survey of 680 students and 87 educators (Australia, Cyprus, US): essay and coding assessments seen as most affected",Unsupervised formats; Supervised assessment,Partial,High
+R50,Maybe,,Educator survey (n=318) on how teaching and assessment should change; sample spans school and HE levels (IC1),Unsupervised formats,N,Low
+R51,Include,,Review of assessment guidelines at the world's top 50 universities,AI-use declarations; Unsupervised formats,N,Medium
+R52,Include,,Experiments at two UK universities: markers could not detect GenAI input and authentic design did not safeguard integrity,Unsupervised formats; Personalised tasks; Supervised assessment,N,High
+R53,Include,,GenAI output graded by independent markers against UG and PG written assessment criteria (biomedical),Unsupervised formats,N,Medium
+R54,Include,,AI vs student essays marked blind; markers identified origin 79% of the time; AI detector comparison,Unsupervised formats,N,Medium
+R55,Include,,Instructors identified AI-written essays only 70% of the time; expertise did not help,Unsupervised formats,N,Medium
+R56,Include,,Survey (468 UG) linking perceived academic dishonesty and risk to ChatGPT use,AI-use declarations,N,Low
+R57,Include,,Survey of 337 Australian students: over a third used chatbots for assessments and did not see it as a breach,Unsupervised formats; AI-use declarations,N,Medium
+R58,Exclude,E2,GenAI literacy development through self-regulated learning; not assessment,,N,
+R59,Exclude,E2,Development of GenAI literacy among humanities students; not assessment,,N,
+R60,Exclude,E2,AI literacy development in graduate courses; not assessment,,N,
+R61,Exclude,E2,Students' GenAI literacy knowledge survey; not assessment,,N,
+R62,Exclude,E2,Student views on the future of HE with GenAI; assessment only one subtheme,,N,
+R63,Exclude,E2,Faculty and student perceptions of GenAI in courses; not assessment,,N,
+R64,Exclude,E2,Stakeholder impacts of GenAI in HE; not assessment-focused,,N,
+R65,Exclude,E2,Systematic review of ChatGPT adoption and applications in HE; not assessment-focused,,N,
+R67,Exclude,E2,Review of AI in CS education 2003-2023; largely pre-GenAI and not assessment-focused,,Y,
+R70,Exclude,E2,Perceptions of AI integration in HE; assessment incidental,,N,
+R72,Include,,Intro programming: AI banned on structured homework but encouraged on open-ended project; later exam scores rose,Unsupervised formats; Supervised assessment,Y,High
+R73,Include,,CS homework: AI vs human solutions compared; strategies for assignments less solvable by AI,Unsupervised formats; Personalised tasks,Y,Medium
+R74,Maybe,,Controlled CS1 experiment with ChatGPT access and closed-book post-evaluation; check full text for assessment implications,Supervised assessment; Unsupervised formats,Y,Medium
+R75,Maybe,,AI recommender to build personalised CS1 assignments and exams to reduce plagiarism; pre-GenAI context,Personalised tasks,Y,Low
+R76,Include,,GenAI-assisted grading of a CS master's project (NotebookLM); staff workload perspective,Unsupervised formats,Y,Low
+R78,Include,,Platform combining code evaluation with code-aware integrity monitoring; relevant to the AI-use monitoring framework,Process evidence; Supervised assessment,Y,Low
+R79,Include,,ESP32 project with traceable GenAI use; demonstration 50% + individual viva 50% + peer assessment,Practical demonstrations; Oral assessments; Staged submissions; Process evidence; AI-use declarations,Y,High
+R82,Include,,Adapting ABET program assessment for student GenAI use; experience report with example assignments,Unsupervised formats; AI-use declarations,Y,Medium
+R83,Include,,Framework for take-home assignments in software courses using Bloom's levels 3-6,Unsupervised formats; Personalised tasks,Y,High
+R84,Include,,Front-end web course: LLMs solved structured tasks but failed SVG logo reconstruction; supervised assessment does not scale,Unsupervised formats; Supervised assessment; Personalised tasks,Y,High
+R85,Exclude,E1,Pretesting effects in a workforce training programme; not HE and no AI,,N,
+R86,Exclude,E3,Retrieval practice experiments on retention and transfer; no AI context,,N,
+R87,Exclude,E2,Systematic review of GenAI implementation case studies in teaching and learning; not assessment-focused,,N,
+R88,Include,,Theoretical framework for integrating GenAI in assessment: governance tiers; oral defence with artefact trail; cohort-specific briefs,Oral assessments; Process evidence; Personalised tasks; Supervised assessment,N,High
+R28,Include,,Systematic review of GenAI in computing education (72 studies) incl. assessment integrity; comprehension-completion gap,Unsupervised formats; Supervised assessment,Y,High
+R38,Exclude,E2,Systematic review of AI tools in programming education (2010-2025) focused on learner outcomes,,Y,
+R42,Exclude,E2,Meta-analysis of ChatGPT effects on learning; assessment points concern research post-tests not assessment design,,N,
+R43,Exclude,E2,Scale development for student reliance on GenAI; not assessment design,,N,
+R66,Exclude,E2,Systematic review of AI in CS and database instruction; integrity only listed as a challenge,,Y,
+R68,Include,,TEQSA national guidance on assessment reform for AI (formal framework paper under IC4); program-level security; detection unreliable,Supervised assessment; Process evidence; AI-use declarations,N,High
+R69,Exclude,E1,Secondary-school assessment design (Israel); also a non-peer-reviewed preprint,,Y,
+R71,Include,,AI-resistant programming assignments using application-specific commands and animated output (44 UG),Personalised tasks; Unsupervised formats,Y,Medium
+R77,Include,,Keystroke-log process monitoring to detect plagiarism in programming (precision 94%),Process evidence,Y,Medium
+R80,Include,,Java mini-projects (750+ students): GenAI allowed with prompt submission + reflective rationale + in-person viva,Oral assessments; AI-use declarations; Unsupervised formats,Y,High
+R81,Include,,Action research (60 UG): take-home code vs explain/reproduce gap; TAP framework = version control + viva + live coding,Process evidence; Oral assessments; Practical demonstrations; Supervised assessment,Y,High

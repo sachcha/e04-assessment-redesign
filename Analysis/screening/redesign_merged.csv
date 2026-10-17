@@ -1,0 +1,58 @@
+Record ID,redesign_relevance_A,redesign_relevance_B,note,title,evidence_tier
+R01,a_redesign,a_redesign,Review synthesising AI-resistant and process-based assessment strategies,Redefining student assessment in AI-infused learning environments: a systematic review of challenges and strategies for academic integrity,Supporting
+R03,a_redesign,b_informs_redesign,Scoping review of GenAI exam performance and integrity challenges,A scoping review on how generative artificial intelligence transforms assessment in higher education,Supporting
+R04,a_redesign,a_redesign,GENESIS framework and Assessment Design Matrix for ICT assessment,Designing assessments in the generative AI era: A tailored assessment framework for ICT tertiary education,Core
+R07,a_redesign,c_not_redesign,Pre-GenAI review of AI-enabled assessment systems,Assessment in the age of artificial intelligence,Supporting
+R08,b_informs_redesign,b_informs_redesign,Codex performance on real CS1 exams; plagiarism detectors ineffective,Computing Education in the Era of Generative AI,Core
+R09,a_redesign,a_redesign,Implemented summative assessment requiring critique of ChatGPT output,Incorporating Generative AI into Software Development Education,Core
+R10,a_redesign,a_redesign,AI Assessment Scale framework for permitted use per task,The Artificial Intelligence Assessment Scale (AIAS): A Framework for Ethical Integration of Generative AI in Educational Assessment,Supporting
+R11,a_redesign,a_redesign,Coauthorship integrity validity framework and AI Viva prototype,Coauthorship integrity: Reconceptualising assessment validity for the age of generative artificial intelligence,Supporting
+R12,b_informs_redesign,b_informs_redesign,How students actually use GenAI on assessment tasks,How university students work on assessment tasks with generative artificial intelligence: matters of judgement,Supporting
+R14,a_redesign,b_informs_redesign,Student declarations of GenAI use under permitted-use policy,Themes in the Declared Use of Generative Artificial Intelligence in Assessment,Supporting
+R15,a_redesign,a_redesign,Redesigned writing assessment requiring declared and evaluated GenAI use,The Summative Assessment of Generative AI Usage within Academic Writing in a Computing Foundation Year,Core
+R16,a_redesign,a_redesign,Design patterns for authentic assessment beyond detection,Beyond Detection: Redesigning Authentic Assessment in an AI-Mediated World,Supporting
+R17,a_redesign,a_redesign,DRIVE framework for grading student-GenAI interaction logs,Assessing students' DRIVE: A framework to evaluate learning through interactions with generative AI,Supporting
+R19,a_redesign,a_redesign,"Against, Avoid, Adopt assessment redesign principle",Generative Artificial Intelligence in Tertiary Education: Assessment Redesign Principles and Considerations,Supporting
+R20,a_redesign,a_redesign,Redesigned writing assessments with AI-use reflection,Reinventing assessments with ChatGPT and other online tools: Opportunities for GenAI-empowered assessment practices,Supporting
+R21,a_redesign,a_redesign,Adapts assessment strategies to build evaluative judgement with GenAI,Developing evaluative judgement for a time of generative artificial intelligence,Supporting
+R23,a_redesign,a_redesign,Authentic assessment designs illustrated through practice scenarios,Embracing a new world: authentic assessment designs in an age of generative artificial intelligence (GenAI),Supporting
+R24,a_redesign,a_redesign,EAP departments' implemented assessment adaptations to GenAI,Changing EAP assessment practices in the age of generative artificial intelligence: The case of Scottish higher education institutions,Supporting
+R25,b_informs_redesign,b_informs_redesign,Online exam grade inflation and vulnerability evidence; mostly pre-ChatGPT,Online assessment in the age of artificial intelligence,Supporting
+R26,b_informs_redesign,b_informs_redesign,ChatGPT essays evade Turnitin and pass human markers,Is AI changing learning and assessment as we know it? Evidence from a ChatGPT experiment and a conceptual framework,Supporting
+R27,a_redesign,a_redesign,Piloted AI-acknowledged project assessment; actual student use examined,AI in action: Changes to student perceptions when using generative artificial intelligence for the creation of a multimedia project-based assessment,Supporting
+R28,a_redesign,a_redesign,Systematic review with VIE framework for AI-resistant assessment,Generative AI in computing education: A systematic review and a framework for responsible integration,Supporting
+R33,a_redesign,a_redesign,Evaluates exam tasks correcting LLM-generated code,Integrating Generative AI into Programming Education: Student Perceptions and the Challenge of Correcting AI Errors,Supporting
+R44,a_redesign,a_redesign,Pilot task critically evaluating ChatGPT-generated essays,ChatGPT in the Classroom: Evaluating its Role in Fostering Critical Evaluation Skills,Supporting
+R45,a_redesign,a_redesign,Evaluates authentic assessment with AI-use reflection; fabricated claims found,Making sense of generative AI for assessments: Contrasting student claims and assessor evaluations,Supporting
+R47,a_redesign,a_redesign,Staged assignment redesign with ChatGPT draft critique evaluated,"Using Generative AI to Promote Psychological, Feedback, and Artificial Intelligence Literacies in Undergraduate Psychology",Supporting
+R49,b_informs_redesign,b_informs_redesign,Educator and student views on GenAI-adapted versus original prompts,"Perceived impact of generative AI on assessments: Comparing educator and student perspectives in Australia, Cyprus, and the United States",Supporting
+R50,b_informs_redesign,b_informs_redesign,Teacher survey on perceived impact and suggested assessment changes,How should we change teaching and assessment in response to increasingly powerful generative Artificial Intelligence? Outcomes of the ChatGPT teacher survey,Supporting
+R51,a_redesign,b_informs_redesign,Review of university guidelines on GenAI and assessment design,Generative AI tools and assessment: Guidelines of the world's top-ranking universities,Supporting
+R52,b_informs_redesign,b_informs_redesign,Marker detection limits; authentic assessment not a safeguard,The impact of generative AI on academic integrity of authentic assessments within a higher education context,Supporting
+R53,b_informs_redesign,b_informs_redesign,GenAI performance on real biomedical written assessments,Comparison of generative AI performance on undergraduate and postgraduate written assessments in the biomedical sciences,Supporting
+R54,b_informs_redesign,b_informs_redesign,GPT-4 essays versus students; marker and detector accuracy,ChatGPT versus human essayists: an exploration of the impact of artificial intelligence for authorship and academic integrity in the humanities,Supporting
+R55,b_informs_redesign,b_informs_redesign,Humans unreliable at identifying AI-generated essays,Can you spot the bot? Identifying AI-generated writing in college essays,Supporting
+R56,c_not_redesign,c_not_redesign,Dishonesty and risk perceptions predicting ChatGPT use,"Chat or cheat? Academic dishonesty, risk perceptions, and ChatGPT usage in higher education students",Supporting
+R57,b_informs_redesign,b_informs_redesign,Reports how students use chatbots on assessments,The rapid rise of generative AI and its implications for academic integrity: Students’ perceptions and use of chatbots for assistance with assessments,Supporting
+R68,a_redesign,a_redesign,TEQSA expert propositions for assessment reform,Assessment Reform for the Age of Artificial Intelligence,Supporting
+R71,a_redesign,a_redesign,AI-resistant programming assignments with custom commands evaluated,Educational Effects of Animated Output and Application-Specific Commands in Programming Classes in the Age of Generative AI,Core
+R72,a_redesign,a_redesign,AI-permitted open-ended project with documentation and video explanation,Work in Progress: Integration of AI Tools on an Open-Ended Computer Programming Project,Supporting
+R73,a_redesign,a_redesign,Homework design recommendations from ChatGPT versus instructor solutions,Adapting to AI: Innovative Approaches for Homework in Computer Science Education,Core
+R76,c_not_redesign,c_not_redesign,AI-assisted grading with NotebookLM,AI-Assisted Assessment: A Dual Perspective on Effective Usage Plans for Students and Teachers,Core
+R77,b_informs_redesign,b_informs_redesign,Activity-log detection performance including transcribed AI code,"Process over Product: A Real-Time, Big Data Approach to Plagiarism Detection via Activity Logs",Core
+R78,c_not_redesign,c_not_redesign,Code evaluation and feedback platform prototype,CAP: AI-Augmented Curriculum-Aware Platform for Code Evaluation,Core
+R79,a_redesign,a_redesign,Traceable GenAI use with demo and individual viva,"Educational Integration of ESP32 Project-Based Learning with Generative AI: Design, Implementation, and Evaluation in Two Engineering Cohorts",Supporting
+R80,a_redesign,a_redesign,GenAI-permitted project with prompt submission and individual viva,Redefining Undergraduate Computing Education with GenAI-Facilitated Authentic In-Term Assessment,Core
+R81,a_redesign,a_redesign,TAP triangulated redesign evaluated against take-home baseline,Beyond the Code: Evaluating Alternative Assessment Strategies for Integrity and Authentic Learning in AI-Influenced Programming Tasks,Core
+R82,a_redesign,a_redesign,Program assessment adaptation; instruments replaced after ChatGPT testing,Adapting Program Assessment for the Age of Generative AI,Core
+R83,a_redesign,a_redesign,Five-rule take-home assessment design framework,A Framework for Assessment Design in the Era of Generative AI: Case Study of Take-Home Assignment in Software-related Courses,Core
+R84,a_redesign,b_informs_redesign,LLM capability on a real web development assignment,Can We Design AI-Resilient Programming Assessments? Reflections from a Front-End Web Development Course,Core
+R88,a_redesign,a_redesign,Tiered governance and Swiss-cheese framework for assessment integration,Beyond the ban: A theoretical framework for integrating Generative AI in assessment,Supporting
+R89,a_redesign,c_not_redesign,Lockdown coding lab platform; not GenAI redesign,CodeNest: A Web Application for Conducting and Managing Timed Coding Lab Assignments with student-faculty interaction,Core
+R90,a_redesign,a_redesign,Lab redesigns evaluated against ChatGPT-4 solvability,Designing CS Assignments to Foster Cogitation in the AI Era,Core
+R91,a_redesign,a_redesign,Guide-AI-Ed model with redesigned labs evaluated,Encouraging responsible GenAI use in software engineering education: A design-oriented model,Core
+R92,b_informs_redesign,b_informs_redesign,Student boundaries of AI cheating and actual AI use in projects,Where Students Draw the Line Between AI Assistance and Cheating in Introductory Programming,Core
+R93,a_redesign,a_redesign,Three-layer PBL assessment framework with case study,Integrating AI in Project-Based Engineering Education: Strengthening Course Design and Assessment Integrity,Supporting
+R94,a_redesign,a_redesign,Oral micro-presentations and viva formats replacing take-home writing,GenAI-Driven Game and Viva Assessments for Software Engineering,Core
+R95,a_redesign,a_redesign,Live checkoffs verifying tool proficiency evaluated,Assessing Student Proficiency in Foundational Developer Tools Through Live Checkoffs,Core
+R96,b_informs_redesign,b_informs_redesign,AI-reliant submissions score higher but exams show no gain,Generative AI in Programming Education: An Empirical Analysis of Student Performance and Assessment Challenges in the LLM Era,Core

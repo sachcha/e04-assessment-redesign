@@ -1,0 +1,293 @@
+{
+ "cells": [
+  {
+   "learning_outcome": "LO1 Foundational knowledge",
+   "cohort": "Small (<50)",
+   "main_assessment": "Short in-person supervised tests on core concepts (paper or controlled lab machines). Unsupervised online quizzes are kept for low-stakes practice only.",
+   "verification_layer": "The supervised test is the main check. Add brief live oral questioning for every student, such as a randomly drawn topic with a short spoken answer or a short viva.",
+   "ai_use_level": "No AI (supervised) for the tests and orals, matching AIAS Level 1 [R10]. AI for ideas and feedback only on formative practice quizzes.",
+   "rationale": "Frameworks place foundational skills in supervised, AI-free formats, and supervision gives the most direct evidence of unaided capability [R04], [R19], [R10]. Some students completed open-book online quizzes by pasting questions into GenAI [R12], and in one computing course AI-permitted assignment marks bunched near the top while proctored exam marks spread more [D24], [D25]. In software engineering classes of up to 30, take-home writing was replaced by randomly drawn topics with a two-minute oral presentation, alongside time-limited tests and vivas [R94].",
+   "trade_offs": "Timed AI-free tests are less authentic and can add stress for anxious students and students with English as an additional language, so accommodations are needed [R01], [R51], [R84]. The tested example is a quality 1/5 practice report with no comparison group [R94].",
+   "evidence_status": "Implemented in computing (descriptive evidence)",
+   "key_studies": [
+    "R94",
+    "R04",
+    "R19",
+    "R10",
+    "R12",
+    "D24",
+    "D25",
+    "R51",
+    "R01",
+    "R84"
+   ]
+  },
+  {
+   "learning_outcome": "LO1 Foundational knowledge",
+   "cohort": "Medium (50-200)",
+   "main_assessment": "In-person invigilated exam on core concepts, auto-graded where the items allow. Online quizzes are used only as formative practice.",
+   "verification_layer": "Invigilation of the exam is the check, with no routine viva. If exam reasoning needs checking, run a 10-minute post-exam viva for a random sample of about 20% of students [S009].",
+   "ai_use_level": "No AI (supervised) for the exam. AI for ideas and feedback only on formative quizzes.",
+   "rationale": "Proctored exam marks spread more than AI-permitted assignment marks and agreed only moderately with them (rho = 0.53) [D24], [D25], and unproctored online multiple-choice exams gave markedly higher grades than the same exams taken in person [R25]. Question format explained little of AI resistance, so protection has to come from supervision, not wording [J3], [D03]. Automated multiple-choice grading has been used with 120-150 students [R25].",
+   "trade_offs": "On R84's estimate of about 1,000 staff minutes per 100 students for 10-minute interviews, a 20% sample of 200 students needs about 400 minutes, against about 2,000 for all students [R84]. To validate: compare sampled viva outcomes with exam marks and record staff time, because S009 used random vivas with cohorts of 17-34 but did not measure their effect [S009].",
+   "evidence_status": "Proposal (not yet tested)",
+   "key_studies": [
+    "D24",
+    "D25",
+    "R25",
+    "J3",
+    "D03",
+    "S009",
+    "R84"
+   ]
+  },
+  {
+   "learning_outcome": "LO1 Foundational knowledge",
+   "cohort": "Large (>200)",
+   "main_assessment": "In-person invigilated exam in existing exam venues, with auto-graded or quickly marked items. Frequent online quizzes stay formative.",
+   "verification_layer": "Invigilation is the verification. No universal or routine viva. Short follow-up orals are reserved for risk-based cases, such as a student whose exam and coursework results differ sharply.",
+   "ai_use_level": "No AI (supervised) for the exam. AI for ideas and feedback only on formative quizzes.",
+   "rationale": "Security is too resource-intensive for every task, so guidance recommends securing key points such as end-of-stage or gatekeeping exams [R68], [R04], [S097]. For large cohorts D2 favours existing invigilated or auto-graded exams over custom online platforms: one lockdown coding platform worked best up to 80 concurrent users and broke at 300 [R89], and lockdown browsers can be bypassed [R25]. A follow-up oral explanation when doubt arises has been proposed for coding answers [R25].",
+   "trade_offs": "Invigilation, venues and timetabling are real costs that no study priced at this scale [R84], and a return to invigilated exams risks narrowing what is assessed [R88]. To validate: track exam versus coursework gaps across cohorts, and the number, cost and outcome of triggered orals.",
+   "evidence_status": "Proposal (not yet tested)",
+   "key_studies": [
+    "R68",
+    "R04",
+    "S097",
+    "R89",
+    "R25",
+    "R84",
+    "R88"
+   ]
+  },
+  {
+   "learning_outcome": "LO2 Programming and implementation skill",
+   "cohort": "Small (<50)",
+   "main_assessment": "AI-permitted take-home programming project kept in a repository with version history. Short practice homework stays AI-free.",
+   "verification_layer": "Every student completes a structured viva and a supervised live code demonstration that includes a small change requested on the spot.",
+   "ai_use_level": "AI permitted with declaration on the project (prompts and responses submitted). No AI on short practice homework.",
+   "rationale": "In a 60-student programming module, take-home scores averaged about 83.8% while viva and live-demo scores averaged about 35.2% and 43.9%; after the redesign with repository history, a structured viva and a live demo, the mean Learning Integrity Score rose from about 11.7 to 45.3 [R81]. A course of 25-35 students allowed AI on open-ended projects with interaction logs and an 8-10 minute code walkthrough video, while banning it on small homework [R72]. On R84's estimate, 10-minute sessions for 50 students need about 500 staff minutes [R84].",
+   "trade_offs": "Viva performance can reflect anxiety or language proficiency, so the three sources should be triangulated and reattempts or quieter rooms offered [R81], [R95]. Both tested examples are single-course reports without control groups, and R81 sits just above the small band [R81], [R72].",
+   "evidence_status": "Implemented in computing (descriptive evidence)",
+   "key_studies": [
+    "R81",
+    "R72",
+    "R84",
+    "R95"
+   ]
+  },
+  {
+   "learning_outcome": "LO2 Programming and implementation skill",
+   "cohort": "Medium (50-200)",
+   "main_assessment": "AI-permitted programming assignments kept in a repository with version history and auto-tested for functionality.",
+   "verification_layer": "A 10-minute individual code walkthrough for every student, combining viva questions with a live modification request, run in booked, time-limited slots.",
+   "ai_use_level": "AI permitted with declaration.",
+   "rationale": "The triangulated repository, viva and live-demo design ran within normal delivery for 60 students [R81], and 10-minute vivas with live modification requests gave clearly different marks to members of the same group [R80]. Booked appointments with time limits reduced queue time for live checkoffs [R95]. On R84's estimate, 10-minute sessions for 200 students need about 2,000 staff minutes [R84].",
+   "trade_offs": "Staff time rises with cohort size, and live sessions overran plans in one course (medians of 9.5, 19 and 25 minutes against 5, 15 and 15 planned) [R95]. Near 200 students, the large-cohort model of a supervised lab test plus sampled walkthroughs may be more sustainable.",
+   "evidence_status": "Implemented in computing (descriptive evidence)",
+   "key_studies": [
+    "R81",
+    "R80",
+    "R95",
+    "R84"
+   ]
+  },
+  {
+   "learning_outcome": "LO2 Programming and implementation skill",
+   "cohort": "Large (>200)",
+   "main_assessment": "AI-permitted programming assignments with auto-testing and repository history, plus a supervised in-person lab test on controlled machines for core coding skills.",
+   "verification_layer": "The supervised lab test checks every student. Add 10-minute code walkthroughs for a random sample (for example 20%) and for risk-based cases, such as a large gap between assignment and lab-test performance.",
+   "ai_use_level": "AI permitted with declaration on assignments. No AI (supervised) in the lab test.",
+   "rationale": "Universal live checks have run at this scale but at high cost: checkoffs for 237 students took about 80% of TA office-hour time [R95], and 10-minute vivas ran for over 750 students with no staff-time data [R80]. For 300 students, universal 10-minute walkthroughs would need about 3,000 staff minutes on R84's estimate, against about 600 for a 20% sample [R84], [S009]. Supervised performance has exposed gaps that AI-permitted take-home marks concealed [R81], [D24].",
+   "trade_offs": "Sampling verifies fewer individuals and may feel unequal to students, and lab tests need venues and several sittings, since one lockdown platform broke at 300 concurrent users [R84], [R89]. To validate: pilot sampled walkthroughs against the universal checkoff model in R95 and compare the gaps found, staff hours and student fairness ratings.",
+   "evidence_status": "Proposal (not yet tested)",
+   "key_studies": [
+    "R95",
+    "R80",
+    "R84",
+    "S009",
+    "R81",
+    "D24",
+    "R89"
+   ]
+  },
+  {
+   "learning_outcome": "LO3 Analysis, design and problem solving",
+   "cohort": "Small (<50)",
+   "main_assessment": "Staged design project: problem definition and design first, then AI-assisted implementation, then a written justification of design decisions, with feedback at each checkpoint.",
+   "verification_layer": "Individual viva for every student at the final checkpoint, focused on reasoning, dependencies, failure analysis and transfer to a changed problem. Where work is done in the university-managed workspace, questions can be drawn from the captured design and AI record [R81].",
+   "ai_use_level": "AI permitted with declaration, sequenced so that the design stage is completed before AI is used for low-level code.",
+   "rationale": "In two engineering cohorts of 14 and 15 (partly computing), three checkpoints, traceable GenAI use and an individual viva on reasoning and transfer were combined, with analytic rubrics shared in advance [R79]. Staging makes process visible, but each unsupervised stage can still be produced by GenAI, so an individual check is needed [R68], [R24], [D03]. In a computing course of about 30, a guided design phase before AI use gave more meaningful outcome data, and students who skipped design struggled [R82].",
+   "trade_offs": "Feedback at each checkpoint adds marking load, and open-ended projects lose autograding [R24], [R82]. The tested example had no non-AI baseline and was run in engineering rather than a pure computing course [R79].",
+   "evidence_status": "Implemented in another discipline (descriptive evidence)",
+   "key_studies": [
+    "D03",
+    "R24",
+    "R68",
+    "R79",
+    "R81",
+    "R82"
+   ]
+  },
+  {
+   "learning_outcome": "LO3 Analysis, design and problem solving",
+   "cohort": "Medium (50-200)",
+   "main_assessment": "Staged design project with two or three rubric-marked stages (design, build, justification), marked by a tutor team.",
+   "verification_layer": "One 10-minute individual viva for every student at a key checkpoint, anchored in the student's own design, commit history or prompt log. Where work is done in the university-managed workspace, questions can be drawn from the captured design and AI record [R81].",
+   "ai_use_level": "AI permitted with declaration, sequenced after an AI-free design stage.",
+   "rationale": "Computing orals have been designed to assess explaining logic, justifying design and adapting code [R81], [R80], and D2 recommends anchoring questions in the student's own artefact and commit history [J4]. D2 found no staged computing deployment at 50-200 students, so a tutor team would be needed for any individual check [J4]. A single 10-minute viva for 200 students costs about 2,000 staff minutes on R84's estimate [R84].",
+   "trade_offs": "Keeping stages few limits feedback, and drafts and justifications from unsupervised stages can themselves be AI-generated [R24], [R68]. To validate: run the design in one medium course and compare viva results with stage marks and recorded staff hours.",
+   "evidence_status": "Proposal (not yet tested)",
+   "key_studies": [
+    "J4",
+    "R24",
+    "R68",
+    "R80",
+    "R81",
+    "R84"
+   ]
+  },
+  {
+   "learning_outcome": "LO3 Analysis, design and problem solving",
+   "cohort": "Large (>200)",
+   "main_assessment": "Staged design project with few stages, rubric-marked by tutorial staff, plus a supervised design or case-study question in the final exam.",
+   "verification_layer": "The supervised design question checks everyone. Add 10-minute design vivas for a random sample (for example 20%) and for flagged cases. Automated, submission-specific viva questions are an option only if run under supervision. Where work is done in the university-managed workspace, questions can be drawn from the captured design and AI record [R81].",
+   "ai_use_level": "AI permitted with declaration on the project. No AI (supervised) for the exam question.",
+   "rationale": "A three-phase staged assignment ran with 363 students marked by tutorial instructors, though in psychology [R47]. Automatically generated viva questions grounded in each submission were tested with over 250 computing students and reached QWK 0.782 agreement with human grades, but were not evaluated for integrity [S156]. Sampling keeps oral time to about 600 staff minutes for 300 students rather than about 3,000 [R84], [S009].",
+   "trade_offs": "Multi-draft marking is a known burden [R24], and unsupervised online questioning may be open to real-time AI help [S001]. To validate: pilot sampled design vivas in a large computing course and test automated questioning under supervised conditions.",
+   "evidence_status": "Proposal (not yet tested)",
+   "key_studies": [
+    "R24",
+    "R47",
+    "R81",
+    "R84",
+    "S001",
+    "S009",
+    "S156"
+   ]
+  },
+  {
+   "learning_outcome": "LO4 Professional and collaborative practice",
+   "cohort": "Small (<50)",
+   "main_assessment": "Team project for a real client or users, with a shared repository, a team prompt log and a public demonstration.",
+   "verification_layer": "Individual viva for every student on their own contribution, plus structured peer assessment.",
+   "ai_use_level": "AI permitted with declaration, with team prompt logs recording purpose, accepted or rejected output and justification.",
+   "rationale": "In two engineering cohorts of 14 and 15 (partly computing), a public prototype demonstration and an individual viva were each worth 50%, and peer assessment correlated with final grade (r about 0.78) [R79]. Individual vivas distinguished members of the same group [R80], and at this size full logs can be read and graded [R72]. Capstone clients most often worried about students' lack of independent understanding in meetings (7 of 11) [D20].",
+   "trade_offs": "Peer assessment showed a possible ceiling effect, and student-kept logs are often poor or incomplete [R79], [R27], [R72]. The tested example was outside a pure computing course and had no comparison group [R79].",
+   "evidence_status": "Implemented in another discipline (descriptive evidence)",
+   "key_studies": [
+    "R79",
+    "R80",
+    "R72",
+    "R27",
+    "D20"
+   ]
+  },
+  {
+   "learning_outcome": "LO4 Professional and collaborative practice",
+   "cohort": "Medium (50-200)",
+   "main_assessment": "Group project with a shared repository and a structured team AI-use declaration (tool, rationale, prompt and output, or the team's best prompts with justifications).",
+   "verification_layer": "A 10-minute individual viva for every student on their own code and design decisions, with a live modification request.",
+   "ai_use_level": "AI permitted with declaration.",
+   "rationale": "A computing course of over 750 students combined an AI-permitted group project, submission of the three best prompts with justifications and a 10-minute individual viva, and students in the same group sometimes received clearly different marks [R80]. Team declarations ran for over 140 students in 37 teams, but teams declaring no use were assumed truthful [R14]. For 200 students, the vivas need about 2,000 staff minutes on R84's estimate [R84].",
+   "trade_offs": "Declarations add transparency but rest on unverified self-report, so the viva carries the individual judgement [S423], [R45]. Rotating 5-15 minute tutor conversations on artefacts and commit history are a lighter alternative, with evidence of feasibility only [J4].",
+   "evidence_status": "Implemented in computing (descriptive evidence)",
+   "key_studies": [
+    "R80",
+    "R14",
+    "R84",
+    "S423",
+    "J4",
+    "R45"
+   ]
+  },
+  {
+   "learning_outcome": "LO4 Professional and collaborative practice",
+   "cohort": "Large (>200)",
+   "main_assessment": "Capstone or major team project, treated as a secured programme moment, with repository history and a structured team AI-use declaration.",
+   "verification_layer": "A short individual check for every student: a 10-minute viva or a rotating 5-15 minute tutor conversation on artefacts and commit history. Longer vivas are reserved for unclear contributions. Smaller team tasks elsewhere in the programme use sampling instead.",
+   "ai_use_level": "AI permitted with declaration.",
+   "rationale": "Expert guidance recommends securing key programme moments rather than every task, and gives the example of a computer science capstone secured through interactive code reviews, resourced by removing a first-year exam [R68], [R04]. Universal 10-minute vivas ran for over 750 computing students [R80], and one capstone used about one tutor per three teams of 9-10 students for its tutor conversations [J4]. For 300 students, 10-minute checks need about 3,000 staff minutes on R84's estimate [R84].",
+   "trade_offs": "This is the costliest large-cohort cell and is justified only at a key programme point; R80 reported no staff-time data [R80]. Orals can disadvantage anxious students and students with English as an additional language, so triangulation and accommodations are needed [R81], [R51].",
+   "evidence_status": "Implemented in computing (descriptive evidence)",
+   "key_studies": [
+    "R68",
+    "R04",
+    "R80",
+    "J4",
+    "R84",
+    "R81",
+    "R51"
+   ]
+  },
+  {
+   "learning_outcome": "LO5 Critical and responsible use of AI",
+   "cohort": "Small (<50)",
+   "main_assessment": "AI-integrated task completed in the university-managed workspace, so prompts, outputs and edits are captured. Marks go mainly to the quality of AI use: framing, verification, error correction and justification, using an outcome-weighted rubric [R17], [R09], [R91].",
+   "verification_layer": "Live check for every student, with questions drawn from their captured record, such as why a suggestion was rejected or how an error was found [R81], [S156].",
+   "ai_use_level": "AI integrated and assessed (critique or correction of AI output), close to AIAS Level 4 [R10].",
+   "rationale": "In a computing module of 17 learners, students generated Java and Pep/8 Assembly code with ChatGPT and critiqued it, and one learner did not notice that the output was Python [R09]. An engineering project (partly computing) verified traceable AI use, with prompt logs of accepted or rejected fragments, through an individual viva [R79]. D2 notes that orals assess AI use only when questions probe how output was checked, and that written AI-use reflections can be fabricated [R45]. For this outcome the assessed interaction record is direct evidence of the skill [R17]; the check guards against staged interactions.",
+   "trade_offs": "Critique can become performative, so the rubric must reward judgement rather than compliance [R91], [R45]. To validate: the critique task is tested in computing but without an individual check [R09], so test whether the viva identifies students whose written critique overstates their judgement.",
+   "evidence_status": "Proposal (not yet tested)",
+   "key_studies": [
+    "R09",
+    "R10",
+    "R17",
+    "R45",
+    "R79",
+    "R81",
+    "R91"
+   ]
+  },
+  {
+   "learning_outcome": "LO5 Critical and responsible use of AI",
+   "cohort": "Medium (50-200)",
+   "main_assessment": "AI-integrated task completed in the university-managed workspace, so prompts, outputs and edits are captured. Marks go mainly to the quality of AI use: framing, verification, error correction and justification, using an outcome-weighted rubric [R17], [R09], [R91]. A different topic per student.",
+   "verification_layer": "Live check from the record for every student, or supervised exam tasks correcting flawed AI-generated code after formative practice [R33], [R81].",
+   "ai_use_level": "AI integrated and assessed (critique or correction of AI output) in coursework. No AI (supervised) for the exam correction tasks.",
+   "rationale": "An 88-student computing module required GenAI use and marked prompts, AI outputs and a reflection that checked output for completeness, bias and hallucinations [R15]. In supervised exams with 147 students, tasks correcting LLM-generated Java code scored significantly lower than instructor-designed tasks, which the authors partly link to no prior training [R33]. Verification requests made up only 3.7% of students' chatbot prompts, so checking AI output has to be taught and assessed [D22]. For this outcome the assessed interaction record is direct evidence of the skill [R17]; the check guards against staged interactions.",
+   "trade_offs": "Correction tasks scale through existing exams but measure a different demand from construction tasks [R33]. To validate: both layers were tested in computing only separately [R15], [R33], so run them together and check whether exam correction scores track coursework critique marks.",
+   "evidence_status": "Proposal (not yet tested)",
+   "key_studies": [
+    "D22",
+    "R15",
+    "R17",
+    "R33",
+    "R81"
+   ]
+  },
+  {
+   "learning_outcome": "LO5 Critical and responsible use of AI",
+   "cohort": "Large (>200)",
+   "main_assessment": "AI-integrated task completed in the university-managed workspace, so prompts, outputs and edits are captured. Marks go mainly to the quality of AI use: framing, verification, error correction and justification, using an outcome-weighted rubric [R17], [R09], [R91].",
+   "verification_layer": "Supervised AI-correction tasks for every student, plus live checks from the record for a random sample and for students with unexplained content [R33], [R77].",
+   "ai_use_level": "AI integrated and assessed (critique or correction of AI output) in assignments. No AI (supervised) for the exam tasks.",
+   "rationale": "Collecting short declarations scales, but reading detailed logs and reflections is impractical in large cohorts, so detailed review should be sampled [R16], [S342], [R10]. A staged critique task in which students graded a ChatGPT draft against the rubric ran with 363 students, though in psychology, and a few students rated inaccurate AI content highly [R47]. Group submission of best prompts with justifications ran for over 750 computing students [R80]. For this outcome the assessed interaction record is direct evidence of the skill [R17]; the check guards against staged interactions.",
+   "trade_offs": "Long submitted AI conversations made marking much slower unless format and length are limited [S123], and fair use needs tools all students can access [R15], [R20]. To validate: pilot in a large computing course and measure marking time and whether sampled review finds problems the exam tasks miss [R33].",
+   "evidence_status": "Proposal (not yet tested)",
+   "key_studies": [
+    "R10",
+    "R15",
+    "R16",
+    "R17",
+    "R20",
+    "R33",
+    "R47",
+    "R80",
+    "R81",
+    "S123",
+    "S342"
+   ]
+  }
+ ],
+ "cross_cutting_principles": [
+  "No single assessment type does everything. Combine a scalable main assessment with a proportionate individual verification layer, and triangulate evidence rather than treating any one mode, including the viva, as decisive [R68], [R81], [R79].",
+  "Secure key programme moments, such as gatekeeping exams and capstones, rather than every task. Expert guidance describes security as too resource-intensive for all tasks, and one programme funded secured capstone code reviews by removing a first-year exam [R68], [R04].",
+  "Logs and declarations improve transparency but do not establish understanding on their own. Logged AI-use behaviour was not associated with grades or assignment-exam gaps [D26], [J6], marking did not respond to verbatim AI-authored code [J1], and self-declarations are often unverified or fabricated [S423], [R45].",
+  "Question or task wording is not a security measure. Item-format features explained little of AI resistance [J3], GPT-4 fully answered 85.6% of CS questions with best-of-8 prompting [D03], and any AI-resistant design must be retested each cycle because defences erode [R82], [R83], [S030].",
+  "Budget staff time explicitly and scale verification to it. Ten-minute interviews cost about 1,000 staff minutes per 100 students [R84], live checkoffs for 237 students took about 80% of TA office-hour time and overran plans [R95], so large cohorts should use sampled or risk-based orals [S009], short rotating tutor conversations [J4] or supervised items rather than universal vivas.",
+  "Plan for accessibility and equity. Orals can reflect anxiety or language proficiency, so offer reattempts, quieter rooms and triangulation [R81], [R95], [R51]; avoid AI detectors, which are unreliable and can disadvantage non-native writers [R28], [R15]; and permit only tools that all students can access, or provide institutional access [R15], [R20], [R10].",
+  "Set the permitted AI level per task and assess judgement, not compliance. Scales such as the AIAS tie AI levels to learning outcomes [R10]; 41% of students in one computing course agreed they completed GenAI tasks just to meet the requirement [R91]; and students need practice before high-stakes AI-correction tasks [R33].",
+  "Evidence of how students used AI should be captured by the system, not self-reported: declarations can be invented [R45], while system-captured records are far harder to fake [R77]. Records inform the individual check; the check decides."
+ ]
+}

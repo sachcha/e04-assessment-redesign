@@ -1,0 +1,1694 @@
+[
+ {
+  "record_id": "S012",
+  "title": "Implementing a collaborative program-wide approach to redeveloping assessment in response to generative artificial intelligence (GenAI)",
+  "authors": "Kelli Nicola‐Richmond; Phillip Dawson; Justin T. Lawson; Pearse Fay; Judi A. Parson; Susie Macfarlane",
+  "year": 2026,
+  "venue": "Assessment & Evaluation in Higher Education",
+  "doi": "10.1080/02602938.2026.2653886",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Taylor & Francis OA PDF (CC BY-NC-ND) via doi",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "HE program-wide assessment redesign in response to GenAI; peer reviewed; 2026.",
+  "study_design": "Qualitative: combined ethnographic and interpretive phenomenological study of a program-wide assessment redesign project",
+  "country": "Australia",
+  "discipline": "Health / social development (program-level)",
+  "computing": "N",
+  "level": "Program level (award level not specified)",
+  "sample": "Academic team members (n=4), project leads (n=3), researchers (n=6); 8 project meetings, 3 focus groups, 12 reflective activities; one Australian university (Deakin)",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [
+   "Oral assessments"
+  ],
+  "key_findings": [
+   {
+    "finding": "Six themes emerged; success of program-wide redesign depended on wide stakeholder participation, openness and curiosity, and protected time for collaboration and peer learning.",
+    "location": "Abstract; Conclusion"
+   },
+   {
+    "finding": "Participants saw few options for assuring learning beyond oral and performative assessments, which they judged hard to run with large or online cohorts.",
+    "location": "Results (challenges and resourcing of assessment change)"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "Staff found oral/performative tasks were the main secure options for assuring learning.",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "Oral and performative formats were seen as hard to scale to large and online cohorts.",
+   "workload": "Redesign needed dedicated time and resourcing for collaboration.",
+   "feasibility": "Program-wide collaborative redesign was feasible but challenging and resource-dependent.",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Embed time for collaboration and peer learning and involve a range of stakeholders in program-wide redesign.",
+   "Use the GenAI moment to improve assessment design more broadly (not tested)."
+  ],
+  "limitations": "Single institution, small sample of staff whose assessments changed, data from 2024 only.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Clear qualitative design with stated limitations; small single-site sample."
+  },
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Reports the lived process of implementing a program-wide assessment redesign for GenAI, with enablers and barriers."
+ },
+ {
+  "record_id": "S023",
+  "title": "Pedagogical Implications of ChatGPT on Accounting Assessment in Higher Education",
+  "authors": "Hannah Wong; Valeriya Avdeev; Sia Nassiripour",
+  "year": 2025,
+  "venue": "International Journal of Economics Business and Management Research",
+  "doi": "10.51505/ijebmr.2025.9804",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Journal PDF via doi (ijebmr.com)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "HE accounting assessment tasks tested against ChatGPT; academic integrity implications; 2025.",
+  "study_design": "Descriptive comparison of ChatGPT (GPT-4o) answers versus student scores on course homework and quizzes",
+  "country": "United States",
+  "discipline": "Accounting",
+  "computing": "N",
+  "level": "Postgraduate (online MBA, intermediate accounting)",
+  "sample": "One intermediate accounting course section in an online MBA, US public university; 15 homework assignments and 7 quizzes; student cohort size not extracted",
+  "genai_tools": "ChatGPT (GPT-4o)",
+  "assessment_types": [
+   "Unsupervised formats"
+  ],
+  "key_findings": [
+   {
+    "finding": "ChatGPT averaged 87.84% on open-ended homework problems, slightly below the students' 91.73% mean.",
+    "location": "Table 5; Results"
+   },
+   {
+    "finding": "ChatGPT averaged 93.33 on unproctored multiple-choice quizzes, above the student mean of 85.86, showing high vulnerability of such tasks.",
+    "location": "Table 6; Conclusion"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "AI scores close to or above students undermine these tasks as evidence of individual capability.",
+   "integrity_security": "Unproctored online quizzes and homework are highly answerable by ChatGPT, creating cheating risk.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Accounting educators should keep abreast of chatbot advances to keep assessment effective (not tested)."
+  ],
+  "limitations": "Single graduate course, prompts entered once without follow-up, so results may not generalise.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Unclear",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 4,
+   "note": "Simple descriptive test; student n and statistical comparison not reported."
+  },
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Shows that unproctored online accounting homework and quizzes are largely solvable by GenAI."
+ },
+ {
+  "record_id": "S032",
+  "title": "Global Trends in Intervention Strategies for Academic Integrity in the Age of Generative Artificial Intelligence: A Bibliometric Analysis",
+  "authors": "Mugiarti Nur Fadlilah; Arthadi Fitri Utami; Fiki Febriani; Herdian Herdian; Nur’aeni Nur’aeni",
+  "year": 2026,
+  "venue": "TOFEDU The Future of Education Journal",
+  "doi": "10.61445/tofedu.v5i2.1937",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Journal PDF (journal.tofedu.or.id, CC BY)",
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E2",
+  "ft_reason": "Bibliometric mapping of research themes on integrity interventions; no specific assessment design and no direct evidence on assessment vulnerability (Amendment 3: c_not_redesign).",
+  "study_design": "Bibliometric analysis (Scopus, VOSviewer)",
+  "country": "not extracted (light)",
+  "discipline": "General higher education",
+  "computing": "N",
+  "level": "Higher education (general)",
+  "sample": "100 Scopus publications, 2021-2024",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [],
+  "key_findings": [
+   {
+    "finding": "Five thematic clusters were found, one being assessment redesign and pedagogical intervention.",
+    "location": "Abstract; Conclusion"
+   },
+   {
+    "finding": "The literature shifted from detection and punishment toward preventive strategies such as AI literacy and authentic assessment redesign.",
+    "location": "Abstract; Conclusion"
+   }
+  ],
+  "evidence_type": "review",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Combine bibliometric mapping with systematic reviews to judge which interventions work (not tested)."
+  ],
+  "limitations": "Scopus only, 2021-2024, no appraisal of study quality.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Adequate bibliometric reporting; only maps topics."
+  },
+  "redesign_relevance": "c_not_redesign",
+  "redesign_note": "Only maps research topics, including assessment redesign as one cluster; offers no design or direct evidence."
+ },
+ {
+  "record_id": "S045",
+  "title": "Cheating with ChatGPT and Techniques of Neutralization",
+  "authors": "James E.Hawdon; Matthew Costello; Ashley V. Reichelmann",
+  "year": 2025,
+  "venue": "Deviant Behavior",
+  "doi": "10.1080/01639625.2025.2456067",
+  "fulltext_status": "abstract only",
+  "source_used": "OpenAlex abstract (closed access; no legal OA copy found)",
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E2",
+  "ft_reason": "Survey on criminological predictors of AI-assisted cheating (neutralization, self-control); integrity attitudes/behaviour only, not assessment redesign (Amendment 3: c_not_redesign).",
+  "study_design": "Cross-sectional survey (from abstract)",
+  "country": "United States",
+  "discipline": "Criminology / general undergraduate",
+  "computing": "N",
+  "level": "Undergraduate",
+  "sample": "US undergraduates across the United States; n not reported in abstract",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [],
+  "key_findings": [
+   {
+    "finding": "Agreement with cheating neutralization, cyber-neutralization and deviant peers was positively associated with AI-assisted cheating, while guilt was inversely associated.",
+    "location": "abstract"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [],
+  "limitations": "Abstract only; design details not available.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "Unclear",
+   "q4": "Unclear",
+   "q5": "Unclear",
+   "quality_score": 1,
+   "note": "Abstract only."
+  },
+  "redesign_relevance": "c_not_redesign",
+  "redesign_note": "Explains why students cheat with AI but gives nothing on assessment design or task vulnerability."
+ },
+ {
+  "record_id": "S052",
+  "title": "ChatGPT giving advice on how to cheat in university assignments: how workable are its suggestions?",
+  "authors": "Dirk H. R. Spennemann; Jessica Maree Biles; Lachlan Brown; Matthew Frank Ireland; Laura Longmore; C. Singh",
+  "year": 2024,
+  "venue": "Interactive Technology and Smart Education",
+  "doi": "10.1108/itse-10-2023-0195",
+  "fulltext_status": "full text (author/repository copy)",
+  "source_used": "Research Square preprint (CC BY), the queue oa_url; may differ from the published ITSE version",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "HE assignment cheating; tests whether ChatGPT-generated evasion advice would escape markers; 2024 journal version.",
+  "study_design": "Qualitative content analysis of 30 ChatGPT outputs (role-play prompts) rated by academics for likelihood of escaping detection",
+  "country": "Australia",
+  "discipline": "Multidisciplinary academic staff (university assignments)",
+  "computing": "N",
+  "level": "Higher education (university assignments)",
+  "sample": "30 iterations of ChatGPT prompts; rated by the authors (academics at Charles Sturt University)",
+  "genai_tools": "ChatGPT (3.5)",
+  "assessment_types": [
+   "Unsupervised formats"
+  ],
+  "key_findings": [
+   {
+    "finding": "Most ChatGPT-suggested strategies for hiding contract cheating had a low chance of escaping detection, but content blending, obscuring plagiarism and distraction techniques had a higher chance of going unnoticed.",
+    "location": "Abstract; Results"
+   },
+   {
+    "finding": "Whether the advice works depends on marker vigilance and on students telling viable options from unworkable ones.",
+    "location": "Conclusions"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "Some AI-suggested concealment strategies could evade markers, depending on marker vigilance.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Markers need to stay vigilant to blending and style-masking strategies (not tested)."
+  ],
+  "limitations": "Expert judgement of detection likelihood was not tested against real cases.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Unclear",
+   "quality_score": 4,
+   "note": "Preprint version used; ratings are author judgement; no explicit limitations section found."
+  },
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Gives evidence on the limits of marker detection when GenAI is used to plan concealment of outsourced work."
+ },
+ {
+  "record_id": "S058",
+  "title": "Academic integrity is under fire in the Generative AI age: insights from accounting educators to overcome challenges, threats and ethical concerns",
+  "authors": "Krayyem Al‐Hajaya",
+  "year": 2025,
+  "venue": "Higher Education Skills and Work-based Learning",
+  "doi": "10.1108/heswbl-02-2025-0060",
+  "fulltext_status": "abstract only",
+  "source_used": "OpenAlex abstract (closed access; no legal OA copy found)",
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E2",
+  "ft_reason": "Interview study of accounting educators' views on GenAI threats to integrity; perceptions only, no specific design or direct evidence (Amendment 3: c_not_redesign).",
+  "study_design": "Qualitative semi-structured interviews",
+  "country": "United Kingdom",
+  "discipline": "Accounting",
+  "computing": "N",
+  "level": "Higher education (UK universities)",
+  "sample": "17 accounting instructors from UK universities",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [],
+  "key_findings": [
+   {
+    "finding": "Educators named misconduct, overreliance, accuracy/bias and privacy as concerns and called for new assessment forms, AI policies and AI literacy training.",
+    "location": "abstract"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Use AI-friendly assessment tools that support higher-order thinking (not tested)."
+  ],
+  "limitations": "Abstract only; small interview sample.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Unclear",
+   "q5": "Unclear",
+   "quality_score": 3,
+   "note": "Abstract only."
+  },
+  "redesign_relevance": "c_not_redesign",
+  "redesign_note": "Educator perceptions only; recommendations on assessment are general."
+ },
+ {
+  "record_id": "S066",
+  "title": "Refining Assessment Design and Practice in Nursing and Midwifery Education in the Era of Generative AI : A Discussion Paper",
+  "authors": "Yenna Salamonson; Pauletta Irwin; Rachel Anne Kornhaber; Deborah Walker; Shirley McGough; Kat Vakavosaki",
+  "year": 2026,
+  "venue": "Journal of Clinical Nursing",
+  "doi": "10.1111/jocn.70484",
+  "fulltext_status": "abstract only",
+  "source_used": "OpenAlex abstract (Wiley OA landing and PDF blocked by bot check; not bypassed)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Discussion paper on GenAI-era assessment design in nursing and midwifery HE; peer reviewed journal; 2026.",
+  "study_design": "Discussion paper / narrative review",
+  "country": "not extracted (light)",
+  "discipline": "Nursing and midwifery",
+  "computing": "N",
+  "level": "Higher education (nursing and midwifery programs)",
+  "sample": "Not applicable (narrative review of literature, commentary and policy)",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [
+   "Supervised assessment",
+   "Process evidence",
+   "AI-use declarations"
+  ],
+  "key_findings": [
+   {
+    "finding": "Proposes Lane One GenAI-resistant tasks, Lane Two human-AI collaboration focused on transparency and process, and a hybrid Lane Three with conditional AI use.",
+    "location": "abstract"
+   },
+   {
+    "finding": "Argues that valid redesign needs structural changes to assessment mechanics and program-level assessment rather than discursive rule changes.",
+    "location": "abstract"
+   }
+  ],
+  "evidence_type": "conceptual/framework",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "Structural (not discursive) changes are argued to be needed to preserve validity.",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "Hybrid lane allows conditional AI use within defined boundaries.",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "Lane Two focuses on process and evaluative judgement.",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Adopt program-level structural assessment redesign (not tested).",
+   "Clarify acceptable AI use with explicit policies and rubrics (not tested)."
+  ],
+  "limitations": "Abstract only; narrative review without systematic search.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "N",
+   "q4": "Unclear",
+   "q5": "Unclear",
+   "quality_score": 1,
+   "note": "Abstract only; discussion paper."
+  },
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Proposes a three-lane assessment design framework for nursing and midwifery education."
+ },
+ {
+  "record_id": "S092",
+  "title": "THE IMPACT OF GENERATIVE AI ON COGNITIVE DEVELOPMENT AND ACADEMIC INTEGRITY IN HIGHER EDUCATION: A LONGITUDINAL ANALYSIS",
+  "authors": "Ragini Kumari",
+  "year": 2026,
+  "venue": "Scholarly Research Journal for Interdisciplinary Studies",
+  "doi": "10.5281/zenodo.23001341",
+  "fulltext_status": "full text (author/repository copy)",
+  "source_used": "Zenodo deposit of journal PDF (record 23001342)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "HE mixed-methods study on GenAI, invigilated exam performance and detection gaps; journal states peer review; 2026.",
+  "study_design": "Convergent parallel mixed methods (student data plus faculty interviews), described as 24-month longitudinal",
+  "country": "not extracted (light)",
+  "discipline": "Multidisciplinary (STEM, humanities, professional studies)",
+  "computing": "N",
+  "level": "Undergraduate",
+  "sample": "1,200 undergraduates (stratified) from five Tier-1 universities and 45 senior faculty interviews",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [
+   "Supervised assessment",
+   "Unsupervised formats",
+   "Process evidence"
+  ],
+  "key_findings": [
+   {
+    "finding": "Reports that GenAI users had slightly higher GPA but lower performance on invigilated AI-free exams (r = -0.58), a 'performance-competence gap'.",
+    "location": "Abstract; Sec 7.1"
+   },
+   {
+    "finding": "Reports that 68% of AI-assisted submissions bypassed standard plagiarism detection, and argues for process-oriented over product-based grading.",
+    "location": "Abstract; Conclusion"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "Gap between unsupervised grades and invigilated exam performance questions the validity of unsupervised products.",
+   "integrity_security": "Standard plagiarism detection missed most AI-assisted submissions.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "Proposes process-oriented assessment over product grading.",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Shift to process-oriented assessment (not tested).",
+   "Adopt the proposed 'AI-Translucency' framework (not tested)."
+  ],
+  "limitations": "Urban Tier-1 sample, 24-month window and fast-changing LLMs limit inference.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "Unclear",
+   "q4": "Unclear",
+   "q5": "Y",
+   "quality_score": 2,
+   "note": "Large claimed sample but measures, data sources and analysis are thinly reported; treat statistics cautiously."
+  },
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Offers (weakly reported) evidence that unsupervised products overstate competence relative to invigilated tests and that detection fails."
+ },
+ {
+  "record_id": "S102",
+  "title": "ChatGPT: The Future Research Assistant or an Academic Fraud? [A Case Study on a State University Located in Jakarta, Indonesia]",
+  "authors": "Tri Marhendra Rahardyan; Candra Hapsari Susilo; Alifia Malikha Nur Iswara; Meinar Lutfiah Hartono",
+  "year": 2024,
+  "venue": "Asia Pacific Fraud Journal",
+  "doi": "10.21532/apfjournal.v9i2.347",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Journal PDF (apfjournal.or.id, CC BY-SA)",
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E2",
+  "ft_reason": "Literature review plus student perception questionnaire on ChatGPT benefits and fraud risks; perceptions only (Amendment 3: c_not_redesign).",
+  "study_design": "Literature review plus descriptive questionnaire",
+  "country": "Indonesia",
+  "discipline": "Accounting / fraud examination",
+  "computing": "N",
+  "level": "Undergraduate",
+  "sample": "45 usable questionnaires from a population of 236 students at one Jakarta state university",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [],
+  "key_findings": [
+   {
+    "finding": "Most respondents agreed ChatGPT use carries plagiarism, integrity and accuracy risks, and that using it for articles or closed-book exams is academic dishonesty.",
+    "location": "Conclusion"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [],
+  "limitations": "Small voluntary sample at one faculty with descriptive statistics only.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "N",
+   "quality_score": 3,
+   "note": "Small descriptive survey."
+  },
+  "redesign_relevance": "c_not_redesign",
+  "redesign_note": "Student perceptions of ChatGPT fraud risk; nothing on assessment design."
+ },
+ {
+  "record_id": "S108",
+  "title": "Participatory Co-Design and Evaluation of a Novel Approach to Generative AI-Integrated Coursework Assessment in Higher Education",
+  "authors": "Alex F. Martin; Svitlana Tubaltseva; Anja Harrison; Gideon James Rubin",
+  "year": 2025,
+  "venue": "Behavioral Sciences",
+  "doi": "10.3390/bs15060808",
+  "fulltext_status": "full text (author/repository copy)",
+  "source_used": "Europe PMC full text (PMC12189063) of MDPI CC BY article; MDPI PDF returned 403",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Co-designed and evaluated a GenAI-integrated coursework assessment in HE; peer reviewed; 2025.",
+  "study_design": "Participatory co-design and mixed-methods evaluation with random allocation (compliant vs unrestricted AI use), blinded marking, focus groups and interviews; pre-registered",
+  "country": "United Kingdom",
+  "discipline": "Psychology (postgraduate)",
+  "computing": "N",
+  "level": "Postgraduate (MSc)",
+  "sample": "Cohort of about 30 MSc students at King's College London; 8 students and 4 teaching staff in the evaluation; 20 blogs in the marker identification analysis",
+  "genai_tools": "Microsoft Copilot",
+  "assessment_types": [
+   "Unsupervised formats",
+   "Process evidence",
+   "AI-use declarations"
+  ],
+  "key_findings": [
+   {
+    "finding": "Blinded markers identified group membership no better than chance (6/14 compliant vs 3/6 unrestricted correct; Fisher's exact p = 1.00), despite some markers feeling confident.",
+    "location": "Sec 3 Results (marker identification)"
+   },
+   {
+    "finding": "Students found AI did not reduce workload because outputs needed refining; scaffolded AI integration was judged to support critical AI literacy and ethical reflection.",
+    "location": "Sec 3.2; Abstract"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "Markers could not tell unrestricted AI use from compliant use.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "Structured, scaffolded AI use with critical reflection was built into the task.",
+   "scalability": "",
+   "workload": "AI did not lower student workload; markers found dual evaluation of AI and student work demanding.",
+   "feasibility": "Co-design toolkit judged feasible and transferable.",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Use participatory co-design with students and staff when building AI-integrated assessments.",
+   "Provide workshops, declaration forms and exemplar prompts to support ethical AI use (not tested)."
+  ],
+  "limitations": "Single small cohort, students not involved from the start, and feedback taken after the first pilot only.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Pre-registered; small sample acknowledged."
+  },
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Implements and evaluates a GenAI-integrated blog assessment and tests whether markers can detect unrestricted AI use."
+ },
+ {
+  "record_id": "S114",
+  "title": "Tools facilitate cheating, or partner supports learning? GenAI and academic integrity issues from students’ perspectives",
+  "authors": "Feyisa Mulisa; Tesfa Mezgebu",
+  "year": 2026,
+  "venue": "International Journal for Educational Integrity",
+  "doi": "10.1007/s40979-026-00231-z",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Springer OA PDF (International Journal for Educational Integrity)",
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E2",
+  "ft_reason": "Qualitative study of students' perspectives on GenAI and integrity (plagiarism, originality, fairness); perceptions only (Amendment 3: c_not_redesign).",
+  "study_design": "Qualitative reflexive thematic analysis of semi-structured interviews",
+  "country": "Ethiopia",
+  "discipline": "Multiple fields",
+  "computing": "N",
+  "level": "Undergraduate",
+  "sample": "27 undergraduates (18 male, 9 female) at Ambo University, Ethiopia",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [],
+  "key_findings": [
+   {
+    "finding": "Many students saw relying on GenAI for coursework as a minor violation and noted it creates an uneven playing field in assessment.",
+    "location": "Abstract; Results"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Redesign assessment toward reflective and authentic methods (not tested)."
+  ],
+  "limitations": "Single institution, mostly male sample, students with disabilities not included.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Sound qualitative reporting."
+  },
+  "redesign_relevance": "c_not_redesign",
+  "redesign_note": "Student integrity perceptions only; redesign is mentioned only as a general implication."
+ },
+ {
+  "record_id": "S124",
+  "title": "Predictors of Psychology Student GenAI Use and Grades on GenAI Secure Versus Unsecure Assessments",
+  "authors": "Phoebe E. Bailey; Anoushka Parylo; Kell S. Tremayne; Catherine O'Gorman; Poppy Watson",
+  "year": 2026,
+  "venue": "Psychology Learning & Teaching",
+  "doi": "10.1177/14757257261430600",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "SAGE OA PDF via doi",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "HE psychology students' GenAI use and grades on secure (supervised) vs unsecure assessments; peer reviewed; 2026.",
+  "study_design": "Cross-sectional survey linked to assessment grades",
+  "country": "Australia",
+  "discipline": "Psychology",
+  "computing": "N",
+  "level": "Undergraduate",
+  "sample": "164 psychology students at the University of Technology Sydney (142 of 185 enrolled in the two subjects)",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [
+   "Supervised assessment",
+   "Unsupervised formats"
+  ],
+  "key_findings": [
+   {
+    "finding": "Greater self-reported GenAI use was not correlated with assessment grades, but was linked to more procrastination and memory difficulties.",
+    "location": "Abstract; Results"
+   },
+   {
+    "finding": "Grades on GenAI-secure (in-person, supervised) and unsecure (unsupervised) assessments were consistently positively correlated, suggesting GenAI did not inflate unsecure grades in early 2024.",
+    "location": "Abstract; Exploratory analyses"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "Secure and unsecure grades tracked each other, giving a validity check on unsupervised tasks.",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "Higher workload predicted more GenAI use.",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Support students to use GenAI to ease workload without bypassing deep learning (not tested)."
+  ],
+  "limitations": "Self-report, mostly female sample and early-2024 timing limit generalisability.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Clear quantitative design."
+  },
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Compares grades on secure and unsecure assessments to test whether GenAI inflates unsupervised results."
+ },
+ {
+  "record_id": "S139",
+  "title": "Reconsidering Student GenAI Disclosure Through Postdigital Agency",
+  "authors": "Daniel Chang; Michael Pin Chuan Lin; Jing-Yuan Huang; Jeeho Ryoo",
+  "year": 2026,
+  "venue": "Postdigital Science and Education",
+  "doi": "10.1007/s42438-026-00679-9",
+  "fulltext_status": "abstract only",
+  "source_used": "Springer landing-page abstract (closed access; PDF not available without subscription)",
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E2",
+  "ft_reason": "Conceptual comment on why students do not disclose GenAI use; no assessment design and no empirical evidence (Amendment 3: c_not_redesign). Borderline because it concerns AI-use disclosure; flagged for adjudicator.",
+  "study_design": "Conceptual commentary (article type: Comment) drawing on an office-hours narrative",
+  "country": "not extracted (light)",
+  "discipline": "General higher education",
+  "computing": "N",
+  "level": "Higher education",
+  "sample": "Not applicable (conceptual; single narrative)",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [],
+  "key_findings": [
+   {
+    "finding": "Argues non-disclosure of GenAI use can be a situated response to environments where honesty carries academic or relational costs, not just a self-regulation failure.",
+    "location": "abstract"
+   }
+  ],
+  "evidence_type": "conceptual/framework",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [],
+  "limitations": "Abstract only; conceptual comment.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "N",
+   "q4": "Unclear",
+   "q5": "Unclear",
+   "quality_score": 1,
+   "note": "Abstract only."
+  },
+  "redesign_relevance": "c_not_redesign",
+  "redesign_note": "Reframes AI-use disclosure conceptually; could inform declaration design but gives no design or evidence."
+ },
+ {
+  "record_id": "S155",
+  "title": "Addressing student use of generative AI in schools and universities through academic integrity reporting",
+  "authors": "Steven Peterson",
+  "year": 2025,
+  "venue": "Frontiers in Education",
+  "doi": "10.3389/feduc.2025.1610836",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Frontiers OA PDF",
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E2",
+  "ft_reason": "Theoretical opinion piece proposing an integrity reporting process for suspected GenAI misuse (schools and universities); about reporting and detection cues, not assessment redesign (Amendment 3: c_not_redesign).",
+  "study_design": "Opinion / theoretical article",
+  "country": "United States",
+  "discipline": "Education (general)",
+  "computing": "N",
+  "level": "Schools and universities",
+  "sample": "Not applicable",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [],
+  "key_findings": [
+   {
+    "finding": "Proposes a transparent, scalable framework for educators to assess and report suspected inappropriate GenAI use, based on textual cues such as hallucinated references.",
+    "location": "Introduction; framework sections"
+   }
+  ],
+  "evidence_type": "conceptual/framework",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [],
+  "limitations": "Opinion piece without empirical testing of the reporting framework.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "N",
+   "q4": "Unclear",
+   "q5": "N",
+   "quality_score": 1,
+   "note": "Opinion article; no limitations section found."
+  },
+  "redesign_relevance": "c_not_redesign",
+  "redesign_note": "Focuses on detecting and reporting misuse rather than designing assessment."
+ },
+ {
+  "record_id": "S193",
+  "title": "A DOUBLE-EDGED SWORD: WEIGHING THE POTENTIAL AND RISKS OF GENERATIVE AI IN MAINTAINING ACADEMIC INTEGRITY IN HIGHER EDUCATION",
+  "authors": "Multajimah; Mohamed Shifaz; Aminath Nafeeza",
+  "year": 2025,
+  "venue": "Al-Hijr Journal of Adulearn World",
+  "doi": "not reported",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Journal PDF (Al-Hijr OJS)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "HE GenAI integrity study including assessment models and a case study of process-oriented assessment; peer-reviewed journal; 2025.",
+  "study_design": "Mixed analytical design: literature review, secondary statistics, policy document analysis and single-institution case study",
+  "country": "not extracted (light)",
+  "discipline": "General higher education",
+  "computing": "N",
+  "level": "Higher education",
+  "sample": "Secondary data and one mid-sized public university case study; n not reported",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [
+   "Process evidence",
+   "Unsupervised formats"
+  ],
+  "key_findings": [
+   {
+    "finding": "Integrity risks were linked mainly to unclear policies, assessments relying on final text outputs, and limited faculty preparedness.",
+    "location": "Abstract; Results and Discussion"
+   },
+   {
+    "finding": "In the case institution, permitting AI for brainstorming only, plus process-oriented assessment, was followed by fewer reported plagiarism violations in the first year.",
+    "location": "Results and Discussion (case study)"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "Final-product text assessments were the main vulnerability.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "Process-oriented assessment was associated with lower perceived misconduct.",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Use adaptive governance and process-oriented assessment rather than prohibition (not tested)."
+  ],
+  "limitations": "Data sources, sample sizes and analysis are thinly reported.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "N",
+   "q4": "Unclear",
+   "q5": "Unclear",
+   "quality_score": 1,
+   "note": "Secondary figures and case data are not sourced in detail."
+  },
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Gives (weak) evidence that output-only assessments are vulnerable and that process-oriented redesign coincided with less reported misconduct."
+ },
+ {
+  "record_id": "S206",
+  "title": "A reflective conversation on assessment in the age of generative AI using the traffic light framework at the University of Leeds",
+  "authors": "Chrissi Nerantzi; John Palfreyman; Maria Pavlopoulou",
+  "year": 2026,
+  "venue": "Open Scholarship of Teaching and Learning",
+  "doi": "10.56230/osotl.151",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "OSOTL journal PDF",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Reflective evaluation of a university traffic-light framework for AI use in assessment; journal article; 2026.",
+  "study_design": "Reflective conversation (practitioner/student dialogue)",
+  "country": "United Kingdom",
+  "discipline": "Education (digital education)",
+  "computing": "N",
+  "level": "Postgraduate",
+  "sample": "Three participants (two postgraduate students, one also an academic, and one academic) at the University of Leeds",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [
+   "AI-use declarations",
+   "Process evidence"
+  ],
+  "key_findings": [
+   {
+    "finding": "The Red/Amber/Green framework gave initial clarity but Amber was hard to interpret, and its focus on assessment rather than learning was questioned.",
+    "location": "Abstract"
+   },
+   {
+    "finding": "Participants argued the framework now seems outdated and called for transparent, process-oriented approaches linking learning and assessment.",
+    "location": "Abstract; closing section"
+   }
+  ],
+  "evidence_type": "guidance",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "Traffic-light categories set permitted AI use but Amber was ambiguous.",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "Calls for process-oriented approaches throughout learning.",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Replace the traffic-light system with a more flexible framework connecting learning and assessment (not tested)."
+  ],
+  "limitations": "Three-person reflective account with no systematic data.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "Y",
+   "q4": "Unclear",
+   "q5": "N",
+   "quality_score": 2,
+   "note": "Reflective piece."
+  },
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Evaluates, from user experience, an institutional AI-use-in-assessment framework (traffic light)."
+ },
+ {
+  "record_id": "S211",
+  "title": "Generative AI in education: Process-aware pedagogy, assessment integrity, and institutional governance",
+  "authors": "Nora Pireci Sejdiu; Simone Grassini; Sejdi Sejdiu",
+  "year": 2026,
+  "venue": "Open Research Europe",
+  "doi": "10.12688/openreseurope.23343.1",
+  "fulltext_status": "full text (author/repository copy)",
+  "source_used": "Europe PMC full text (PMC13276483) of Open Research Europe CC BY article",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Thematic review proposing a process-aware assessment framework for GenAI in HE; post-publication peer review (1 approved, 2 approved with reservations); 2026.",
+  "study_design": "Qualitative thematic literature review (2020-2025)",
+  "country": "not extracted (light)",
+  "discipline": "General higher education",
+  "computing": "N",
+  "level": "Higher education",
+  "sample": "47 sources included (from 60 identified)",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [
+   "Process evidence",
+   "Oral assessments",
+   "Staged submissions"
+  ],
+  "key_findings": [
+   {
+    "finding": "The review found four tensions, including growing ambiguity in authorship and assessment practices and fragmented policy responses.",
+    "location": "Abstract (Results)"
+   },
+   {
+    "finding": "Proposes 'augmented pedagogy' with transparency in AI use and process-oriented assessment such as oral exams, in-class reflections and scaffolded assignments.",
+    "location": "Abstract (Conclusions); Discussion"
+   }
+  ],
+  "evidence_type": "review",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "Positions GenAI as a cognitive scaffold with transparent use.",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "Argues for process over product and live performance over polished outputs.",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Adopt process-oriented assessment and transparent AI-use expectations (not tested)."
+  ],
+  "limitations": "Reviewer reports note the included sources are not clearly listed.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "Unclear",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 3,
+   "note": "Thematic review; source selection not fully reported."
+  },
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Proposes a process-aware assessment framework from a literature synthesis."
+ },
+ {
+  "record_id": "S237",
+  "title": "Navigating Generative AI in Education: A Narrative Review of Teaching Practices and Ethical Challenges",
+  "authors": "George Ayobami Thomas; Stephen Abu; Ajibola Joshua Ajayi; Philip Andoh Frempong; Doreen Mensah; John Oluwafemi Badmus",
+  "year": 2025,
+  "venue": "Asian Journal of Education and Social Studies",
+  "doi": "10.9734/ajess/2025/v51i112630",
+  "fulltext_status": "abstract only",
+  "source_used": "OpenAlex abstract (journal and HAL copies blocked by 403/bot check; not bypassed)",
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E2",
+  "ft_reason": "General narrative review of GenAI teaching practices and ethics; no specific assessment design or direct evidence (Amendment 3: c_not_redesign).",
+  "study_design": "Narrative review (2022-2025)",
+  "country": "not extracted (light)",
+  "discipline": "General higher education",
+  "computing": "N",
+  "level": "Higher education",
+  "sample": "Not reported",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [],
+  "key_findings": [
+   {
+    "finding": "Reports a shift toward higher-order objectives, AI literacy and process-oriented assessment, alongside unresolved authorship, equity and privacy challenges.",
+    "location": "abstract"
+   }
+  ],
+  "evidence_type": "review",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [],
+  "limitations": "Abstract only; narrative review method.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "N",
+   "q4": "Unclear",
+   "q5": "Unclear",
+   "quality_score": 1,
+   "note": "Abstract only."
+  },
+  "redesign_relevance": "c_not_redesign",
+  "redesign_note": "Broad review of teaching practice; assessment mentioned only as a trend."
+ },
+ {
+  "record_id": "S304",
+  "title": "Embedding Generative AI as a digital capability into a year-long skills program.",
+  "authors": "David P. Smith; Dami Sokoya; Skye Moore; Chinenye Okonkwo; Charlotte Boyd; Melissa M. Lacey",
+  "year": 2025,
+  "venue": "Journal of University Teaching and Learning Practice",
+  "doi": "10.53761/fh6q4v89",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "JUTLP journal PDF (CC BY-ND); Cardiff ORCA copy also listed",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "HE MSc programme embedding GenAI with a process-based assessment framework; peer reviewed; 2025.",
+  "study_design": "Mixed methods: longitudinal skills-audit questionnaires plus semi-structured interviews",
+  "country": "United Kingdom",
+  "discipline": "Biosciences and chemistry",
+  "computing": "N",
+  "level": "Postgraduate (MSc)",
+  "sample": "156 of 180 MSc students opted in to questionnaires; 15 interviewees; Sheffield Hallam University",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [
+   "Process evidence"
+  ],
+  "key_findings": [
+   {
+    "finding": "Students' self-reported confidence in GenAI competencies such as ethical use and data protection improved over the year-long programme.",
+    "location": "Abstract; Results"
+   },
+   {
+    "finding": "Authors report that process-based assessments focused on the creation process rather than the final output promoted ethical GenAI use; students also reported tension from unclear institutional expectations.",
+    "location": "Abstract; Practitioner Notes"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "Embedded, scaffolded GenAI use with explicit ethical guidance.",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "Process-based assessment framework valued the creation process over final output.",
+   "accessibility_equity": "GenAI language support was seen as aiding international and non-native English students."
+  },
+  "author_recommendations": [
+   "Adopt process-based assessments across modules.",
+   "Embed explicit guidance and reflection on ethical use and data privacy."
+  ],
+  "limitations": "Single institution and self-reported confidence rather than direct learning measures.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Good participation rate; outcomes are self-report."
+  },
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Implements a process-based assessment framework embedding GenAI across an MSc skills programme."
+ },
+ {
+  "record_id": "S405",
+  "title": "The effectiveness of ChatGPT in pediatric simulation-based tests of nursing courses in Taiwan: A descriptive study",
+  "authors": "Hui‐Man Huang; Shao-Hui Shu",
+  "year": 2025,
+  "venue": "Clinical Simulation in Nursing",
+  "doi": "10.1016/j.ecns.2025.101732",
+  "fulltext_status": "abstract only",
+  "source_used": "OpenAlex abstract and highlights (Elsevier page returned 403; not bypassed)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "HE nursing simulation-based assessment tests completed by ChatGPT and compared with students; peer reviewed; 2025.",
+  "study_design": "Descriptive comparison study",
+  "country": "Taiwan",
+  "discipline": "Nursing",
+  "computing": "N",
+  "level": "Associate Degree in Nursing (fourth year)",
+  "sample": "267 fourth-year ADN students; 4 pediatric simulated scenarios, 40 items; Taiwan",
+  "genai_tools": "ChatGPT (GPT-3.5, GPT-4.0)",
+  "assessment_types": [
+   "Practical demonstrations",
+   "Unsupervised formats"
+  ],
+  "key_findings": [
+   {
+    "finding": "GPT-4.0 outperformed GPT-3.5, but neither model passed all pediatric simulation-based test sections, with fabricated and inconsistent answers.",
+    "location": "abstract"
+   },
+   {
+    "finding": "Students scored higher than the GPT models in all sections except the second-round GPT-4.0 attempt.",
+    "location": "abstract"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "Simulation-based tests requiring clinical judgement remained harder for GenAI than for students.",
+   "integrity_security": "ChatGPT could not reliably pass simulation-based clinical reasoning tests.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [],
+  "limitations": "Abstract only; single programme and two model versions.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Unclear",
+   "q5": "Unclear",
+   "quality_score": 3,
+   "note": "Abstract only."
+  },
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Shows how GenAI performs on real simulation-based assessment tasks in nursing."
+ },
+ {
+  "record_id": "S420",
+  "title": "Academic Integrity in the Era of Generative AI: Challenges, Ethical Dilemmas, and Policy Responses in Higher Education",
+  "authors": "Atif Usman",
+  "year": 2026,
+  "venue": "MAIRAJ",
+  "doi": "not reported",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Journal PDF (mairaj.pk)",
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E2",
+  "ft_reason": "Narrative policy review of integrity challenges and governance; recommendations on assessment are generic (Amendment 3: c_not_redesign).",
+  "study_design": "Narrative literature and policy review",
+  "country": "Pakistan",
+  "discipline": "General higher education",
+  "computing": "N",
+  "level": "Higher education",
+  "sample": "Not applicable",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [],
+  "key_findings": [
+   {
+    "finding": "Recommends AI literacy, transparent disclosure, assessment redesign, faculty training and comprehensive governance rather than prohibition.",
+    "location": "Abstract; Conclusion"
+   }
+  ],
+  "evidence_type": "review",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [],
+  "limitations": "No stated review method and no explicit limitations section.",
+  "quality": {
+   "q1": "Y",
+   "q2": "N",
+   "q3": "N",
+   "q4": "Unclear",
+   "q5": "N",
+   "quality_score": 1,
+   "note": "Narrative review without method."
+  },
+  "redesign_relevance": "c_not_redesign",
+  "redesign_note": "Governance and policy recommendations only; no specific design or evidence."
+ },
+ {
+  "record_id": "S428",
+  "title": "Student Perceptions of Generative Artificial Intelligence Regulations: A Mixed‐Methods Study of Higher Education in Singapore",
+  "authors": "Michelle Xin Yi Tan; Yao Qu; Jue Wang",
+  "year": 2025,
+  "venue": "Higher Education Quarterly",
+  "doi": "10.1111/hequ.70038",
+  "fulltext_status": "abstract only",
+  "source_used": "OpenAlex abstract (closed; DR-NTU repository record has no open file)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "HE student compliance with GenAI regulations and honesty of AI-use declarations; peer reviewed; 2025.",
+  "study_design": "Mixed methods: survey with thematic analysis and Theory of Planned Behaviour modelling",
+  "country": "Singapore",
+  "discipline": "Multidisciplinary",
+  "computing": "N",
+  "level": "Higher education",
+  "sample": "Students at one Singapore university; n not reported in abstract",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [
+   "AI-use declarations"
+  ],
+  "key_findings": [
+   {
+    "finding": "Understanding of guidelines increased compliance and declaration honesty, while perceived restrictiveness and more GenAI experience reduced them.",
+    "location": "abstract"
+   },
+   {
+    "finding": "Faculty influence raised compliance but had little effect on declaration honesty.",
+    "location": "abstract"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "Honest declaration was not driven by faculty influence.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "Clear guidelines improved compliance with permitted-use rules.",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Use balanced, flexible rules combined with educational clarity and faculty engagement (not tested)."
+  ],
+  "limitations": "Abstract only; single institution.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Unclear",
+   "q4": "Unclear",
+   "q5": "Unclear",
+   "quality_score": 2,
+   "note": "Abstract only."
+  },
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Gives evidence on what drives honest AI-use declarations and compliance with permitted-use policies."
+ },
+ {
+  "record_id": "S433",
+  "title": "Generative AI governance in higher education: a case study from Africa",
+  "authors": "Donrich Willem Thaldar; Marietjie Botes; Abdulbaqi Eyitayo Badru; Hafizah Yousuf Chenia; Sinegugu Evidence Duma; Siyabonga Dlamini",
+  "year": 2025,
+  "venue": "Frontiers in Political Science",
+  "doi": "10.3389/fpos.2025.1666661",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Frontiers OA PDF",
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E2",
+  "ft_reason": "Case study of institutional GenAI governance guidelines (teaching and research); not an assessment design or evidence on assessment (Amendment 3: c_not_redesign).",
+  "study_design": "Qualitative single-institution case study (process tracing, policy analysis)",
+  "country": "South Africa",
+  "discipline": "Institution-wide",
+  "computing": "N",
+  "level": "Higher education",
+  "sample": "University of KwaZulu-Natal AI Academic Guidelines; authors were AI Task Team members",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [
+   "AI-use declarations"
+  ],
+  "key_findings": [
+   {
+    "finding": "The guidelines set principles for innovation, ethical use, academic rigour and capacity building, including a tiered disclosure framework.",
+    "location": "Abstract (Results)"
+   }
+  ],
+  "evidence_type": "guidance",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [],
+  "limitations": "Insider single-institution account without outcome data.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Unclear",
+   "q5": "N",
+   "quality_score": 3,
+   "note": "Descriptive insider case study."
+  },
+  "redesign_relevance": "c_not_redesign",
+  "redesign_note": "Institution-wide governance; the disclosure framework is not assessment-specific or evaluated."
+ },
+ {
+  "record_id": "S446",
+  "title": "Ethics in Times of Advanced AI: Investigating Students’ Attitudes Towards ChatGPT and Academic Integrity",
+  "authors": "Elena Shalevska; Bisera Kostadinovska-Stojchevska",
+  "year": 2024,
+  "venue": "Učitel/Teacher",
+  "doi": "10.20544/teacher.27.08",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Journal PDF (ijeteacher.com)",
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E2",
+  "ft_reason": "Survey of student attitudes toward ChatGPT and academic integrity; attitudes only (Amendment 3: c_not_redesign).",
+  "study_design": "Mixed methods: brief literature review plus survey",
+  "country": "North Macedonia",
+  "discipline": "Multiple faculties",
+  "computing": "N",
+  "level": "Undergraduate",
+  "sample": "114 undergraduates at University St. Kliment Ohridski, Bitola, North Macedonia",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [],
+  "key_findings": [
+   {
+    "finding": "A notable share of students reported using ChatGPT without telling professors, citing grade pressure, time constraints and the belief that everyone does it.",
+    "location": "Abstract; Results and discussion"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [],
+  "limitations": "Self-report data from one university context.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Simple descriptive survey."
+  },
+  "redesign_relevance": "c_not_redesign",
+  "redesign_note": "Student attitudes and undisclosed use only; nothing on assessment design."
+ },
+ {
+  "record_id": "S452",
+  "title": "Mapping generative AI governance readiness in Kurdistan Region universities",
+  "authors": "Akam Aziz Abdulrahman; Sirwan Khalid Ahmed",
+  "year": 2026,
+  "venue": "Discover Education",
+  "doi": "10.1007/s44217-026-02242-x",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Springer OA PDF (Discover Education)",
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E2",
+  "ft_reason": "Public-facing GenAI governance readiness audit of universities; governance, not assessment redesign (Amendment 3: c_not_redesign).",
+  "study_design": "Website-based document analysis / policy audit",
+  "country": "Iraq (Kurdistan Region)",
+  "discipline": "Institution-wide",
+  "computing": "N",
+  "level": "Higher education",
+  "sample": "30 universities in the Kurdistan Region of Iraq; 10 double-coded",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [],
+  "key_findings": [
+   {
+    "finding": "Most universities were at Stage 1 readiness, with AI-use disclosure, acceptable-use guidance, privacy and AI-aware assessment redesign the weakest areas.",
+    "location": "Abstract; Results"
+   }
+  ],
+  "evidence_type": "empirical",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [],
+  "limitations": "Public web documents only, and two-thirds of coding was not double-checked.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 5,
+   "note": "Transparent audit with reliability checks."
+  },
+  "redesign_relevance": "c_not_redesign",
+  "redesign_note": "Audits governance visibility; assessment redesign is only one audited dimension."
+ },
+ {
+  "record_id": "S458",
+  "title": "Responsible integration of generative artificial intelligence in academic writing: a narrative review and synthesis",
+  "authors": "Umar Sodangi; Akilu Isma’il",
+  "year": 2025,
+  "venue": "Journal of Artificial Intelligence Machine Learning and Neural Network",
+  "doi": "10.55529/jaimlnn.52.13.23",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Journal PDF (hmjournals.com)",
+  "ft_decision": "Exclude",
+  "ft_exclusion_code": "E2",
+  "ft_reason": "Narrative review of responsible GenAI use in academic writing, including research publishing; not assessment redesign (Amendment 3: c_not_redesign).",
+  "study_design": "Narrative review and conceptual synthesis",
+  "country": "Nigeria",
+  "discipline": "Education (academic writing)",
+  "computing": "N",
+  "level": "Higher education and research",
+  "sample": "Not reported",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [],
+  "key_findings": [
+   {
+    "finding": "Identifies plagiarism, hallucinated citations and authorship problems as key risks and calls for transparency and clear disclosure.",
+    "location": "Abstract; Conclusion"
+   }
+  ],
+  "evidence_type": "review",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [],
+  "limitations": "Narrative synthesis without systematic method.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "N",
+   "q4": "Unclear",
+   "q5": "Unclear",
+   "quality_score": 1,
+   "note": "Limitations mentioned only briefly."
+  },
+  "redesign_relevance": "c_not_redesign",
+  "redesign_note": "Covers academic writing ethics broadly; no assessment design."
+ },
+ {
+  "record_id": "S467",
+  "title": "CHATGPT AND SIMILAR GENERATIVE AI TOOLS IN HIGHER EDUCATION:ACADEMIC INTEGRITY, AIGIARISM, AND INSTITUTIONAL POLICY RESPONSES, A SYSTEMATIC LITERATURE REVIEW AND IMPLEMENTATION FRAMEWORK",
+  "authors": "Kendjayeva Dildora Xudayberganovna; Мухторова Зилола; Giyosjon A. Jumayev",
+  "year": 2026,
+  "venue": "IFSMRC African International Journal of Research in Management",
+  "doi": "not reported",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Journal PDF (ifsmrc.org OJS)",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Systematic review of AIgiarism, AI detection limits and institutional policy in HE, with an implementation framework; journal article; 2026.",
+  "study_design": "Systematic literature review (PRISMA, MMAT/AMSTAR-2 appraisal)",
+  "country": "Uzbekistan",
+  "discipline": "General higher education",
+  "computing": "N",
+  "level": "Higher education",
+  "sample": "78 studies (Nov 2022 - Jun 2025) from Scopus, WoS, ERIC, ScienceDirect, Google Scholar",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [
+   "AI-use declarations",
+   "Oral assessments",
+   "Process evidence"
+  ],
+  "key_findings": [
+   {
+    "finding": "Detection tools were reported at roughly 80-90% accuracy with 3-8% false positives, disproportionately affecting non-native English writers.",
+    "location": "Abstract; Table 2"
+   },
+   {
+    "finding": "Assessment redesign (oral exams, process-based evaluation, real-world projects) was the most consistently supported of five policy models, but no single intervention sufficed.",
+    "location": "Policy models section; Table 3"
+   }
+  ],
+  "evidence_type": "review",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "Detection tools are imperfect, with false positives.",
+   "lo_alignment": "",
+   "appropriate_ai_use": "",
+   "scalability": "",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": "False positives fall disproportionately on non-native English speakers."
+  },
+  "author_recommendations": [
+   "Combine assessment redesign, AI literacy, disclosure norms and calibrated detection (not tested).",
+   "Apply a five-stage implementation framework for Uzbekistan (not tested)."
+  ],
+  "limitations": "Publication bias, self-report prevalence data and a geographically skewed evidence base.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "Y",
+   "q4": "Unclear",
+   "q5": "Y",
+   "quality_score": 4,
+   "note": "Detection values are approximate ranges drawn partly from vendor and grey sources."
+  },
+  "redesign_relevance": "b_informs_redesign",
+  "redesign_note": "Synthesises evidence on detection limits and policy models that redesign must respond to."
+ },
+ {
+  "record_id": "S475",
+  "title": "Thinking to learn: managing the risks of outsourcing to GenAI",
+  "authors": "Anne‐Marie Chase; K. M. Galvin",
+  "year": 2026,
+  "venue": "Assessment & Evaluation in Higher Education",
+  "doi": "10.1080/02602938.2026.2620055",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Taylor & Francis OA PDF via doi",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Conceptual framework for GenAI-era assessment design in HE; peer reviewed; 2026.",
+  "study_design": "Conceptual / framework paper",
+  "country": "Australia",
+  "discipline": "General higher education",
+  "computing": "N",
+  "level": "Higher education",
+  "sample": "Not applicable",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [
+   "Process evidence",
+   "AI-use declarations"
+  ],
+  "key_findings": [
+   {
+    "finding": "Combines Griffin's developmental assessment model with the AI Assessment Scale to guide principled decisions about where GenAI may support assessment.",
+    "location": "Abstract"
+   },
+   {
+    "finding": "The framework aims to make learning visible and preserve cognitive ownership by aligning tasks with outcomes and observable indicators.",
+    "location": "Conclusion"
+   }
+  ],
+  "evidence_type": "conceptual/framework",
+  "dimensions": {
+   "authenticity": "",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "Aligns tasks to learning outcomes and observable indicators of learning.",
+   "appropriate_ai_use": "Uses the AIAS to set permitted GenAI levels.",
+   "scalability": "",
+   "workload": "Success depends on educator capability and professional learning.",
+   "feasibility": "",
+   "process_visibility": "Aims to make student thinking and learning visible.",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Use the developmental assessment framework with the AIAS for task design (not tested)."
+  ],
+  "limitations": "Not empirically tested; success depends on educator capability and institutional support.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Y",
+   "q3": "N",
+   "q4": "Y",
+   "q5": "Y",
+   "quality_score": 4,
+   "note": "Conceptual paper grounded in cited literature."
+  },
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Proposes a developmental assessment design framework combined with the AIAS."
+ },
+ {
+  "record_id": "S490",
+  "title": "“Broken and Repair” case studies: Developing GenAI-age critical evaluation and creative problem-solving skills in communication education",
+  "authors": "Triparna Gandhi; Tom Whitford",
+  "year": 2026,
+  "venue": "Communication Teacher",
+  "doi": "10.1080/17404622.2026.2724115",
+  "fulltext_status": "full text (publisher OA)",
+  "source_used": "Taylor & Francis OA PDF via doi",
+  "ft_decision": "Include",
+  "ft_exclusion_code": "",
+  "ft_reason": "Peer-reviewed teaching-idea article describing a GenAI-aware case-study assessment in HE; 2026.",
+  "study_design": "Teaching practice description (original teaching idea)",
+  "country": "Australia",
+  "discipline": "Marketing / strategic communication",
+  "computing": "N",
+  "level": "Postgraduate (adaptable to upper undergraduate)",
+  "sample": "Used with about 160 students per year (about 80 per semester) at the University of Melbourne",
+  "genai_tools": "not extracted (light)",
+  "assessment_types": [
+   "AI-use declarations"
+  ],
+  "key_findings": [
+   {
+    "finding": "Students diagnose and repair a deliberately flawed professional pitch, which makes reasoning visible and is reported to reduce template-driven answers.",
+    "location": "Abstract; closing appraisal section"
+   }
+  ],
+  "evidence_type": "guidance",
+  "dimensions": {
+   "authenticity": "Uses professionally presented pitches with realistic flaws.",
+   "capability_verification": "",
+   "integrity_security": "",
+   "lo_alignment": "",
+   "appropriate_ai_use": "GenAI permitted only for ideation and visualisation during redesign, with a structured usage declaration in the rubric.",
+   "scalability": "Authors state it scales across large cohorts.",
+   "workload": "",
+   "feasibility": "",
+   "process_visibility": "",
+   "accessibility_equity": ""
+  },
+  "author_recommendations": [
+   "Use deliberately broken cases with bounded GenAI use and graded usage declarations."
+  ],
+  "limitations": "Needs careful scaffolding and subtle errors, and was not formally evaluated.",
+  "quality": {
+   "q1": "Y",
+   "q2": "Unclear",
+   "q3": "Y",
+   "q4": "Unclear",
+   "q5": "Y",
+   "quality_score": 3,
+   "note": "Practice description without formal evaluation."
+  },
+  "redesign_relevance": "a_redesign",
+  "redesign_note": "Describes a specific GenAI-aware assessment design with a graded AI-use declaration."
+ }
+]

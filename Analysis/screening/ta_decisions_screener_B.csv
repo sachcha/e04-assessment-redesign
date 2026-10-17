@@ -1,0 +1,76 @@
+Record ID,ta_decision,exclusion_code,reason
+R12,Include,,Qualitative study of how university students use GenAI when completing assessment tasks.
+R14,Include,,Reports an assessment practice requiring students to declare and explain GenAI use.
+R15,Include,,Summative assessment of GenAI use in academic writing in a computing foundation year.
+R16,Include,,Conceptual redesign of authentic assessment in HE for GenAI including process evidence and oral defences.
+R17,Include,,Framework for assessing learning through student GenAI interactions in HE.
+R19,Include,,Proposes assessment redesign principles for GenAI in tertiary education.
+R20,Include,,Assessments redesigned to incorporate GenAI tools in a university course.
+R21,Include,,Conceptual paper on assessment practices for evaluative judgement with GenAI in HE.
+R22,Maybe,,Policy analysis of learning design and assessment for GenAI but unclear whether HE-specific.
+R23,Include,,Authentic assessment designs for GenAI in HE including a computer science scenario.
+R24,Include,,Changes to university EAP assessment practices in response to GenAI including AI declarations.
+R25,Include,,Online assessment integrity and cheating with ChatGPT in a university statistics course.
+R26,Include,,ChatGPT experiment on essay assessment and framework for AI-assisted assessment in HE.
+R27,Include,,Pilot of a new AI-allowed multimedia assessment in a university pharmacology unit.
+R29,Exclude,E2,Systematic review of GenAI in programming education with integrity only mentioned in passing.
+R30,Exclude,E2,Review focuses on learning performance and hallucinations rather than assessment.
+R31,Exclude,E2,Review of GenAI integration in programming education; assessment not a primary focus.
+R32,Exclude,E2,Broad review of AI in programming pedagogy not focused on assessment design or integrity.
+R33,Maybe,,Includes study of students correcting LLM-generated code in exams; assessment focus unclear.
+R34,Exclude,E2,Studies student-ChatGPT interaction in programming learning not assessment.
+R35,Exclude,E2,Examines ChatGPT effects on programming behaviours and performance not assessment.
+R36,Exclude,E2,Scoping review of ChatGPT in programming education with integrity as one minor theme.
+R37,Exclude,E2,Review of GenAI learning effects in programming education not assessment-focused.
+R39,Exclude,E2,Focus is learning outcomes of ChatGPT use with integrity only a secondary concern.
+R40,Exclude,E2,Review of ChatGPT effects on critical and creative thinking not assessment.
+R41,Exclude,E2,Meta-analysis of GenAI effects on STEM learning outcomes not assessment design.
+R44,Include,,Uses AI-generated essays in a critical evaluation assessment task with integrity context in HE.
+R45,Include,,Compares student AI-use reflections with assessor evaluations in a postgraduate assessment.
+R46,Exclude,E2,Focus is quality of AI-generated feedback not assessment design or integrity.
+R47,Include,,Describes an assessment integrating genAI in an undergraduate psychology course.
+R48,Exclude,E2,Develops a GenAI literacy test rather than addressing assessment design or integrity.
+R49,Include,,Survey of educator and student views on GenAI impact on HE assessments.
+R50,Maybe,,Teacher survey on changing assessment for GenAI spans multiple teaching levels so HE focus unclear.
+R51,Include,,Reviews top universities' GenAI assessment guidelines including academic integrity.
+R52,Include,,Experiments on GenAI impact on academic integrity of authentic assessments in HE.
+R53,Include,,Evaluates GenAI performance on university written assessments with integrity implications.
+R54,Include,,Examines AI essays and detection for authorship and academic integrity in HE.
+R55,Include,,Tests ability to identify AI-generated college essays relevant to integrity.
+R56,Include,,Studies academic dishonesty perceptions and ChatGPT use among university students.
+R57,Include,,Examines student use of chatbots for assessments and academic integrity implications.
+R58,Exclude,E2,Focus is GenAI literacy development through self-regulated learning not assessment.
+R59,Exclude,E2,Focus is GenAI literacy development not assessment or integrity.
+R60,Exclude,E2,Focus is AI literacy pedagogy not assessment or integrity.
+R61,Exclude,E2,Focus is students' GenAI knowledge and literacy not assessment.
+R62,Exclude,E2,Broad future research agenda for HE with assessment only briefly mentioned.
+R63,Exclude,E2,General faculty and student perceptions of GenAI not focused on assessment.
+R64,Exclude,E2,General impact of GenAI on HE stakeholders without assessment as primary focus.
+R65,Exclude,E2,General review of ChatGPT in HE not focused on assessment or integrity.
+R67,Exclude,E2,General review of AI in CS education not focused on assessment or integrity.
+R70,Exclude,E2,General perceptions of AI integration in HE with integrity only mentioned.
+R72,Include,,Programming course assessment design permitting AI on an open-ended project but not homework.
+R73,Include,,Examines AI solvability of CS assignments and recommends integrity-preserving assignment design.
+R74,Exclude,E2,Experiment on ChatGPT effects on CS1 learning outcomes not assessment design.
+R75,Include,,AI recommender to build personalised CS1 assignments and exams including to reduce plagiarism.
+R76,Include,,Evaluates AI-assisted grading of a project assessment in a master's CS course.
+R78,Include,,AI-assisted code evaluation and integrity monitoring platform for programming education.
+R79,Include,,GenAI-allowed project assessment with traceability and individual viva in engineering HE.
+R82,Include,,Adapting program and course assessment for GenAI in computing education.
+R83,Include,,Framework for take-home assignment design with GenAI and integrity in software courses.
+R84,Include,,Evaluates AI-resilient programming assessment design for unsupervised take-home tasks.
+R85,Exclude,E3,Workforce training test effects study with no AI context.
+R86,Exclude,E3,Retrieval practice study with no AI context.
+R87,Exclude,E2,Review of GenAI implementation in HE teaching not focused on assessment.
+R88,Include,,Theoretical framework for integrating GenAI in university assessment and integrity.
+R28,Maybe,,Computing education GenAI review covers assessment integrity as one of four areas; depth unclear.
+R38,Exclude,E2,Review of AI tools in programming education focused on learning outcomes.
+R42,Exclude,E2,Meta-analysis of ChatGPT effects on learning not assessment design.
+R43,Exclude,E2,Scale of student GenAI reliance not focused on assessment or integrity.
+R66,Exclude,E2,Review of AI in CS and database instruction with integrity only mentioned.
+R68,Include,,National regulator-commissioned assessment reform framework for HE in the AI era.
+R69,Exclude,E4,Non-peer-reviewed preprint in a secondary school context.
+R71,Include,,AI-resistant programming assignment design in undergraduate classes.
+R77,Include,,Process-based activity-log plagiarism detection for AI-generated code in programming courses.
+R80,Include,,Authentic in-term programming assessment with prompt submission and viva under GenAI.
+R81,Include,,Alternative programming assessments with version control vivas and live demos for integrity.

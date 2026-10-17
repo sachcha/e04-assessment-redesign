@@ -1,0 +1,10 @@
+measure,n,denominator,pct
+Student responses,150,150,100.0
+Reported any GenAI use in the project (not 'not at all'),139,150,92.66666666666667
+Used GenAI often or continuously,58,150,38.666666666666664
+"AI-first mode (AI proposes, student reviews) frequently or very frequently",51,150,34.0
+"Student-first mode (student proposes, AI reviews) frequently or very frequently",56,150,37.333333333333336
+Rated student GenAI use as rather or very useful,96,150,64.0
+Rated student GenAI use as rather or very harmful,19,150,12.666666666666666
+Rated own programming skill as low,13,150,8.666666666666666
+No professional programming experience,100,150,66.66666666666667

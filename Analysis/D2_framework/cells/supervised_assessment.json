@@ -1,0 +1,285 @@
+{
+ "assessment_type": "Supervised assessment",
+ "n_studies_in_pack": 52,
+ "cells": [
+  {
+   "dimension": "capability_verification",
+   "rating": "Strong",
+   "confidence": "High",
+   "literature": "[L] Supervised performance exposed large gaps behind high take-home marks: viva and live-demo averages of about 35% and 44% against 83.8% on take-home work in a 60-student module [R81], no invigilated-exam advantage for AI-reliant students despite higher assignment marks [R96], and, in a non-computing business course, failures rose from 2.1-5.7% to 18.4% after a move from a take-home to a supervised closed-book exam, although the change also removed all resources and added time pressure [S119]. Live checkoffs with verbal explanation let TAs confirm individual baseline proficiency [R95], and in-person hurdles were the only elements GPT-4 could not pass in a whole physics degree [S097]. In a test of eight engineering students, proctored scores were far below AI-permitted scores (26.25% vs 78.75%) [S101], invigilated tasks correcting LLM code exposed debugging gaps [R33], and random post-exam vivas were used to check exam reasoning [S009].",
+   "dataset": "[D] In one computing course, students averaged 94.8% on AI-permitted assignments but 86.3% on proctored exams, and 90.6% scored higher on assignments [D24]; exam marks spread more and agreed only moderately with assignment marks (rho = 0.53) [D25].",
+   "interpretation": "[I] Supervision gives the most direct evidence of what an individual can do unaided, although a timed exam shows they can produce answers rather than explain or extend their own work unless questioning or live demonstration is added.",
+   "key_studies": [
+    "R81",
+    "R96",
+    "R95",
+    "S119",
+    "S097",
+    "S101",
+    "R33",
+    "S009"
+   ],
+   "n_supporting": 8,
+   "computing_studies": 5,
+   "core_studies": 3,
+   "conflicts": "In early 2024, grades on secure and unsecure psychology assessments were positively correlated, so the gap was not universal [S124]. Auto-graded timed tasks mis-scored some correct but unorthodox solutions [R89].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "genai_exposure",
+   "rating": "Strong",
+   "confidence": "Medium",
+   "literature": "[L] Under in-person invigilation GenAI is kept out of the task: GPT-4 would have passed a whole physics degree except for its in-person laboratory and viva hurdles [S097], and face-to-face exams, laboratory work and in-person closed-book unseen exams are reported as not yet threatened [R03], [R54]. The items themselves are highly AI-solvable: LLMs averaged 83% against a student average of 54% on six years of ML exams [S009], ChatGPT-4 Vision placed in the top 10 percentile of a national CS exam [S008], and ChatGPT passed 8 of 15 computer engineering exams [S030]. Weaker variants are exceptions: lockdown browsers can be bypassed [R25], in-class interface restrictions were circumvented, including by transcribing AI code [R77], and unsupervised online interviews may be vulnerable to real-time AI help [S001].",
+   "dataset": "[D] With best-of-8 prompting, GPT-4 fully answered 85.6% of EPFL CS questions [D03], and AI resistance did not reside in question format [J3].",
+   "interpretation": "[I] Rated under its defining condition of in-person invigilation, the type blocks GenAI use, but the protection comes from the conditions rather than the questions, so online proctoring and lockdown-browser formats are much weaker exceptions.",
+   "key_studies": [
+    "S097",
+    "R03",
+    "R54",
+    "S009",
+    "S008",
+    "S030",
+    "R25",
+    "R77",
+    "S001"
+   ],
+   "n_supporting": 9,
+   "computing_studies": 4,
+   "core_studies": 1,
+   "conflicts": "No study directly tested covert AI use under in-person invigilation, so the Strong rating rests on whole-programme benchmarking and reviews [S097], [R03], [R54]. Because the items are AI-solvable [S009], [S008], [D03], any breach of supervision is high-impact. Lockdown, interface-restricted and remote formats were bypassed or judged vulnerable [R25], [R77], [S001].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authorship_assurance",
+   "rating": "Strong",
+   "confidence": "Medium",
+   "literature": "[L] Face-to-face exams, laboratory work and in-person orals are reported as the formats least threatened by GenAI [R03], [S001], and in-person closed-book unseen exams were judged not yet threatened while non-invigilated essays were [R54]. Fully supervised tests are described as effective for authorship [R84], and expert guidance recommends securing key programme-level assessments through supervision [R68], [R04]. In remote or computer-based settings, assurance depends on extra controls such as lockdown and per-student questions [R89] or keystroke-log monitoring, which detected most instructed plagiarism with 87.13% accuracy [R77].",
+   "dataset": "",
+   "interpretation": "[I] In-person invigilation gives staff high confidence about who produced the work and that AI was not used, but the confidence weakens in online or lockdown-browser settings.",
+   "key_studies": [
+    "S097",
+    "R03",
+    "S001",
+    "R54",
+    "R84",
+    "R77",
+    "R68"
+   ],
+   "n_supporting": 7,
+   "computing_studies": 2,
+   "core_studies": 2,
+   "conflicts": "Lockdown browsers can be bypassed [R25] and in-class interface restrictions were circumvented [R77]. Online vivas are described as vulnerable to AI assistance and avatars [S104].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "lo_alignment",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Frameworks place supervised, AI-free assessment against foundational or certification-required skills [R04], [R19], [R10], with recall assessed in class and higher-order work set as take-home tasks [S127]. Supervised formats can target reasoning when designed for it, for example tasks correcting LLM-generated code [R33] and live checkoffs scoped to listed tool skills [R95], but item types vary widely in what they measure and in how vulnerable they are [S030]. Critics warn that a return to invigilated pen-and-paper exams risks narrowing what is assessed [R88].",
+   "dataset": "",
+   "interpretation": "[I] Alignment is good for foundational computing knowledge and skills but depends on design for process and reasoning outcomes, which timed product-only exams capture poorly.",
+   "key_studies": [
+    "R04",
+    "R19",
+    "R10",
+    "R33",
+    "R95",
+    "S030",
+    "R88"
+   ],
+   "n_supporting": 7,
+   "computing_studies": 4,
+   "core_studies": 2,
+   "conflicts": "Authors note that LLM-debugging and construction tasks measure different cognitive demands, which limits comparability within one exam [R33].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "authenticity",
+   "rating": "Weak",
+   "confidence": "Medium",
+   "literature": "[L] Supervised, time-constrained assessment is criticised as distant from real-world tasks [R01], and authors warn that a retreat to invigilated tasks may reduce authenticity [R57] and narrow what is assessed [R88]. Practitioners rejected pen-and-paper exams as inauthentic [R24], and a natural experiment in a business course notes a tension between certification credibility and authenticity [S119], [S097]. Live checkoffs in real tool environments resembling technical interviews are an exception [R95].",
+   "dataset": "",
+   "interpretation": "[I] AI-free, timed conditions are unlike professional computing practice, where AI tools are available, unless the supervised task is a hands-on demonstration in real tools.",
+   "key_studies": [
+    "R01",
+    "R57",
+    "R88",
+    "R24",
+    "S119",
+    "R95"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 1,
+   "core_studies": 1,
+   "conflicts": "Live checkoffs in real developer tools were argued to be more authentic than written exams [R95]. This rating rests mainly on non-computing or partly computing evidence and on perceptions.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "appropriate_ai_use",
+   "rating": "Weak",
+   "confidence": "Medium",
+   "literature": "[L] Supervised assessment is usually the No-AI or Against level of AI-use frameworks [R10], [R19], and it appears as an AI-free lab exam alongside AI-permitted tasks [R93] or as the No-AI foundation in a staged model [R96]. Institutions pair secure high-stakes exams with AI-enabled coursework [S115], so responsible AI use is developed elsewhere. Supervised tasks can still assess critical evaluation of AI output, as with invigilated tasks correcting LLM-generated code [R33].",
+   "dataset": "",
+   "interpretation": "[I] By design the type mostly excludes AI, so it cannot develop responsible GenAI use on its own and should be paired with AI-permitted tasks.",
+   "key_studies": [
+    "R10",
+    "R19",
+    "R93",
+    "R96",
+    "S115",
+    "R33"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 2,
+   "core_studies": 1,
+   "conflicts": "Supervised AI-critique tasks can assess judgement about AI output [R33], although students scored lower on them without prior training.",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "process_visibility",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Technology-supported supervised tests can capture process: keystroke logs and code replay reconstructed how solutions were developed in an in-class test [R77], and a timed coding platform tracked submission history and audit logs [R89]. Live checkoffs make working and explanation visible to a TA [R95]. Conventional exams grade products, and authors recommend process-oriented assessment alongside them [S092], [R96].",
+   "dataset": "",
+   "interpretation": "[I] A standard invigilated exam shows only the product, so process visibility depends on adding logging, live demonstration or questioning.",
+   "key_studies": [
+    "R77",
+    "R89",
+    "R95"
+   ],
+   "n_supporting": 3,
+   "computing_studies": 3,
+   "core_studies": 3,
+   "conflicts": "Process-logging evidence comes from custom platforms and one in-class deployment with instructed plagiarism [R77], [R89].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "scalability",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Supervised tests are described as effective but resource-intensive and hard to scale to large cohorts [R84], and security is described as too resource-intensive to apply to every task [R68]. Large deployments exist: automated multiple-choice grading was used in a statistics lecture of 120-150 students, mostly in online semesters [R25], live checkoffs ran with 237 students but with long queues [R95], and a log-monitoring platform sustained 200 concurrent users in a load test [R77]. A lockdown coding platform worked best up to 80 concurrent users and broke at 300 [R89].",
+   "dataset": "[D] Proctored exams ran alongside AI-permitted assignments in a single computing course [D24].",
+   "interpretation": "[I] Supervised assessment scales when it is auto-graded or uses existing exam infrastructure, but individual live formats and custom platforms strain at large cohorts.",
+   "key_studies": [
+    "R84",
+    "R68",
+    "R25",
+    "R95",
+    "R77",
+    "R89"
+   ],
+   "n_supporting": 6,
+   "computing_studies": 4,
+   "core_studies": 4,
+   "conflicts": "Some authors call their formats scalable but report queues, overruns or tested limits [R95], [R89].",
+   "cohort_note": "Small (<50): controlled-environment testing is described as a quick solution, especially for smaller schools using paper exams [R82], and lockdown-browser exams were used in a course of about 25-35 students [R72]. Medium (50-200): automated multiple-choice grading was used with 120-150 students [R25], and a lockdown platform performed best up to 80 concurrent users [R89]. Large (>200): live checkoffs for 237 students caused queues and took about 80% of TA office-hour time [R95], one platform broke at 300 users [R89], and programmes are advised to secure only key assessment points [R68], [R04].",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "workload",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Supervised tests need invigilation, facilities and timetabling [R84], and live checkoffs ran longer than planned and took about 80% of TA office-hour time [R95]. Integrity measures for exams need substantial extra question-writing, traded against saved grading time from automated marking [R25]. Growing supervised tasks may require recalibrating assessment volume [R04], and a lockdown platform reported reduced administrative time, though with little supporting data [R89].",
+   "dataset": "",
+   "interpretation": "[I] Marking burden can be low with auto-grading, but invigilation, fresh item writing and live supervision add substantial staff time.",
+   "key_studies": [
+    "R84",
+    "R95",
+    "R25",
+    "R04",
+    "R68"
+   ],
+   "n_supporting": 5,
+   "computing_studies": 3,
+   "core_studies": 3,
+   "conflicts": "A lockdown platform claimed a 68% reduction in faculty administrative time, but the results section gives only a qualitative quote [R89].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "feasibility",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Paper or existing invigilated exams need little change: controlling the environment is described as a quick, satisfactory solution, especially for smaller schools [R82], and strategic in-person assessment at year end is proposed rather than everywhere [S097]. Implementation cost falls mainly on staff time and infrastructure: supervised tests need invigilation, facilities and timetabling, and interviews are costed at about 1,000 minutes of staff time for 100 students [R84]; live checkoffs took about 80% of TA office-hour time and needed Docker environments [R95]; and secure exams need extra question-writing and instructor availability when lockdown browsers fail [R25]. Computer-based variants need custom platforms such as a monitored web editor [R77] or a lockdown system [R89], one programme freed resources for secured code reviews by removing a first-year exam [R68], and staff resistance, resource limits and accreditation are named as barriers [R04], [R68].",
+   "dataset": "",
+   "interpretation": "[I] Paper or existing invigilated exams need little change, but invigilation, venues and staff time are real costs, and secure computer-based testing and programme-level redesign need platform and policy work; no study reported venue or licence costs in money terms, so cost evidence is limited to staff time and infrastructure descriptions.",
+   "key_studies": [
+    "R82",
+    "S097",
+    "R84",
+    "R95",
+    "R25",
+    "R77",
+    "R89",
+    "R04",
+    "R68"
+   ],
+   "n_supporting": 9,
+   "computing_studies": 6,
+   "core_studies": 6,
+   "conflicts": "An open-book supervised exam needed Head of Department or Academic Council approval and extra preparation [S009].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  },
+  {
+   "dimension": "accessibility_equity",
+   "rating": "Moderate",
+   "confidence": "Medium",
+   "literature": "[L] Supervision removes advantages from unequal AI access, a concern raised by instructors (32% worried about unfairness between AI users and non-users) [S342], by students [S101] and in benchmarking where paid tools beat free ones [S001], [R10]. Against this, guidelines caution that over-reliance on in-class or oral formats may disadvantage non-native speakers and students with disabilities [R51], high-stakes supervised testing can cause stress [R84], lockdown browsers malfunctioned for about 2-3% of students [R25], and monitoring falsely flagged honest students with atypical editing styles [R77]. Accommodations such as extra time and read-aloud questions can mitigate some of this [S009], [R95].",
+   "dataset": "",
+   "interpretation": "[I] Supervised assessment is fairer on AI access but can disadvantage anxious students, students with disabilities and those affected by technical failures unless accommodations are planned.",
+   "key_studies": [
+    "S342",
+    "S001",
+    "R10",
+    "R51",
+    "R84",
+    "R25",
+    "R77",
+    "S009"
+   ],
+   "n_supporting": 8,
+   "computing_studies": 4,
+   "core_studies": 2,
+   "conflicts": "Evidence points in both directions: equity of AI access improves, but stress, accommodation and technical-failure risks rise [R51], [R84], [R25].",
+   "cohort_note": "",
+   "low_conf_venue_studies": 0
+  }
+ ],
+ "evaluation_finding": "Supervised assessment gives the most credible evidence of individual unaided capability and authorship, and supervised results repeatedly revealed gaps that AI-permitted work concealed [R81], [R96], [D24], with confounded non-computing support [S119]. Under in-person invigilation it keeps GenAI out of the task, but this security comes from the conditions rather than the questions, which current models can largely answer [S097], [S009], [S008], [J3], and lockdown or online variants are much weaker [R25], [R77]. It scores poorly on authenticity and on developing responsible AI use [R01], [R10], carries real invigilation and staff-time costs [R84], [R95], and works best as a targeted gatekeeping component within a programme that also uses AI-permitted, process-focused tasks [R68], [R04], [S115].",
+ "strengths": [
+  "Supervised vivas, demonstrations and exams exposed large gaps between take-home marks and individual capability [R81], [R96], [D24], and confounded grade data from a non-computing course point the same way [S119].",
+  "Under in-person invigilation GenAI is kept out of the task: in-person hurdles were the only elements that GPT-4 could not pass across a whole degree [S097], and face-to-face formats are reported as least threatened by GenAI [R03], [S001].",
+  "It removes unfairness from unequal access to paid or advanced AI tools [S342], [S001], [R10].",
+  "Live checkoffs in real developer tools combine supervision with demonstration and explanation and were valued by students [R95]."
+ ],
+ "limitations": [
+  "Exam items themselves are highly AI-solvable, so any breach of supervision is high-impact, and no study directly tested covert AI use under in-person invigilation [S009], [S008], [S030], [D03].",
+  "Lockdown browsers and interface restrictions can be bypassed or circumvented, so online and lockdown variants do not share the in-person rating [R25], [R77].",
+  "Timed, AI-free conditions are criticised as inauthentic and as narrowing what is assessed [R01], [R57], [R88], [R24].",
+  "The type mostly excludes AI, so it does not develop responsible GenAI use on its own [R10], [R19].",
+  "Invigilation, facilities, timetabling and live supervision carry substantial staff-time costs at scale [R84], [R95], and over-reliance on in-class formats may disadvantage non-native speakers, students with disabilities and anxious students [R51], [R84]."
+ ],
+ "practical_considerations": [
+  "Secure selected gatekeeping or stage-gate assessments rather than every task, because supervision is resource-intensive; one programme funded secured code reviews by removing a first-year exam [R68], [R04], [S097].",
+  "For large cohorts, prefer auto-graded or existing invigilated exams; live checkoffs at 237 students took about 80% of TA office-hour time [R95], [R25].",
+  "Budget for invigilation, venues and timetabling, and for custom platforms if testing is computer-based, since lockdown and monitoring tools need their own infrastructure [R84], [R77], [R89].",
+  "Write fresh or parameter-modified items and pre-test them against GenAI, accepting the extra preparation effort [R25], [S008], [R51].",
+  "Pair supervised components with AI-permitted coursework and short questioning, and plan accommodations, quieter spaces and fallbacks for technical failures [S115], [R93], [S009], [R95], [R25]."
+ ],
+ "evidence_gaps": [
+  "No study directly compared the learning effects of supervised versus AI-permitted assessment in computing with a controlled design.",
+  "No study directly tested how often students covertly use GenAI under in-person invigilation.",
+  "Evidence on remote or online proctoring security under current GenAI tools is thin and mostly anecdotal or from instructed-cheating evaluations.",
+  "Staff workload and monetary costs (venues, invigilators, licences) for invigilated computing exams at large cohorts (>200) were not measured.",
+  "The effect of supervised AI-critique tasks on students who received prior training was not tested.",
+  "Equity impacts on specific groups (students with disabilities, English as an additional language) were not measured for supervised computing assessments."
+ ]
+}

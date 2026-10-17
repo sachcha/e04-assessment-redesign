@@ -1,0 +1,14 @@
+item,value
+Courses in courses.json,54
+Courses with graded questions,54
+Questions in questions.json,5175
+Questions with grades,5175
+  of which MCQ,3099
+  of which open answer,2076
+Computer Science courses,17
+Computer Science questions,2227
+Grade rows expected (questions x 2 models x 8 prompts),82800
+Grade rows present,82768
+Grade rows missing,32
+Missing grade values,0
+Questions with Bloom's / difficulty labels,0
