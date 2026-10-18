@@ -152,8 +152,8 @@ add(9, "Robustness to weak sources", "Sensitivity analysis excluding low-confide
 
 # 10 Client acceptance
 add(10, "Client acceptance", "Stakeholder review of D2/D3",
-    "Pending: summary and workbooks sent for review (record David Menzies' response here when received)",
-    "Client confirms findings and feasibility", "Pending", "Client correspondence")
+    "Client agreed the D2 and D3 matrices after reviewing the summary and workbooks; formal confirmation due 21 Oct 2026",
+    "Client confirms findings and feasibility", "Agreed; formal confirmation due 21 Oct 2026", "Client correspondence")
 
 df = pd.DataFrame(out)
 df.to_csv(A / "quality" / "quality_metrics.csv", index=False)

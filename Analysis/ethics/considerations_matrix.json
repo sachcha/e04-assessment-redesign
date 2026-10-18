@@ -12,7 +12,7 @@
    "frameworks": "National Statement on Ethical Conduct in Human Research 2025, 5.1.15 to 5.1.17(a),(c) [7]; Adelaide University Human Research Ethics Procedure s3.4 to 3.5 [7]",
    "perspectives": "Students whose data are in the datasets",
    "effect_on_deliverables": "Only public, de-identified datasets were used, with no attempt to re-identify anyone. No primary data were collected (methodology decision M5). Raw student prompts are not quoted, because a few StudyChat prompts may contain residual personal details.",
-   "status": "Action: confirm the exemption position with the supervisor"},
+   "status": "Done: the supervisor confirmed on 14 Oct 2026 that no ethics application was needed"},
   {"stage": "Methods: copyright and licences", "type": "Legal",
    "issue": "Published papers and datasets carry copyright and licence terms. The EPFL data are CC BY-NC-ND, which bars sharing adapted versions.",
    "frameworks": "Copyright Act 1968 s40, s41, moral rights [4a]; CC BY-NC-ND 4.0 s2(a)(1)(B), s3(a) [4b]; CC BY 4.0 (StudyChat, Hannover)",
@@ -74,10 +74,10 @@
    "effect_on_deliverables": "Part C notes that records must not be broken down by Indigenous status without Indigenous governance and consultation. Relevance to the current project is limited, and the report says so.",
    "status": "Added to D3 Part C"},
   {"stage": "Client relationship: honesty in reporting", "type": "Ethical",
-   "issue": "The client asked for AI detection, and the client's review of D2/D3 is still pending.",
+   "issue": "The client asked for AI detection, and the client's acceptance of D2/D3 needed to be recorded honestly.",
    "frameworks": "Australian Code for the Responsible Conduct of Research P1, R23 [8]; ACS Code 2.1 [6]",
    "perspectives": "The client; the project team",
-   "effect_on_deliverables": "The scope change explained why detection is unreliable and can harm students. The report states the evidence limits plainly, and client validation is recorded only once received.",
-   "status": "Done; validation pending"}
+   "effect_on_deliverables": "The scope change explained why detection is unreliable and can harm students. The report states the evidence limits plainly, and the client has agreed the matrices, and formal confirmation is due on 21 Oct 2026.",
+   "status": "Done; formal client confirmation due 21 Oct 2026"}
  ]
 }
