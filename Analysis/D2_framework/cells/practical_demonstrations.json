@@ -7,7 +7,7 @@
    "rating": "Strong",
    "confidence": "High",
    "literature": "[L] In a 60-student programming module, take-home scores averaged about 83.8% but live code demonstrations averaged about 43.9%, and many high scorers could not explain or reproduce their own code [R81]. Live checkoffs with scripted questions let TAs confirm individual baseline proficiency in real tools for 237 students [R95], and individual vivas with real-time code modification separated students within the same group [R80], [R79]. A systematic review reports that live coding and oral defence are the most AI-resistant checks of understanding because they need real-time independent reasoning [R28], [S097].",
-   "dataset": "[D] Students scored a median 7.7 points higher on AI-permitted take-home assignments than on proctored exams, and assignment marks agreed only moderately with exam marks [D24], [D25]. Marking did not respond to verbatim AI-authored content in submissions [J1].",
+   "dataset": "[D] Students scored a median 7.7 points higher on AI-permitted take-home assignments than on proctored exams, and assignment marks agreed only moderately with exam marks [D24], [D25]. Take-home grades were blind to authorship [J1].",
    "interpretation": "[I] Live demonstration with questioning is one of the few formats that tests whether students can explain, justify and adapt their own work, although checkoff ceiling effects mean it confirms baseline rather than graded proficiency [R95].",
    "key_studies": [
     "R81",
@@ -53,8 +53,8 @@
    "dimension": "authorship_assurance",
    "rating": "Moderate",
    "confidence": "Medium",
-   "literature": "[L] A Learning Integrity Score comparing submissions with supervised viva and demo performance rose from about 11.7 to about 45.3 after redesign, and the authors warn no single mode should be treated as decisive [R81]. Individual vivas distinguished contributions within group projects [R80], [R79], and a mismatch between understanding and submitted work triggered investigation of undisclosed AI use [R93]. How AI was used was visible only when demos were paired with prompt logs, and log compliance was weak in one course [R72], [R79].",
-   "dataset": "[D] A capstone course used a rotating 5-15 minute tutor conversation on artefacts and commit history to verify individual contributions; this shows feasibility, not effectiveness [J4].",
+   "literature": "[L] A Learning Integrity Score comparing submissions with supervised viva and demo performance rose from about 11.7 to about 45.3 after redesign, and the authors warn no single mode should be treated as decisive [R81]. Individual vivas distinguished contributions within group projects [R80], [R79], and a mismatch between understanding and submitted work triggered investigation of undisclosed AI use [R93]. How AI was used was visible only when demos were paired with prompt logs, and log compliance was weak in one course [R72], [R79]. The Hannover capstone (Mircea et al., 2026) used a rotating 5-15 minute tutor conversation on artefacts and commit history to verify individual contributions; this shows feasibility, not effectiveness [J4].",
+   "dataset": "",
    "interpretation": "[I] Demonstrations establish whether a student owns and understands the work, but not who produced each part or how AI was used unless paired with repository history or AI logs.",
    "key_studies": [
     "R81",
@@ -73,10 +73,10 @@
   {
    "dimension": "lo_alignment",
    "rating": "Strong",
-   "confidence": "High",
+   "confidence": "Medium",
    "literature": "[L] Checkoff skills were listed per checkoff, and the debugger checkoff was deliberately scoped to the stated learning objectives [R95]. Demo and viva designs were grounded in constructive alignment, assessing explanation of logic, justification of design and adaptation of code rather than output alone [R81], [R79], and graded components were mapped to course outcomes [R93], [R04]. Rubric scores from screencast demos gave more meaningful outcome data than autograded instruments [R82].",
    "dataset": "",
-   "interpretation": "[I] Demonstrations align well with computing outcomes that involve reasoning and tool use, though a narrowly scoped checkoff can reduce coverage to a small skill set [R95].",
+   "interpretation": "[I] Demonstrations align well with computing outcomes that involve reasoning and tool use, though a narrowly scoped checkoff can reduce coverage to a small skill set [R95]. Alignment is asserted by design rather than validated against independent measures, so confidence is held at Medium, as for oral assessments.",
    "key_studies": [
     "R95",
     "R81",
@@ -165,8 +165,8 @@
    "dimension": "scalability",
    "rating": "Moderate",
    "confidence": "Medium",
-   "literature": "[L] Live checkoffs ran for 237 students, but sessions overran plans (median 9.5-25 min against 5-15 min) and demand peaked on the last day [R95]. Ten-minute individual vivas with live code modification ran for over 750 students across two campuses [R80]. Most other implementations were small or medium, from cohorts of 14 and 15 to about 60 students [R79], [R72], [R93], [R81], and process-heavy formats with oral defences are noted as impractical in large cohorts [R16].",
-   "dataset": "[D] A capstone course ran rotating 5-15 minute tutor conversations at about one tutor per three teams of 9-10 students [J4].",
+   "literature": "[L] Live checkoffs ran for 237 students, but sessions overran plans (median 9.5-25 min against 5-15 min) and demand peaked on the last day [R95]. Ten-minute individual vivas with live code modification ran for over 750 students across two campuses [R80]. Most other implementations were small or medium, from cohorts of 14 and 15 to about 60 students [R79], [R72], [R93], [R81], and process-heavy formats with oral defences are noted as impractical in large cohorts [R16]. The Hannover capstone (Mircea et al., 2026) ran rotating 5-15 minute tutor conversations at about one tutor per three teams of 9-10 students [J4].",
+   "dataset": "",
    "interpretation": "[I] Demonstrations can scale with short, booked, rubric-based slots and enough tutors, but cost rises roughly with cohort size.",
    "key_studies": [
     "R95",
@@ -188,8 +188,8 @@
    "dimension": "workload",
    "rating": "Weak",
    "confidence": "Medium",
-   "literature": "[L] Checkoff appointments took up about 80% of TA office-hour time, and the authors advise avoiding other large deadlines in checkoff week [R95]. Conceptual and guidance papers report that oral defences and related measures need substantial staff time and institutional recognition of workload [R16], [S105], [R04]. One course reported rubric grading of screencast demos as its only added burden, and a review places code-explanation components as a lower-effort entry point than full oral defence [R82], [R28].",
-   "dataset": "[D] A capstone course needed about one tutor per three teams for its rotating conversations [J4].",
+   "literature": "[L] Checkoff appointments took up about 80% of TA office-hour time, and the authors advise avoiding other large deadlines in checkoff week [R95]. Conceptual and guidance papers report that oral defences and related measures need substantial staff time and institutional recognition of workload [R16], [S105], [R04]. One course reported rubric grading of screencast demos as its only added burden, and a review places code-explanation components as a lower-effort entry point than full oral defence [R82], [R28]. The Hannover capstone (Mircea et al., 2026) needed about one tutor per three teams for its rotating conversations [J4].",
+   "dataset": "",
    "interpretation": "[I] Live demos are staff-intensive per student; booked appointments, pair formats and short recorded walkthroughs reduce but do not remove the burden [R95], [R82].",
    "key_studies": [
     "R95",
@@ -210,8 +210,8 @@
    "dimension": "feasibility",
    "rating": "Moderate",
    "confidence": "Medium",
-   "literature": "[L] Demonstrations were run within normal module delivery in several computing courses [R81], [R80], [R95], [R72], and little policy change was needed. Their main implementation cost is staff time: checkoff appointments took about 80% of TA office-hour time, and Docker containers, scripts and rubrics were needed to standardise delivery, although environment setup problems still caused bottlenecks [R95]. Platform and equipment costs were kept low with low-cost ESP32 hardware [R79] and screencast demos marked by rubric, whose only reported extra burden was rubric grading [R82]. Faculty workshops produced oral-defence templates rated implementable within one semester [R28], while staff resistance, resource limits and the need for staff AI literacy training are reported barriers [R04], [S331].",
-   "dataset": "[D] A capstone course embedded tutor conversations on artefacts within its existing assessment [J4].",
+   "literature": "[L] Demonstrations were run within normal module delivery in several computing courses [R81], [R80], [R95], [R72], and little policy change was needed. Their main implementation cost is staff time: checkoff appointments took about 80% of TA office-hour time, and Docker containers, scripts and rubrics were needed to standardise delivery, although environment setup problems still caused bottlenecks [R95]. Platform and equipment costs were kept low with low-cost ESP32 hardware [R79] and screencast demos marked by rubric, whose only reported extra burden was rubric grading [R82]. Faculty workshops produced oral-defence templates rated implementable within one semester [R28], while staff resistance, resource limits and the need for staff AI literacy training are reported barriers [R04], [S331]. The Hannover capstone (Mircea et al., 2026) embedded tutor conversations on artefacts within its existing assessment [J4].",
+   "dataset": "",
    "interpretation": "[I] Little policy or licence change is needed, but demos depend on TA or tutor time, scheduling and prepared environments, so feasibility including cost is Moderate; cost evidence is limited, because no study reported staff hours per student at scale or costs in money terms.",
    "key_studies": [
     "R95",

@@ -99,6 +99,12 @@ def ieee(r):
 refs = pd.DataFrame([{"Record ID": k, "Tier": st.loc[k, "evidence_tier"], "Computing": st.loc[k, "computing"],
                       "Quality (0-5)": st.loc[k, "quality_score"],
                       "Reference (IEEE style, to be numbered)": ieee(st.loc[k])} for k in cited])
+LEGAL = [("LEG1", "Surveillance Devices Act 2016 (SA), ss 3 and 8, consolidated version 21 Sept. 2023. [Online]. Available: legislation.sa.gov.au"),
+         ("LEG2", "Disability Standards for Education 2005 (Cth), F2005L00767, as amended by the Disability Standards for Education Amendment Standards 2025."),
+         ("LEG3", "Adelaide University, \"Privacy Policy,\" Adelaide, SA, Australia, effective 1 Jan. 2026.")]
+refs = pd.concat([refs, pd.DataFrame([{"Record ID": k, "Tier": "Legislation or policy", "Computing": "",
+                                       "Quality (0-5)": "", "Reference (IEEE style, to be numbered)": v}
+                                      for k, v in LEGAL])], ignore_index=True)
 
 readme = pd.DataFrame([
     ("Deliverable", "D3 Computing Assessment Recommendation Matrix / Decision Guide. It turns the D2 evaluation into "
@@ -125,6 +131,17 @@ readme = pd.DataFrame([
     ("Evidence levels", "Level 1 findings and Level 2 interpretations are in D2. D3 holds Level 3 recommendations, each "
                         "with its evidence status (Project Context s.16)."),
     ("Cross-cutting principles", bl(B["cross_cutting_principles"])),
+    ("AI-use level labels", "'AI permitted with declaration' names the permitted-use level only. Declarations are "
+                            "not evidence of how AI was used; that evidence is captured by the system (Part C)."),
+    ("Staff time", "Staff-time figures are minimums. R84's 1,000 staff minutes per 100 students assumes 10 minutes "
+                   "and one examiner. Applying R95's overruns (1.27 to 1.9 times the plan) and two examiners [S156] "
+                   "gives about 1,270 to 3,800 minutes per 100 students, before scheduling and moderation."),
+    ("Residual risk", "Sampled checks leave most students in large cohorts verified only by the supervised test, "
+                      "for example about 80% of an LO2 large cohort when 1 in 5 are sampled."),
+    ("Team strategies", "Codes in the last column of the Recommendation Matrix are the team's preliminary strategies "
+                        "(Project Context s.11): A supervised assessments; B short oral viva; C multi-stage "
+                        "assessment; D University-controlled GenAI environment; E AI-assisted assessment with error "
+                        "correction; F AI-supported formative feedback."),
     ("Calibration", "See D3_recommendations/calibration_log.md."),
     ("Citations", "Record IDs listed in References; converted to IEEE numbers in the final report."),
 ], columns=["Item", "Detail"])

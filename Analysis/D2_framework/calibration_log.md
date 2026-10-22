@@ -100,3 +100,32 @@ Checked and correct (no change):
 - D3 partA_ai_use_declarations identified_problem and risks_and_limits [S423]; partA_staged_submissions identified_problem, recommended_redesign[1] and justification [S113]; partB cells[10] trade_offs and cross_cutting_principles[2] [S423]; partC privacy_ethics_legal_requirements[4] (matches the S423 abstract and discussion wording).
 - S040 is not cited in any of the 12 files, so nothing to check. S119 was already counted as non-computing (Partial) in computing_studies, so no count changed for it.
 - All edited files parse with json.load; no em or en dashes added.
+
+## Revision after external review (22 Oct 2026)
+Applied from the team's prioritised revision guide (21 Oct 2026), issues P1-1, P1-3 and P2-1. No rating changed; two confidence levels changed.
+- practical_demonstrations, lo_alignment: confidence High -> Medium (alignment asserted by design, not validated; matches oral assessments; qualifying studies R95 and conceptual R04)
+- staged_submissions, process_visibility: confidence High -> Medium (only qualifying study R04 is conceptual)
+- supervised_assessment, evaluation_finding: "supervised results repeatedly revealed gaps that AI-permitted work concealed [R81], [R96]," -> "supervised results repeatedly diverged from AI-permitted take-home marks [R81], [R96], [D2"
+- ai_use_declarations, authorship_assurance, dataset: "Marking did not respond to AI-authored content: moving from 0% to 100% verbatim overlap ch" -> "Take-home grades were blind to authorship: moving from 0% to 100% verbatim chatbot overlap"
+- oral_assessments, capability_verification, dataset: "and the share of AI-authored code did not change assignment marks [D24], [J1]" -> "and take-home grades were blind to how much code came from the chatbot [D24], [J1]"
+- personalised_tasks, capability_verification, dataset: "and assignment marks did not respond to the share of verbatim AI-authored content [J1]" -> "and take-home grades were blind to authorship [J1]"
+- personalised_tasks, authorship_assurance, dataset: "within-assignment marks did not respond to the share of verbatim chatbot code in submissio" -> "take-home grades were blind to the share of verbatim chatbot code in submissions, where AI"
+- practical_demonstrations, capability_verification, dataset: "Marking did not respond to verbatim AI-authored content in submissions [J1]." -> "Take-home grades were blind to authorship [J1]."
+- staged_submissions, capability_verification, dataset: "Assignment marking did not respond to the share of AI-authored code in submissions [J1]." -> "Take-home grades were blind to authorship [J1]."
+- staged_submissions, authorship_assurance, dataset: "Marking did not respond to AI-authored content in submissions, so a product-focused mark g" -> "Take-home grades were blind to authorship in a course where AI use was permitted, so a pro"
+- unsupervised_formats, capability_verification, dataset: "Marking did not respond to the share of AI-authored code in submissions [J1]." -> "Take-home grades were blind to authorship [J1]."
+- process_evidence, authorship_assurance, dataset: "yet assignment marks did not respond to this overlap" -> "yet take-home grades were blind to this overlap, where AI use was permitted"
+- unsupervised_formats, authorship_assurance, dataset: "yet assignment marks did not respond to this overlap [J1]" -> "yet take-home grades were blind to this overlap, where AI use was permitted [J1]"
+- oral_assessments, genai_exposure, dataset: "[D] With best-of-8 prompting GPT-4 fully answered 85.6% of EPFL computing questions [D03]" -> "[D] As a baseline from written exam questions, not orals, GPT-4 fully answered 85.6% of EP"
+- oral_assessments, authorship_assurance: J4 moved from dataset [D] to literature [L] (course design reported in the Mircea et al. paper)
+- oral_assessments, process_visibility: J4 moved from dataset [D] to literature [L] (course design reported in the Mircea et al. paper)
+- oral_assessments, scalability: J4 moved from dataset [D] to literature [L] (course design reported in the Mircea et al. paper)
+- oral_assessments, workload: J4 moved from dataset [D] to literature [L] (course design reported in the Mircea et al. paper)
+- oral_assessments, feasibility: J4 moved from dataset [D] to literature [L] (course design reported in the Mircea et al. paper)
+- practical_demonstrations, authorship_assurance: J4 moved from dataset [D] to literature [L] (course design reported in the Mircea et al. paper)
+- practical_demonstrations, scalability: J4 moved from dataset [D] to literature [L] (course design reported in the Mircea et al. paper)
+- practical_demonstrations, workload: J4 moved from dataset [D] to literature [L] (course design reported in the Mircea et al. paper)
+- practical_demonstrations, feasibility: J4 moved from dataset [D] to literature [L] (course design reported in the Mircea et al. paper)
+- staged_submissions, scalability: J4 moved from dataset [D] to literature [L] (course design reported in the Mircea et al. paper)
+- unsupervised_formats, scalability: J4 moved from dataset [D] to literature [L] (course design reported in the Mircea et al. paper)
+- dataset_evidence.md: J4 relabelled as literature (course design from the paper)

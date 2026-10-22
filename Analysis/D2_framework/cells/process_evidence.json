@@ -49,7 +49,7 @@
    "rating": "Moderate",
    "confidence": "Medium",
    "literature": "[L] Keystroke-log monitoring in a computing course identified anomalous authorship with 87.13% accuracy (precision 93.67%, recall 90.24%, N = 101), but falsely flagged honest students with heavy delete-and-rewrite styles [R77]. Student-curated records were weaker: AI-interaction documentation was generally poor [R72], only one group fully documented prompts and outputs [R27], about a third of AI users' logs were unusable [R17], and some tool-use claims were fabricated [R45]. One author warns that chat logs are curatable and should not be the main evidence in misconduct decisions [S457].",
-   "dataset": "[D] On average 14.5% of new submitted code lines matched the student's own chatbot replies verbatim, yet assignment marks did not respond to this overlap (-1.0 points from 0% to 100% overlap, 95% CI -4.3 to +2.3) [J1].",
+   "dataset": "[D] On average 14.5% of new submitted code lines matched the student's own chatbot replies verbatim, yet take-home grades were blind to this overlap, where AI use was permitted (-1.0 points from 0% to 100% overlap, 95% CI -4.3 to +2.3) [J1].",
    "interpretation": "[I] Assurance depends on whether the record is captured by a system (version control, course chatbot, instrumented editor) or written by the student, and on whether staff examine it. Tracing each part of a submission to the captured record, and checking any unexplained content in a live conversation, would strengthen assurance (proposal) [R77], [J1], [R81].",
    "key_studies": [
     "R77",

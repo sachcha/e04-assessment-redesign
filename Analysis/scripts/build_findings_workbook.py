@@ -8,6 +8,8 @@ Every number in the Findings sheet is read from an output CSV, not typed by hand
 """
 from pathlib import Path
 
+import re
+
 import pandas as pd
 from openpyxl import load_workbook
 from openpyxl.styles import Alignment, Font, PatternFill, Border, Side
@@ -17,6 +19,16 @@ E = ROOT / "Analysis" / "outputs" / "EPFL"
 M = ROOT / "Analysis" / "outputs" / "Mircea"
 S = ROOT / "Analysis" / "outputs" / "StudyChat"
 XLSX = ROOT / "Analysis" / "Dataset_Findings_EPFL_Mircea_StudyChat.xlsx"
+GRADES = ROOT / "Datasets" / "StudyChat" / "scores"
+
+
+def extra_credit():
+    """Students scoring above 100% on exam 2, per semester."""
+    out = {}
+    for sem in ("f24", "s25"):
+        g = pd.read_csv(GRADES / f"{sem}_grades_released_normalized.csv")
+        out[sem] = (int((g["e2"] > 1).sum()), int(g["e2"].notna().sum()))
+    return out
 
 EPFL_SRC = ("Borges et al. (2024), PNAS 121(49), e2414955121, doi:10.1073/pnas.2414955121; "
             "dataset github.com/epfl-nlp/NLP4Education. Our own secondary analysis.")
@@ -86,6 +98,25 @@ UNSUP = "Unsupervised assessment formats (programming tasks, take-home assignmen
 PROCESS = "Process-based assessment (staged submissions, checkpoints, logs, version history)"
 AUTH = "Authentic and personalised assessment (real-world projects, contextualised tasks)"
 AITRANS = "AI-transparent and integrated assessment (declarations, critical evaluation of AI output)"
+# proposal Table 1 categories mapped to the eight D2 assessment types
+D2_TYPES = {
+    UNSUP_TEST: "Unsupervised formats",
+    SUPERVISED: "Supervised assessment, Oral assessments, Practical demonstrations",
+    UNSUP: "Unsupervised formats",
+    PROCESS: "Staged submissions, Process evidence",
+    AUTH: "Personalised tasks",
+    AITRANS: "AI-use declarations, Process evidence",
+    "All": "All eight types",
+}
+
+
+def d2_types(atype):
+    out = []
+    for a in atype.split(";"):
+        for t_ in D2_TYPES[a.strip()].split(", "):
+            if t_ not in out:
+                out.append(t_)
+    return ", ".join(out)
 
 findings = []
 
@@ -96,7 +127,7 @@ def add(ds, topic, finding, measure, sample, method, atype, criteria, interp, li
         "Finding (Level 1: what our analysis of the data shows)": finding,
         "Key measure(s)": measure, "Sample / denominator": sample,
         "Calculation method": method,
-        "Related assessment approach (proposal Table 1)": atype,
+        "Related assessment types (D2)": d2_types(atype),
         "Evaluation criteria informed": criteria,
         "Possible implication (Level 2: our interpretation, not a finding)": interp,
         "Limitations": limits, "Output file": file, "Source to cite": SOURCES[ds],
@@ -474,6 +505,10 @@ add("StudyChat", "First move in a chat",
     "Mircea survey. A final submission cannot show which pattern a student followed; process evidence can.",
     SC_LIM + "Chat-level count, so heavy users contribute more chats.", "S2_first_turn_of_chat.csv")
 
+ec = extra_credit()
+EC_NOTE = (f"Exam 2 carried extra credit ({ec['f24'][0]} of {ec['f24'][1]} Fall 2024 and {ec['s25'][0]} of "
+           f"{ec['s25'][1]} Spring 2025 students scored above 100%), which raises exam averages and narrows the gap.")
+
 add("StudyChat", "AI-permitted assignments vs proctored exams",
     f"Students averaged {pct(ae.assign_mean * 100)} on take-home programming assignments where the course chatbot "
     f"was allowed, and {pct(ae.exam_mean * 100)} on proctored exams without AI. {pct(ae.pct_assign_above_exam * 100)} "
@@ -486,15 +521,17 @@ add("StudyChat", "AI-permitted assignments vs proctored exams",
     "bootstrap 95% CI for the median gap.",
     UNSUP + "; " + SUPERVISED, "Evidence of individual understanding; Academic integrity; Validity",
     "Unsupervised AI-permitted work and supervised exams measure different things. Some gap is expected (time "
-    "pressure, exam difficulty), so it is not a measure of AI misuse, but assignment marks alone overstate "
-    "unaided capability.",
+    "pressure, exam difficulty), so it is not a measure of AI misuse; how much students used the course "
+    "chatbot did not predict the gap (D26). Assignment marks alone carry little information about unaided "
+    "capability.",
     SC_LIM + "Assignments and exams differ in content, format and difficulty, so the gap is not caused by AI alone. "
-    "No pre-GenAI comparison cohort.", "S4_assignment_vs_exam.csv; S4b_per_item_scores.csv")
+    "No pre-GenAI comparison cohort. " + EC_NOTE, "S4_assignment_vs_exam.csv; S4b_per_item_scores.csv")
 
 add("StudyChat", "Assignment marks bunch at the top",
     f"{pct(ae.pct_assign_ge_90 * 100)} of students averaged 90% or more on assignments, compared with "
     f"{pct(ae.pct_exam_ge_90 * 100)} on exams. Assignment scores spread less (SD {ae.assign_sd * 100:.1f} vs "
-    f"{ae.exam_sd * 100:.1f} points) and agreed only moderately with exam scores (rho = {ae.spearman_assign_exam:.2f}).",
+    f"{ae.exam_sd * 100:.1f} points) and agreed only moderately with exam scores (rho = {ae.spearman_assign_exam:.2f} "
+    f"pooled; {sae.loc['f24'].spearman_assign_exam:.2f} in Fall 2024 and {sae.loc['s25'].spearman_assign_exam:.2f} in Spring 2025).",
     f">= 90%: assignments {pct(ae.pct_assign_ge_90 * 100)}, exams {pct(ae.pct_exam_ge_90 * 100)}; Spearman rho "
     f"{ae.spearman_assign_exam:.2f}",
     f"n = {int(ae.n)} graded students",
@@ -502,7 +539,7 @@ add("StudyChat", "Assignment marks bunch at the top",
     UNSUP + "; " + SUPERVISED, "Validity; Evidence of individual understanding",
     "When AI is available, take-home programming assignments separate students poorly, so they say little about "
     "who can do the work unaided. A supervised or verification component is needed to discriminate.",
-    SC_LIM + "The ceiling may also reflect generous marking or autograders, not only AI use.",
+    SC_LIM + "The ceiling may also reflect generous marking or autograders, not only AI use. " + EC_NOTE,
     "S4_assignment_vs_exam.csv; S4b_per_item_scores.csv")
 
 sc_all = scor[scor.scope == "all"]
@@ -606,8 +643,13 @@ methods = pd.DataFrame([
                              "use. All usage-outcome results are exploratory and observational."),
     ("Not double counting", "If Borges et al. (2024), Mircea et al. (2026) or McNichols et al. (2025) are also in the evidence log, do not count the "
                             "paper and our analysis of its dataset as two independent studies."),
-    ("Assessment mapping", "The 'Related assessment approach' column uses the categories in proposal Table 1. Mapping to the "
-                           "final eight assessment types still needs to be confirmed by the team."),
+    ("Assessment mapping", "The 'Related assessment types (D2)' column maps each finding to the eight assessment "
+                           "types rated in the D2 Evaluation Framework."),
+    ("Finding IDs", "D01 to D28 number the rows of 'Dataset Findings' in order; the D2 and D3 workbooks cite "
+                    "them by these codes. J1 to J6 are the team's separate analyses, listed in sheet 'J findings'."),
+    ("Dataset licences", "EPFL NLP4Education: CC BY-NC-ND 4.0, so only aggregate results are shared and no adapted "
+                         "dataset is published. Hannover capstone survey (Mircea et al.) and StudyChat: CC BY 4.0, "
+                         "attribution required. Raw StudyChat prompts are not quoted."),
     ("Citations", "IEEE numbers are not assigned here; use the 'Source to cite' column and number them in the reference "
                   "manager. Mircea and StudyChat references verified against Jiajun's dataset documentation (14 Oct 2026)."),
     ("Independent replication", "Jiajun's separate analyses of the same three datasets (Jiajun - Data Analysis/, "
@@ -618,7 +660,12 @@ methods = pd.DataFrame([
 # ---------------------------------------------------------------- write
 with pd.ExcelWriter(XLSX, engine="openpyxl") as xw:
     methods.to_excel(xw, "Read me and methods", index=False)
+    fdf.insert(0, "Finding ID", [f"D{i:02d}" for i in range(1, len(fdf) + 1)])
     fdf.to_excel(xw, "Dataset Findings", index=False)
+    jlines = [l for l in (ROOT / "Analysis" / "D2_framework" / "dataset_evidence.md").read_text(encoding="utf-8").splitlines()
+              if re.match(r"- \[J\d\]", l)]
+    pd.DataFrame([{"Finding ID": l[3:5], "Finding (as cited in D2)": l[7:].strip()} for l in jlines]
+                 ).to_excel(xw, "J findings", index=False)
     for name, f in [("EPFL overall", "01_overall_by_model_qtype.csv"),
                     ("EPFL CS", "02_computer_science_by_model_qtype.csv"),
                     ("EPFL by program", "03a_by_program.csv"),
@@ -645,7 +692,8 @@ wb = load_workbook(XLSX)
 head_fill = PatternFill("solid", fgColor="1C5CAB")
 thin = Side(style="thin", color="D0D0D0")
 widths = {"Read me and methods": [24, 120],
-          "Dataset Findings": [11, 22, 60, 34, 24, 36, 34, 28, 52, 44, 30, 40]}
+          "Dataset Findings": [10, 11, 22, 60, 34, 24, 36, 34, 28, 52, 44, 30, 40],
+          "J findings": [10, 140]}
 for ws in wb.worksheets:
     ws.freeze_panes = "A2"
     for c in ws[1]:

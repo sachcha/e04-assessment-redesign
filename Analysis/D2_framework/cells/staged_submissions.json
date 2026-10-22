@@ -7,7 +7,7 @@
    "rating": "Moderate",
    "confidence": "Medium",
    "literature": "[L] In a computing project with about 30 students, a guided design phase plus screencast code tours gave more meaningful outcome data than the unsupervised instruments it replaced, which had produced misleading attainment under AI use [R82]. Most studies pair staged work with an oral or defence element to confirm understanding, such as an individual viva after three checkpoints in two cohorts of 14 and 15 students [R79], a narrative review's proposed, untested triangulation of staged work with oral explanation and live demonstration [S113], and defence of the reasoning behind the final submission [S430], [S218]. Practitioners doubted that portfolios alone resist GenAI [R24].",
-   "dataset": "[D] Marks on AI-permitted take-home programming assignments bunched at the top and agreed only moderately with proctored exam marks [D24], [D25]. Assignment marking did not respond to the share of AI-authored code in submissions [J1].",
+   "dataset": "[D] Marks on AI-permitted take-home programming assignments bunched at the top and agreed only moderately with proctored exam marks [D24], [D25]. Take-home grades were blind to authorship [J1].",
    "interpretation": "[I] Staged submissions verify individual capability only when at least one stage requires the student to explain, defend or extend their own work under observed conditions; the drafts alone say little.",
    "key_studies": [
     "R82",
@@ -49,7 +49,7 @@
    "rating": "Moderate",
    "confidence": "Medium",
    "literature": "[L] Multi-stage submissions with drafts let educators follow learning progress and students' interaction with AI over time [R01], and decision trails or AI-collaboration logs are proposed as evidence of process [R68]. One project combined mandatory team prompt logs and evidence boards with an individual viva as a dual safeguard [R79]. In EAP programmes, AI-use declarations were judged ineffective, while named marking by tutors who knew the students reportedly coincided with fewer misconduct cases [R24].",
-   "dataset": "[D] Marking did not respond to AI-authored content in submissions, so a product-focused mark gave no signal of AI authorship [J1].",
+   "dataset": "[D] Take-home grades were blind to authorship in a course where AI use was permitted, so a product-focused mark gave no signal of AI use [J1].",
    "interpretation": "[I] Staged evidence improves staff confidence about how the work developed, but it gives firm authorship assurance only when combined with individual verification and staff who follow the work across stages.",
    "key_studies": [
     "R01",
@@ -129,10 +129,10 @@
   {
    "dimension": "process_visibility",
    "rating": "Strong",
-   "confidence": "High",
+   "confidence": "Medium",
    "literature": "[L] Process over product, using prompts, reflective commentaries, planning notes and time-stamped drafts, is a core strategy for ICT assessment [R04], and multi-stage submissions let educators follow learning progress and AI interaction over time [R01]. Design-phase deliverables and screencast code tours exposed students' process in a computing course [R82], evidence boards and prompt logs fed formative and summative judgement [R79], and tracked changes documented revision of an AI draft [R47]. Staged design was advised in 13 of 17 university guidelines that gave assessment-design advice [R51].",
    "dataset": "",
-   "interpretation": "[I] Making process visible is the main strength of staged submissions, as long as stages capture AI interactions and decisions, not only interim products.",
+   "interpretation": "[I] Making process visible is the main strength of staged submissions, as long as stages capture AI interactions and decisions, not only interim products. Confidence is Medium because the only qualifying Core or computing study is a conceptual framework [R04]; the empirical support is from single courses.",
    "key_studies": [
     "R04",
     "R01",
@@ -152,8 +152,8 @@
    "dimension": "scalability",
    "rating": "Moderate",
    "confidence": "Medium",
-   "literature": "[L] A three-phase staged assignment ran in a large psychology course (n = 363) with tutorial instructors marking [R47]. In a computing course of about 30 students, the open-ended multi-part project prevented autograding, so grading relied on rubrics and screencast demos [R82], while a checkpointed project with vivas was run only with cohorts of 14 and 15 [R79]. Practitioners raised workload concerns about marking multiple drafts [R24], and a claim that a staged framework scales has not been tested [R04].",
-   "dataset": "[D] A capstone's own assessment added a 5-15 minute one-to-one tutor conversation on artefacts and commit history, with about one tutor per three teams of 9-10; this shows feasibility, not effectiveness [J4].",
+   "literature": "[L] A three-phase staged assignment ran in a large psychology course (n = 363) with tutorial instructors marking [R47]. In a computing course of about 30 students, the open-ended multi-part project prevented autograding, so grading relied on rubrics and screencast demos [R82], while a checkpointed project with vivas was run only with cohorts of 14 and 15 [R79]. Practitioners raised workload concerns about marking multiple drafts [R24], and a claim that a staged framework scales has not been tested [R04]. The Hannover capstone's own assessment (Mircea et al., 2026) added a 5-15 minute one-to-one tutor conversation on artefacts and commit history, with about one tutor per three teams of 9-10; this shows feasibility, not effectiveness [J4].",
+   "dataset": "",
    "interpretation": "[I] Staged submissions can run at scale when stages are few and rubric-marked by a tutor team, but per-stage feedback and individual verification grow with cohort size.",
    "key_studies": [
     "R47",

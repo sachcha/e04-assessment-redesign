@@ -66,7 +66,7 @@
    "main_assessment": "AI-permitted take-home programming project kept in a repository with version history. Short practice homework stays AI-free.",
    "verification_layer": "Every student completes a structured viva and a supervised live code demonstration that includes a small change requested on the spot.",
    "ai_use_level": "AI permitted with declaration on the project (prompts and responses submitted). No AI on short practice homework.",
-   "rationale": "In a 60-student programming module, take-home scores averaged about 83.8% while viva and live-demo scores averaged about 35.2% and 43.9%; after the redesign with repository history, a structured viva and a live demo, the mean Learning Integrity Score rose from about 11.7 to 45.3 [R81]. A course of 25-35 students allowed AI on open-ended projects with interaction logs and an 8-10 minute code walkthrough video, while banning it on small homework [R72]. On R84's estimate, 10-minute sessions for 50 students need about 500 staff minutes [R84].",
+   "rationale": "In a 60-student programming module, take-home scores averaged about 83.8% while viva and live-demo scores averaged about 35.2% and 43.9%; after the redesign with repository history, a structured viva and a live demo, a descriptive, single-cohort integrity score rose from about 11.7 to about 45.3 [R81]. A course of 25-35 students allowed AI on open-ended projects with interaction logs and an 8-10 minute code walkthrough video, while banning it on small homework [R72]. On R84's estimate, 10-minute sessions for 50 students need about 500 staff minutes [R84].",
    "trade_offs": "Viva performance can reflect anxiety or language proficiency, so the three sources should be triangulated and reattempts or quieter rooms offered [R81], [R95]. Both tested examples are single-course reports without control groups, and R81 sits just above the small band [R81], [R72].",
    "evidence_status": "Implemented in computing (descriptive evidence)",
    "key_studies": [
@@ -224,7 +224,7 @@
    "learning_outcome": "LO5 Critical and responsible use of AI",
    "cohort": "Small (<50)",
    "main_assessment": "AI-integrated task completed in the university-managed workspace, so prompts, outputs and edits are captured. Marks go mainly to the quality of AI use: framing, verification, error correction and justification, using an outcome-weighted rubric [R17], [R09], [R91].",
-   "verification_layer": "Live check for every student, with questions drawn from their captured record, such as why a suggestion was rejected or how an error was found [R81], [S156].",
+   "verification_layer": "Live check for every student, with questions drawn from their captured record, such as why a suggestion was rejected or how an error was found [R81], [S156]. Where the workspace is not available, supervised tasks correcting flawed AI-generated code give a tested alternative [R33].",
    "ai_use_level": "AI integrated and assessed (critique or correction of AI output), close to AIAS Level 4 [R10].",
    "rationale": "In a computing module of 17 learners, students generated Java and Pep/8 Assembly code with ChatGPT and critiqued it, and one learner did not notice that the output was Python [R09]. An engineering project (partly computing) verified traceable AI use, with prompt logs of accepted or rejected fragments, through an individual viva [R79]. D2 notes that orals assess AI use only when questions probe how output was checked, and that written AI-use reflections can be fabricated [R45]. For this outcome the assessed interaction record is direct evidence of the skill [R17]; the check guards against staged interactions.",
    "trade_offs": "Critique can become performative, so the rubric must reward judgement rather than compliance [R91], [R45]. To validate: the critique task is tested in computing but without an individual check [R09], so test whether the viva identifies students whose written critique overstates their judgement.",
@@ -236,7 +236,8 @@
     "R45",
     "R79",
     "R81",
-    "R91"
+    "R91",
+    "R33"
    ]
   },
   {

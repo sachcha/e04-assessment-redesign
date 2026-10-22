@@ -7,7 +7,7 @@
    "rating": "Weak",
    "confidence": "High",
    "literature": "[L] In a 60-student computing module, take-home scores averaged about 83.8% while viva and live-demonstration scores averaged about 35.2% and 43.9%, and many high scorers could not explain or reproduce their own code [R81]. AI-generated assignment submissions scored higher than self-written ones, yet AI-reliant students did no better in invigilated exams, and unsupervised instruments produced misleading outcome-attainment data [R96], [R82]. Studies and reviews report that submitted code no longer reliably shows skill and that take-home grades can overstate independent competence [R28], [R08], [S037], [S101], [R12], [S020], and in a non-computing business course failures rose from 2.1-5.7% to 18.4% when a take-home exam became supervised, a rise partly confounded by removing all resources and adding time pressure [S119].",
-   "dataset": "[D] In StudyChat, students averaged 94.8% on AI-permitted take-home assignments against 86.3% on proctored exams, assignment marks bunched near the top and agreed only moderately with exam marks (rho = 0.53) [D24], [D25]. Marking did not respond to the share of AI-authored code in submissions [J1].",
+   "dataset": "[D] In StudyChat, students averaged 94.8% on AI-permitted take-home assignments against 86.3% on proctored exams, assignment marks bunched near the top and agreed only moderately with exam marks (rho = 0.53) [D24], [D25]. Take-home grades were blind to authorship [J1].",
    "interpretation": "[I] A correct unsupervised artefact on its own says little about what the individual student understands, unless it is paired with a check such as a viva or demonstration.",
    "key_studies": [
     "R81",
@@ -53,7 +53,7 @@
    "rating": "Weak",
    "confidence": "High",
    "literature": "[L] Code-similarity tools are reported to be ineffective against AI-generated code, and MOSS found no similarity in AI-generated HTML or SVG [R08], [R84], [R73]. Turnitin flagged only about 6% of raw AI output, detection fell sharply after light tampering, and detection evidence overall is thin and inequitable [S009], [R28]; markers could not reliably tell AI from student work [R55], [R52], [S108], and when staff judged one fully AI-generated essay with no human-written control, only 53.57% judged it mostly or wholly AI-written at once [S006]. Self-declarations were unverified or unverifiable, and some AI-use reflections appeared fabricated [R14], [S028], [R45].",
-   "dataset": "[D] In StudyChat, on average 14.5% of new code lines matched the student's own chatbot replies verbatim, yet assignment marks did not respond to this overlap [J1]. Logged AI-use behaviour did not identify which students had larger assignment-exam gaps [J6].",
+   "dataset": "[D] In StudyChat, on average 14.5% of new code lines matched the student's own chatbot replies verbatim, yet take-home grades were blind to this overlap, where AI use was permitted [J1]. Logged AI-use behaviour did not identify which students had larger assignment-exam gaps [J6].",
    "interpretation": "[I] Without an added check, staff cannot establish who produced an unsupervised submission or how GenAI was used.",
    "key_studies": [
     "R08",
@@ -164,8 +164,8 @@
    "dimension": "scalability",
    "rating": "Strong",
    "confidence": "Medium",
-   "literature": "[L] Unsupervised formats were run in a statistics lecture of 120-150 students using automated MCQ grading [R25], in a software testing course with a typical enrolment of 150-250 [R91] and with over 750 students across two campuses [R80]. Open-ended projects can prevent autograding [R82], and the checks that restore assurance (interviews, supervised tests, highly authentic tasks) are costly to scale [R84], [R52].",
-   "dataset": "[D] Adding verification has a staffing cost: the Hannover capstone used a rotating 5-15 minute tutor conversation with about one tutor per three teams [J4].",
+   "literature": "[L] Unsupervised formats were run in a statistics lecture of 120-150 students using automated MCQ grading [R25], in a software testing course with a typical enrolment of 150-250 [R91] and with over 750 students across two campuses [R80]. Open-ended projects can prevent autograding [R82], and the checks that restore assurance (interviews, supervised tests, highly authentic tasks) are costly to scale [R84], [R52]. Adding verification has a staffing cost: the Hannover capstone used a rotating 5-15 minute tutor conversation with about one tutor per three teams [J4].",
+   "dataset": "",
    "interpretation": "[I] The format itself scales well, but the add-ons needed for assurance reduce that advantage.",
    "key_studies": [
     "R25",

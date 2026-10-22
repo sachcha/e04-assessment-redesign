@@ -24,7 +24,7 @@
   },
   {
    "component": "Layer 3: Provenance accounting (unexplained content)",
-   "description": "Each part of the submission is traced to one of three sources: typed and developed in the workspace, a logged AI response, or staff-provided starter code. Content with none of these sources, for example a large block with no editing history and no matching AI output, is reported as unexplained content.",
+   "description": "Each part of the submission is traced to one of three sources: typed and developed in the workspace, a logged AI response, or staff-provided starter code. Content with none of these sources, for example a large block with no editing history and no matching AI output, is reported as unexplained content. Output from a permitted external AI tool counts as explained when the student submits its exported transcript, so students who do not use the University tool are not triaged for that reason alone.",
    "what_it_can_evidence": "Where content most likely came from outside the system, which is the signal that should trigger a check.",
    "what_it_cannot": "It does not judge understanding, and unexplained content can have innocent causes such as offline work or pasted notes, so it only triggers a conversation.",
    "evidence": "The matching method exists: on average 14.5% of new submitted code lines matched the student's own chatbot replies verbatim [J1]. Here it is reversed to measure what cannot be accounted for.",
@@ -75,7 +75,7 @@
  "implementation_steps": [
   "Agree the purpose and the permitted AI-use level for each task before choosing any monitoring, using a purpose-first approach [S416] and a scale such as the AIAS [R10]. Name the level plainly, for example \"AI permitted with declaration\" or \"AI integrated and assessed (critique or correction of AI output)\".",
   "Run the privacy impact assessment, platform vetting and policy checks in the requirements list, and confirm what the candidate University tool can record, export and audit (Strategy D, Project Context section 11) [R16].",
-  "Provide equal access to the University AI tool and accept declared use of external tools, since most students used general chatbots rather than the university-hosted instance [D14], [R20].",
+  "Provide equal access to the University AI tool and accept use of external tools when the exported transcript is submitted, since most students used general chatbots rather than the university-hosted instance [D14], [R20].",
   "Design structured templates for declarations, verification logs and justifications, model them for students and weight them in the rubric, as compliance was poor otherwise [R72], [R27], [R91], [S123].",
   "Build the verification layer into the course plan: universal short vivas or demonstrations in small cohorts, and sampled plus prioritised checks in medium and large cohorts, with staff time budgeted using the available estimates [R84], [R95], [J4], [R80].",
   "Train staff in AI literacy, in reading the records and in running fair verification conversations, with calibration for borderline cases [S331], [R27], [R79].",

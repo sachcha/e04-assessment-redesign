@@ -48,7 +48,7 @@
    "rating": "Weak",
    "confidence": "High",
    "literature": "[L] A multidisciplinary scoping review of 11 studies (only one from computing) found compliance with transparency mechanisms was often not assessed (27.3%) or relied on unverified self-disclosure (18.2%) [S423]. In computing courses, teams declaring no use were assumed truthful [R14], compliance with permitted limits could not be checked [S028], and undisclosed AI use is commonly 45-65% [R28]. Students under-declare because of fear of judgement, peer norms and low trust [S449], [S460], [S481], and fabricated declarations were observed [R45].",
-   "dataset": "[D] Marking did not respond to AI-authored content: moving from 0% to 100% verbatim overlap changed assignment scores by only -1.0 points [J1]. Traceability was a concern for 4 of 11 capstone clients [D20].",
+   "dataset": "[D] Take-home grades were blind to authorship: moving from 0% to 100% verbatim chatbot overlap changed assignment scores by only -1.0 points, in a course where AI use was permitted [J1]. Traceability was a concern for 4 of 11 capstone clients [D20].",
    "interpretation": "[I] Declarations cannot on their own establish who produced the work or how AI was used, because they rest on unverifiable self-report.",
    "key_studies": [
     "S423",

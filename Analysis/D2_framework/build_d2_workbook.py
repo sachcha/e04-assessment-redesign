@@ -32,13 +32,16 @@ for f in D.glob("cells/*.json"):
 bullets = lambda xs: "\n".join(f"- {x}" for x in xs)
 
 DEF = json.load(open(D / "type_definitions.json", encoding="utf-8"))
+TAGS = pd.read_csv(D.parent / "screening" / "review_studies.csv").fillna("")
+TAGS = TAGS[TAGS.ft_decision == "Include"]
+n_tagged = lambda t: int(TAGS.assessment_types.apply(lambda s: t in [x.strip() for x in s.split(";")]).sum())
 summary = pd.DataFrame([{
     "Assessment Type": t, "Scope (what is rated)": DEF[t]["scope"],
     "Evaluation Finding": rows[t]["evaluation_finding"],
     "Strengths": bullets(rows[t]["strengths"]), "Limitations": bullets(rows[t]["limitations"]),
     "Practical Considerations": bullets(rows[t]["practical_considerations"]),
     "Evidence gaps": bullets(rows[t].get("evidence_gaps", [])),
-    "Studies in evidence pack": rows[t]["n_studies_in_pack"]} for t in ORDER])
+    "Studies tagged with this type": n_tagged(t)} for t in ORDER])
 
 def basis(c, n=4):
     """Key citations shown in the grid cell: up to n key studies plus any dataset codes used."""
@@ -109,13 +112,16 @@ readme = pd.DataFrame([
                    "workload, feasibility and cost, accessibility and equity. Merged from the proposal's dimensions, "
                    "the Project Context criteria and Jiajun's framework."),
     ("Ratings", "Strong / Moderate / Weak / Insufficient evidence. Strong is always the favourable end (for GenAI "
-                "exposure, Strong = hard for GenAI to complete). Definitions in D2_framework/SYNTHESIS_PROTOCOL.md."),
-    ("Confidence", "Simplified GRADE-CERQual: High needs at least 3 studies including a Core or computing study rated 4 or "
+                "exposure, Strong = hard for GenAI to complete). Moderate = mixed, or depends on how the task is designed. "
+                "What Strong and Weak mean for each dimension is in the sheet 'Rating anchors'."),
+    ("Confidence", "CERQual-informed (adapted from GRADE-CERQual, using a study-count rule): High needs at least 3 studies including a Core or computing study rated 4 or "
                    "more, with consistent findings; Medium = 2 or more with inconsistency or weaker designs; Low = "
-                   "0-1 studies or conceptual or untested evidence."),
+                   "0-1 studies or conceptual or untested evidence. A High rating also needs an empirical qualifying study; "
+                   "a conceptual framework alone does not qualify. Abstract-only studies corroborate but never "
+                   "qualify a rating on their own."),
     ("Evidence levels", "[L] literature finding, [D] our dataset finding, [I] our interpretation. Recommendations "
                         "(Level 3) are in D3, not here."),
-    ("Calibration", "Ratings were calibrated across types (rules C1-C3) and every change is logged in "
+    ("Calibration", "Ratings were calibrated across types (rules C1-C4) and every change is logged in "
                     "D2_framework/calibration_log.md."),
     ("Citations", "Record IDs (Rxx = evidence-log stream, Sxxx = update search) are listed in the References sheet "
                   "and converted to IEEE numbers in the final report."),
@@ -124,11 +130,25 @@ readme = pd.DataFrame([
                          "separate category, so the eight types in the project brief are kept unchanged."),
 ] + [(f"Definition: {t}", f"{DEF[t]['scope']} Includes: {DEF[t]['includes']} Excludes: {DEF[t]['excludes']}")
      for t in ORDER] + [
-    ("Dataset codes", dcodes[:30000]),
+    ("Dataset codes", "D01-D28 and J1-J6 are listed in full in the sheet 'Dataset codes'."),
 ], columns=["Item", "Detail"])
+
+proto = (D / "SYNTHESIS_PROTOCOL.md").read_text(encoding="utf-8")
+anchors = []
+for line in proto.splitlines():
+    m = re.match(r"\| (\d+) \| \w+ \| ([^|]+) \| ([^|]+) \| ([^|]+) \|", line)
+    if m:
+        anchors.append({"#": int(m.group(1)), "Dimension": m.group(2).strip(), "Strong means": m.group(3).strip(),
+                        "Moderate means": "Mixed, or depends on how the task is designed (the cell says on what)",
+                        "Weak means": m.group(4).strip()})
+anchors = pd.DataFrame(anchors)
+codes = pd.DataFrame([{"Code": m.group(1), "Source": m.group(2), "Finding and limitations": m.group(3)}
+                      for m in re.finditer(r"^- \[([DJ]\d+)\] \(([^)]*)\) (.*)$", dcodes, re.M)])
 
 with pd.ExcelWriter(XLSX, engine="openpyxl") as xw:
     readme.to_excel(xw, "Read me", index=False)
+    anchors.to_excel(xw, "Rating anchors", index=False)
+    codes.to_excel(xw, "Dataset codes", index=False)
     summary.to_excel(xw, "Evaluation Matrix", index=False)
     grid.to_excel(xw, "Rating Grid", index=False)
     ev.to_excel(xw, "Cell Evidence", index=False)
@@ -140,7 +160,8 @@ thin = Side(style="thin", color="D0D0D0")
 FILL = {"Strong": "C6E7C2", "Moderate": "FCE9B2", "Weak": "F4C7C3", "Insufficient evidence": "E3E3E3"}
 widths = {"Read me": [18, 120], "Evaluation Matrix": [22, 45, 60, 55, 55, 55, 40, 10],
           "Rating Grid": [22] + [21] * 11, "Cell Evidence": [20, 20, 12, 10, 60, 45, 45, 40, 30, 22, 9, 9, 9, 9],
-          "References": [9, 10, 9, 8, 18, 110]}
+          "References": [9, 10, 9, 8, 18, 110], "Rating anchors": [5, 26, 50, 40, 45],
+          "Dataset codes": [8, 36, 150]}
 for ws in wb.worksheets:
     ws.freeze_panes = "B2"
     for c in ws[1]:

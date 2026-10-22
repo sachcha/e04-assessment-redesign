@@ -7,7 +7,7 @@
    "rating": "Moderate",
    "confidence": "Medium",
    "literature": "[L] Personalised designs are proposed to show the student's own work when students must justify their choices or verify AI output against their own research [R73], [R15], but these claims were not tested or rest on student self-report [R71]. Stronger evidence appears when personalisation is applied to questioning: viva questions generated from each student's own project reached QWK 0.782 agreement with human grades [S156], and experts rated text-specific open-ended comprehension items highly for checking understanding [R11].",
-   "dataset": "[D] In one AI course, students averaged 94.8% on AI-permitted take-home assignments but 86.3% on proctored exams [D24], and assignment marks did not respond to the share of verbatim AI-authored content [J1].",
+   "dataset": "[D] In one AI course, students averaged 94.8% on AI-permitted take-home assignments but 86.3% on proctored exams [D24], and take-home grades were blind to authorship [J1].",
    "interpretation": "[I] A personalised artefact alone says little about individual understanding; credibility depends on adding explanation, justification or questioning tied to the student's own work.",
    "key_studies": [
     "S156",
@@ -49,7 +49,7 @@
    "rating": "Weak",
    "confidence": "Medium",
    "literature": "[L] Personalisation does not by itself establish who produced the work: detecting AI-generated code was described as challenging and often impractical [R73], and the only misconduct check in R15 relied on detectors its authors call unreliable [R15]. GenAI declarations were judged ineffective, whereas named marking by tutors who know the students reportedly coincided with fewer misconduct cases [R24]. Reviews report that AI detectors are unreliable [R01], [R51].",
-   "dataset": "[D] In one course, within-assignment marks did not respond to the share of verbatim chatbot code in submissions (-1.0 points from 0% to 100% overlap, 95% CI -4.3 to +2.3) [J1].",
+   "dataset": "[D] In one course, take-home grades were blind to the share of verbatim chatbot code in submissions, where AI use was permitted (-1.0 points from 0% to 100% overlap, 95% CI -4.3 to +2.3) [J1].",
    "interpretation": "[I] Authorship assurance has to come from paired measures such as process logs or questioning on the work, not from the personal content of the task.",
    "key_studies": [
     "R73",

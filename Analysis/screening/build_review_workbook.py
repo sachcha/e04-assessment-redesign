@@ -63,10 +63,29 @@ qual = inc[["Record ID", "evidence_tier", "evidence_type", "quality_score", "qua
 qsum = (inc.groupby(["evidence_tier", "evidence_type"]).quality_score
         .agg(["count", "mean", "median", "min", "max"]).round(2).reset_index())
 
+import json, re
+cited = set()
+for f in list((D.parent / "D2_framework" / "cells").glob("*.json")) + list((D.parent / "D3_recommendations" / "out").glob("*.json")):
+    cited |= set(re.findall(r"\b([RS]\d{2,3})\b", f.read_text(encoding="utf-8")))
+inc["Cited in D2/D3"] = inc["Record ID"].isin(cited).map({True: "Yes", False: "No"})
+tier = inc.set_index("Record ID").evidence_tier
+d2cells = [c for f in (D.parent / "D2_framework" / "cells").glob("*.json")
+           for c in json.loads(f.read_text(encoding="utf-8"))["cells"]]
+ncells = len(d2cells)
+mixed = sum(1 for c in d2cells if any(tier.get(k) == "Supporting" for k in c["key_studies"]))
+emp = inc[inc.evidence_type == "empirical"]
+core_q = pd.to_numeric(emp[emp.evidence_tier == "Core"].quality_score).mean()
+supp_q = pd.to_numeric(emp[emp.evidence_tier == "Supporting"].quality_score).mean()
+prisma = pd.concat([prisma, pd.DataFrame([
+    {"stage": "  of which used in the D2/D3 synthesis", "n": int((inc["Cited in D2/D3"] == "Yes").sum())},
+    {"stage": "  of which not cited in D2/D3 (background only)", "n": int((inc["Cited in D2/D3"] == "No").sum())}])],
+    ignore_index=True)
+
 methods = pd.DataFrame([
     ("Purpose", "Evidence base for the structured systematic literature review (D1) supporting the Evaluation "
                 "Framework (D2) and Recommendation Matrix (D3)."),
-    ("Reporting standard", "PRISMA 2020 flow (sheet 'PRISMA'). Search cut-off 16 October 2026."),
+    ("Reporting standard", "PRISMA 2020 flow (sheet 'PRISMA'). Update search run on 17 October 2026, covering publication years "
+                           "2022-2026 up to that date."),
     ("Identification", "Stream A: the team's evidence log (team-compiled source lists; original search strings "
                        "were not recorded) plus 8 team-supplied papers. Stream B: a documented supplementary update "
                        "search in OpenAlex on 17 Oct 2026 (9 strings; see screening/search/search_log.csv)."),
@@ -82,9 +101,10 @@ methods = pd.DataFrame([
     ("Eligibility", "IC1 higher education; IC2 assessment design, validity or integrity as a primary or "
                     "substantial focus; IC3 GenAI or AI in assessment; IC4 peer-reviewed or formal framework "
                     "paper; IC5 2022-2026, English. Exclusion codes E1-E7 as in the evidence log Guide."),
-    ("Title/abstract screening", "Two independent AI-assisted screeners (A and B). B was blinded to A's "
-                                 "decisions. Disagreements were adjudicated by a human team member. Agreement "
-                                 "is in sheet 'Screening agreement'."),
+    ("Title/abstract screening", "Two independent AI-assisted screeners (A and B), each a separate AI model run; "
+                                 "B was blinded to A's decisions. A human team member adjudicated every "
+                                 "disagreement. Kappa in sheet 'Screening agreement' therefore measures the "
+                                 "consistency of the two runs, not agreement between two people."),
     ("Full-text screening and extraction", "AI-assisted extraction against a written protocol "
                                            "(screening/extraction/EXTRACTION_PROTOCOL.md). Full texts came from "
                                            "legal open-access copies and team-supplied PDFs; no paywall was "
@@ -92,11 +112,14 @@ methods = pd.DataFrame([
     ("Quality appraisal", "Five-item checklist adapted from MMAT 2018 and CASP: clear aim; appropriate method; "
                           "adequate sample description; findings supported; limitations acknowledged. "
                           "Score 0-5. Conceptual papers score N on the sample item by design."),
-    ("Evidence tiers", "Core = the team evidence log's 'Include' (21 studies). Supporting = other studies "
-                       "meeting IC1-IC5 (team log 'Background'). Core studies drive the D2/D3 ratings; "
-                       "supporting studies corroborate."),
+    ("Evidence tiers", f"Core = the team evidence log's 'Include' ({(inc.evidence_tier == 'Core').sum()} studies). Supporting = "
+                       "other studies meeting IC1-IC5. Core studies were read first and are flagged in D2, but "
+                       f"their mean quality is lower (empirical Core {core_q:.1f} vs Supporting {supp_q:.1f}; "
+                       f"sheet 'Quality summary'). Ratings therefore also draw on Supporting studies ({mixed} of {ncells} D2 "
+                       "ratings cite at least one), and High confidence needs a qualifying empirical study of "
+                       "quality 4 or more."),
     ("AI assistance disclosure", "Screening and extraction were AI-assisted (Claude), with human adjudication "
-                                 "and verification. This must be declared in the report."),
+                                 "and verification. This is declared in the report."),
     ("Reproducibility", "Scripts in Analysis/screening: fetch_metadata.py, compute_agreement.py, "
                         "finalise_ta.py, match_papers.py, merge_extraction.py, build_review_workbook.py."),
 ], columns=["Item", "Detail"])

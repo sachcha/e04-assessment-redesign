@@ -26,3 +26,15 @@ A cell is "Implemented" only if one study implemented the same main assessment a
 
 ## Legal and ethical requirements added (17 Oct 2026)
 - Part C requirements now cite verified frameworks (Analysis/ethics/frameworks_verified.csv): Surveillance Devices Act 2016 (SA) s8 (capture limited to the University workspace); privacy regime uncertainty and the need for a specific collection notice; Disability Standards 3.4 and 3.5; contestability and human oversight; Indigenous data governance.
+
+## Revision after external review (22 Oct 2026)
+Applied from the team's prioritised revision guide (21 Oct 2026). No evidence status changed.
+- partA_process_evidence.json: "D2 rated process evidence Weak on capability verification, GenAI exposure" -> "D2 rated process evidence Weak on capability verification when records are unass"
+- partA_process_evidence.json: "the mean Learning Integrity Score rose from about 11.7 to about 45.3" -> "a descriptive, single-cohort integrity score rose from about 11.7 to about 45.3"
+- partA_process_evidence.json: "reported a rise in mean Learning Integrity Score from about 11.7 to about 45.3" -> "reported a rise in a descriptive, single-cohort integrity score from about 11.7 "
+- partA_unsupervised_formats.json: "raised a learning-integrity score from about 11.7 to about 45.3" -> "a descriptive, single-cohort integrity score rose from about 11.7 to about 45.3"
+- partB_decision_guide.json: "the mean Learning Integrity Score rose from about 11.7 to 45.3" -> "a descriptive, single-cohort integrity score rose from about 11.7 to about 45.3"
+- partB LO5 Small: fallback without the workspace added (supervised AI-correction tasks [R33])
+- partC Layer 3: external AI output with an exported transcript counts as explained
+- partC implementation step: external tools accepted with exported transcript (was 'declared use')
+- build_d3_workbook.py: Read me rows for AI-use level labels, staff-time ranges, residual risk and the team strategy legend; legal sources LEG1-LEG3 added to References

@@ -31,7 +31,7 @@ prisma = pd.DataFrame([
     (5, "Eligibility criteria", "Met", "IC1-IC5, E1-E7; Amendment 3 (redesign focus), dated"),
     (6, "Information sources", "Met", "Team evidence log + OpenAlex update search, dates recorded"),
     (7, "Search strategy", "Partial", "Update search strings fully recorded; original team searches not recorded"),
-    (8, "Selection process", "Met", "Two independent screeners + human adjudication; AI assistance disclosed"),
+    (8, "Selection process", "Met", "Two independent AI-assisted screeners (separate model runs, B blinded to A) with a human adjudicator for every disagreement; AI assistance disclosed"),
     (9, "Data collection process", "Met", "Written extraction protocol; full or light extraction stated"),
     (10, "Data items", "Met", "Protocol key list (design, sample, findings with locations, dimensions)"),
     (11, "Study risk-of-bias assessment", "Met", "5-item checklist adapted from MMAT 2018 / CASP"),
@@ -53,6 +53,28 @@ prisma = pd.DataFrame([
     (27, "Availability of data, code, materials", "Met", "All scripts and outputs in Analysis/ with READMEs"),
 ], columns=["Item", "PRISMA 2020 item", "Status", "Where / note"])
 prisma.to_csv(A / "quality" / "prisma_checklist.csv", index=False)
+# formatted copy for readers (review guide P3-12)
+from openpyxl.styles import Alignment, Font, PatternFill, Side, Border
+XL = A / "quality" / "prisma_checklist.xlsx"
+with pd.ExcelWriter(XL, engine="openpyxl") as xw:
+    prisma.to_excel(xw, "PRISMA 2020 checklist", index=False)
+    prisma.iloc[:, 2].value_counts().rename_axis("Status").reset_index(name="Items").to_excel(xw, "Status summary", index=False)
+from openpyxl import load_workbook
+wb = load_workbook(XL)
+STATUS = {"Met": "C6E7C2", "Partial": "FCE9B2", "Not met": "F4C7C3"}
+edge = Side(style="thin", color="C9C9C9")
+for ws in wb.worksheets:
+    ws.freeze_panes = "A2"
+    for c in ws[1]:
+        c.font = Font(bold=True, color="FFFFFF"); c.fill = PatternFill("solid", fgColor="1C5CAB")
+    for row in ws.iter_rows():
+        for c in row:
+            c.alignment = Alignment(wrap_text=True, vertical="top"); c.border = Border(edge, edge, edge, edge)
+            if c.row > 1 and c.value in STATUS:
+                c.fill = PatternFill("solid", fgColor=STATUS[c.value])
+    for col, w in zip("ABCD", [6, 30, 12, 90] if ws.title.startswith("PRISMA") else [14, 8]):
+        ws.column_dimensions[col].width = w
+wb.save(XL)
 sc = prisma.Status.value_counts()
 applic = len(prisma) - sc.get("Not applicable", 0)
 done = sc.get("Met", 0)
@@ -146,9 +168,26 @@ add(8, "Independent replication", "Two analysts, same datasets, separate code (o
 low = {k for k, v in st.set_index("Record ID").venue_weight.fillna("").items() if v}
 dep = sum(1 for c in cells if c["key_studies"] and len(set(c["key_studies"]) - low) < 2)
 uses = sum(1 for c in cells if set(c["key_studies"]) & low)
-add(9, "Robustness to weak sources", "Sensitivity analysis excluding low-confidence venues",
-    f"{uses} of {len(cells)} D2 cells cite a low-confidence venue; {dep} would lose support (fewer than 2 other studies) without them",
-    "No rating depends on low-confidence venues", "Met" if dep == 0 else "Check", "review_studies.csv; D2 cells")
+# drop the two most-used single-course studies and re-apply the confidence rule (review guide P1-4)
+sti = st.set_index("Record ID")
+def qualifies(r):  # Core or computing study of quality 4 or more
+    if r not in sti.index:
+        return False
+    q = pd.to_numeric(sti.at[r, "quality_score"], errors="coerce")
+    return q >= 4 and (str(sti.at[r, "evidence_tier"]).startswith("Core") or sti.at[r, "computing"] == "Y")
+DROP = {"R81", "R82"}
+lose = high_down = 0
+for c in cells:
+    rest = [k for k in c["key_studies"] if k not in DROP]
+    if set(c["key_studies"]) & DROP and len(rest) < 2:
+        lose += 1
+    if c["confidence"].startswith("High") and (len(rest) < 3 or not any(qualifies(k) for k in rest)):
+        high_down += 1
+n_drop = sum(1 for c in cells if set(c["key_studies"]) & DROP)
+add(9, "Robustness to weak sources", "Sensitivity analysis excluding low-confidence venues, and excluding R81 and R82",
+    f"{uses} of {len(cells)} D2 cells cite a low-confidence venue; {dep} would lose support (fewer than 2 other studies) without them. "
+    f"Without R81 and R82 ({n_drop} cells cite them): {lose} ratings would lose support and {high_down} High confidence levels would fall to Medium",
+    "No rating depends on low-confidence venues or on a single study", "Met" if dep == 0 and lose == 0 else "Check", "review_studies.csv; D2 cells")
 
 # 10 Client acceptance
 add(10, "Client acceptance", "Stakeholder review of D2/D3",

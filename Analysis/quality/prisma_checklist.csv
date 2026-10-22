@@ -6,7 +6,7 @@ Item,PRISMA 2020 item,Status,Where / note
 5,Eligibility criteria,Met,"IC1-IC5, E1-E7; Amendment 3 (redesign focus), dated"
 6,Information sources,Met,"Team evidence log + OpenAlex update search, dates recorded"
 7,Search strategy,Partial,Update search strings fully recorded; original team searches not recorded
-8,Selection process,Met,Two independent screeners + human adjudication; AI assistance disclosed
+8,Selection process,Met,"Two independent AI-assisted screeners (separate model runs, B blinded to A) with a human adjudicator for every disagreement; AI assistance disclosed"
 9,Data collection process,Met,Written extraction protocol; full or light extraction stated
 10,Data items,Met,"Protocol key list (design, sample, findings with locations, dimensions)"
 11,Study risk-of-bias assessment,Met,5-item checklist adapted from MMAT 2018 / CASP
