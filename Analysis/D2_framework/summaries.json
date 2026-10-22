@@ -1,0 +1,35 @@
+{
+ "_note": "Short reading versions of the D2 evaluation (22 Oct 2026), written from the cells and evaluation findings, matching report Table 7. Citations stay in 'Cell Evidence'.",
+ "Supervised assessment": {
+  "verdict": "The strongest check of what a student can do alone, but far from real practice and usually AI-free",
+  "strength": "Verifies individual capability: in one module, viva and live-demo marks of about 35% and 44% sat behind take-home marks of 84%",
+  "weakness": "Low realism and no place for AI use: time-limited conditions are far from professional practice"},
+ "Unsupervised formats": {
+  "verdict": "Cheap and scalable, but weak on every validity criterion when AI is available",
+  "strength": "Scales to large cohorts at low cost, already run for 150 to over 750 students",
+  "weakness": "Marks say little about unaided ability: current GenAI completes most programming tasks, and markers cannot reliably spot AI work"},
+ "Oral assessments": {
+  "verdict": "The best direct check of understanding; staff time is the main cost",
+  "strength": "Vivas exposed students who could not explain their own code, and live questioning is among the most AI-resistant checks",
+  "weakness": "Staff workload: at least 1,000 staff minutes per 100 students, and about 1,300 to 3,800 in practice"},
+ "Practical demonstrations": {
+  "verdict": "A strong check of skills in real tools; staff time is the main cost",
+  "strength": "Live demos averaged 44% against 84% on take-home work, and checkoffs confirmed tool skills for 237 students",
+  "weakness": "Staff workload: checkoffs took about 80% of tutor office-hour time"},
+ "Staged submissions": {
+  "verdict": "Makes the working process visible and lets AI use be sequenced, but each stage stays open to AI",
+  "strength": "Milestones show planning, drafts and AI use, so AI can be introduced in stages",
+  "weakness": "Each stage can still be completed with undisclosed AI help, and marking several stages adds workload"},
+ "Process evidence": {
+  "verdict": "Useful when records are captured by the system and assessed by staff; student-kept logs verify little",
+  "strength": "Code replay, repository history and graded interaction logs make AI use visible and assessable",
+  "weakness": "Logs can be fabricated, and students' accounts did not match their AI traces, so a live check is still needed"},
+ "Personalised tasks": {
+  "verdict": "Adds realism, but does not stop AI or show who did the work",
+  "strength": "Realistic, personal contexts are widely recommended and make tasks more authentic",
+  "weakness": "Personalising a task does not stop AI from completing it or show who did the work"},
+ "AI-use declarations": {
+  "verdict": "Support transparency at low cost, but cannot show how AI was really used",
+  "strength": "Support transparency and critical AI use at little cost",
+  "weakness": "Self-reports did not match assessors' judgements, and undisclosed AI use is commonly 45% to 65%"}
+}

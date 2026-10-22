@@ -35,12 +35,15 @@ for f in D.glob("cells/*.json"):
 bullets = lambda xs: "\n".join(f"- {x}" for x in xs)
 
 DEF = json.load(open(D / "type_definitions.json", encoding="utf-8"))
+SUM = json.load(open(D / "summaries.json", encoding="utf-8"))
 TAGS = pd.read_csv(D.parent / "screening" / "review_studies.csv").fillna("")
 TAGS = TAGS[TAGS.ft_decision == "Include"]
 n_tagged = lambda t: int(TAGS.assessment_types.apply(lambda s: t in [x.strip() for x in s.split(";")]).sum())
 summary = pd.DataFrame([{
-    "Assessment Type": t, "Scope (what is rated)": DEF[t]["scope"],
-    "Evaluation Finding": rows[t]["evaluation_finding"],
+    "Assessment Type": t, "In short: overall verdict": SUM[t]["verdict"],
+    "In short: main strength": SUM[t]["strength"], "In short: main weakness": SUM[t]["weakness"],
+    "Scope (what is rated)": DEF[t]["scope"],
+    "Evaluation Finding (full)": rows[t]["evaluation_finding"],
     "Strengths": bullets(rows[t]["strengths"]), "Limitations": bullets(rows[t]["limitations"]),
     "Practical Considerations": bullets(rows[t]["practical_considerations"]),
     "Evidence gaps": bullets(rows[t].get("evidence_gaps", [])),
@@ -54,6 +57,14 @@ def basis(c, n=4):
     return ", ".join(ks)
 
 
+def grid_text(c):
+    """Reading view of one rating: rating, confidence and how many studies support it."""
+    r, conf = c["rating"], c["confidence"]
+    if "/" in r:  # split rating, e.g. process evidence capability verification
+        return f"Weak / Moderate*\n({conf.replace(' / ', ' / ')})\n{c['n_supporting']} studies"
+    return f"{r} ({conf})\n{c['n_supporting']} studies"
+
+
 def note(c):
     parts = [c["literature"], c.get("dataset", ""), c["interpretation"]]
     if c.get("conflicts"):
@@ -64,8 +75,7 @@ def note(c):
 grid, grid_notes = [], {}
 for i, t in enumerate(ORDER):
     cells = {c["dimension"]: c for c in rows[t]["cells"]}
-    grid.append({"Assessment Type": t, **{lab: f'{cells[k]["rating"]} ({cells[k]["confidence"]})\n{basis(cells[k])}'
-                                         for k, lab in DIMS}})
+    grid.append({"Assessment Type": t, **{lab: grid_text(cells[k]) for k, lab in DIMS}})
     for jdx, (k, lab) in enumerate(DIMS):
         grid_notes[(i + 2, jdx + 2)] = (note(cells[k]), i * len(DIMS) + jdx + 2)
 grid = pd.DataFrame(grid)
@@ -161,8 +171,8 @@ wb = load_workbook(XLSX)
 head = PatternFill("solid", fgColor="1C5CAB")
 thin = Side(style="thin", color="D0D0D0")
 FILL = {"Strong": "C6E7C2", "Moderate": "FCE9B2", "Weak": "F4C7C3", "Insufficient evidence": "E3E3E3"}
-widths = {"Read me": [18, 120], "Evaluation Matrix": [22, 45, 60, 55, 55, 55, 40, 10],
-          "Rating Grid": [22] + [21] * 11, "Cell Evidence": [20, 20, 12, 10, 60, 45, 45, 40, 30, 22, 9, 9, 9, 9],
+widths = {"Read me": [18, 120], "Evaluation Matrix": [22, 40, 44, 44, 45, 60, 55, 55, 55, 40, 10],
+          "Rating Grid": [24] + [19] * 11, "Cell Evidence": [20, 20, 12, 10, 60, 45, 45, 40, 30, 22, 9, 9, 9, 9],
           "References": [9, 10, 9, 8, 18, 110], "Rating anchors": [5, 26, 50, 40, 45],
           "Dataset codes": [8, 36, 150]}
 for ws in wb.worksheets:
@@ -190,9 +200,31 @@ for (r, c), (txt, ev_row) in grid_notes.items():
     cell.comment = cm
     cell.hyperlink = Hyperlink(ref=cell.coordinate, location=f"'Cell Evidence'!A{ev_row}")
 for r in range(2, len(ORDER) + 2):
-    ws.row_dimensions[r].height = 62
-ws.cell(len(ORDER) + 3, 1, "How to read: each cell shows rating (confidence) and the key studies it rests on. "
-        "Hover for the evidence summary; click to open the full evidence row in 'Cell Evidence'.")
+    ws.row_dimensions[r].height = 46
+    ws.cell(r, 1).font = Font(bold=True)
+    ws.cell(r, 1).alignment = Alignment(wrap_text=True, vertical="center")
+    for c in range(2, len(DIMS) + 2):
+        ws.cell(r, c).alignment = Alignment(wrap_text=True, vertical="center", horizontal="center")
+r0 = len(ORDER) + 3
+ws.cell(r0, 1, "How to read").font = Font(bold=True, color="001F5F")
+ws.cell(r0, 2, "Each cell gives the rating, its confidence (High, Medium or Low) and how many studies support it. "
+               "Hover over a cell for the evidence summary; click it to open the full evidence and the studies "
+               "in 'Cell Evidence'. What each rating means is in 'Rating anchors'. * Process evidence: Weak when "
+               "records are student-kept or not assessed, Moderate when the system captures them and staff "
+               "assess them.").alignment = Alignment(wrap_text=True, vertical="top")
+ws.merge_cells(start_row=r0, start_column=2, end_row=r0, end_column=len(DIMS) + 1)
+ws.row_dimensions[r0].height = 34
+ws.cell(r0 + 1, 1, "Cell colour").font = Font(bold=True, color="001F5F")
+for j, (lab, col) in enumerate([(k, v) for k, v in FILL.items() if k != "Insufficient evidence"]):
+    c = ws.cell(r0 + 1, j + 2, lab); c.fill = PatternFill("solid", fgColor=col)
+    c.alignment = Alignment(horizontal="center")
+
+em = wb["Evaluation Matrix"]
+for r in range(2, em.max_row + 1):
+    em.row_dimensions[r].height = 52
+    em.cell(r, 1).font = Font(bold=True)
+for c in range(1, 5):
+    em.cell(1, c).fill = PatternFill("solid", fgColor="001F5F")
 wb.save(XLSX)
 print("Wrote", XLSX)
 print(grid.to_string(index=False))
@@ -201,11 +233,11 @@ add_start_sheet(XLSX, "D2 Assessment Strategy Evaluation Framework",
     "Rates eight assessment types on 11 criteria for computing courses where students can use generative AI. "
     "Every rating is linked to the studies and data behind it.",
     ["Open 'Rating Grid'. Each row is an assessment type and each column a criterion. Green = Strong, amber = "
-     "Moderate, red = Weak; the letter in brackets is the confidence (H, M or L).",
+     "Moderate, red = Weak; the confidence and the number of supporting studies are shown in each cell.",
      "Click any rating in 'Rating Grid' to jump to its evidence in 'Cell Evidence', which gives the studies, the "
      "dataset findings and our interpretation.",
-     "Use 'Evaluation Matrix' for a one-row summary of each type: main finding, strengths, limitations and "
-     "practical points."],
+     "Use 'Evaluation Matrix' for a plain summary of each type: the first three columns give the overall "
+     "verdict, main strength and main weakness in one line each."],
     [("Rating Grid", "All 88 ratings with confidence; click a rating to see its evidence"),
      ("Cell Evidence", "The evidence for each rating: literature [L], dataset findings [D], interpretation [I]"),
      ("Evaluation Matrix", "One row per assessment type: finding, strengths, limitations, practical considerations"),
