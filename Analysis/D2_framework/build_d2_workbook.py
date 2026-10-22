@@ -118,7 +118,7 @@ dcodes = open(D / "dataset_evidence.md", encoding="utf-8").read()
 readme = pd.DataFrame([
     ("Deliverable", "D2 Assessment Strategy Evaluation Framework: eight assessment types rated on 11 dimensions for "
                     "computing higher education in the GenAI era."),
-    ("Evidence base", f"{len(st[st.ft_decision == 'Include'])} included studies (Literature_Review_Evidence.xlsx) plus "
+    ("Evidence base", f"{len(st[st.ft_decision == 'Include'])} included studies (see the Literature Review Evidence workbook) plus "
                       "our dataset analysis (D01-D28) and Jiajun's team analysis (J1-J6)."),
     ("Dimensions", "Validity: capability verification, GenAI exposure, authorship assurance, learning-outcome alignment, "
                    "authenticity. Integration: appropriate AI use, process visibility. Practicality: scalability, staff "

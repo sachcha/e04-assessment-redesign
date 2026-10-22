@@ -127,15 +127,107 @@ methods = pd.DataFrame([
                         "finalise_ta.py, match_papers.py, merge_extraction.py, build_review_workbook.py."),
 ], columns=["Item", "Detail"])
 
+
+# ---------------------------------------------------------------- reading versions of the sheets
+CODE = {"E1": "Not higher education", "E2": "Not about assessment, or not focused on assessment redesign",
+        "E3": "No generative AI", "E4": "Not peer reviewed", "E5": "Outside 2022-2026", "E6": "Not in English",
+        "E7": "No full text available"}
+
+
+def first_author(a, y):
+    names = [x.strip() for x in str(a).split(";") if x.strip() and x.strip().lower() != "nan"]
+    if not names:
+        return f"({y})"
+    sur = names[0].split()[-1]
+    return f"{sur}{' et al.' if len(names) > 2 else (' and ' + names[1].split()[-1] if len(names) == 2 else '')} ({y})"
+
+
+def offers(r):
+    note = "" if pd.isna(r.redesign_note) else str(r.redesign_note).strip()
+    if note:
+        return note
+    first = str(r.key_findings).split(" | ")[0]
+    return re.sub(r"\s*\[[^\]]*\]\s*$", "", first).strip()
+
+
+yr = lambda y: int(y) if pd.notna(y) and str(y).strip() else "n.d."
+inc_read = pd.DataFrame({
+    "Record ID": inc["Record ID"],
+    "Study": [first_author(a, yr(y)) for a, y in zip(inc.authors, inc.year)],
+    "Title": inc.title,
+    "Tier": inc.evidence_tier,
+    "Computing-specific": inc.computing.map({"Y": "Yes", "Partial": "Partly", "N": "No"}),
+    "Assessment types it informs": inc.assessment_types.fillna("").str.replace(";", ",", regex=False),
+    "What it offers for redesign": [offers(r) for r in inc.itertuples()],
+    "Quality (0-5)": inc.quality_score,
+    "Cited in D2/D3": inc["Cited in D2/D3"],
+})
+DETAIL = {"Record ID": "Record ID", "title": "Title", "authors": "Authors", "year": "Year", "venue": "Venue",
+          "doi": "DOI", "fulltext_status": "Full text", "study_design": "Study design", "country": "Country",
+          "discipline": "Discipline", "level": "Level", "sample": "Sample", "evidence_type": "Evidence type",
+          "key_findings": "Key findings (location in the source in brackets)",
+          "author_recommendations": "Author recommendations", "limitations": "Limitations",
+          "redesign_relevance": "Redesign relevance", "quality_note": "Quality note",
+          "dim_capability_verification": "Notes: capability verification", "dim_integrity_security": "Notes: integrity and security",
+          "dim_lo_alignment": "Notes: learning-outcome alignment", "dim_authenticity": "Notes: authenticity",
+          "dim_appropriate_ai_use": "Notes: appropriate AI use", "dim_process_visibility": "Notes: process visibility",
+          "dim_scalability": "Notes: scalability", "dim_workload": "Notes: staff workload",
+          "dim_feasibility": "Notes: feasibility and cost", "dim_accessibility_equity": "Notes: accessibility and equity",
+          "team_log_decision": "Team evidence log decision", "stream": "Identification stream",
+          "extraction_level": "Extraction level", "venue_flag": "Venue check", "venue_weight": "Venue weight",
+          "ft_reason": "Full-text eligibility note"}
+inc_detail = inc[list(DETAIL)].rename(columns=DETAIL)
+inc_detail["Redesign relevance"] = inc_detail["Redesign relevance"].map(
+    {"a_redesign": "Proposes or evaluates a redesign", "b_informs_redesign": "Evidence a redesign must respond to"})
+
+def stream_of(s):
+    s = str(s)
+    return "Evidence log" if s.startswith("A.") else "Update search" if s.startswith("B.") else "Combined"
+prisma_read = pd.DataFrame({"Stream": [stream_of(s) for s in prisma.stage],
+                            "Stage": [re.sub(r"^[AB]\.\s*", "", str(s)).strip() for s in prisma.stage],
+                            "Records": prisma.n})
+prisma_read["Stage"] = prisma_read["Stage"].str.replace("TOTAL studies included in review", "Total studies included in the review")
+PLAIN = {"Evidence-log stream: records identified (team lists + team-supplied papers)":
+             "Records identified (team source lists and team-supplied papers)",
+         "Update search: hits across 9 strings (with overlap)": "Hits across the 9 search strings (with overlap)",
+         "Computing-specific (Y)": "Computing-specific", "Core (team log Include)": "Core tier (team evidence log 'Include')",
+         "Supporting": "Supporting tier", "Full text": "Assessed with full text", "Abstract only": "Assessed on abstract only",
+         "a_redesign": "Propose or evaluate an assessment redesign",
+         "b_informs_redesign": "Give evidence a redesign must respond to"}
+PLAIN_L = {k.lower(): v for k, v in PLAIN.items()}
+prisma_read["Stage"] = prisma_read["Stage"].str.strip().map(lambda s: PLAIN_L.get(s.lower(), s))
+prisma_read["Stage"] = prisma_read["Stage"].str.replace(r"^of which (E\d)$", lambda m: "  of which: " + CODE[m.group(1)][0].lower() + CODE[m.group(1)][1:], regex=True)
+prisma_read["Stage"] = prisma_read["Stage"].apply(lambda s: re.sub(r"^(\s*)([a-z])", lambda m: m.group(1) + m.group(2).upper(), s))
+in_total = prisma_read.Stream.eq("Combined") & ~prisma_read.Stage.str.startswith("Total")
+prisma_read.loc[in_total, "Stage"] = "  " + prisma_read.loc[in_total, "Stage"]
+
+agree_read = pd.DataFrame({"Comparison": agree.comparison, "Stage": agree.stage, "Records": agree.n,
+                           "Agreement (%)": (agree.pct_agreement * 100).round(1),
+                           "Cohen's kappa": agree.cohens_kappa.round(2)})
+agree_read["Screeners"] = "Two independent AI-assisted runs; a team member settled disagreements"
+
+qual_read = qual.rename(columns={"evidence_tier": "Tier", "evidence_type": "Evidence type",
+                                 "quality_score": "Quality (0-5)", "quality_note": "Quality note"})
+qsum_read = qsum.rename(columns={"evidence_tier": "Tier", "evidence_type": "Evidence type", "count": "Studies",
+                                 "mean": "Mean quality", "median": "Median", "min": "Lowest", "max": "Highest"})
+qsum_read["Mean quality"] = qsum_read["Mean quality"].round(1)
+
+excl_read = excl.copy()
+excl_read.insert(excl_read.columns.get_loc("exclusion_code") + 1, "Reason category",
+                 excl_read.exclusion_code.map(CODE).fillna(""))
+excl_read = excl_read.rename(columns={"authors": "Authors", "year": "Year", "title": "Title", "stage": "Stage",
+                                      "exclusion_code": "Code", "reason": "Screener note", "resolution": "How decided"})
+
 with pd.ExcelWriter(XLSX, engine="openpyxl") as xw:
     methods.to_excel(xw, "Read me and methods", index=False)
-    prisma.rename(columns={"stage": "PRISMA stage", "n": "Records"}).to_excel(xw, "PRISMA", index=False)
-    agree.round(3).to_excel(xw, "Screening agreement", index=False)
+    prisma_read.to_excel(xw, "PRISMA", index=False)
+    agree_read.to_excel(xw, "Screening agreement", index=False)
     cov.to_excel(xw, "Coverage by type", index=False)
-    inc.drop(columns=["ft_decision", "ft_exclusion_code"]).to_excel(xw, "Included studies", index=False)
-    qual.to_excel(xw, "Quality appraisal", index=False)
-    qsum.to_excel(xw, "Quality summary", index=False)
-    excl.to_excel(xw, "Excluded with reasons", index=False)
+    inc_read.to_excel(xw, "Included studies", index=False)
+    inc_detail.to_excel(xw, "Study details", index=False)
+    qual_read.to_excel(xw, "Quality appraisal", index=False)
+    qsum_read.to_excel(xw, "Quality summary", index=False)
+    excl_read.to_excel(xw, "Excluded with reasons", index=False)
 
 wb = load_workbook(XLSX)
 head = PatternFill("solid", fgColor="1C5CAB")
@@ -152,6 +244,13 @@ for ws in wb.worksheets:
     for col in ws.columns:
         longest = max(len(str(c.value or "")) for c in col)
         ws.column_dimensions[col[0].column_letter].width = min(max(longest + 2, 10), 60)
+    fixed = {"Included studies": [10, 24, 50, 11, 12, 30, 60, 10, 10], "PRISMA": [16, 70, 10],
+             "Screening agreement": [42, 34, 9, 12, 12, 40]}.get(ws.title)
+    if fixed:
+        for i, w in enumerate(fixed):
+            ws.column_dimensions[ws.cell(1, i + 1).column_letter].width = w
+    if ws.title == "Study details":
+        ws.freeze_panes = "C2"
 wb.save(XLSX)
 print("Wrote", XLSX, "-", len(inc), "included studies")
 print(cov[["Assessment type", "Core studies", "Supporting studies", "Of which computing-specific"]].to_string(index=False))
@@ -160,11 +259,12 @@ add_start_sheet(XLSX, "Literature Review Evidence",
     "The evidence base for the project: how studies were found and selected, and what each of the 143 included "
     "studies contributes.",
     ["Open 'PRISMA' to see how 586 screened records became 143 included studies.",
-     "Open 'Included studies' for one row per study: what it found, its quality score and the assessment types "
-     "it informs.",
+     "Open 'Included studies' for one row per study: what it offers for assessment redesign, its quality score "
+     "and the assessment types it informs. The full extraction for each study is in 'Study details'.",
      "Use 'Excluded with reasons' to check any study that was left out."],
     [("PRISMA", "Study selection counts at each stage"),
-     ("Included studies", "All 143 included studies with findings, quality and assessment types"),
+     ("Included studies", "All 143 included studies, one line each: what each offers, quality and types"),
+     ("Study details", "The full extraction for each study: findings with their location, sample, limitations"),
      ("Coverage by type", "How many studies support each assessment type"),
      ("Quality appraisal", "The quality score and note for each study"),
      ("Quality summary", "Average quality by tier and study type"),
