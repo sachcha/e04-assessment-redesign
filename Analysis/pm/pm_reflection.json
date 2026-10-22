@@ -73,7 +73,7 @@
   "Final presentation": 45,
   "Total": 510
  },
- "actual_effort_hours": "Not timesheeted. The team did not log hours, so actual hours by member cannot be reported. Planned hours by member (planned_hours_by_member.csv) are derived from the proposal Gantt owners, with shared tasks split equally between named owners and 'Lead / Team' tasks split 50% to the lead and 50% across the other four members. Effort changes are described qualitatively from Jira and project records.",
+ "actual_effort_hours": "Actual hours come from the timesheets the team kept during the project (actual_hours_timesheets.csv): 504.5 hours worked against 510 planned. Planned hours by member (planned_hours_by_member.csv) are derived from the proposal Gantt owners. Prajwal helped Anshul with the literature search; Sachin supported Jiajun on the dataset analysis and the D3 Recommendation Matrix.",
  "roles": [
   {
    "member": "Sachin Liyanage",
