@@ -1,0 +1,30 @@
+{
+ "_note": "Short reading versions of the D3 recommendations (22 Oct 2026), written from the full text in partA_*.json and partB_decision_guide.json. Citations stay with the full text.",
+ "partA": {
+  "Supervised assessment": {"problem": "Low realism; excludes AI", "redesign": "Secure a few key points in each degree with hands-on live checkoffs and tasks that ask students to correct AI-generated code"},
+  "Unsupervised formats": {"problem": "Easy to complete with AI; marks say little about unaided ability", "redesign": "Keep as the main task, mark critique and reasoning, and add a short individual check"},
+  "Oral assessments": {"problem": "Staff time; anxiety and language effects", "redesign": "Ten-minute structured vivas on the student's own work, sampled in large cohorts, with accessible alternatives"},
+  "Practical demonstrations": {"problem": "Staff time", "redesign": "Short live demos with a change made on request, on top of an AI-permitted project"},
+  "Staged submissions": {"problem": "Each stage can be AI-produced", "redesign": "Few real milestones, with design before AI-assisted coding and at least one individual explanation"},
+  "Process evidence": {"problem": "Student-kept logs can be faked", "redesign": "Capture records in a university workspace and have staff assess the quality of AI use"},
+  "Personalised tasks": {"problem": "Not a security measure", "redesign": "Use for realism, and pair with questions on the student's own work"},
+  "AI-use declarations": {"problem": "Self-report can be invented", "redesign": "Use for transparency only; capture AI use where it counts for marks"}
+ },
+ "partB": {
+  "LO1|Small (<50)": {"main": "Short supervised tests on core concepts; online quizzes for practice only", "check": "The test itself, plus brief live questions for every student", "ai": "No AI in tests; AI for feedback on practice quizzes"},
+  "LO1|Medium (50-200)": {"main": "Invigilated exam on core concepts; quizzes for practice only", "check": "The exam itself; an optional 10-minute viva for a 20% sample", "ai": "No AI in the exam"},
+  "LO1|Large (>200)": {"main": "Invigilated exam in existing venues, with quickly marked items", "check": "The exam itself; short orals only for risk-based cases", "ai": "No AI in the exam"},
+  "LO2|Small (<50)": {"main": "AI-permitted project in a repository with version history", "check": "Viva and live code demo with an on-the-spot change, for every student", "ai": "Allowed; prompts and responses submitted"},
+  "LO2|Medium (50-200)": {"main": "AI-permitted assignments in a repository, auto-tested", "check": "10-minute code walkthrough with a live change, for every student", "ai": "Allowed and recorded"},
+  "LO2|Large (>200)": {"main": "AI-permitted assignments, auto-tested, plus a supervised lab test", "check": "Lab test for all; walkthroughs for a 20% sample and flagged cases", "ai": "Allowed on assignments; no AI in the lab test"},
+  "LO3|Small (<50)": {"main": "Staged design project: design first, then AI-assisted build, then justification", "check": "Viva for every student at the final checkpoint", "ai": "Allowed once the design stage is complete"},
+  "LO3|Medium (50-200)": {"main": "Staged design project with two or three marked stages", "check": "10-minute viva at a key checkpoint, on the student's own design", "ai": "Allowed after an AI-free design stage"},
+  "LO3|Large (>200)": {"main": "Staged design project plus a supervised design question in the exam", "check": "Exam question for all; design vivas for a 20% sample and flagged cases", "ai": "Allowed on the project; no AI in the exam question"},
+  "LO4|Small (<50)": {"main": "Team project for a real client, with a shared repository and team prompt log", "check": "Viva on own contribution for every student, plus peer assessment", "ai": "Allowed; the team log records how AI output was used"},
+  "LO4|Medium (50-200)": {"main": "Group project with a shared repository and a team record of AI use", "check": "10-minute viva on own code with a live change, for every student", "ai": "Allowed and recorded"},
+  "LO4|Large (>200)": {"main": "Capstone team project, treated as a secured point in the degree", "check": "Short individual viva or tutor conversation for every student", "ai": "Allowed and recorded"},
+  "LO5|Small (<50)": {"main": "AI-integrated task in the University workspace; marks mainly for the quality of AI use", "check": "Live check from the record for every student (fallback: supervised AI-correction tasks)", "ai": "AI integrated and assessed"},
+  "LO5|Medium (50-200)": {"main": "AI-integrated task in the University workspace; marks mainly for the quality of AI use", "check": "Live check from the record, or supervised tasks correcting AI code", "ai": "Integrated and assessed; no AI in the exam correction tasks"},
+  "LO5|Large (>200)": {"main": "AI-integrated task in the University workspace; marks mainly for the quality of AI use", "check": "Supervised AI-correction tasks for all; live checks for a sample and flagged cases", "ai": "Integrated and assessed; no AI in the exam tasks"}
+ }
+}

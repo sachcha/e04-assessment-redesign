@@ -30,16 +30,29 @@ LOS = ["LO1 Foundational knowledge", "LO2 Programming and implementation skill",
 COHORTS = ["Small (<50)", "Medium (50-200)", "Large (>200)"]
 bl = lambda xs: "\n".join(f"- {x}" for x in xs)
 
+
+def stat_word(s):
+    """Plain evidence-status label for the reading columns."""
+    for k, v in (("Implemented in computing", "Implemented in computing"),
+                 ("Implemented in another", "Implemented in another discipline"),
+                 ("Partly", "Partly implemented"), ("Proposal", "Proposal (pilot first)")):
+        if s.startswith(k):
+            return v
+    return s
+
 A = {json.load(open(f, encoding="utf-8"))["assessment_type"]: json.load(open(f, encoding="utf-8"))
      for f in D.glob("out/partA_*.json")}
 B = json.load(open(D / "out/partB_decision_guide.json", encoding="utf-8"))
 C = json.load(open(D / "out/partC_monitoring_framework.json", encoding="utf-8"))
+SUM = json.load(open(D / "out/summaries.json", encoding="utf-8"))
 
 part_a = pd.DataFrame([{
-    "Assessment Type": t, "Identified Problem": A[t]["identified_problem"],
-    "Recommended Redesign": bl(A[t]["recommended_redesign"]), "Justification": A[t]["justification"],
+    "Assessment Type": t, "In short: problem": SUM["partA"][t]["problem"],
+    "In short: recommended redesign": SUM["partA"][t]["redesign"], "Evidence status": stat_word(A[t]["evidence_status"]),
+    "Identified Problem (full)": A[t]["identified_problem"],
+    "Recommended Redesign (full)": bl(A[t]["recommended_redesign"]), "Justification": A[t]["justification"],
     "Implementation Considerations": bl(A[t]["implementation_considerations"]),
-    "Evidence status": A[t]["evidence_status"], "Evidence status basis": A[t]["evidence_status_basis"],
+    "Evidence status (full)": A[t]["evidence_status"], "Evidence status basis": A[t]["evidence_status_basis"],
     "Risks and limits": A[t]["risks_and_limits"],
     "Team strategy (Project Context s.11)": A[t].get("related_team_strategy", "")} for t in ORDER])
 
@@ -66,10 +79,7 @@ def stat(s):
     return next((v for k, v in STAT.items() if s.startswith(k)), s)
 
 
-grid = pd.DataFrame([{"Learning outcome": lo, **{co: (
-    f"MAIN: {short(cells[(lo, co)]['main_assessment'])}\nVERIFY: {short(cells[(lo, co)]['verification_layer'])}\n"
-    f"AI: {short(cells[(lo, co)]['ai_use_level'], 90)}\n[{stat(cells[(lo, co)]['evidence_status'])}] "
-    + ", ".join(f"[{k}]" for k in cells[(lo, co)]["key_studies"][:4])) for co in COHORTS}} for lo in LOS])
+grid = pd.DataFrame([{"Learning outcome": lo, **{co: "" for co in COHORTS}} for lo in LOS])
 
 comp = pd.DataFrame([{"Component": x["component"], "Description": x["description"],
                       "What it can evidence": x["what_it_can_evidence"], "What it cannot": x["what_it_cannot"],
@@ -163,8 +173,8 @@ head = PatternFill("solid", fgColor="1C5CAB")
 thin = Side(style="thin", color="D0D0D0")
 FILL = {"[IMPLEMENTED (computing)]": "C6E7C2", "[IMPLEMENTED (other field)]": "DDEFD9",
         "[PARTLY IMPLEMENTED]": "FCE9B2", "[PROPOSAL]": "E8E8E8"}
-widths = {"Read me": [22, 120], "Recommendation Matrix": [22, 50, 60, 55, 55, 26, 45, 40, 14],
-          "Decision Guide": [26, 48, 48, 48], "Decision Guide Detail": [26, 14, 45, 45, 30, 50, 40, 26, 22],
+widths = {"Read me": [22, 120], "Recommendation Matrix": [22, 34, 48, 22, 50, 60, 55, 55, 26, 45, 40, 14],
+          "Decision Guide": [24, 44, 44, 44], "Decision Guide Detail": [26, 14, 45, 45, 30, 50, 40, 26, 22],
           "Monitoring Framework": [30, 60, 45, 45, 45, 26], "References": [9, 10, 9, 8, 110]}
 for ws in wb.worksheets:
     ws.freeze_panes = "B2"
@@ -187,24 +197,63 @@ for c in mf[len(c_meta) + 4]:
     if c.value is not None:
         c.font = Font(bold=True, color="FFFFFF"); c.fill = head
 dg = wb["Decision Guide"]
+from openpyxl.cell.rich_text import CellRichText, TextBlock
+from openpyxl.cell.text import InlineFont
+B_ = InlineFont(rFont="Calibri", sz=11, b=True, color="001F5F"); N_ = InlineFont(rFont="Calibri", sz=11)
+STATUS_FILL = {"Implemented in computing": "C6E7C2", "Implemented in another discipline": "E2F0D9",
+               "Partly implemented": "FCE9B2", "Proposal (pilot first)": "FFF2CC"}
+dg.cell(1, 1).value = "Learning outcome"
+for j, co in enumerate(COHORTS):
+    dg.cell(1, j + 2).value = co
 for i, lo in enumerate(LOS):
-    dg.row_dimensions[i + 2].height = 150
+    dg.row_dimensions[i + 2].height = 168
+    dg.cell(i + 2, 1).font = Font(bold=True)
+    dg.cell(i + 2, 1).alignment = Alignment(wrap_text=True, vertical="center")
     for j, co in enumerate(COHORTS):
-        cell = dg.cell(i + 2, j + 2); x = cells[(lo, co)]
-        cm = Comment(f"RATIONALE: {x['rationale']}\n\nTRADE-OFFS: {x['trade_offs']}\n\nSTATUS: {x['evidence_status']}"[:1800],
-                     "D3 evidence"); cm.width, cm.height = 480, 320
+        cell = dg.cell(i + 2, j + 2); x = cells[(lo, co)]; s = SUM["partB"][f"{lo[:3]}|{co}"]
+        status = stat_word(x["evidence_status"])
+        cell.value = CellRichText(TextBlock(B_, "Main task: "), TextBlock(N_, s["main"] + "\n\n"),
+                                  TextBlock(B_, "Individual check: "), TextBlock(N_, s["check"] + "\n\n"),
+                                  TextBlock(B_, "AI use: "), TextBlock(N_, s["ai"] + "\n\n"),
+                                  TextBlock(B_, "Evidence: "), TextBlock(N_, status))
+        cell.fill = PatternFill("solid", fgColor=STATUS_FILL.get(status, "FFFFFF"))
+        cell.alignment = Alignment(wrap_text=True, vertical="top")
+        cm = Comment(f"WHY: {x['rationale']}\n\nTRADE-OFFS: {x['trade_offs']}"[:1800], "D3 evidence")
+        cm.width, cm.height = 480, 320
         cell.comment = cm
         cell.hyperlink = Hyperlink(ref=cell.coordinate, location=f"'Decision Guide Detail'!A{i * 3 + j + 2}")
-dg.cell(len(LOS) + 3, 1, "How to read: MAIN = what students produce; VERIFY = how individual understanding is checked; "
-        "AI = permitted AI use. Hover for rationale and trade-offs; click for the full row.")
+r0 = len(LOS) + 3
+dg.cell(r0, 1, "How to read").font = Font(bold=True, color="001F5F")
+dg.cell(r0, 2, "Find the learning outcome (row) and class size (column). Each cell gives the main task, how each "
+               "student's own understanding is checked, and what AI use is allowed. Hover over a cell for the "
+               "reasoning; click it for the full row with the studies behind it.").alignment = Alignment(wrap_text=True, vertical="top")
+dg.merge_cells(start_row=r0, start_column=2, end_row=r0, end_column=4)
+dg.row_dimensions[r0].height = 32
+dg.cell(r0 + 1, 1, "Cell colour").font = Font(bold=True, color="001F5F")
+for j, (lab, col) in enumerate(list(STATUS_FILL.items())[:2] + [list(STATUS_FILL.items())[3]]):
+    c = dg.cell(r0 + 1, j + 2, lab); c.fill = PatternFill("solid", fgColor=col)
+    c.alignment = Alignment(horizontal="center")
+dg.freeze_panes = "B2"
+
+ra = wb["Recommendation Matrix"]
+for r in range(2, ra.max_row + 1):
+    ra.row_dimensions[r].height = 50
+    ra.cell(r, 1).font = Font(bold=True)
+    st_ = ra.cell(r, 4).value or ""
+    ra.cell(r, 4).fill = PatternFill("solid", fgColor=STATUS_FILL.get(st_, "FFFFFF"))
+    for c in (2, 3, 4):
+        ra.cell(r, c).alignment = Alignment(wrap_text=True, vertical="top")
+for c in range(1, 5):
+    ra.cell(1, c).fill = PatternFill("solid", fgColor="001F5F")
+ra.freeze_panes = "B2"
 wb.save(XLSX)
 print("Wrote", XLSX, "|", len(cited), "studies cited")
 
 add_start_sheet(XLSX, "D3 Recommendation Matrix and Decision Guide",
     "Turns the D2 ratings into practical redesigns: one per assessment type, combinations by learning outcome "
     "and class size, and an AI-use monitoring framework.",
-    ["Open 'Recommendation Matrix'. Each row is an assessment type: the problem found in D2, the recommended "
-     "redesign, why, and what it takes to implement.",
+    ["Open 'Recommendation Matrix'. The first three columns give each assessment type's problem, the recommended "
+     "redesign and its evidence status in one line each; the columns after them give the full detail.",
      "Open 'Decision Guide' and find your learning outcome (row) and class size (column). Hover over a cell, or "
      "see 'Decision Guide Detail', for the reasoning and trade-offs.",
      "Check the evidence status: 'Proposal' means it should be piloted first."],

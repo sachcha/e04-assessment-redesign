@@ -9,7 +9,7 @@ BLUE = "1C5CAB"
 
 def add_start_sheet(path, title, what, how, sheets):
     """what: one sentence on the workbook; how: list of short reading steps; sheets: [(sheet name, what it shows)]."""
-    wb = load_workbook(path)
+    wb = load_workbook(path, rich_text=True)  # keep bold labels inside cells
     if "Start here" in wb.sheetnames:
         del wb["Start here"]
     ws = wb.create_sheet("Start here", 0)
