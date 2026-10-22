@@ -11,6 +11,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from start_sheet import add_start_sheet
 
+import json
 import re
 
 import pandas as pd
@@ -664,6 +665,15 @@ methods = pd.DataFrame([
 with pd.ExcelWriter(XLSX, engine="openpyxl") as xw:
     methods.to_excel(xw, "Read me and methods", index=False)
     fdf.insert(0, "Finding ID", [f"D{i:02d}" for i in range(1, len(fdf) + 1)])
+    HEAD = json.load(open(ROOT / "Analysis" / "scripts" / "findings_summaries.json", encoding="utf-8"))["headline"]
+    fdf.insert(3, "In short", fdf["Finding ID"].map(HEAD))
+    fdf = fdf.rename(columns={
+        "Finding (Level 1: what our analysis of the data shows)": "Finding in full (what the data show)",
+        "Possible implication (Level 2: our interpretation, not a finding)": "What it might mean (our interpretation)",
+        "Related assessment types (D2)": "Assessment types it informs"})
+    first = ["Finding ID", "Dataset", "Topic", "In short", "Assessment types it informs",
+             "Finding in full (what the data show)", "What it might mean (our interpretation)", "Limitations"]
+    fdf = fdf[first + [c for c in fdf.columns if c not in first]]
     fdf.to_excel(xw, "Dataset Findings", index=False)
     jlines = [l for l in (ROOT / "Analysis" / "D2_framework" / "dataset_evidence.md").read_text(encoding="utf-8").splitlines()
               if re.match(r"- \[J\d\]", l)]
@@ -694,19 +704,90 @@ with pd.ExcelWriter(XLSX, engine="openpyxl") as xw:
 wb = load_workbook(XLSX)
 head_fill = PatternFill("solid", fgColor="1C5CAB")
 thin = Side(style="thin", color="D0D0D0")
+LABEL = {
+    "model": "Model", "qtype": "Question type", "n_questions": "Questions", "program": "Programme", "level": "Level",
+    "mean_grade_avg_prompts": "Mean grade over 8 prompts", "mean_grade_ci_low": "95% CI low", "mean_grade_ci_high": "95% CI high",
+    "pct_correct_zero_shot": "Fully correct, one attempt (%)", "pct_mostly_correct_zero_shot": "Mostly correct, one attempt (%)",
+    "pct_correct_majority_of_8": "Fully correct, majority of 8 prompts (%)", "pct_correct_best_of_8": "Fully correct, best of 8 prompts (%)",
+    "pct_mostly_correct_best_of_8": "Mostly correct, best of 8 prompts (%)", "pct_never_correct_any_prompt": "Never fully correct (%)",
+    "prompt_type": "Prompting strategy", "mean_grade": "Mean grade", "ci_low": "95% CI low", "ci_high": "95% CI high",
+    "course_id": "Course", "zero_shot_mean": "Mean grade, one attempt", "best_of_8_mean": "Mean grade, best of 8",
+    "question": "Question", "response": "Response", "n": "n", "pct": "Share (%)", "denominator": "Out of",
+    "purpose": "Purpose", "n_yes": "Yes (n)", "pct_all_students": "All students (%)", "n_yes_among_users": "Yes among AI users (n)",
+    "pct_of_users": "AI users (%)", "n_yes_among_non_users": "Yes among non-users (n)", "denominator_all": "All students (n)",
+    "denominator_users": "AI users (n)", "variable_1": "Variable 1", "variable_2": "Variable 2", "spearman_rho": "Spearman rho",
+    "p_raw": "p", "p_holm": "p (Holm-adjusted)", "category": "Category", "code": "Code", "n_statements": "Statements (n)",
+    "pct_of_statements": "Share of statements (%)", "concern": "Concern", "turns": "Prompts (n)", "turn_share": "Share of all prompts",
+    "student_mean_share": "Average share per student", "students_using_at_least_once": "Students using it at least once",
+    "n_students": "Students (n)", "semester": "Semester", "assign_mean": "Assignment mean", "assign_sd": "Assignment SD",
+    "assign_median": "Assignment median", "exam_mean": "Exam mean", "exam_sd": "Exam SD", "exam_median": "Exam median",
+    "gap_median": "Median gap (assignment minus exam)", "gap_ci_low": "Gap 95% CI low", "gap_ci_high": "Gap 95% CI high",
+    "pct_assign_above_exam": "Higher on assignments than exams", "pct_assign_ge_90": "Assignment average 90% or more",
+    "pct_exam_ge_90": "Exam average 90% or more", "wilcoxon_p": "p (Wilcoxon)", "spearman_assign_exam": "Spearman rho, assignment vs exam",
+    "spearman_p": "p (Spearman)", "item": "Item", "ai_permitted": "AI permitted", "mean": "Mean", "sd": "SD", "median": "Median",
+    "pct_ge_90": "Scored 90% or more", "scope": "Scope", "measure": "Usage measure", "outcome": "Outcome", "p": "p",
+    "p_holm_within_scope": "p (Holm-adjusted)", "term": "Term", "std_beta": "Standardised beta", "se": "Standard error",
+    "t": "t", "r2": "R squared", "production_tertile": "Write-or-edit tertile", "share_production_min": "Write-or-edit share, lowest",
+    "share_production_max": "Write-or-edit share, highest", "gap_mean": "Mean gap (assignment minus exam)",
+    "turns_median": "Median prompts", "kruskal_exam_p": "p, exam (Kruskal-Wallis)", "kruskal_gap_p": "p, gap (Kruskal-Wallis)",
+    "assignment": "Assignment", "n_used": "Used chatbot (n)", "n_not_used": "Did not use (n)", "mean_used": "Mean mark, used",
+    "mean_not_used": "Mean mark, did not use", "mannwhitney_p": "p (Mann-Whitney)"}
+SUPPORTS = {"EPFL overall": "All questions (background to D02-D03)", "EPFL CS": "D02, D03", "EPFL by program": "Background to D09",
+            "EPFL prompts": "D07", "EPFL courses": "D08", "Mircea closed Qs": "D12", "Mircea purposes": "D13",
+            "Mircea modes": "D15", "Mircea correlations": "D16, D17", "Mircea coded advice": "D19", "Mircea clients": "D20",
+            "StudyChat dialogue acts": "D22", "StudyChat assign vs exam": "D24, D25", "StudyChat per item": "D24, D25",
+            "StudyChat correlations": "D26", "StudyChat regression": "D26", "StudyChat tertiles": "D26",
+            "StudyChat use vs score": "D27"}
+
+
+def fmt_for(sheet, col):
+    """Display format only; stored values are unchanged. StudyChat stores 0-1 proportions, EPFL grades are 0-1."""
+    if col in ("p", "p_raw", "p_holm", "p_holm_within_scope", "wilcoxon_p", "spearman_p", "mannwhitney_p",
+               "kruskal_exam_p", "kruskal_gap_p"):
+        return '[<0.001]"<0.001";0.000'
+    if col in ("spearman_rho", "spearman_assign_exam", "std_beta", "se", "t", "r2"):
+        return "0.00"
+    if col.startswith("pct") and not sheet.startswith("StudyChat"):
+        return "0.0"                                   # already in percent units
+    if sheet.startswith("StudyChat") and col not in ("n", "turns", "n_students", "students_using_at_least_once",
+                                                       "n_used", "n_not_used", "turns_median", "semester", "item",
+                                                       "assignment", "scope", "measure", "outcome", "term",
+                                                       "production_tertile", "ai_permitted", "category"):
+        return "0.0%"
+    if "grade" in col or col.endswith("_mean") or col in ("ci_low", "ci_high"):
+        return "0.0%"
+    return None
+
+
 widths = {"Read me and methods": [24, 120],
-          "Dataset Findings": [10, 11, 22, 60, 34, 24, 36, 34, 28, 52, 44, 30, 40],
+          "Dataset Findings": [10, 11, 24, 46, 30, 60, 52, 44, 34, 24, 36, 28, 30, 40],
           "J findings": [10, 140]}
+for name, sup in SUPPORTS.items():
+    ws = wb[name]
+    raw = [c.value for c in ws[1]]
+    for j, col in enumerate(raw, 1):
+        f = fmt_for(name, str(col))
+        if f:
+            for r in range(2, ws.max_row + 1):
+                ws.cell(r, j).number_format = f
+        ws.cell(1, j).value = LABEL.get(col, col)
+        ws.column_dimensions[ws.cell(1, j).column_letter].width = max(12, min(34, len(str(LABEL.get(col, col))) + 2))
+    ws.insert_rows(1)
+    ws.cell(1, 1, f"Supports finding(s): {sup}. Percentages and grades are shown as percentages; values are unchanged from the analysis output.")
+    ws.cell(1, 1).font = Font(italic=True, color="001F5F")
 for ws in wb.worksheets:
-    ws.freeze_panes = "A2"
-    for c in ws[1]:
+    hr = 2 if ws.title in SUPPORTS else 1     # statistics sheets carry a one-line note above the header
+    ws.freeze_panes = f"A{hr + 1}"
+    for c in ws[hr]:
         c.font = Font(bold=True, color="FFFFFF")
         c.fill = head_fill
         c.alignment = Alignment(wrap_text=True, vertical="center")
-    for row in ws.iter_rows(min_row=2):
+    for row in ws.iter_rows(min_row=hr + 1):
         for c in row:
             c.alignment = Alignment(wrap_text=True, vertical="top")
             c.border = Border(top=thin, bottom=thin, left=thin, right=thin)
+    if ws.title in SUPPORTS:
+        continue                               # widths already set from the plain headers
     w = widths.get(ws.title)
     for i, col in enumerate(ws.columns):
         letter = col[0].column_letter
@@ -718,9 +799,10 @@ print("Wrote", XLSX, "with", len(fdf), "findings")
 add_start_sheet(XLSX, "Dataset Findings: EPFL, Hannover capstone and StudyChat",
     "Our analysis of three public datasets: what current AI can do on real university questions, how students "
     "use AI, and how marks respond.",
-    ["Open 'Dataset Findings'. Each row is one finding (D01-D28) with its sample, method, the assessment types it "
-     "informs, our interpretation and its limitations.",
-     "The remaining sheets hold the statistics behind each finding, named by dataset."],
+    ["Open 'Dataset Findings'. Each row is one finding (D01-D28); the 'In short' column gives it in one line, and "
+     "the next columns give the full finding, what it might mean and its limitations.",
+     "The remaining sheets hold the statistics behind the findings. Each starts with a note saying which "
+     "findings it supports."],
     [("Dataset Findings", "All 28 findings, with interpretation kept separate from the finding"),
      ("J findings", "The team's separate analyses (J1-J6) cited in D2"),
      ("Read me and methods", "Data files, definitions, statistical methods and licences")])

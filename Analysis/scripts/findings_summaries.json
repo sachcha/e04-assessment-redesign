@@ -1,0 +1,33 @@
+{
+ "_note": "One-line headlines for the 28 dataset findings (22 Oct 2026), written from the full finding text. Full figures, methods and limitations stay in the other columns.",
+ "headline": {
+  "D01": "All 5,175 EPFL questions from 54 courses are graded and usable",
+  "D02": "In one attempt, GPT-4 fully answered almost half (46.7%) of computer science questions",
+  "D03": "With the best of 8 prompts, GPT-4 fully answered 85.6% of computer science questions",
+  "D04": "On multiple-choice questions GPT-4 scored about twice what guessing would (52.2% vs 26.5%)",
+  "D05": "GPT-4 did about as well on open-answer questions as on multiple choice",
+  "D06": "GPT-4 clearly outperformed GPT-3.5, so newer models are likely stronger still",
+  "D07": "How the question is prompted changed GPT-4's multiple-choice grade by up to 15 points",
+  "D08": "GPT-4 passed the 0.5 mark in 13 of 17 computer science courses on its first attempt",
+  "D09": "Master's-level questions were no harder for GPT-4 than Bachelor's-level ones",
+  "D10": "GPT-4 performed similarly on English and French questions",
+  "D11": "Questions containing code and longer multiple-choice questions were somewhat harder for GPT-4",
+  "D12": "Almost all capstone students (92.7%) used generative AI in their project",
+  "D13": "Students mostly used AI for code and learning, rarely for design or requirements",
+  "D14": "Students used general chatbots far more than the university-hosted tool (74.7% vs 5.3%)",
+  "D15": "Students used AI both to propose solutions and to review their own, about equally",
+  "D16": "Heavier AI use went with letting AI propose solutions first",
+  "D17": "Self-rated programming skill did not clearly change how much students used AI",
+  "D18": "Most students (64.0%) found AI use in the project useful; 12.7% found it harmful",
+  "D19": "Students' most common advice to peers was to keep their own understanding",
+  "D20": "Clients worried most about students' independent understanding, yet most wanted AI use encouraged",
+  "D21": "StudyChat covers 16,851 prompts from 203 students; 175 have both chats and grades",
+  "D22": "Students mostly asked the AI to explain (47.1%) rather than to write or edit (31.2%)",
+  "D23": "Chats opened about equally with a writing request or a conceptual question",
+  "D24": "90.6% of students scored higher on AI-permitted assignments than on supervised exams",
+  "D25": "Assignment marks bunched near full marks, so they barely separated students",
+  "D26": "How students used the chatbot did not predict their marks or the assignment-exam gap",
+  "D27": "Using the chatbot on an assignment made no clear difference to its mark",
+  "D28": "Requests for code varied by assignment, while requests for explanation stayed steady"
+ }
+}
