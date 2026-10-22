@@ -7,6 +7,9 @@ epfl_analysis.py, mircea_analysis.py and studychat_analysis.py. Run those three 
 Every number in the Findings sheet is read from an output CSV, not typed by hand.
 """
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from start_sheet import add_start_sheet
 
 import re
 
@@ -711,3 +714,13 @@ for ws in wb.worksheets:
             max(len(str(c.value or "")) for c in col) + 2, 45)
 wb.save(XLSX)
 print("Wrote", XLSX, "with", len(fdf), "findings")
+
+add_start_sheet(XLSX, "Dataset Findings: EPFL, Hannover capstone and StudyChat",
+    "Our analysis of three public datasets: what current AI can do on real university questions, how students "
+    "use AI, and how marks respond.",
+    ["Open 'Dataset Findings'. Each row is one finding (D01-D28) with its sample, method, the assessment types it "
+     "informs, our interpretation and its limitations.",
+     "The remaining sheets hold the statistics behind each finding, named by dataset."],
+    [("Dataset Findings", "All 28 findings, with interpretation kept separate from the finding"),
+     ("J findings", "The team's separate analyses (J1-J6) cited in D2"),
+     ("Read me and methods", "Data files, definitions, statistical methods and licences")])

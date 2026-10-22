@@ -9,6 +9,9 @@ Citations are Record IDs here; they are converted to IEEE numbers (first-citatio
 import json
 import re
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+from start_sheet import add_start_sheet
 
 import pandas as pd
 from openpyxl import load_workbook
@@ -193,3 +196,20 @@ ws.cell(len(ORDER) + 3, 1, "How to read: each cell shows rating (confidence) and
 wb.save(XLSX)
 print("Wrote", XLSX)
 print(grid.to_string(index=False))
+
+add_start_sheet(XLSX, "D2 Assessment Strategy Evaluation Framework",
+    "Rates eight assessment types on 11 criteria for computing courses where students can use generative AI. "
+    "Every rating is linked to the studies and data behind it.",
+    ["Open 'Rating Grid'. Each row is an assessment type and each column a criterion. Green = Strong, amber = "
+     "Moderate, red = Weak; the letter in brackets is the confidence (H, M or L).",
+     "Click any rating in 'Rating Grid' to jump to its evidence in 'Cell Evidence', which gives the studies, the "
+     "dataset findings and our interpretation.",
+     "Use 'Evaluation Matrix' for a one-row summary of each type: main finding, strengths, limitations and "
+     "practical points."],
+    [("Rating Grid", "All 88 ratings with confidence; click a rating to see its evidence"),
+     ("Cell Evidence", "The evidence for each rating: literature [L], dataset findings [D], interpretation [I]"),
+     ("Evaluation Matrix", "One row per assessment type: finding, strengths, limitations, practical considerations"),
+     ("Rating anchors", "What Strong, Moderate and Weak mean for each of the 11 criteria"),
+     ("Dataset codes", "The dataset findings (D01-D28) and team analyses (J1-J6) cited in the ratings"),
+     ("References", "Every cited study, with its quality score"),
+     ("Read me", "Method details: dimensions, confidence rule, calibration and type definitions")])

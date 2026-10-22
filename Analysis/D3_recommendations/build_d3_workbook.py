@@ -10,6 +10,9 @@ Citations are Record IDs; they become IEEE numbers in the final report.
 import json
 import re
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+from start_sheet import add_start_sheet
 
 import pandas as pd
 from openpyxl import load_workbook
@@ -196,3 +199,18 @@ dg.cell(len(LOS) + 3, 1, "How to read: MAIN = what students produce; VERIFY = ho
         "AI = permitted AI use. Hover for rationale and trade-offs; click for the full row.")
 wb.save(XLSX)
 print("Wrote", XLSX, "|", len(cited), "studies cited")
+
+add_start_sheet(XLSX, "D3 Recommendation Matrix and Decision Guide",
+    "Turns the D2 ratings into practical redesigns: one per assessment type, combinations by learning outcome "
+    "and class size, and an AI-use monitoring framework.",
+    ["Open 'Recommendation Matrix'. Each row is an assessment type: the problem found in D2, the recommended "
+     "redesign, why, and what it takes to implement.",
+     "Open 'Decision Guide' and find your learning outcome (row) and class size (column). Hover over a cell, or "
+     "see 'Decision Guide Detail', for the reasoning and trade-offs.",
+     "Check the evidence status: 'Proposal' means it should be piloted first."],
+    [("Recommendation Matrix", "One redesign per assessment type, with justification and implementation notes"),
+     ("Decision Guide", "Recommended combination for each learning outcome and class size"),
+     ("Decision Guide Detail", "The reasoning, trade-offs and key studies behind each Decision Guide cell"),
+     ("Monitoring Framework", "The proposed AI-use evidence system, its layers and legal requirements"),
+     ("References", "Every cited study and legal source"),
+     ("Read me", "Definitions, evidence status labels, staff-time assumptions and principles")])

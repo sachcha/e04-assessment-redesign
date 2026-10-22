@@ -6,6 +6,9 @@ Build Analysis/Literature_Review_Evidence.xlsx from the screening and extraction
 Run merge_extraction.py first. Every number is read from the CSV outputs.
 """
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+from start_sheet import add_start_sheet
 
 import pandas as pd
 from openpyxl import load_workbook
@@ -152,3 +155,19 @@ for ws in wb.worksheets:
 wb.save(XLSX)
 print("Wrote", XLSX, "-", len(inc), "included studies")
 print(cov[["Assessment type", "Core studies", "Supporting studies", "Of which computing-specific"]].to_string(index=False))
+
+add_start_sheet(XLSX, "Literature Review Evidence",
+    "The evidence base for the project: how studies were found and selected, and what each of the 143 included "
+    "studies contributes.",
+    ["Open 'PRISMA' to see how 586 screened records became 143 included studies.",
+     "Open 'Included studies' for one row per study: what it found, its quality score and the assessment types "
+     "it informs.",
+     "Use 'Excluded with reasons' to check any study that was left out."],
+    [("PRISMA", "Study selection counts at each stage"),
+     ("Included studies", "All 143 included studies with findings, quality and assessment types"),
+     ("Coverage by type", "How many studies support each assessment type"),
+     ("Quality appraisal", "The quality score and note for each study"),
+     ("Quality summary", "Average quality by tier and study type"),
+     ("Screening agreement", "Agreement between the two screening runs (kappa)"),
+     ("Excluded with reasons", "Every excluded record and the reason"),
+     ("Read me and methods", "Eligibility criteria, screening and extraction method")])
