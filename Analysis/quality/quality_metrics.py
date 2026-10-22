@@ -22,36 +22,37 @@ def add(n, metric, standard, value, threshold, verdict, basis):
                 "Benchmark": threshold, "Verdict": verdict, "Computed from": basis})
 
 
-# 1 PRISMA 2020 checklist (status assessed against what the project records and the report will contain)
+# 1 PRISMA 2020 checklist: status against the final report and the supplementary documents (22 Oct 2026)
+LR = "Literature Review Evidence"
 prisma = pd.DataFrame([
-    (1, "Title", "Report", "To report: identify the report as a systematic review"),
-    (2, "Abstract (structured)", "Report", "To report: executive summary follows PRISMA abstract items"),
-    (3, "Rationale", "Met", "Proposal s.1; Project Context s.2"),
-    (4, "Objectives / questions", "Met", "RQ1-RQ5 (proposal)"),
-    (5, "Eligibility criteria", "Met", "IC1-IC5, E1-E7; Amendment 3 (redesign focus), dated"),
-    (6, "Information sources", "Met", "Team evidence log + OpenAlex update search, dates recorded"),
-    (7, "Search strategy", "Partial", "Update search strings fully recorded; original team searches not recorded"),
-    (8, "Selection process", "Met", "Two independent AI-assisted screeners (separate model runs, B blinded to A) with a human adjudicator for every disagreement; AI assistance disclosed"),
-    (9, "Data collection process", "Met", "Written extraction protocol; full or light extraction stated"),
-    (10, "Data items", "Met", "Protocol key list (design, sample, findings with locations, dimensions)"),
-    (11, "Study risk-of-bias assessment", "Met", "5-item checklist adapted from MMAT 2018 / CASP"),
-    (12, "Effect measures", "Not applicable", "Narrative / qualitative synthesis; no pooled effect sizes"),
-    (13, "Synthesis methods", "Met", "Structured framework synthesis, D2 protocol and calibration rules C1-C4"),
-    (14, "Reporting-bias assessment", "Partial", "Venue credibility check and sensitivity analysis; no formal publication-bias test"),
-    (15, "Certainty assessment", "Met", "Simplified GRADE-CERQual (High / Medium / Low per finding)"),
-    (16, "Study selection (flow diagram)", "Met", "prisma_counts_combined.csv; diagram to draw in report"),
-    (17, "Study characteristics", "Met", "Included studies sheet (design, setting, sample, discipline)"),
-    (18, "Risk of bias in studies", "Met", "Quality score per study"),
-    (19, "Results of individual studies", "Met", "Key findings with source locations"),
-    (20, "Results of syntheses", "Met", "D2 cells with [L]/[D]/[I] evidence"),
-    (21, "Reporting biases", "Partial", "Low-confidence venues flagged; sensitivity check shows no cell depends on them"),
-    (22, "Certainty of evidence", "Met", "Confidence per D2 cell; evidence status per D3 recommendation"),
-    (23, "Discussion and limitations", "Report", "To report: limits listed in D2/D3 and summary"),
-    (24, "Registration and protocol", "Partial", "Protocols written and dated; review not registered (e.g. PROSPERO/OSF)"),
-    (25, "Support / funding", "Report", "To report"),
-    (26, "Competing interests", "Report", "To report"),
-    (27, "Availability of data, code, materials", "Met", "All scripts and outputs in Analysis/ with READMEs"),
-], columns=["Item", "PRISMA 2020 item", "Status", "Where / note"])
+    (1, "Title", "Met", "Report cover: 'Final Project Report: a structured systematic review and evaluation framework'"),
+    (2, "Abstract (structured)", "Partial", "Executive Summary gives aim, methods, results and conclusions, but not every PRISMA abstract item"),
+    (3, "Rationale", "Met", "Report Section 1 (the business problem and the opportunity)"),
+    (4, "Objectives / questions", "Met", "Report Section 1.2 (research questions RQ1 to RQ5)"),
+    (5, "Eligibility criteria", "Met", f"Report Section 3.2; {LR}, sheet 'Read me and methods' (criteria IC1 to IC5, exclusion codes E1 to E7, dated redesign amendment)"),
+    (6, "Information sources", "Met", "Report Section 3.2 and Figure 1: team evidence log and an OpenAlex update search on 17 October 2026"),
+    (7, "Search strategy", "Partial", "Update-search strings recorded in full in the code repository (screening/search/search_log.csv); the original team searches were not recorded (Report Section 3.2)"),
+    (8, "Selection process", "Met", "Report Section 3.2: two independent AI-assisted screening runs, the second blinded to the first, with a team member settling every disagreement; AI use disclosed in Section 3.6"),
+    (9, "Data collection process", "Met", "Report Section 3.2: written extraction protocol recording each finding with its location in the source (protocol in the code repository)"),
+    (10, "Data items", "Met", f"{LR}, sheet 'Study details' (design, sample, findings with locations, notes on each criterion)"),
+    (11, "Study risk-of-bias assessment", "Met", f"Report Section 3.2: five-item checklist adapted from MMAT 2018; {LR}, sheet 'Quality appraisal'"),
+    (12, "Effect measures", "Not applicable", "Framework synthesis of mixed evidence; no pooled effect sizes (Report Section 3.5)"),
+    (13, "Synthesis methods", "Met", "Report Section 3.4: framework synthesis with written calibration rules; D2 Evaluation Framework, sheet 'Read me'"),
+    (14, "Reporting-bias assessment", "Partial", "Venue credibility check and sensitivity analysis (Report Section 6); no formal publication-bias test"),
+    (15, "Certainty assessment", "Met", "Report Section 3.4: CERQual-informed confidence rule (High, Medium or Low for every rating)"),
+    (16, "Study selection (flow diagram)", "Met", f"Report Figure 1 (PRISMA flow diagram); {LR}, sheet 'PRISMA'"),
+    (17, "Study characteristics", "Met", f"{LR}, sheets 'Included studies' and 'Study details'; Report Section 4.1"),
+    (18, "Risk of bias in studies", "Met", f"Quality score for every study ({LR}, sheet 'Quality appraisal'); summary in Report Section 4.1"),
+    (19, "Results of individual studies", "Met", f"{LR}, sheet 'Study details' (findings with their location in each source)"),
+    (20, "Results of syntheses", "Met", "Report Section 4.3; D2 Evaluation Framework, sheets 'Rating Grid' and 'Cell Evidence'"),
+    (21, "Reporting biases", "Partial", "Low-confidence venues flagged; sensitivity checks without them and without the two most-cited studies change no rating (Report Section 6)"),
+    (22, "Certainty of evidence", "Met", "Report Section 4.3 (confidence for every D2 rating) and Section 5 (evidence status for every D3 recommendation)"),
+    (23, "Discussion and limitations", "Met", "Report Section 6 (limits of the evidence) and Section 9 (conclusion)"),
+    (24, "Registration and protocol", "Partial", "Protocols written and dated in the code repository; the review was not registered (for example on PROSPERO or OSF)"),
+    (25, "Support / funding", "Met", "Report Section 8.2: no external funding; tool costs from the project budget"),
+    (26, "Competing interests", "Met", "Report Section 8.2: the team declares no competing interests"),
+    (27, "Availability of data, code, materials", "Met", "Report Appendix A: code repository and supplementary documents (links)"),
+], columns=["Item", "PRISMA 2020 item", "Status", "Where it is reported"])
 prisma.to_csv(A / "quality" / "prisma_checklist.csv", index=False)
 # formatted copy for readers (review guide P3-12)
 from openpyxl.styles import Alignment, Font, PatternFill, Side, Border
@@ -79,8 +80,8 @@ sc = prisma.Status.value_counts()
 applic = len(prisma) - sc.get("Not applicable", 0)
 done = sc.get("Met", 0)
 add(1, "Reporting completeness", "PRISMA 2020 checklist (27 items)",
-    f"{done} of {applic} applicable items met in the evidence base; {sc.get('Partial', 0)} partial; "
-    f"{sc.get('Report', 0)} to be completed in the report text",
+    f"{done} of {applic} applicable items met; {sc.get('Partial', 0)} partly met "
+    f"(structured abstract, search strings, two reporting-bias items, registration)",
     "All applicable items met or explained", "Met, with stated partials",
     "quality/prisma_checklist.csv")
 
