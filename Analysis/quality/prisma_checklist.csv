@@ -6,7 +6,7 @@ Item,PRISMA 2020 item,Status,Where it is reported
 5,Eligibility criteria,Met,"Report Section 3.2; Literature Review Evidence, sheet 'Read me and methods' (criteria IC1 to IC5, exclusion codes E1 to E7, dated redesign amendment)"
 6,Information sources,Met,Report Section 3.2 and Figure 1: team evidence log and an OpenAlex update search on 17 October 2026
 7,Search strategy,Partial,Update-search strings recorded in full in the code repository (screening/search/search_log.csv); the original team searches were not recorded (Report Section 3.2)
-8,Selection process,Met,"Report Section 3.2: two independent AI-assisted screening runs, the second blinded to the first, with a team member settling every disagreement; AI use disclosed in Section 3.6"
+8,Selection process,Met,"Report Section 3.2: two independent, blinded screening runs using Anthropic Claude (Opus 5.5), with a team member settling every disagreement; AI use disclosed in Section 3.6"
 9,Data collection process,Met,Report Section 3.2: written extraction protocol recording each finding with its location in the source (protocol in the code repository)
 10,Data items,Met,"Literature Review Evidence, sheet 'Study details' (design, sample, findings with locations, notes on each criterion)"
 11,Study risk-of-bias assessment,Met,"Report Section 3.2: five-item checklist adapted from MMAT 2018; Literature Review Evidence, sheet 'Quality appraisal'"

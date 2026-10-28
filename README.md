@@ -60,7 +60,7 @@ The EPFL data are licensed CC BY-NC-ND 4.0, which does not permit sharing adapte
 
 ## Use of AI in this project
 
-AI tools assisted screening, extraction, a replication of the dataset analyses and drafting. Two independent AI-assisted screeners were used, with a team member adjudicating every disagreement. All protocols, decisions and changes are recorded in the folders above.
+AI tools assisted screening, extraction, a replication of the dataset analyses and drafting. Screening used two independent, blinded runs of Anthropic Claude (Opus 5.5) with identical instructions, and a team member reviewed every disagreement and made the final decision. All protocols, decisions and changes are recorded in the folders above.
 
 ## Licence
 

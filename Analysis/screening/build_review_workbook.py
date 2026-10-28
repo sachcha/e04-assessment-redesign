@@ -104,7 +104,7 @@ methods = pd.DataFrame([
     ("Eligibility", "IC1 higher education; IC2 assessment design, validity or integrity as a primary or "
                     "substantial focus; IC3 GenAI or AI in assessment; IC4 peer-reviewed or formal framework "
                     "paper; IC5 2022-2026, English. Exclusion codes E1-E7 as in the evidence log Guide."),
-    ("Title/abstract screening", "Two independent AI-assisted screeners (A and B), each a separate AI model run; "
+    ("Title/abstract screening", "Two independent, blinded screening runs (A and B) using Anthropic Claude (Opus 5.5), with identical instructions; "
                                  "B was blinded to A's decisions. A human team member adjudicated every "
                                  "disagreement. Kappa in sheet 'Screening agreement' therefore measures the "
                                  "consistency of the two runs, not agreement between two people."),
@@ -204,7 +204,7 @@ prisma_read.loc[in_total, "Stage"] = "  " + prisma_read.loc[in_total, "Stage"]
 agree_read = pd.DataFrame({"Comparison": agree.comparison, "Stage": agree.stage, "Records": agree.n,
                            "Agreement (%)": (agree.pct_agreement * 100).round(1),
                            "Cohen's kappa": agree.cohens_kappa.round(2)})
-agree_read["Screeners"] = "Two independent AI-assisted runs; a team member settled disagreements"
+agree_read["Screeners"] = "Two independent, blinded Claude (Opus 5.5) runs; a team member settled disagreements"
 
 qual_read = qual.rename(columns={"evidence_tier": "Tier", "evidence_type": "Evidence type",
                                  "quality_score": "Quality (0-5)", "quality_note": "Quality note"})
