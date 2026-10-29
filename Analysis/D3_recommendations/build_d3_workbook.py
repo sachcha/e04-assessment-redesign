@@ -128,7 +128,8 @@ readme = pd.DataFrame([
                "from D2 ratings."),
     ("Part B", "Decision Guide: 5 learning outcomes x 3 cohort sizes. Each cell combines a main assessment, a "
                "proportionate verification layer and an AI-use level."),
-    ("Part C", "AI-use monitoring framework for unsupervised assessment (approved scope change). A conceptual proposal, "
+    ("Part C", "AI-use monitoring framework for unsupervised assessment: the middle ground agreed in the approved scope change, "
+               "a system that identifies AI use from recorded evidence rather than a text detector. A conceptual proposal, "
                "not a deployed system and not an AI detector."),
     ("Learning outcomes", "LO1 Foundational knowledge (concepts, theory, algorithms). LO2 Programming and implementation "
                           "skill. LO3 Analysis, design and problem solving. LO4 Professional and collaborative practice "

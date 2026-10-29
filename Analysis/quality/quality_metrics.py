@@ -46,7 +46,7 @@ prisma = pd.DataFrame([
     (19, "Results of individual studies", "Met", f"{LR}, sheet 'Study details' (findings with their location in each source)"),
     (20, "Results of syntheses", "Met", "Report Section 4.3; D2 Evaluation Framework, sheets 'Rating Grid' and 'Cell Evidence'"),
     (21, "Reporting biases", "Partial", "Low-confidence venues flagged; sensitivity checks without them and without the two most-cited studies change no rating (Report Section 6)"),
-    (22, "Certainty of evidence", "Met", "Report Section 4.3 (confidence for every D2 rating) and Section 5 (evidence status for every D3 recommendation)"),
+    (22, "Certainty of evidence", "Met", "Report Section 4.3 (High-confidence ratings marked and confidence totals given; every rating's level in the D2 workbook) and Section 5 (evidence status for every D3 recommendation)"),
     (23, "Discussion and limitations", "Met", "Report Section 6 (limits of the evidence) and Section 9 (conclusion)"),
     (24, "Registration and protocol", "Partial", "Protocols written and dated in the code repository; the review was not registered (for example on PROSPERO or OSF)"),
     (25, "Support / funding", "Met", "Report Section 8.2: no external funding; tool costs from the project budget"),
@@ -115,7 +115,7 @@ cells = []
 for f in glob.glob(str(A / "D2_framework" / "cells" / "*.json")):
     cells += json.load(open(f, encoding="utf-8"))["cells"]
 conf = pd.Series([c["confidence"].split(" /")[0] for c in cells]).value_counts()
-add(4, "Confidence in findings", "Simplified GRADE-CERQual",
+add(4, "Confidence in findings", "CERQual-informed rule (adapted from GRADE-CERQual)",
     f"{len(cells)} D2 cells: High {conf.get('High', 0)}, Medium {conf.get('Medium', 0)}, Low {conf.get('Low', 0)}; "
     "all High cells meet the stated rule (>= 3 studies incl. a Core or computing study rated >= 4)",
     "Explicit, rule-based confidence for every rating", "Met", "D2_framework/cells/*.json; calibration_log.md")
@@ -154,9 +154,9 @@ add(6, "Evidence coverage", "Studies per assessment type; empty cells",
 
 # 7 Reproducibility (result of the re-run test, 17 Oct 2026)
 add(7, "Reproducibility", "Full re-run of all offline scripts; MD5 comparison of outputs",
-    "83 of 83 output files byte-identical after re-running dataset analyses, screening agreement, decisions and "
-    "extraction merge. Live web queries (OpenAlex search, venue check) are dated snapshots, not re-run.",
-    "Identical outputs on re-run", "Met", "Re-run log, 17 Oct 2026")
+    "All offline outputs and the four deliverable workbooks identical in content on a clean re-run from the shared "
+    "code package. Live web queries (OpenAlex search, venue check) are dated snapshots, not re-run.",
+    "Identical outputs on re-run", "Met", "Clean-copy re-run, 28 Oct 2026")
 
 # 8 Independent replication
 add(8, "Independent replication", "Two analysts, same datasets, separate code (ours vs Jiajun's)",

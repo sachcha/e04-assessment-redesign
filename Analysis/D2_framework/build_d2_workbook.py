@@ -154,6 +154,10 @@ for line in proto.splitlines():
         anchors.append({"#": int(m.group(1)), "Dimension": m.group(2).strip(), "Strong means": m.group(3).strip(),
                         "Moderate means": "Mixed, or depends on how the task is designed (the cell says on what)",
                         "Weak means": m.group(4).strip()})
+REPORT_LABEL = ["Verifies own work", "Resists AI", "Shows who did it", "Fits outcomes", "Authentic", "Builds AI skills",
+                "Shows process", "Scales", "Low workload", "Low cost", "Equitable"]
+for a_, lab in zip(anchors, REPORT_LABEL):
+    a_["Short label used in the report (Table 6)"] = lab
 anchors = pd.DataFrame(anchors)
 codes = pd.DataFrame([{"Code": m.group(1), "Source": m.group(2), "Finding and limitations": m.group(3)}
                       for m in re.finditer(r"^- \[([DJ]\d+)\] \(([^)]*)\) (.*)$", dcodes, re.M)])
@@ -173,7 +177,7 @@ thin = Side(style="thin", color="D0D0D0")
 FILL = {"Strong": "C6E7C2", "Moderate": "FCE9B2", "Weak": "F4C7C3", "Insufficient evidence": "E3E3E3"}
 widths = {"Read me": [18, 120], "Evaluation Matrix": [22, 40, 44, 44, 45, 60, 55, 55, 55, 40, 10],
           "Rating Grid": [24] + [19] * 11, "Cell Evidence": [20, 20, 12, 10, 60, 45, 45, 40, 30, 22, 9, 9, 9, 9],
-          "References": [9, 10, 9, 8, 18, 110], "Rating anchors": [5, 26, 50, 40, 45],
+          "References": [9, 10, 9, 8, 18, 110], "Rating anchors": [5, 26, 50, 40, 45, 22],
           "Dataset codes": [8, 36, 150]}
 for ws in wb.worksheets:
     ws.freeze_panes = "B2"

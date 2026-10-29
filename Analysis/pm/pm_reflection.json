@@ -16,8 +16,8 @@
   {
    "phase": "Screening and extraction",
    "planned": "Wk 6-8; milestones 'screening complete' and 'extraction complete' about 27 Sep",
-   "actual": "Screening (C5102-6) and extraction (C5102-7) were completed in Covidence by late Sep / early Oct, as Jira shows. The Excel evidence log was not updated in step with Covidence and was consolidated on 17 Oct, when the documented update search (494 further records) was also screened.",
-   "variance": "On schedule in Covidence; the evidence log lagged about 3 weeks behind"
+   "actual": "Preliminary screening and extraction (C5102-6, C5102-7) in Covidence by early October; AI-assisted dual screening and the consolidated evidence log on 17 October with the update search.",
+   "variance": "About one week late after the search slip; the evidence log lagged about three weeks behind Covidence"
   },
   {
    "phase": "Mid-semester break",
@@ -34,27 +34,33 @@
   {
    "phase": "Evaluation Framework (D2) and Recommendation Matrix (D3)",
    "planned": "Wk 11-12; both complete about 19 Oct",
-   "actual": "Both built 17 Oct; Jira epics C5102-9 and C5102-10 in progress; three tasks added after the scope change (AI-use monitoring research, conceptual framework, integration into D3)",
+   "actual": "First versions on 17 October; revised after internal review by 22 October; epics C5102-9 and C5102-10 done by 29 October. Three tasks added for the scope change.",
    "variance": "On schedule despite added scope"
   },
   {
    "phase": "Final report",
    "planned": "Wk 12-13; report ready about 1 Nov",
-   "actual": "C5102-12 in progress; team target to finalise about 23 Oct, a week earlier than planned",
-   "variance": "Ahead of plan if the target holds"
+   "actual": "C5102-12 done; report submitted on 30 October",
+   "variance": "Ahead of the planned 1 November"
   },
   {
    "phase": "Final presentation",
    "planned": "Wk 13-14; slides ready about 2 Nov",
-   "actual": "C5102-13 not started (scheduled November)",
+   "actual": "C5102-13 in progress (scheduled November)",
    "variance": "On schedule"
+  },
+  {
+   "phase": "Scope change (3 tasks, 60 h)",
+   "planned": "Not planned",
+   "actual": "Added in October; delivered within the original timeline",
+   "variance": "Possible because the team was ahead of schedule by October"
   }
  ],
  "flow": [
   "Work in progress was high in Aug to early Sep (about 10 to 12 issues in progress at once) and fell to almost zero by late September, so flow improved as the team settled.",
-  "Done rose steadily from about 3 issues (16 Aug) to about 55 (30 Sep), stayed flat over the break, then rose to about 62 by 18 Oct.",
   "Total scope rose from about 94 to 97 issues at the end, matching the three tasks added after the scope change.",
-  "On 18 Oct about 62 of 97 issues (about 64%) were done, about 10 were in progress and about 25 were in the backlog, most of them reporting and presentation tasks scheduled for Wk 12 to 14."
+  "Work in progress rose again from mid-October, to about 18 issues, as D2, D3 and the report ran in parallel.",
+  "By 29 October about nine in ten of the 97 issues were done; the remaining work covered the final presentation."
  ],
  "planned_effort_hours": {
   "Communication plan": 6,
@@ -171,19 +177,19 @@
  ],
  "effort_changes": [
   "More than planned: screening and selection. An unplanned, documented OpenAlex update search added 494 records to screen, and a protocol amendment (redesign focus) was applied to all records.",
-  "More than planned: scope-change work. Three tasks (AI-use monitoring research, conceptual framework, integration into D3) were added under epics 9 and 10, against the change request's estimate of 150 to 250 hours if detection had been added in full.",
-  "More than planned: dataset analysis. The three datasets were analysed independently twice, which doubled effort but gave an exact replication.",
+  "More than planned: scope-change work. Three tasks (AI-use monitoring research, conceptual framework, integration into D3) were added under epics 9 and 10, 60 hours approved and logged separately, against the change request's estimate of 150 to 250 hours if detection had been added in full.",
+  "More than planned: dataset analysis. The three datasets were analysed independently twice, which doubled effort but gave a replication check (StudyChat and Hannover figures matched; EPFL agreed in direction).",
   "Less than planned or redistributed: AI-assisted screening, extraction and drafting (budgeted as AI productivity tools) reduced the manual hours for screening and synthesis.",
   "As planned: proposal, protocol, synthesis timing and the mid-semester break."
  ],
  "budget": {
-  "note": "Budget and actual costs in A$ excluding GST unless stated. Labour is valued at the proposal rate of A$65 per hour. Effort was tracked at task level in Jira rather than by the hour.",
+  "note": "Budget and actual costs in A$ excluding GST unless stated. Labour is valued at the proposal rate of A$65 per hour; actual hours come from the timesheets the team kept during the project.",
   "items": [
    {
     "item": "Consultant professional fees (510 h at A$65)",
     "budget": 33150.0,
-    "actual": "33,150.00 (planned hours; effort tracked by task, not by hour)",
-    "variance": "Effort shifted towards screening, scope-change work and dataset analysis. AI assistance reduced manual screening and synthesis time, so total effort stayed within the planned envelope."
+    "actual": 32792.5,
+    "variance": "504.5 timesheet hours against 510 planned (A$357.50 under). Prajwal supported the literature search and Sachin supported the dataset analysis and D3. The scope-change work (60 hours) was logged separately and funded from contingency."
    },
    {
     "item": "Jira subscription",
@@ -256,10 +262,16 @@
     "budget": 0.0,
     "actual": "US$339 per year (Single review plan, covidence.org/pricing), funded from contingency",
     "variance": "Unbudgeted. The proposal planned screening without a dedicated platform; Covidence was adopted to manage dual screening and should have been budgeted."
+   },
+   {
+    "item": "Scope change (60 h at A$65), not in the original budget",
+    "budget": 0.0,
+    "actual": 3900.0,
+    "variance": "Agreed middle ground for the AI-detection request (estimated at 150 to 250 hours); approved by the client and the mentor; funded from contingency."
    }
   ],
-  "contingency": "A$4,198.20 budgeted (10%). Used for the Covidence subscription; the scope change was absorbed within planned effort through the change-control process, so most of the contingency remains unused.",
-  "lesson": "Budget the review platform at the planning stage. The only unplanned cost was the screening software, which every systematic review needs."
+  "contingency": "A$4,198.20 budgeted (10%). Used for the scope change (A$3,900) and Covidence (US$339 per year); together about A$220 over the contingency, an overrun the client approved.",
+  "lesson": "Budget the review platform at the planning stage, and keep a contingency large enough for an approved scope change."
  },
  "scope_change_agreement": "Client requested AI detection; team estimated 150-250 hours (A$9,750-16,250 at A$65/h). Agreed middle ground: a system that identifies AI use in unsupervised assessments from recorded evidence, rather than a text detector (the AI-use monitoring framework). +60 hours (A$3,900), logged separately: Sachin 20, Prajwal 20, Nadia 10, Anshul 10. Approved by the client and the mentor; delivered within the original timeline.",
  "contingency_use": "A$4,198.20 contingency funded the scope change (A$3,900) and Covidence (US$339/yr); together about A$220 over the contingency, an overrun the client approved."

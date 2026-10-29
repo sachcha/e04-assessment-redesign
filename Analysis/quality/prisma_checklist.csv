@@ -20,7 +20,7 @@ Item,PRISMA 2020 item,Status,Where it is reported
 19,Results of individual studies,Met,"Literature Review Evidence, sheet 'Study details' (findings with their location in each source)"
 20,Results of syntheses,Met,"Report Section 4.3; D2 Evaluation Framework, sheets 'Rating Grid' and 'Cell Evidence'"
 21,Reporting biases,Partial,Low-confidence venues flagged; sensitivity checks without them and without the two most-cited studies change no rating (Report Section 6)
-22,Certainty of evidence,Met,Report Section 4.3 (confidence for every D2 rating) and Section 5 (evidence status for every D3 recommendation)
+22,Certainty of evidence,Met,Report Section 4.3 (High-confidence ratings marked and confidence totals given; every rating's level in the D2 workbook) and Section 5 (evidence status for every D3 recommendation)
 23,Discussion and limitations,Met,Report Section 6 (limits of the evidence) and Section 9 (conclusion)
 24,Registration and protocol,Partial,Protocols written and dated in the code repository; the review was not registered (for example on PROSPERO or OSF)
 25,Support / funding,Met,Report Section 8.2: no external funding; tool costs from the project budget
