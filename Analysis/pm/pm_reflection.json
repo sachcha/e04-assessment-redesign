@@ -273,6 +273,6 @@
   "contingency": "A$4,198.20 budgeted (10%). Used for the scope change (A$3,900) and Covidence (US$339 per year); together about A$220 over the contingency, an overrun the client approved.",
   "lesson": "Budget the review platform at the planning stage, and keep a contingency large enough for an approved scope change."
  },
- "scope_change_agreement": "Client requested AI detection; team estimated 150-250 hours (A$9,750-16,250 at A$65/h). Agreed middle ground: a system that identifies AI use in unsupervised assessments from recorded evidence, rather than a text detector (the AI-use monitoring framework). +60 hours (A$3,900), logged separately: Sachin 20, Prajwal 20, Nadia 10, Anshul 10. Approved by the client and the mentor; delivered within the original timeline.",
+ "scope_change_agreement": "Client requested AI detection; team estimated 150-250 hours (A$9,750-16,250 at A$65/h). Agreed middle ground: a system that identifies AI use in unsupervised assessments from recorded evidence, rather than a text detector (the AI-use monitoring framework). +60 hours (A$3,900), logged separately: Prajwal 20, Sachin 14, Nadia 10, Anshul 10, Jiajun 6. Approved by the client and the mentor; delivered within the original timeline.",
  "contingency_use": "A$4,198.20 contingency funded the scope change (A$3,900) and Covidence (US$339/yr); together about A$220 over the contingency, an overrun the client approved."
 }
